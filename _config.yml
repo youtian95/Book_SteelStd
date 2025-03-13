@@ -1,6 +1,4 @@
 # Book settings
-# Learn more at https://jupyterbook.org/customize/config.html
-
 title: 钢结构设计标准 GB 50017-2017
 author: 游田
 logo: logo.png
@@ -21,8 +19,8 @@ bibtex_bibfiles:
 
 # Information about where the book exists on the web
 repository:
-  url: https://github.com/executablebooks/jupyter-book  # Online location of your book
-  path_to_book: docs  # Optional path to your book, relative to the repository root
+  url: https://github.com/youtianjava/Standard_for_design_of_steel_structures_GB_50017-2017  # Online location of your book
+  path_to_book: SteelStd  # Optional path to your book, relative to the repository root
   branch: main  # Which branch of the repository should be used when creating links (optional)
 
 # Add GitHub buttons to your book
