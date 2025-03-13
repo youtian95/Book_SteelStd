@@ -1,7 +1,8 @@
 # Book settings
 title: 钢结构设计标准 GB 50017-2017
-author: 游田
+author: 住房和城乡建设部，游田重新排版
 logo: logo.png
+copyright: "2025"
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
@@ -28,3 +29,6 @@ repository:
 html:
   use_issues_button: true
   use_repository_button: true
+  use_issues_button: true
+  comments:
+    Hypothesis: true

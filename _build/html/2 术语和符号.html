@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>前言 &#8212; 钢结构设计标准 GB 50017-2017</title>
+    <title>2 术语和符号 &#8212; 钢结构设计标准 GB 50017-2017</title>
   
   
   
@@ -57,11 +57,11 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = '前言';</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '2 术语和符号';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="1 总则" href="1%20%E6%80%BB%E5%88%99.html" />
-    <link rel="prev" title="钢结构设计标准 GB 50017-2017" href="README.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -124,6 +124,8 @@
       
       
       
+        
+      
       <div class="bd-sidebar-primary bd-sidebar">
         
 
@@ -179,8 +181,8 @@
                 </a>
             </li>
         </ul>
-        <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">前言</a></li>
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="%E5%89%8D%E8%A8%80.html">前言</a></li>
 <li class="toctree-l1"><a class="reference internal" href="1%20%E6%80%BB%E5%88%99.html">1 总则</a></li>
 </ul>
 
@@ -253,7 +255,7 @@
       
       
       
-      <li><a href="https://github.com/youtianjava/Standard_for_design_of_steel_structures_GB_50017-2017/issues/new?title=Issue%20on%20page%20%2F前言.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/youtianjava/Standard_for_design_of_steel_structures_GB_50017-2017/issues/new?title=Issue%20on%20page%20%2F2 术语和符号.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -283,7 +285,7 @@
       
       
       
-      <li><a href="_sources/前言.md" target="_blank"
+      <li><a href="_sources/2 术语和符号.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -354,7 +356,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -365,11 +369,29 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>前言</h1>
+    <h1>2 术语和符号</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">2.1 术语</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#brittle-fracture">2.1.1 脆断 (brittle fracture)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">2.2 符号</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">2.2.1 作用和作用效应设计值</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">2.2.2 计算指标</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">2.2.3 几何参数</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">2.2.4 计算系数和其他</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -380,73 +402,86 @@ document.write(`
                 <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="id1">
-<h1>前言<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
-<p>根据住房和城乡建设部《关于印发&lt;2008年工程建设标准规范制订、修订计划&gt;的通知》（建标[2008]105号）的要求，标准编制组经广泛调查研究，认真总结实践经验，参考有关国际标准和国外先进标准，并在广泛征求意见的基础上，修订了《钢结构设计规范》GB50017-2003。</p>
-<p>本标准的主要内容是：1.总则；2.术语和符号；3.基本设计规定；4.材料；5.结构分析与稳定性设计；6.受弯构件；7.轴心受力构件；8.拉弯、压弯构件；9.加劲钢板剪力墙；10.塑性及弯矩调幅设计；11.连接；12.节点；13.钢管连接节点；14.钢与混凝土组合梁；15.钢管混凝土柱及节点；16.疲劳计算及防脆断设计；17.钢结构抗震性能化设计；18.钢结构防护等。</p>
-<p>本次修订的主要内容是：</p>
-<ol class="arabic simple">
-<li><p>“基本设计规定（第3章）”增加了截面板件宽厚比等级，”材料选用”及”设计指标”内容移入新章节”材料（第4章）”，关于结构计算内容移入新章节”结构分析及稳定性设计（第5章）”，”构造要求（原规范第8章）”中”大跨度屋盖结构”及”制作、运输及安装”的内容并入本章。</p></li>
-<li><p>“受弯构件的计算（原规范第4章）”改为”受弯构件（第6章）”，增加了腹板开孔的内容，”构造要求（原规范第8章）”的”结构构件”中与梁设计相关的内容移入本章。</p></li>
-<li><p>“轴心受力构件和拉弯、压弯构件的计算（原规范第5章）”改为”轴心受力构件（第7章）”及”拉弯、压弯构件（第8章）”两章，”构造要求（原规范第8章）”中与柱设计相关的内容移入第7章。</p></li>
-<li><p>“疲劳计算（原规范第6章）”改为”疲劳计算及防脆断设计（第16章）”，增加了简便快速验算疲劳强度的方法，”构造要求（原规范第8章）”中”对吊车梁和吊车桁架（或类似结构）的要求”及”提高寒冷地区结构抗脆断能力的要求”移入本章，并增加了抗脆断设计的规定。</p></li>
-<li><p>“连接计算（原规范第7章）”改为”连接（第11章）”及”节点（第12章）”两章，”构造要求（原规范第8章）”中有关焊接及螺栓连接的内容并入第11章、柱脚内容并入第12章。</p></li>
-<li><p>“构造要求（原规范第8章）”中的条文根据其内容，分别并入相关各章，其中”防护和隔热”移入”钢结构防护（第18章）”。</p></li>
-<li><p>“塑性设计（原规范第9章）”改为”塑性及弯矩调幅设计（第10章）”，采用了利用钢结构塑性进行内力重分配的思路进行设计。</p></li>
-<li><p>“钢管结构（原规范第10章）”改为”钢管连接节点（第13章）”，丰富了计算的节点连接形式，另外，增加了节点刚度判定的内容。</p></li>
-<li><p>“钢与混凝土组合梁（原规范第11章，修订后为第14章）”，补充了纵向抗剪设计内容，删除了与弯筋连接件有关的内容。</p></li>
-</ol>
-<p>本次修订新增了材料（第4章）、结构分析及稳定性设计（第5章）、加劲钢板剪力墙（第9章）、钢管混凝土柱及节点（第15章）、钢结构抗震性能化设计（第17章）、钢结构防护（第18章）等章节，同时在附录中增加了常用建筑结构体系、钢与混凝土组合梁的疲劳验算等内容。</p>
-<p>本标准中以黑体字标志的条文为强制性条文，必须严格执行。</p>
-<p>本标准由住房和城乡建设部负责管理和对强制性条文的解释，中冶京诚工程技术有限公司负责具体技术内容的解释。执行过程中如有意见或建议请寄送中冶京诚工程技术有限公司（地址：北京经济技术开发区建安街7号，邮编：100176）。</p>
-<p>本标准主编单位：中冶京诚工程技术有限公司</p>
-<p>本标准参编单位：</p>
-<ul class="simple">
-<li><p>北京京诚华宇建筑设计研究院有限公司</p></li>
-<li><p>西安建筑科技大学</p></li>
-<li><p>同济大学</p></li>
-<li><p>清华大学</p></li>
-<li><p>浙江大学</p></li>
-<li><p>中冶建筑研究总院有限公司</p></li>
-<li><p>上海宝钢工程技术有限公司</p></li>
-<li><p>哈尔滨工业大学</p></li>
-<li><p>天津大学</p></li>
-<li><p>重庆大学</p></li>
-<li><p>东南大学</p></li>
-<li><p>湖南大学</p></li>
-<li><p>北京工业大学</p></li>
-<li><p>青岛理工大学</p></li>
-<li><p>华南理工大学</p></li>
-<li><p>中国建筑标准设计研究院</p></li>
-<li><p>华东建筑设计研究院有限公司</p></li>
-<li><p>中国建筑设计研究院</p></li>
-<li><p>中冶赛迪工程技术股份有限公司</p></li>
-<li><p>北京市建筑设计研究院</p></li>
-<li><p>中国机械工业集团公司</p></li>
-<li><p>中国电子工程设计院</p></li>
-<li><p>中国航空规划建设发展有限公司</p></li>
-<li><p>中冶南方工程技术有限公司</p></li>
-<li><p>中冶华天工程技术有限公司</p></li>
-<li><p>中水东北勘测设计研究有限责任公司</p></li>
-<li><p>中国石化工程建设公司</p></li>
-<li><p>中国中元国际工程公司</p></li>
-<li><p>中国电力工程顾问集团西北电力设计院有限公司</p></li>
-<li><p>江苏沪宁钢机股份有限公司</p></li>
-<li><p>北京多维联合集团有限公司</p></li>
-<li><p>上海宝冶集团有限公司</p></li>
-<li><p>博思格巴特勒（中国）公司</p></li>
-<li><p>安徽鸿路钢结构（集团）股份有限公司</p></li>
-</ul>
-<p>本标准参加单位：</p>
-<ul class="simple">
-<li><p>浙江杭萧钢构股份有限公司</p></li>
-<li><p>浙江东南网架股份有限公司</p></li>
-<li><p>安徽富煌钢构股份有限公司</p></li>
-<li><p>宝钢钢构有限公司</p></li>
-<li><p>马鞍山钢铁股份有限公司</p></li>
-<li><p>浙江精工钢结构集团有限公司</p></li>
-</ul>
-<p>本标准主要起草人员：施设、王立军、余海群、陈绍蕃、沈祖炎、童根树、陈炯、柴昶、崔佳、郁银泉、汪大绥、吴耀华、舒赣平、舒兴平、郝际平、范峰、石永久、范重、陈以一、聂建国、陈志华、李国强、柯长华、张爱林、武振宇、童乐为、王元清、何文汇、但泽义、郭彦林、郭耀杰、娄宇、戴国欣、侯兆新、赵春莲、顾强、穆海生、徐建、陈瑞金、崔元山、王燕、马天鹏、关晓松、李茂新、朱丹、贺明玄、王湛、丁阳、王玉银、张同亿、姜学宜、谭晋鹏、高继领、张辉、罗兴隆、张伟、张亚军、孙雅欣</p>
-<p>本标准主要审查人员：周绪红、徐厚军、侯忠良、戴国莹、戴为志、刘锡良、陈绍礼、武人岱、葛家琪、陈禄如、冯远、邓华、金天德、王仕统、田春雨</p>
+<h1>2 术语和符号<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
+<section id="id2">
+<h2>2.1 术语<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<section id="brittle-fracture">
+<h3>2.1.1 脆断 (brittle fracture)<a class="headerlink" href="#brittle-fracture" title="Link to this heading">#</a></h3>
+<p>结构或构件在拉应力状态下没有出现警示性的塑性变形而突然发生的断裂。</p>
+</section>
+</section>
+<section id="id3">
+<h2>2.2 符号<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
+<section id="id4">
+<h3>2.2.1 作用和作用效应设计值<a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
+<p><span class="math notranslate nohighlight">\(F\)</span> —— 集中荷载；</p>
+<p><span class="math notranslate nohighlight">\(G\)</span> —— 重力荷载；</p>
+<p><span class="math notranslate nohighlight">\(H\)</span> —— 水平力；</p>
+<p><span class="math notranslate nohighlight">\(M\)</span> —— 弯矩；</p>
+<p><span class="math notranslate nohighlight">\(N\)</span> —— 轴心力；</p>
+<p><span class="math notranslate nohighlight">\(P\)</span> —— 高强度螺栓的预拉力；</p>
+<p><span class="math notranslate nohighlight">\(R\)</span> —— 支座反力；</p>
+<p><span class="math notranslate nohighlight">\(V\)</span> —— 剪力。</p>
+</section>
+<section id="id5">
+<h3>2.2.2 计算指标<a class="headerlink" href="#id5" title="Link to this heading">#</a></h3>
+<p><span class="math notranslate nohighlight">\(E\)</span> —— 钢材的弹性模量；</p>
+<p><span class="math notranslate nohighlight">\(E_c\)</span> —— 混凝土的弹性模量；</p>
+<p><span class="math notranslate nohighlight">\(f\)</span> —— 钢材的抗拉、抗压和抗弯强度设计值；</p>
+<p><span class="math notranslate nohighlight">\(f_v\)</span> —— 钢材的抗剪强度设计值；</p>
+<p><span class="math notranslate nohighlight">\(f_{ce}\)</span> —— 钢材的端面承压强度设计值；</p>
+<p><span class="math notranslate nohighlight">\(f_y\)</span> —— 钢材的屈服强度；</p>
+<p><span class="math notranslate nohighlight">\(f_u\)</span> —— 钢材的抗拉强度最小值；</p>
+<p><span class="math notranslate nohighlight">\(f_{at}\)</span> —— 锚栓的抗拉强度设计值；</p>
+<p><span class="math notranslate nohighlight">\(f_{bt}\)</span>、<span class="math notranslate nohighlight">\(f_{bv}\)</span>、<span class="math notranslate nohighlight">\(f_{bc}\)</span> —— 螺栓的抗拉、抗剪和承压强度设计值；</p>
+<p><span class="math notranslate nohighlight">\(f_{bop}\)</span> —— 外露螺栓的插入螺母后露出螺纹部分强度折减系数；</p>
+<p><span class="math notranslate nohighlight">\(f_w\)</span> —— 焊缝的强度设计值；</p>
+<p><span class="math notranslate nohighlight">\([f]\)</span> —— 钢材的许用应力；</p>
+<p><span class="math notranslate nohighlight">\(G\)</span> —— 剪切模量；</p>
+<p><span class="math notranslate nohighlight">\(I\)</span> —— 截面惯性矩；</p>
+<p><span class="math notranslate nohighlight">\(I_p\)</span> —— 极惯性矩；</p>
+<p><span class="math notranslate nohighlight">\(I_t\)</span> —— 扭转惯性矩；</p>
+<p><span class="math notranslate nohighlight">\(I_w\)</span> —— 弯翘惯性矩；</p>
+<p><span class="math notranslate nohighlight">\(W\)</span> —— 截面模量；</p>
+<p><span class="math notranslate nohighlight">\(A\)</span> —— 截面面积；</p>
+<p><span class="math notranslate nohighlight">\(A_d\)</span> —— 加劲肋的截面面积；</p>
+<p><span class="math notranslate nohighlight">\(A_g\)</span> —— 毛截面面积；</p>
+<p><span class="math notranslate nohighlight">\(A_n\)</span> —— 净截面面积；</p>
+<p><span class="math notranslate nohighlight">\(A_v\)</span> —— 抗剪截面面积；</p>
+<p><span class="math notranslate nohighlight">\(A_w\)</span> —— 腹板面积；</p>
+<p><span class="math notranslate nohighlight">\(S\)</span> —— 静矩；</p>
+<p><span class="math notranslate nohighlight">\(i\)</span> —— 回转半径。</p>
+</section>
+<section id="id6">
+<h3>2.2.3 几何参数<a class="headerlink" href="#id6" title="Link to this heading">#</a></h3>
+<p><span class="math notranslate nohighlight">\(b\)</span> —— 构件宽度；</p>
+<p><span class="math notranslate nohighlight">\(h\)</span> —— 构件高度；</p>
+<p><span class="math notranslate nohighlight">\(t\)</span> —— 板件厚度；</p>
+<p><span class="math notranslate nohighlight">\(t_w\)</span> —— 腹板厚度；</p>
+<p><span class="math notranslate nohighlight">\(t_f\)</span> —— 翼缘厚度；</p>
+<p><span class="math notranslate nohighlight">\(l\)</span> —— 构件长度；</p>
+<p><span class="math notranslate nohighlight">\(r\)</span> —— 圆角半径。</p>
+</section>
+<section id="id7">
+<h3>2.2.4 计算系数和其他<a class="headerlink" href="#id7" title="Link to this heading">#</a></h3>
+<p><span class="math notranslate nohighlight">\(\alpha\)</span> —— 相关系数；</p>
+<p><span class="math notranslate nohighlight">\(\beta\)</span> —— 系数；</p>
+<p><span class="math notranslate nohighlight">\(\gamma\)</span> —— 重要性系数；</p>
+<p><span class="math notranslate nohighlight">\(\gamma_G\)</span> —— 永久作用分项系数；</p>
+<p><span class="math notranslate nohighlight">\(\gamma_L\)</span> —— 可变作用分项系数；</p>
+<p><span class="math notranslate nohighlight">\(\lambda\)</span> —— 长细比；</p>
+<p><span class="math notranslate nohighlight">\(\overline{\lambda}\)</span> —— 构件的相对长细比；</p>
+<p><span class="math notranslate nohighlight">\(\overline{\lambda}_p\)</span> —— 板件的相对宽厚比；</p>
+<p><span class="math notranslate nohighlight">\(\mu\)</span> —— 摩擦系数；</p>
+<p><span class="math notranslate nohighlight">\(\nu\)</span> —— 泊松比；</p>
+<p><span class="math notranslate nohighlight">\(\phi\)</span> —— 强度设计值系数；</p>
+<p><span class="math notranslate nohighlight">\(\phi_x\)</span> —— 整体稳定系数；</p>
+<p><span class="math notranslate nohighlight">\(\phi_b\)</span> —— 局部稳定系数；</p>
+<p><span class="math notranslate nohighlight">\(\sigma\)</span> —— 正应力；</p>
+<p><span class="math notranslate nohighlight">\(\tau\)</span> —— 切应力；</p>
+<p><span class="math notranslate nohighlight">\(\xi\)</span> —— 截面塑性发展系数。</p>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -479,30 +514,37 @@ document.write(`
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
-    <a class="left-prev"
-       href="README.html"
-       title="previous page">
-      <i class="fa-solid fa-angle-left"></i>
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">钢结构设计标准 GB 50017-2017</p>
-      </div>
-    </a>
-    <a class="right-next"
-       href="1%20%E6%80%BB%E5%88%99.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">1 总则</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
-    </a>
 </div>
                 </footer>
               
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">2.1 术语</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#brittle-fracture">2.1.1 脆断 (brittle fracture)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">2.2 符号</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">2.2.1 作用和作用效应设计值</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">2.2.2 计算指标</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">2.2.3 几何参数</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">2.2.4 计算系数和其他</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
