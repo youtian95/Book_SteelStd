@@ -6,3 +6,4 @@ root: README
 chapters:
 - file: 前言
 - file: 1 总则
+- file: 2 术语和符号
