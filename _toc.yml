@@ -4,5 +4,5 @@
 format: jb-book
 root: README
 chapters:
-- file: 引言
+- file: 前言
 - file: 1 总则
