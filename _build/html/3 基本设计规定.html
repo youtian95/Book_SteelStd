@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -57,6 +57,8 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = '3 基本设计规定';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -183,11 +185,12 @@
 <li class="toctree-l1"><a class="reference internal" href="%E5%89%8D%E8%A8%80.html">钢结构设计标准 GB 50017—2017</a></li>
 <li class="toctree-l1"><a class="reference internal" href="%E7%9B%AE%E5%BD%95.html">目次</a></li>
 
-<li class="toctree-l1"><a class="reference internal" href="1%20%E6%80%BB%E5%88%99.html">总则</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1%20%E6%80%BB%E5%88%99.html">1 总则</a></li>
 <li class="toctree-l1"><a class="reference internal" href="2%20%E6%9C%AF%E8%AF%AD%E5%92%8C%E7%AC%A6%E5%8F%B7.html">2 术语和符号</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">3 基本设计规定</a></li>
 <li class="toctree-l1"><a class="reference internal" href="4%20%E6%9D%90%E6%96%99%E5%92%8C%E6%9D%90%E6%96%99%E9%80%89%E7%94%A8.html">4 材料和材料选用</a></li>
 <li class="toctree-l1"><a class="reference internal" href="5%20%E7%BB%93%E6%9E%84%E5%88%86%E6%9E%90%E4%B8%8E%E7%A8%B3%E5%AE%9A%E6%80%A7%E8%AE%BE%E8%AE%A1.html">5 结构分析与稳定性设计</a></li>
+<li class="toctree-l1"><a class="reference internal" href="6%20%E5%8F%97%E5%BC%AF%E6%9E%84%E4%BB%B6.html">6 受弯构件</a></li>
 </ul>
 
     </div>
@@ -453,13 +456,15 @@ document.write(`
 <li><p>预应力钢结构的设计应包括预应力施工阶段和使用阶段的各种工况。应对结构、构件和节点进行强度、刚度和稳定性计算。预应力索膜结构设计应包括找形分析、荷载分析及裁剪分析三个相互制约的过程，必要时还应进行施工过程分析。对于使用阶段需要换索的工况，在计算、构造及施工方案上应预先考虑。</p></li>
 <li><p><strong>结构构件、连接及节点应采用下列承载能力极限状态设计表达式：</strong></p>
 <p><strong>对持久设计状况、短暂设计状况：</strong></p>
-<p>[
-\gamma_0 S \le R \quad \text{（3.1.9-1）}
-]</p>
+<div class="math notranslate nohighlight">
+\[
+    \gamma_0 S \le R \quad \text{（3.1.9-1）}
+    \]</div>
 <p><strong>对地震设计状况：</strong></p>
-<p>[
-S \le \frac{R}{\gamma_{\text{RE}}} \quad \text{（3.1.9-2）}
-]</p>
+<div class="math notranslate nohighlight">
+\[
+    S \le \frac{R}{\gamma_{\text{RE}}} \quad \text{（3.1.9-2）}
+    \]</div>
 <p><strong>式中：</strong></p>
 <ul class="simple">
 <li><p>(\gamma_0) —— 结构重要性系数：对安全等级为一级的结构构件不应小于1.1，对安全等级为二级的结构构件不应小于1.0，对安全等级为三级的结构构件不应小于0.9；</p></li>
@@ -514,21 +519,25 @@ S \le \frac{R}{\gamma_{\text{RE}}} \quad \text{（3.1.9-2）}
 <section id="id9">
 <h3>3.3.2<a class="headerlink" href="#id9" title="Link to this heading">#</a></h3>
 <p>计算重级工作制吊车梁（或吊车桁架）及其制动结构的强度、稳定性以及连接（吊车梁或吊车桁架、制动结构、柱相互间的连接）的强度时，应考虑由起重机摆动引起的横向水平力（此水平力不与荷载规范规定的横向水平荷载同时考虑），作用于每个轮压处的此水平力标准值可由下式进行计算：</p>
-<p>[
-H_k = \alpha P_{k,\max} \quad \text{（3.2.2-1）
-]</p>
+<div class="math notranslate nohighlight">
+\[
+H_k = \alpha P_{k,\max} \quad \text{（3.2.2-1）}
+\]</div>
 <p>对软钩起重机：</p>
-<p>[
-\alpha = 0.1 \quad \text{（3.2.2-2a）
-]</p>
+<div class="math notranslate nohighlight">
+\[
+\alpha = 0.1 \quad \text{（3.2.2-2a）}
+\]</div>
 <p>对抓斗或磁盘起重机：</p>
-<p>[
-\alpha = 0.15 \quad \text{（3.2.2-2b）
-]</p>
+<div class="math notranslate nohighlight">
+\[
+\alpha = 0.15 \quad \text{（3.2.2-2b）}
+\]</div>
 <p>对硬钩起重机：</p>
-<p>[
-\alpha = 0.2 \quad \text{（3.2.2-2c）
-]</p>
+<div class="math notranslate nohighlight">
+\[
+\alpha = 0.2 \quad \text{（3.2.2-2c）}
+\]</div>
 <p>式中：</p>
 <ul class="simple">
 <li><p>(P_{k,\max}) —— 起重机最大轮压标准值；</p></li>
@@ -622,9 +631,10 @@ H_k = \alpha P_{k,\max} \quad \text{（3.2.2-1）
 <section id="id19">
 <h3>3.5.1<a class="headerlink" href="#id19" title="Link to this heading">#</a></h3>
 <p>进行受弯和压弯构件计算及塑性、弯矩调幅设计和抗震设计时，压弯和受弯构件的截面设计等级应符合表3.5的规定，其中参数 (\alpha_0) 应按下式计算：</p>
-<p>[
-\alpha_0 = \frac{\sigma_{\max} - \sigma_{\min}}{\sigma_{\max}} \quad \text{（3.5）
-]</p>
+<div class="math notranslate nohighlight">
+\[
+\alpha_0 = \frac{\sigma_{\max} - \sigma_{\min}}{\sigma_{\max}} \quad \text{（3.5）}
+\]</div>
 <p>式中：</p>
 <ul class="simple">
 <li><p>(\sigma_{\max}) —— 腹板计算边缘的最大压应力；</p></li>
@@ -702,9 +712,9 @@ H_k = \alpha P_{k,\max} \quad \text{（3.2.2-1）
 <tr class="row-odd"><td><p>梁、受弯构件</p></td>
 <td><p>工字形截面</p></td>
 <td><p>翼缘 (\gamma_0 S \le R)</p></td>
-<td><p>9 [S \le R/\gamma_{\rm{RE}}]</p></td>
+<td><p>9 <span class="math notranslate nohighlight">\(S \le R/\gamma_{\rm{RE}}\)</span></p></td>
 <td><p>11 (\gamma_0)</p></td>
-<td><p>13 [S]</p></td>
+<td><p>13 <span class="math notranslate nohighlight">\(S\)</span></p></td>
 <td><p>15 (\gamma_{\rm{RE}})</p></td>
 </tr>
 <tr class="row-even"><td><p></p></td>

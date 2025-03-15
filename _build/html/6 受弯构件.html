@@ -1,0 +1,1322 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>6 受弯构件 &#8212; 钢结构设计标准 GB 50017-2017</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '6 受弯构件';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="5 结构分析与稳定性设计" href="5%20%E7%BB%93%E6%9E%84%E5%88%86%E6%9E%90%E4%B8%8E%E7%A8%B3%E5%AE%9A%E6%80%A7%E8%AE%BE%E8%AE%A1.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="README.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="钢结构设计标准 GB 50017-2017 - Home"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="钢结构设计标准 GB 50017-2017 - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="README.html">
+                    钢结构设计标准 GB 50017-2017
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="%E5%89%8D%E8%A8%80.html">钢结构设计标准 GB 50017—2017</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E7%9B%AE%E5%BD%95.html">目次</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="1%20%E6%80%BB%E5%88%99.html">1 总则</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2%20%E6%9C%AF%E8%AF%AD%E5%92%8C%E7%AC%A6%E5%8F%B7.html">2 术语和符号</a></li>
+<li class="toctree-l1"><a class="reference internal" href="3%20%E5%9F%BA%E6%9C%AC%E8%AE%BE%E8%AE%A1%E8%A7%84%E5%AE%9A.html">3 基本设计规定</a></li>
+<li class="toctree-l1"><a class="reference internal" href="4%20%E6%9D%90%E6%96%99%E5%92%8C%E6%9D%90%E6%96%99%E9%80%89%E7%94%A8.html">4 材料和材料选用</a></li>
+<li class="toctree-l1"><a class="reference internal" href="5%20%E7%BB%93%E6%9E%84%E5%88%86%E6%9E%90%E4%B8%8E%E7%A8%B3%E5%AE%9A%E6%80%A7%E8%AE%BE%E8%AE%A1.html">5 结构分析与稳定性设计</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">6 受弯构件</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/youtianjava/Standard_for_design_of_steel_structures_GB_50017-2017" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/youtianjava/Standard_for_design_of_steel_structures_GB_50017-2017/issues/new?title=Issue%20on%20page%20%2F6 受弯构件.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/6 受弯构件.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>6 受弯构件</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">6.1 受弯构件的强度</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">1. 在主平面内，实腹构件的抗弯强度应按下列规定计算：</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">2. 截面塑性发展系数的取值应符合下列规定：</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#s3-s4s5-6-5">3. 在主平面内，腹板截面设计等级达到S3级受弯构件要求的实腹构件，其抗剪强度应按下式计算，腹板截面设计等级为受弯构件S4或S5级时，应按本规范第6.5节的规定计算。</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">4. 当梁上翼缘受有沿腹板平面作用的集中荷载、且该荷载处又未设置支承加劲肋时，腹板计算高度上边缘的局部承压强度应按下式计算：</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">5. 在梁的腹板计算高度边缘处，若同时受有较大的正应力、剪应力和局部压应力，或同时受有较大的正应力和剪应力（如连续梁中部支座处或梁的翼缘截面改变处等）时，其折算应力应按下式计算：</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">6.2 受弯构件的整体稳定</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">6.2.1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">6.2.2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">6.2.3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">6.2.4</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">6.2.5</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">6.2.6</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">6.2.7</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">6.2.8</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">6.2.8.1</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">6.2.8.2</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">6.2.8.3</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">6.3 弯扭构件的强度及整体稳定</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id20">6.3.1 荷载偏离截面弯心但与主轴平行的弯扭构件的抗弯强度应按下列公式计算：</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id21">6.3.2 荷载偏离截面弯心但与主轴平行的弯扭构件的抗剪强度应按下式计算：</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id22">6.3.3 弯扭构件，当不能在构造上保证整体稳定性时，应按下式计算其稳定性：</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id23">6.4 局部稳定</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id24">6.4.1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id25">6.4.2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id26">6.4.3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id27">6.4.4</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id28">6.4.5</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id29">6.4.6 加劲肋的设置应符合下列规定：</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id30">6.4.7 梁的支承加劲肋应符合下列规定：</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id31">6.5 焊接截面梁腹板考虑屈曲后强度的计算</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id32">6.5.1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id33">6.5.1.1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id34">6.5.1.2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id35">6.5.2</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id36">6.6 腹板开孔要求</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id37">6.6.1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id38">6.6.2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id39">6.6.3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id40">6.6.4</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id41">6.7 梁的构造要求</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id42">6.7.1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id43">6.7.2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id44">6.7.3</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="id1">
+<h1>6 受弯构件<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
+<section id="id2">
+<h2>6.1 受弯构件的强度<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<section id="id3">
+<h3>1. 在主平面内，实腹构件的抗弯强度应按下列规定计算：<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
+<div class="math notranslate nohighlight">
+\[
+\frac{{M_{\rm{x}}}}{{\gamma_{\rm{x}} W_{\rm{nx}}}} + \frac{{M_{\rm{y}}}}{{\gamma_{\rm{y}} W_{\rm{ny}}}} \quad \text{（6.1.1）}
+\]</div>
+<p>式中：<br />
+同一截面处绕<span class="math notranslate nohighlight">\(\sum {N_i}\)</span>轴和<span class="math notranslate nohighlight">\(\sum {H_i}\)</span>轴的弯矩（对工字形截面：<span class="math notranslate nohighlight">\(\Delta u\)</span>轴为强轴，<span class="math notranslate nohighlight">\(h_i\)</span>轴为弱轴）；<br />
+对<span class="math notranslate nohighlight">\(\theta = \frac{1}{\Lambda}\)</span>轴和<span class="math notranslate nohighlight">\(\Lambda\)</span>轴的净截面模量，当截面设计等级达到受弯构件S4级要求时，取全截面模量，当截面设计等级为受弯构件S5级时，取有效截面模量；<br />
+截面塑性发展系数，按本规范第6.1.2条规定取值；<br />
+<span class="math notranslate nohighlight">\(f\)</span>——钢材的抗弯强度设计值。</p>
+</section>
+<section id="id4">
+<h3>2. 截面塑性发展系数的取值应符合下列规定：<a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>对工字形和箱形截面，在翼缘截面设计等级达到受弯构件S3级要求时，截面塑性发展系数应按下列规定取值：<br />
+工字形截面：<span class="math notranslate nohighlight">\(\gamma_{\rm{x}} = 1.05\)</span>，<span class="math notranslate nohighlight">\(\gamma_{\rm{y}} = 1.2\)</span>；箱形截面：<span class="math notranslate nohighlight">\(\gamma_{\rm{x}} = \gamma_{\rm{y}} = 1.05\)</span>；</p></li>
+<li><p>截面设计等级为S4、S5级截面时，取为1.0；</p></li>
+<li><p>其他截面可按表8.1.1采用；</p></li>
+<li><p>对需要计算疲劳的梁，宜取<span class="math notranslate nohighlight">\(\gamma_{\rm{x}} = \gamma_{\rm{y}} = 1.0\)</span>。</p></li>
+</ol>
+</section>
+<section id="s3-s4s5-6-5">
+<h3>3. 在主平面内，腹板截面设计等级达到S3级受弯构件要求的实腹构件，其抗剪强度应按下式计算，腹板截面设计等级为受弯构件S4或S5级时，应按本规范第6.5节的规定计算。<a class="headerlink" href="#s3-s4s5-6-5" title="Link to this heading">#</a></h3>
+<div class="math notranslate nohighlight">
+\[
+\tau = \frac{VS}{It_{\rm{w}}} \le f_{\rm{v}} \quad \text{（6.1.3）}
+\]</div>
+<p>式中：<br />
+<span class="math notranslate nohighlight">\(V\)</span>——计算截面沿腹板平面作用的剪力；<br />
+<span class="math notranslate nohighlight">\(S\)</span>——计算剪应力处以上（或以下）毛截面对中和轴的面积矩；<br />
+<span class="math notranslate nohighlight">\(I\)</span>——毛截面惯性矩；<br />
+<span class="math notranslate nohighlight">\(t_{\rm{w}}\)</span>——腹板厚度；<br />
+<span class="math notranslate nohighlight">\(f_{\rm{v}}\)</span>——钢材的抗剪强度设计值。</p>
+</section>
+<section id="id5">
+<h3>4. 当梁上翼缘受有沿腹板平面作用的集中荷载、且该荷载处又未设置支承加劲肋时，腹板计算高度上边缘的局部承压强度应按下式计算：<a class="headerlink" href="#id5" title="Link to this heading">#</a></h3>
+<div class="math notranslate nohighlight">
+\[
+\sigma_{\rm{c}} = \frac{\psi F}{t_{\rm{w}} l_{\rm{z}}} \le f \quad \text{（6.1.4-1）}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+l_{\rm{z}} = 3.25 \sqrt[3]{\frac{I_R + I_{\rm{f}}}{t_{\rm{w}}}} \quad \text{（6.1.4-2）}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+l_z = a + 5h_{\rm{y}} + 2h_{\rm{R}} \quad \text{（6.1.4-3）}
+\]</div>
+<p>式中：<br />
+<span class="math notranslate nohighlight">\(F\)</span>——集中荷载，对动力荷载应考虑动力系数；<br />
+<span class="math notranslate nohighlight">\(\psi\)</span>——集中荷载增大系数；对重级工作制吊车梁，<span class="math notranslate nohighlight">\(\psi = 1.35\)</span>；对其他梁，<span class="math notranslate nohighlight">\(\psi = 1.0\)</span>；<br />
+<span class="math notranslate nohighlight">\(l_{\rm{z}}\)</span>——集中荷载在腹板计算高度上边缘的假定分布长度，按式（6.1.4-2）计算，也允许采用简化公式（6.1.4-3）计算；<br />
+<span class="math notranslate nohighlight">\(I_R\)</span>——轨道绕自身形心轴的惯性矩；<br />
+<span class="math notranslate nohighlight">\(I_{\rm{f}}\)</span>——安装轨道的上翼缘绕翼缘中面的惯性矩；<br />
+<span class="math notranslate nohighlight">\(a\)</span>——集中荷载沿梁跨度方向的支承长度，对钢轨上的轮压可取50mm；<br />
+<span class="math notranslate nohighlight">\(h_{\rm{y}}\)</span>——自梁顶面至腹板计算高度上边缘的距离；对焊接梁即为上翼缘厚度，对轧制工字形截面梁，是梁顶面到腹板过渡完成点的距离；<br />
+<span class="math notranslate nohighlight">\(h_{\rm{R}}\)</span>——轨道的高度，对梁顶无轨道的梁<span class="math notranslate nohighlight">\(e_0 = l/750 = 0\)</span>；<br />
+<span class="math notranslate nohighlight">\(f\)</span>——钢材的抗压强度设计值。</p>
+<p>注：在梁的支座处，当不设置支承加劲肋时，也应按公式（6.1.4-1）计算腹板计算高度下边缘的局部压应力，但<span class="math notranslate nohighlight">\(\psi\)</span>取1.0。支座集中反力的假定分布长度，应根据支座具体尺寸按公式（6.1.4-3）计算。</p>
+</section>
+<section id="id6">
+<h3>5. 在梁的腹板计算高度边缘处，若同时受有较大的正应力、剪应力和局部压应力，或同时受有较大的正应力和剪应力（如连续梁中部支座处或梁的翼缘截面改变处等）时，其折算应力应按下式计算：<a class="headerlink" href="#id6" title="Link to this heading">#</a></h3>
+<div class="math notranslate nohighlight">
+\[
+\sqrt{\sigma^2 + \sigma_{\rm{c}}^2 - \sigma \sigma_{\rm{c}} + 3\tau^2} \le \beta_1 f \quad \text{（6.1.5-1）}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+\sigma = \frac{M}{I_{\rm{n}}} y_1 \quad \text{（6.1.5-2）}
+\]</div>
+<p>式中：<br />
+<span class="math notranslate nohighlight">\(\sigma\)</span>、<span class="math notranslate nohighlight">\(\tau\)</span>、<span class="math notranslate nohighlight">\(\sigma_{\rm{c}}\)</span>——腹板计算高度边缘同一点上同时产生的正应力、剪应力和局部压应力，<span class="math notranslate nohighlight">\(\tau\)</span>和<span class="math notranslate nohighlight">\(\sigma_{\rm{c}}\)</span>应按式（6.1.3）和式（6.1.4-1）计算，<span class="math notranslate nohighlight">\(\sigma\)</span>应按式（6.1.5-2）计算，<span class="math notranslate nohighlight">\(\sigma\)</span>和<span class="math notranslate nohighlight">\(\sigma_{\rm{c}}\)</span>以拉应力为正值，压应力为负值；<br />
+<span class="math notranslate nohighlight">\(I_{\rm{n}}\)</span>——梁净截面惯性矩；<br />
+<span class="math notranslate nohighlight">\(y_{\rm{1}}\)</span>——所计算点至梁中和轴的距离；<br />
+<span class="math notranslate nohighlight">\(\beta_{\rm{1}}\)</span>——计算折算应力的强度设计值增大系数；当<span class="math notranslate nohighlight">\(\sigma\)</span>与<span class="math notranslate nohighlight">\(\sigma_{\rm{c}}\)</span>异号时，取<span class="math notranslate nohighlight">\(\beta_{\rm{1}} = 1.2\)</span>；当<span class="math notranslate nohighlight">\(\sigma\)</span>与<span class="math notranslate nohighlight">\(\sigma_{\rm{c}}\)</span>同号或<span class="math notranslate nohighlight">\(\sigma_{\rm{c}} = 0\)</span>时，取<span class="math notranslate nohighlight">\(\beta_{\rm{1}} = 1.1\)</span>。</p>
+</section>
+</section>
+<section id="id7">
+<h2>6.2 受弯构件的整体稳定<a class="headerlink" href="#id7" title="Link to this heading">#</a></h2>
+<section id="id8">
+<h3>6.2.1<a class="headerlink" href="#id8" title="Link to this heading">#</a></h3>
+<p>有铺板（各种钢筋混凝土板和钢板）密铺在梁的受压翼缘上并与其牢固相连、能阻止梁受压翼缘的侧向位移时，可不计算梁的整体稳定性。</p>
+</section>
+<section id="id9">
+<h3>6.2.2<a class="headerlink" href="#id9" title="Link to this heading">#</a></h3>
+<p>除6.2.1条所指情况外，在最大刚度主平面内受弯的构件，当梁腹板满足稳定性要求，其整体稳定性应按下式计算：</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{M_{\rm{x}}}{\phi_{\rm{b}} \gamma_{\rm{x}} W_{\rm{x}} f} \le 1 \quad \text{（6.2.2）}
+\]</div>
+<p>式中：<br />
+<span class="math notranslate nohighlight">\(M_{\rm{x}}\)</span>——绕强轴作用的最大弯矩；<br />
+<span class="math notranslate nohighlight">\(W_{\rm{x}}\)</span>、<span class="math notranslate nohighlight">\(\gamma_{\rm{x}}\)</span>——按受压最大纤维确定的梁毛截面模量；<br />
+<span class="math notranslate nohighlight">\(\phi_{\rm{b}}\)</span>——梁的整体稳定性系数，按本规范第6.2.3条确定。</p>
+</section>
+<section id="id10">
+<h3>6.2.3<a class="headerlink" href="#id10" title="Link to this heading">#</a></h3>
+<p>梁的整体稳定性系数应按下列公式计算：</p>
+<div class="math notranslate nohighlight">
+\[
+\varphi_{\rm{b}} = \frac{1}{{\left[1 - \left(\lambda_{\rm{b0}}^{\rm{re}}\right)^{2n} + \left(\lambda_{\rm{b}}^{\rm{re}}\right)^{2n}\right]^{\frac{1}{n}}}} \le 1.0 \quad \text{（6.2.3-1）}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+\lambda_{\rm{b}}^{\rm{re}} = \sqrt{\frac{\gamma_{\rm{x}} W_{\rm{x}} f_{\rm{y}}}{M_{\rm{cr}}}} \quad \text{（6.2.3-2）}
+\]</div>
+<p>式中：<br />
+<span class="math notranslate nohighlight">\(M_{\rm{cr}}\)</span>——简支梁、悬臂梁或连续梁的弹性屈曲临界弯矩。简支梁、悬臂梁和框架梁的弹性屈曲临界弯矩应按附录C的规定采用，当框架梁顶设有混凝土楼板时，应按本规范第6.2.8条的规定采用；<br />
+<span class="math notranslate nohighlight">\(\lambda_{\rm{b0}}^{\rm{re}}\)</span>——梁腹板受弯计算时起始正则化长细比，按表6.2.3采用；<br />
+<span class="math notranslate nohighlight">\(n\)</span>——指数，按表6.2.3采用；<br />
+<span class="math notranslate nohighlight">\(b_1\)</span>——工字形截面受压翼缘的宽度；<br />
+<span class="math notranslate nohighlight">\(h\)</span>——上下翼缘中面的距离；<br />
+<span class="math notranslate nohighlight">\(M_1\)</span>、<span class="math notranslate nohighlight">\(M_2\)</span>——区段的端弯矩，使构件产生同向曲率（无反弯点）时取同号；使构件产生反向曲率（有反弯点）时取异号，且<span class="math notranslate nohighlight">\(\left|M_1\right| \ge \left|M_2\right|\)</span>。</p>
+<p><strong>表6.2.3 指数 <span class="math notranslate nohighlight">\(n\)</span> 和起始正则化长细比 <span class="math notranslate nohighlight">\(\lambda_{\rm{b0}}^{\rm{re}}\)</span></strong></p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p></p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(n\)</span></p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(\lambda_{\rm{b0}}^{\rm{re}}\)</span></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>热轧H型钢及热轧工字钢</p></td>
+<td><p><span class="math notranslate nohighlight">\(2.5\sqrt[3]{\frac{b_1}{h}}\)</span></p></td>
+<td><p>0.4</p></td>
+</tr>
+<tr class="row-odd"><td><p>焊接截面</p></td>
+<td><p><span class="math notranslate nohighlight">\(1.8\sqrt[3]{\frac{b_1}{h}}\)</span></p></td>
+<td><p>0.3</p></td>
+</tr>
+<tr class="row-even"><td><p>轧制槽钢</p></td>
+<td><p>1.5</p></td>
+<td><p>0.3</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="id11">
+<h3>6.2.4<a class="headerlink" href="#id11" title="Link to this heading">#</a></h3>
+<p>除6.2.1条所指情况外，在两个主平面受弯的H型钢截面或工字形截面构件，其整体稳定性应按下式计算：</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{M_{\rm{x}}}{\phi_{\rm{b}} \gamma_{\rm{x}} W_{\rm{x}} f} + \frac{M_{\rm{y}}}{\gamma_{\rm{y}} W_{\rm{y}} f} \le 1 \quad \text{（6.2.4）}
+\]</div>
+<p>式中：<br />
+<span class="math notranslate nohighlight">\(W_{\rm{x}}\)</span>、<span class="math notranslate nohighlight">\(W_{\rm{y}}\)</span>——按受压最大纤维确定的对<span class="math notranslate nohighlight">\(x\)</span>轴和对<span class="math notranslate nohighlight">\(y\)</span>轴毛截面模量；<br />
+<span class="math notranslate nohighlight">\(\phi_{\rm{b}}\)</span>——绕强轴弯曲所确定的梁整体稳定系数，按本规范第6.2.3条计算。</p>
+</section>
+<section id="id12">
+<h3>6.2.5<a class="headerlink" href="#id12" title="Link to this heading">#</a></h3>
+<p>不符合本规范第6.2.1条情况的箱形截面简支梁，其截面尺寸（图6.2.5）应满足</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{h}{b_0} \le 6, \quad \frac{l_1}{b_0} \le 95\varepsilon_{\rm{k}}^2
+\]</div>
+<p>符合上述规定的箱形截面简支梁，可不计算整体稳定性。</p>
+</section>
+<section id="id13">
+<h3>6.2.6<a class="headerlink" href="#id13" title="Link to this heading">#</a></h3>
+<p>梁的支座处，应采取构造措施，以防止梁端截面的扭转。当简支梁仅腹板与相邻构件相连，钢梁稳定性计算时侧向支承点距离应取实际距离的1.2倍。</p>
+</section>
+<section id="id14">
+<h3>6.2.7<a class="headerlink" href="#id14" title="Link to this heading">#</a></h3>
+<p>用作减小梁受压翼缘自由长度的侧向支撑，其支撑力应将梁的受压翼缘视为轴心压杆按7.5.1条计算。</p>
+</section>
+<section id="id15">
+<h3>6.2.8<a class="headerlink" href="#id15" title="Link to this heading">#</a></h3>
+<p>对支座承担负弯矩，且梁顶有砼楼板时，框架梁下翼缘的稳定性计算应符合下列规定：</p>
+<section id="id16">
+<h4>6.2.8.1<a class="headerlink" href="#id16" title="Link to this heading">#</a></h4>
+<p>当工字形截面尺寸满足下式时可不计算稳定性。</p>
+<div class="math notranslate nohighlight">
+\[
+\lambda_{\rm{b}}^{\rm{re}} \le 0.45 \quad \text{（6.2.8-1）}
+\]</div>
+</section>
+<section id="id17">
+<h4>6.2.8.2<a class="headerlink" href="#id17" title="Link to this heading">#</a></h4>
+<p>当不满足式(6.2.8-1)时，稳定性应按下列公式计算：</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{M_{\rm{x}}}{\varphi_{\rm{d}} W_{\rm{x1}} f} \le 1 \quad \text{（6.2.8-2）}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+\lambda_{\rm{e}} = \pi \overline{\lambda}_{\rm{b}} \sqrt{\frac{E}{f_{\rm{y}}}} \quad \text{（6.2.8-3）}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+\lambda_{\rm{b}}^{\rm{re}} = \sqrt{\frac{f_{\rm{y}}}{\sigma_{\rm{cr}}}} \quad \text{（6.2.8-4）}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+\sigma_{\rm{cr}} = \frac{3.46 b_{\rm{1}} t_{\rm{1}}^3 + h_{\rm{w}} t_{\rm{w}}^3 (7.27 \gamma + 3.3) \varphi_1}{h_{\rm{w}}^2 \left(12 b_{\rm{1}} t_{\rm{1}} + 1.78 h_{\rm{w}} t_{\rm{w}} \right)} E \quad \text{（6.2.8-5）}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+\gamma = \frac{b_{\rm{1}}}{t_{\rm{w}}} \sqrt{\frac{b_{\rm{1}} t_{\rm{1}}}{h_{\rm{w}} t_{\rm{w}}}} \quad \text{（6.2.8-6）}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+\varphi_1 = \frac{1}{2} \left( \frac{5.436 \gamma h_{\rm{w}}^2}{l^2} + \frac{l^2}{5.436 \gamma h_{\rm{w}}^2} \right) \quad \text{（6.2.8-7）}
+\]</div>
+<p>式中：<br />
+<span class="math notranslate nohighlight">\(b_1\)</span>——受压翼缘的宽度；<br />
+<span class="math notranslate nohighlight">\(t_1\)</span>——受压翼缘的厚度；<br />
+<span class="math notranslate nohighlight">\(W_{\rm{x1}}\)</span>——受压翼缘的截面模量；<br />
+<span class="math notranslate nohighlight">\(\phi_{\rm{d}}\)</span>——稳定系数，按表D-2采用；<br />
+<span class="math notranslate nohighlight">\(\lambda_{\rm{e}}\)</span>——等效长细比；<br />
+<span class="math notranslate nohighlight">\(\lambda_{\rm{b}}^{\rm{re}}\)</span>——梁腹板受弯计算时的正则化长细比；<br />
+<span class="math notranslate nohighlight">\(\sigma_{\rm{cr}}\)</span>——畸变屈曲临界应力；<br />
+<span class="math notranslate nohighlight">\(l\)</span>——当框架主梁支承次梁且次梁高度不小于主梁高度一半时，取次梁到框架柱的净距；除此情况外，取梁净距的一半。</p>
+</section>
+<section id="id18">
+<h4>6.2.8.3<a class="headerlink" href="#id18" title="Link to this heading">#</a></h4>
+<p>当不满足1,2款时，在侧向未受约束的受压翼缘区段内，应设置隅撑或沿梁长设间距不大于2倍梁高与梁等宽的加劲肋。</p>
+</section>
+</section>
+</section>
+<section id="id19">
+<h2>6.3 弯扭构件的强度及整体稳定<a class="headerlink" href="#id19" title="Link to this heading">#</a></h2>
+<section id="id20">
+<h3>6.3.1 荷载偏离截面弯心但与主轴平行的弯扭构件的抗弯强度应按下列公式计算：<a class="headerlink" href="#id20" title="Link to this heading">#</a></h3>
+<div class="math notranslate nohighlight">
+\[
+\frac{M_x}{\gamma_x W_{nx}} + \frac{B_\omega}{\gamma_\omega W_\omega} \le f \quad \text{（6.3.1-1）}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+W_\omega = \frac{I_\omega}{\omega} \quad \text{（6.3.1-2）}
+\]</div>
+<p>式中：<br />
+<span class="math notranslate nohighlight">\(M_x\)</span>——计算弯矩；<br />
+<span class="math notranslate nohighlight">\(B_\omega\)</span>——与所取弯矩同一截面的双力矩；<br />
+<span class="math notranslate nohighlight">\(W_{nx}\)</span>——对截面主轴<span class="math notranslate nohighlight">\(x\)</span>轴的净截面模量；<br />
+<span class="math notranslate nohighlight">\(W_\omega\)</span>——与弯矩引起的应力同一验算点处的毛截面扇性模量；<br />
+<span class="math notranslate nohighlight">\(\gamma_\omega\)</span>——塑性发展系数，工字形截面取1.05；<br />
+<span class="math notranslate nohighlight">\(\omega\)</span>——为主扇形坐标；<br />
+<span class="math notranslate nohighlight">\(I_\omega\)</span>——为扇形惯性矩。</p>
+</section>
+<section id="id21">
+<h3>6.3.2 荷载偏离截面弯心但与主轴平行的弯扭构件的抗剪强度应按下式计算：<a class="headerlink" href="#id21" title="Link to this heading">#</a></h3>
+<div class="math notranslate nohighlight">
+\[
+\tau = \frac{V_y S_x}{I_x t} + \frac{T_\omega S_\omega}{I_\omega t} + \frac{T_{st}}{2 A_0 t} \le f_v \quad \text{（6.3.2）}
+\]</div>
+<p>式中：<br />
+<span class="math notranslate nohighlight">\(V_y\)</span>——计算截面沿<span class="math notranslate nohighlight">\(y\)</span>轴作用的剪力；<br />
+<span class="math notranslate nohighlight">\(S_x\)</span>——计算剪应力处以上（或以下）毛截面对<span class="math notranslate nohighlight">\(x\)</span>轴的面积矩。</p>
+</section>
+<section id="id22">
+<h3>6.3.3 弯扭构件，当不能在构造上保证整体稳定性时，应按下式计算其稳定性：<a class="headerlink" href="#id22" title="Link to this heading">#</a></h3>
+<div class="math notranslate nohighlight">
+\[
+\frac{M_{\max}}{\varphi_{\rm{b}} \gamma_{\rm{x}} W_{\rm{x}} f} + \frac{B}{W_\omega f} \le 1.0 \quad \text{（6.3.3）}
+\]</div>
+<p>式中：<br />
+<span class="math notranslate nohighlight">\(M_{\max}\)</span>——跨间对主轴<span class="math notranslate nohighlight">\(\varphi_{\rm{b}}\)</span>轴的最大弯矩；<br />
+<span class="math notranslate nohighlight">\(W_x\)</span>——对截面主轴轴的受压边缘的截面模量。</p>
+</section>
+</section>
+<section id="id23">
+<h2>6.4 局部稳定<a class="headerlink" href="#id23" title="Link to this heading">#</a></h2>
+<section id="id24">
+<h3>6.4.1<a class="headerlink" href="#id24" title="Link to this heading">#</a></h3>
+<p>承受静力荷载和间接承受动力荷载的焊接截面梁宜考虑腹板屈曲后强度，按本规范第6.5节的规定计算其抗弯和抗剪承载力。当 <span class="math notranslate nohighlight">\(h_0/t_w &gt; 80\varepsilon_{\rm{k}}\)</span> 时，焊接截面梁应按本规范第6.4.3至6.4.5条的规定计算腹板的稳定性。轻、中级工作制吊车梁计算腹板的稳定性时，吊车轮压设计值可乘以折减系数0.9。</p>
+</section>
+<section id="id25">
+<h3>6.4.2<a class="headerlink" href="#id25" title="Link to this heading">#</a></h3>
+<p>直接承受动力荷载的吊车梁及类似构件的焊接截面梁应配置加劲肋，其腹板配置加劲肋应符合下列规定（图6.4.2）：</p>
+<p><img alt="图6.4.2 加劲肋布置" src="_images/image30.png" /></p>
+<ol class="arabic simple">
+<li><p>当 <span class="math notranslate nohighlight">\(h_0/t_w \le 80\varepsilon_{\rm{k}}\)</span> 时，对有局部压应力的梁，应按构造配置横向加劲肋；当局部压应力较小时，可不配置加劲肋。</p></li>
+<li><p>当 <span class="math notranslate nohighlight">\(h_0/t_w &gt; 80\varepsilon_{\rm{k}}\)</span> 时，应配置横向加劲肋。其中，当 <span class="math notranslate nohighlight">\(h_0/t_w &gt; 170\varepsilon_{\rm{k}}\)</span>（受压翼缘扭转受到约束，如连有刚性铺板、制动板或焊有钢轨时）或 <span class="math notranslate nohighlight">\(h_0/t_w &gt; 150\varepsilon_{\rm{k}}\)</span>（受压翼缘扭转未受到约束时），或按计算需要时，应在弯曲应力较大区格的受压区增加配置纵向加劲肋。局部压应力很大的梁，必要时尚宜在受压区配置短加劲肋。在任何情况下，<span class="math notranslate nohighlight">\(h_0/t_w\)</span> 均不应超过250。此处 <span class="math notranslate nohighlight">\(h_0\)</span> 为腹板的计算高度（对单轴对称梁，当确定是否要配置纵向加劲肋时，<span class="math notranslate nohighlight">\(h_0\)</span> 应取腹板受压区高度 <span class="math notranslate nohighlight">\(\overline{\lambda}_{\rm{b}}\)</span> 的2倍），<span class="math notranslate nohighlight">\(t_w\)</span> 为腹板的厚度。</p></li>
+<li><p>梁的支座处和上翼缘受有较大固定集中荷载处，宜设置支承加劲肋。</p></li>
+</ol>
+<p>注：腹板的计算高度 <span class="math notranslate nohighlight">\(h_0\)</span>：对轧制型钢梁，为腹板与上、下翼缘相接处两内弧起点间的距离；对焊接截面梁，为腹板高度；对高强度螺栓连接（或铆接）梁，为上、下翼缘与腹板连接的高强度螺栓（或铆钉）线间最近距离（见图6.4.2）。</p>
+</section>
+<section id="id26">
+<h3>6.4.3<a class="headerlink" href="#id26" title="Link to this heading">#</a></h3>
+<p>仅配置横向加劲肋的腹板（图6.4.2a），其各区格的局部稳定应按下式计算：</p>
+<div class="math notranslate nohighlight">
+\[
+\left( \frac{\sigma}{\sigma_{\rm{cr}}} \right)^2 + \left( \frac{\tau}{\tau_{\rm{cr}}} \right)^2 + \frac{\sigma_{\rm{c}}}{\sigma_{\rm{c,cr}}} \le 1.0 \quad \text{（6.4.3-1a）}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+\tau = \frac{V}{h_{\rm{w}} t_{\rm{w}}} \quad \text{（6.4.3-1b）}
+\]</div>
+<p>式中：<br />
+<span class="math notranslate nohighlight">\(\sigma\)</span>——计算腹板区格内，由平均弯矩产生的腹板计算高度边缘的弯曲压应力；<br />
+<span class="math notranslate nohighlight">\(\tau\)</span>——所计算腹板区格内，由平均剪力产生的腹板平均剪应力；<br />
+<span class="math notranslate nohighlight">\(\sigma_{\rm{c}}\)</span>——腹板计算高度边缘的局部压应力，应按式（6.1.4-1）计算，但取式中的 <span class="math notranslate nohighlight">\(\psi = 1.0\)</span>；<br />
+<span class="math notranslate nohighlight">\(h_{\rm{w}}\)</span>——为腹板高度；<br />
+——各种应力单独作用下的欧拉临界应力，按下列方法计算：</p>
+<ol class="arabic simple">
+<li><p><span class="math notranslate nohighlight">\(\sigma_{\rm{cr}}\)</span> 按下列公式计算：</p></li>
+</ol>
+<p>当 <span class="math notranslate nohighlight">\(\lambda_{\rm{b}}^{\rm{re}} \le 0.85\)</span> 时：</p>
+<div class="math notranslate nohighlight">
+\[
+\sigma_{\rm{cr}} = f \quad \text{（6.4.3-2a）}
+\]</div>
+<p>当 <span class="math notranslate nohighlight">\(0.85 &lt; \lambda_{\rm{b}}^{\rm{re}} \le 1.25\)</span> 时：</p>
+<div class="math notranslate nohighlight">
+\[
+\sigma_{\rm{cr}} = \left[ 1 - 0.75\left( \lambda_{\rm{b}}^{\rm{re}} - 0.85 \right) \right] f \quad \text{（6.4.3-2b）}
+\]</div>
+<p>当 <span class="math notranslate nohighlight">\(\lambda_{\rm{b}}^{\rm{re}} &gt; 1.25\)</span> 时：</p>
+<div class="math notranslate nohighlight">
+\[
+\sigma_{\rm{cr}} = \frac{1.1f}{\left( \lambda_{\rm{b}}^{\rm{re}} \right)^2} \quad \text{（6.4.3-2c）}
+\]</div>
+<p>当梁受压翼缘扭转受到约束时：</p>
+<div class="math notranslate nohighlight">
+\[
+\lambda_{\rm{b}}^{\rm{re}} = \frac{2h_{\rm{c}}/t_{\rm{w}}}{177} \cdot \frac{1}{\varepsilon_{\rm{k}}} \quad \text{（6.4.3-2d）}
+\]</div>
+<p>当梁受压翼缘扭转未受到约束时：</p>
+<div class="math notranslate nohighlight">
+\[
+\lambda_{\rm{b}}^{\rm{re}} = \frac{2h_{\rm{c}}/t_{\rm{w}}}{138} \cdot \frac{1}{\varepsilon_{\rm{k}}} \quad \text{（6.4.3-2e）}
+\]</div>
+<p>式中：<span class="math notranslate nohighlight">\(\lambda_{\rm{b}}^{\rm{re}}\)</span>——梁腹板受弯计算的正则化长细比；<br />
+<span class="math notranslate nohighlight">\(h_{\rm{c}}\)</span>——梁腹板弯曲受压区高度，对双轴对称截面 <span class="math notranslate nohighlight">\(2h_{\rm{c}} = h_0\)</span>。</p>
+<ol class="arabic simple" start="2">
+<li><p><span class="math notranslate nohighlight">\(\tau_{\rm{cr}}\)</span> 按下列公式计算：</p></li>
+</ol>
+<p>当 <span class="math notranslate nohighlight">\(\lambda_{\rm{s}}^{\rm{re}} \le 0.8\)</span> 时：</p>
+<div class="math notranslate nohighlight">
+\[
+\tau_{\rm{cr}} = f_{\rm{v}} \quad \text{（6.4.3-3a）}
+\]</div>
+<p>当 <span class="math notranslate nohighlight">\(0.8 &lt; \lambda_{\rm{s}}^{\rm{re}} \le 1.2\)</span> 时：</p>
+<div class="math notranslate nohighlight">
+\[
+\tau_{\rm{cr}} = \left[ 1 - 0.59\left( \lambda_{\rm{s}}^{\rm{re}} - 0.8 \right) \right] f_{\rm{v}} \quad \text{（6.4.3-3b）}
+\]</div>
+<p>当 <span class="math notranslate nohighlight">\(\lambda_{\rm{s}}^{\rm{re}} &gt; 1.2\)</span> 时：</p>
+<div class="math notranslate nohighlight">
+\[
+\tau_{\rm{cr}} = \frac{1.1f_{\rm{v}}}{\left( \lambda_{\rm{s}}^{\rm{re}} \right)^2} \quad \text{（6.4.3-3c）}
+\]</div>
+<p>当 <span class="math notranslate nohighlight">\(a/h_0 \le 1\)</span> 时：</p>
+<div class="math notranslate nohighlight">
+\[
+\lambda_{\rm{s}}^{\rm{re}} = \frac{h_0/t_{\rm{w}}}{37\eta \sqrt{4 + 5.34\left( h_0/a \right)^2}} \cdot \frac{1}{\varepsilon_{\rm{k}}} \quad \text{（6.4.3-3d）}
+\]</div>
+<p>当 <span class="math notranslate nohighlight">\(a/h_0 &gt; 1\)</span> 时：</p>
+<div class="math notranslate nohighlight">
+\[
+\lambda_{\rm{s}}^{\rm{re}} = \frac{h_0/t_{\rm{w}}}{37\eta \sqrt{5.34 + 4\left( h_0/a \right)^2}} \cdot \frac{1}{\varepsilon_{\rm{k}}} \quad \text{（6.4.3-3e）}
+\]</div>
+<p>式中：<span class="math notranslate nohighlight">\(\lambda_{\rm{s}}^{\rm{re}}\)</span>——梁腹板受剪计算的正则化长细比；<br />
+<span class="math notranslate nohighlight">\(\eta\)</span>——简支梁取1.11，框架梁取1。</p>
+<ol class="arabic simple" start="3">
+<li><p><span class="math notranslate nohighlight">\(\sigma_{\rm{c,cr}}\)</span> 按照下列公式计算：</p></li>
+</ol>
+<p>当 <span class="math notranslate nohighlight">\(\lambda_{\rm{c}}^{\rm{re}} \le 0.9\)</span> 时：</p>
+<div class="math notranslate nohighlight">
+\[
+\sigma_{\rm{c,cr}} = f \quad \text{（6.4.3-4a）}
+\]</div>
+<p>当 <span class="math notranslate nohighlight">\(0.9 &lt; \lambda_{\rm{c}}^{\rm{re}} \le 1.2\)</span> 时：</p>
+<div class="math notranslate nohighlight">
+\[
+\sigma_{\rm{c,cr}} = \left[ 1 - 0.79\left( \lambda_{\rm{c}}^{\rm{re}} - 0.9 \right) \right] f \quad \text{（6.4.3-4b）}
+\]</div>
+<p>当 <span class="math notranslate nohighlight">\(\lambda_{\rm{c}}^{\rm{re}} &gt; 1.2\)</span> 时：</p>
+<div class="math notranslate nohighlight">
+\[
+\sigma_{\rm{c,cr}} = \frac{1.1f}{\left( \lambda_{\rm{c}}^{\rm{re}} \right)^2} \quad \text{（6.4.3-4c）}
+\]</div>
+<p>当 <span class="math notranslate nohighlight">\(0.5 \le a/h_0 \le 1.5\)</span> 时：</p>
+<div class="math notranslate nohighlight">
+\[
+\lambda_{\rm{c}}^{\rm{re}} = \frac{h_0/t_{\rm{w}}}{28\sqrt{10.9 + 13.4\left( 1.83 - a/h_0 \right)^3}} \cdot \frac{1}{\varepsilon_{\rm{k}}} \quad \text{（6.4.3-4d）}
+\]</div>
+<p>当 <span class="math notranslate nohighlight">\(1.5 &lt; a/h_0 \le 2.0\)</span> 时：</p>
+<div class="math notranslate nohighlight">
+\[
+\lambda_{\rm{c}}^{{\rm{re}}} = \frac{h_0/t_{\rm{w}}}{28\sqrt{18.9 - 5a/h_0}} \cdot \frac{1}{\varepsilon_{\rm{k}}} \quad \text{（6.4.3-4e）}
+\]</div>
+<p>式中：<span class="math notranslate nohighlight">\(\lambda_{\rm{c}}^{\rm{re}}\)</span>——梁腹板受局部压力计算时的正则化长细比。</p>
+</section>
+<section id="id27">
+<h3>6.4.4<a class="headerlink" href="#id27" title="Link to this heading">#</a></h3>
+<p>同时用横向加劲肋和纵向加劲肋加强的腹板（图6.4.2 b、c），其局部稳定性应按下列公式计算：</p>
+<ol class="arabic simple">
+<li><p>受压翼缘与纵向加劲肋之间的区格：</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+\frac{\sigma}{\sigma_{\rm{cr1}}} + \left( \frac{\sigma_{\rm{c}}}{\sigma_{\rm{c,cr1}}} \right)^2 + \left( \frac{\tau}{\tau_{\rm{cr1}}} \right)^2 \le 1.0 \quad \text{（6.4.4-1）}
+\]</div>
+<p>式中分别按下列方法计算：</p>
+<ol class="arabic simple">
+<li><p><span class="math notranslate nohighlight">\(\sigma_{\rm{cr1}}\)</span> 按公式(6.4.3-2)计算，但式中的 <span class="math notranslate nohighlight">\(\lambda_{\rm{b}}^{\rm{re}}\)</span> 改用下列 <span class="math notranslate nohighlight">\(\lambda_{\rm{b1}}^{\rm{re}}\)</span> 代替：</p></li>
+</ol>
+<p>当梁受压翼缘扭转受到约束时：</p>
+<div class="math notranslate nohighlight">
+\[
+\lambda_{\rm{b1}}^{\rm{re}} = \frac{h_1/t_{\rm{w}}}{75\varepsilon_{\rm{k}}} \quad \text{（6.4.4-2a）}
+\]</div>
+<p>当梁受压翼缘扭转未受到约束时：</p>
+<div class="math notranslate nohighlight">
+\[
+\lambda_{\rm{b1}}^{\rm{re}} = \frac{h_1/t_{\rm{w}}}{64\varepsilon_{\rm{k}}} \quad \text{（6.4.4-2b）}
+\]</div>
+<p>式中：<span class="math notranslate nohighlight">\(h_1\)</span>——纵向加劲肋至腹板计算高度受压边缘的距离。</p>
+<ol class="arabic simple" start="2">
+<li><p><span class="math notranslate nohighlight">\(\tau_{\rm{cr1}}\)</span> 按公式（6.4.3-3）计算，但将式中的 <span class="math notranslate nohighlight">\(h_0\)</span> 改为 <span class="math notranslate nohighlight">\(h_1\)</span>。</p></li>
+<li><p><span class="math notranslate nohighlight">\(\sigma_{\rm{c,cr1}}\)</span> 按公式(6.4.3-2)计算，但式中的 <span class="math notranslate nohighlight">\(\lambda_{\rm{b}}^{\rm{re}}\)</span> 改用 <span class="math notranslate nohighlight">\(\lambda_{\rm{c1}}^{\rm{re}}\)</span> 代替：</p></li>
+</ol>
+<p>当梁受压翼缘扭转受到约束时：</p>
+<div class="math notranslate nohighlight">
+\[
+\lambda_{\rm{c1}}^{\rm{re}} = \frac{h_1/t_{\rm{w}}}{56\varepsilon_{\rm{k}}} \quad \text{（6.4.4-3a）}
+\]</div>
+<p>当梁受压翼缘扭转未受到约束时：</p>
+<div class="math notranslate nohighlight">
+\[
+\lambda_{\rm{c1}}^{\rm{re}} = \frac{h_1/t_{\rm{w}}}{40\varepsilon_{\rm{k}}} \quad \text{（6.4.4-3b）}
+\]</div>
+<ol class="arabic simple" start="2">
+<li><p>受拉翼缘与纵向加劲肋之间的区格：</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+\frac{\sigma_2}{\sigma_{\rm{cr2}}} + \left( \frac{\tau}{\tau_{\rm{cr2}}} \right)^2 + \frac{\sigma_{\rm{c2}}}{\sigma_{\rm{c,cr2}}} \le 1.0 \quad \text{（6.4.4-4）}
+\]</div>
+<p>式中：<br />
+<span class="math notranslate nohighlight">\(\sigma_2\)</span>——所计算区格内由平均弯矩产生的腹板在纵向加劲肋处的弯曲压应力；<br />
+<span class="math notranslate nohighlight">\(\sigma_{\rm{c2}}\)</span>——腹板在纵向加劲肋处的横向压应力，取 <span class="math notranslate nohighlight">\(0.3\sigma_{\rm{c}}\)</span>；<br />
+——分别按下列方法计算：</p>
+<ol class="arabic simple">
+<li><p><span class="math notranslate nohighlight">\(\sigma_{\rm{cr2}}\)</span> 按公式(6.4.3.-2)计算，但式中的 <span class="math notranslate nohighlight">\(\lambda_{\rm{b}}^{\rm{re}}\)</span> 改用 <span class="math notranslate nohighlight">\(\lambda_{\rm{b2}}^{\rm{re}}\)</span> 代替：</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+\lambda_{\rm{b2}}^{\rm{re}} = \frac{h_2/t_{\rm{w}}}{194\varepsilon_{\rm{k}}} \quad \text{（6.4.4-5）}
+\]</div>
+<ol class="arabic simple" start="2">
+<li><p><span class="math notranslate nohighlight">\(\tau_{\rm{cr2}}\)</span> 按公式（6.4.3-3）计算，但将式中的 <span class="math notranslate nohighlight">\(h_0\)</span> 改为 <span class="math notranslate nohighlight">\(h_2\)</span>（<span class="math notranslate nohighlight">\(h_2 = h_0 - h_1\)</span>）。</p></li>
+<li><p><span class="math notranslate nohighlight">\(\sigma_{\rm{c,cr2}}\)</span> 按公式（6.4.3-4）计算，但式中的 <span class="math notranslate nohighlight">\(h_0\)</span> 改为 <span class="math notranslate nohighlight">\(h_2\)</span>，当 <span class="math notranslate nohighlight">\(a/h_2 &gt; 2\)</span> 时，取 <span class="math notranslate nohighlight">\(a/h_2 = 2\)</span>。</p></li>
+</ol>
+</section>
+<section id="id28">
+<h3>6.4.5<a class="headerlink" href="#id28" title="Link to this heading">#</a></h3>
+<p>在受压翼缘与纵向加劲肋之间设有短加劲肋的区格（图6.4.2 d），其局部稳定性按式(6.3.4-1)计算。该式中的 <span class="math notranslate nohighlight">\(\sigma_{\rm{cr1}}\)</span> 仍按本规范第6.4.4条1款之1)计算；<span class="math notranslate nohighlight">\(\tau_{\rm{cr1}}\)</span> 按式(6.3.3-3)计算，但将 <span class="math notranslate nohighlight">\(h_0\)</span> 和 <span class="math notranslate nohighlight">\(a\)</span> 改为 <span class="math notranslate nohighlight">\(h_1\)</span> 和 <span class="math notranslate nohighlight">\(a_1\)</span>（<span class="math notranslate nohighlight">\(a_1\)</span> 为短加劲肋间距）；<span class="math notranslate nohighlight">\(\sigma_{\rm{c,cr1}}\)</span> 按式(6.3.3-2)计算，但式中 <span class="math notranslate nohighlight">\(\lambda_{\rm{b}}^{\rm{re}}\)</span> 改用下列 <span class="math notranslate nohighlight">\(\lambda_{\rm{c1}}^{\rm{re}}\)</span> 代替。</p>
+<p>当梁受压翼缘扭转受到约束时：</p>
+<div class="math notranslate nohighlight">
+\[
+\lambda_{\rm{c1}}^{\rm{re}} = \frac{a_1/t_{\rm{w}}}{87\varepsilon_{\rm{k}}} \quad \text{（6.4.5a）}
+\]</div>
+<p>当梁受压翼缘扭转未受到约束时：</p>
+<div class="math notranslate nohighlight">
+\[
+\lambda_{\rm{c1}}^{\rm{re}} = \frac{a_1/t_{\rm{w}}}{73\varepsilon_{\rm{k}}} \quad \text{（6.4.5b）}
+\]</div>
+<p>对 <span class="math notranslate nohighlight">\(a_1/h_1 &gt; 1.2\)</span> 的区格，公式（6.4.5）右侧应乘以 <span class="math notranslate nohighlight">\(\frac{1}{\sqrt{0.4 + 0.5a_1/h_1}}\)</span>。</p>
+</section>
+<section id="id29">
+<h3>6.4.6 加劲肋的设置应符合下列规定：<a class="headerlink" href="#id29" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>加劲肋宜在腹板两侧成对配置，也可单侧配置，但支承加劲肋、重级工作制吊车梁的加劲肋不应单侧配置。</p></li>
+<li><p>横向加劲肋的最小间距应为<span class="math notranslate nohighlight">\(0.5h_0\)</span>，最大间距应为<span class="math notranslate nohighlight">\(2h_0\)</span>（对无局部压应力的梁，当<span class="math notranslate nohighlight">\(h_0/t_w \le 80\varepsilon_{\rm{k}}\)</span>时，可采用<span class="math notranslate nohighlight">\(3h_0\)</span>）。纵向加劲肋至腹板计算高度受压边缘的距离应在<span class="math notranslate nohighlight">\(0.2h_0\)</span>范围内。</p></li>
+<li><p>在腹板两侧成对配置的钢板横向加劲肋，其截面尺寸应符合下列公式要求：</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+b \ge 0.5h_0 \quad \text{（6.4.6-1）}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+t \ge \frac{h_0}{15} \quad \text{（6.4.6-2）}
+\]</div>
+<ol class="arabic simple" start="4">
+<li><p>在腹板一侧配置的钢板横向加劲肋，其外伸宽度应大于按公式（6.4.6-1）算得的1.2倍，厚度不应小于其外伸宽度的1/15和1/19。</p></li>
+<li><p>在同时采用横向加劲肋和纵向加劲肋加强的腹板中，横向加劲肋的截面尺寸除了符合上述规定外，其截面惯性矩<span class="math notranslate nohighlight">\(I_x\)</span>尚应符合下式要求：</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+I_x \ge \frac{h_0^3}{250} \quad \text{（6.4.6-3）}
+\]</div>
+<p>纵向加劲肋的截面惯性矩<span class="math notranslate nohighlight">\(I_y\)</span>，应符合下列公式要求：</p>
+<p>当<span class="math notranslate nohighlight">\(h_0/t_w \le 80\varepsilon_{\rm{k}}\)</span>时：</p>
+<div class="math notranslate nohighlight">
+\[
+I_y \ge \frac{h_0^3}{250} \quad \text{（6.4.6-4a）}
+\]</div>
+<p>当<span class="math notranslate nohighlight">\(h_0/t_w &gt; 80\varepsilon_{\rm{k}}\)</span>时：</p>
+<div class="math notranslate nohighlight">
+\[
+I_y \ge \frac{h_0^3}{150} \quad \text{（6.4.6-4b）}
+\]</div>
+<ol class="arabic simple" start="6">
+<li><p>短加劲肋的最小间距为<span class="math notranslate nohighlight">\(0.5h_0\)</span>。短加劲肋外伸宽度应取横向加劲肋外伸宽度的0.7~1.0倍，厚度不应小于短加劲肋外伸宽度的1/15。</p></li>
+</ol>
+<p>注：</p>
+<ol class="arabic simple">
+<li><p>用型钢（H型钢、工字钢、槽钢、肢尖焊于腹板的角钢）做成的加劲肋，其截面惯性矩不得小于相应钢板加劲肋的惯性矩。</p></li>
+<li><p>在腹板两侧成对配置的加劲肋，其截面惯性矩应按梁腹板中心线为轴线进行计算。</p></li>
+<li><p>在腹板一侧配置的加劲肋，其截面惯性矩应按加劲肋相连的腹板边缘为轴线进行计算。</p></li>
+</ol>
+</section>
+<section id="id30">
+<h3>6.4.7 梁的支承加劲肋应符合下列规定：<a class="headerlink" href="#id30" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>梁的支承加劲肋，应按承受梁支座反力或固定集中荷载的轴心受压构件计算其在腹板平面外的稳定性。此受压构件的截面应包括加劲肋和加劲肋每侧<span class="math notranslate nohighlight">\(h_0/2\)</span>范围内的腹板面积，计算长度取<span class="math notranslate nohighlight">\(h_0\)</span>。</p></li>
+<li><p>当梁支承加劲肋的端部为刨平顶紧时，应按其所承受的支座反力或固定集中荷载计算其端面承压应力；突缘支座的突缘加劲肋的伸出长度不得大于其厚度的2倍；当端部为焊接时，应按传力情况计算其焊缝应力。</p></li>
+<li><p>支承加劲肋与腹板的连接焊缝，应按传力需要进行计算。</p></li>
+</ol>
+</section>
+</section>
+<section id="id31">
+<h2>6.5 焊接截面梁腹板考虑屈曲后强度的计算<a class="headerlink" href="#id31" title="Link to this heading">#</a></h2>
+<section id="id32">
+<h3>6.5.1<a class="headerlink" href="#id32" title="Link to this heading">#</a></h3>
+<p>腹板仅配置支承加劲肋且较大荷载处尚有中间横向加劲肋，同时考虑屈曲后强度的工字形焊接截面梁（图6.4.2a），应按下列公式验算抗弯和抗剪承载能力：</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{M}{\gamma_{\rm{x}} W_{\rm{nx}}} + \frac{V}{\gamma_{\rm{v}} A_{\rm{v}}} \le f \quad \text{（6.5.1-1）}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+\frac{M_{\rm{f}}}{\gamma_{\rm{x}} W_{\rm{nx}}} + \frac{V_{\rm{f}}}{\gamma_{\rm{v}} A_{\rm{v}}} \le f \quad \text{（6.5.1-2）}
+\]</div>
+<p>式中：<br />
+<span class="math notranslate nohighlight">\(M\)</span>、<span class="math notranslate nohighlight">\(V\)</span>——所计算区格内梁的平均弯矩和平均剪力设计值；计算时，当<span class="math notranslate nohighlight">\(M_{\rm{f}}\)</span>取<span class="math notranslate nohighlight">\(M_{\rm{f}}\)</span>；当<span class="math notranslate nohighlight">\(V_{\rm{f}}\)</span>，取<span class="math notranslate nohighlight">\(V_{\rm{f}}\)</span>；<br />
+<span class="math notranslate nohighlight">\(M_{\rm{f}}\)</span>——梁两翼缘所承担的弯矩设计值；<br />
+<span class="math notranslate nohighlight">\(A_{\rm{f}}\)</span>、<span class="math notranslate nohighlight">\(y_{\rm{f}}\)</span>——较大翼缘的截面积及其形心至梁中和轴的距离；<br />
+<span class="math notranslate nohighlight">\(A_{\rm{f}}\)</span>、<span class="math notranslate nohighlight">\(y_{\rm{f}}\)</span>——较小翼缘的截面积及其形心至梁中和轴的距离；<br />
+<span class="math notranslate nohighlight">\(f\)</span>——梁抗弯和抗剪承载力设计值。</p>
+</section>
+<section id="id33">
+<h3>6.5.1.1<a class="headerlink" href="#id33" title="Link to this heading">#</a></h3>
+<p><span class="math notranslate nohighlight">\(M_{\rm{f}}\)</span>应按下列公式计算：</p>
+<div class="math notranslate nohighlight">
+\[
+M_{\rm{f}} = \gamma_{\rm{x}} W_{\rm{nx}} f \quad \text{（6.5.1-3）}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+M_{\rm{f}} = \gamma_{\rm{x}} W_{\rm{nx}} f \quad \text{（6.5.1-4）}
+\]</div>
+<p>当<span class="math notranslate nohighlight">\(\lambda_{\rm{b}}^{\rm{re}} \le 0.85\)</span>时：</p>
+<div class="math notranslate nohighlight">
+\[
+\gamma_{\rm{x}} = 1.0 \quad \text{（6.5.1-5a）}
+\]</div>
+<p>当<span class="math notranslate nohighlight">\(0.85 &lt; \lambda_{\rm{b}}^{\rm{re}} \le 1.25\)</span>时：</p>
+<div class="math notranslate nohighlight">
+\[
+\gamma_{\rm{x}} = 1.0 - 0.75(\lambda_{\rm{b}}^{\rm{re}} - 0.85) \quad \text{（6.5.1-5b）}
+\]</div>
+<p>当<span class="math notranslate nohighlight">\(\lambda_{\rm{b}}^{\rm{re}} &gt; 1.25\)</span>时：</p>
+<div class="math notranslate nohighlight">
+\[
+\gamma_{\rm{x}} = \frac{1.1}{(\lambda_{\rm{b}}^{\rm{re}})^2} \quad \text{（6.5.1-5c）}
+\]</div>
+<p>式中：<br />
+<span class="math notranslate nohighlight">\(\gamma_{\rm{x}}\)</span>——梁截面模量考虑腹板有效高度的折减系数；<br />
+<span class="math notranslate nohighlight">\(W_{\rm{nx}}\)</span>——按受拉或受压最大纤维确定的梁毛截面模量；<br />
+<span class="math notranslate nohighlight">\(I_{\rm{n}}\)</span>——按梁截面全部有效算得的绕<span class="math notranslate nohighlight">\(x\)</span>轴的惯性矩；<br />
+<span class="math notranslate nohighlight">\(h_{\rm{c}}\)</span>——按梁截面全部有效算得的腹板受压区高度；<br />
+<span class="math notranslate nohighlight">\(\gamma_{\rm{x}}\)</span>——梁截面塑性发展系数；<br />
+<span class="math notranslate nohighlight">\(\gamma_{\rm{x}}\)</span>——腹板受压区有效高度系数；<br />
+<span class="math notranslate nohighlight">\(\lambda_{\rm{b}}^{\rm{re}}\)</span>——用于腹板受弯计算时的正则化长细比，按本规范公式（6.4.3-2d、2e）计算。</p>
+</section>
+<section id="id34">
+<h3>6.5.1.2<a class="headerlink" href="#id34" title="Link to this heading">#</a></h3>
+<p><span class="math notranslate nohighlight">\(V_{\rm{f}}\)</span>应按下列公式计算：</p>
+<p>当<span class="math notranslate nohighlight">\(\lambda_{\rm{s}}^{\rm{re}} \le 0.8\)</span>时：</p>
+<div class="math notranslate nohighlight">
+\[
+\gamma_{\rm{v}} = 1.0 \quad \text{（6.5.1-6a）}
+\]</div>
+<p>当<span class="math notranslate nohighlight">\(0.8 &lt; \lambda_{\rm{s}}^{\rm{re}} \le 1.2\)</span>时：</p>
+<div class="math notranslate nohighlight">
+\[
+\gamma_{\rm{v}} = 1.0 - 0.59(\lambda_{\rm{s}}^{\rm{re}} - 0.8) \quad \text{（6.5.1-6b）}
+\]</div>
+<p>当<span class="math notranslate nohighlight">\(\lambda_{\rm{s}}^{\rm{re}} &gt; 1.2\)</span>时：</p>
+<div class="math notranslate nohighlight">
+\[
+\gamma_{\rm{v}} = \frac{1.1}{(\lambda_{\rm{s}}^{\rm{re}})^2} \quad \text{（6.5.1-6c）}
+\]</div>
+<p>式中：<br />
+<span class="math notranslate nohighlight">\(\lambda_{\rm{s}}^{\rm{re}}\)</span>——用于腹板受剪计算时的正则化长细比，按本规范公式（6.4.3-3d、3e）计算。当焊接截面梁仅配置支座加劲肋时，取本规范公式（6.4.3-3e）中的<span class="math notranslate nohighlight">\(\lambda_{\rm{s}}^{\rm{re}}\)</span>。</p>
+</section>
+<section id="id35">
+<h3>6.5.2<a class="headerlink" href="#id35" title="Link to this heading">#</a></h3>
+<p>当仅配置支座加劲肋不能满足公式（6.5.1-1）的要求时，应在两侧成对配置中间横向加劲肋，间距一般为<span class="math notranslate nohighlight">\(h_0\)</span>。中间横向加劲肋和上端受有集中压力的中间支承加劲肋，其截面尺寸除应满足公式（6.4.6-1）和公式（6.4.6-2）的要求外，尚应按轴心受压构件计算其在腹板平面外的稳定性，轴心压力应按下式计算：</p>
+<div class="math notranslate nohighlight">
+\[
+N = \frac{V_{\rm{f}} h_{\rm{w}}}{\gamma_{\rm{v}} A_{\rm{v}}} \quad \text{（6.5.2-1）}
+\]</div>
+<p>式中：<br />
+<span class="math notranslate nohighlight">\(V_{\rm{f}}\)</span>——按公式(6.5.1-6)计算；<br />
+<span class="math notranslate nohighlight">\(h_{\rm{w}}\)</span>——腹板高度；<br />
+<span class="math notranslate nohighlight">\(\gamma_{\rm{v}}\)</span>——按公式（6.4.3-3）计算；<br />
+<span class="math notranslate nohighlight">\(P\)</span>——作用于中间支承加劲肋上端的集中压力。</p>
+<p>当腹板在支座旁的区格<span class="math notranslate nohighlight">\(h_0\)</span>时，支座加劲肋除承受梁的支座反力外尚应承受拉力场的水平分力<span class="math notranslate nohighlight">\(H\)</span>，按压弯构件计算强度和在腹板平面外的稳定，水平分力<span class="math notranslate nohighlight">\(H\)</span>应按下式计算：</p>
+<div class="math notranslate nohighlight">
+\[
+H = \frac{V_{\rm{f}} h_{\rm{w}}}{\gamma_{\rm{v}} A_{\rm{v}}} \quad \text{（6.5.2-2）}
+\]</div>
+<p><span class="math notranslate nohighlight">\(H\)</span>的作用点在距腹板计算高度上边缘<span class="math notranslate nohighlight">\(h_{\rm{w}}\)</span>处。此压弯构件的截面和计算长度同一般支座加劲肋。当支座加劲肋采用图6.5.2的构造形式时，可按下述简化方法进行计算：加劲肋1作为承受支座反力<span class="math notranslate nohighlight">\(P\)</span>的轴心压杆计算，封头肋板2的截面积不应小于按下式计算的数值：</p>
+<div class="math notranslate nohighlight">
+\[
+A = \frac{P}{f} \quad \text{（6.5.2-3）}
+\]</div>
+<p>注：</p>
+<ol class="arabic simple">
+<li><p>腹板高厚比不应大于250。</p></li>
+<li><p>考虑腹板屈曲后强度的梁，可按构造需要设置中间横向加劲肋。</p></li>
+<li><p>中间横向加劲肋较大（<span class="math notranslate nohighlight">\(h_0\)</span>）和不设中间横向加劲肋的腹板，当满足公式（6.4.3-1）时，可取<span class="math notranslate nohighlight">\(h_0\)</span>。</p></li>
+</ol>
+<p><img alt="图6.5.2 设置封头肋板的梁端构造" src="_images/image94.jpeg" /><br />
+图6.5.2 设置封头肋板的梁端构造<br />
+1—加劲肋；2—封头肋板</p>
+</section>
+</section>
+<section id="id36">
+<h2>6.6 腹板开孔要求<a class="headerlink" href="#id36" title="Link to this heading">#</a></h2>
+<section id="id37">
+<h3>6.6.1<a class="headerlink" href="#id37" title="Link to this heading">#</a></h3>
+<p>腹板开孔梁应满足整体稳定及局部稳定要求，并应进行下列计算：</p>
+<ol class="arabic simple">
+<li><p>实腹及开孔截面处的受弯承载力验算；</p></li>
+<li><p>开孔处顶部及底部T形截面受弯剪承载力验算。</p></li>
+</ol>
+</section>
+<section id="id38">
+<h3>6.6.2<a class="headerlink" href="#id38" title="Link to this heading">#</a></h3>
+<p>腹板开孔梁，当孔型为圆形或矩形时，应符合下列规定：</p>
+<ol class="arabic simple">
+<li><p>圆孔孔口直径不宜大于0.7倍梁高，矩形孔口高度不宜大于梁高的0.5倍，矩形孔口长度不已大于3倍孔高与梁高的较小值；</p></li>
+<li><p>相邻圆形孔口边缘间的距离不宜小于梁高的0.25倍，矩形孔口与相邻孔口的距离不宜小于梁高和矩形孔口长度中的较大者；</p></li>
+<li><p>开孔处梁上下T形截面高度均不小于0.15倍梁高，矩形孔口上下边缘至梁翼缘外皮的距离不宜小于梁高的0.25倍；</p></li>
+<li><p>开孔长度（或直径）与T形截面高度的比值不宜大于12；</p></li>
+<li><p>不应在距梁端相当于梁高的范围内设孔，抗震设防的结构不应在隅撑与梁柱接头区域范围内设孔。</p></li>
+</ol>
+</section>
+<section id="id39">
+<h3>6.6.3<a class="headerlink" href="#id39" title="Link to this heading">#</a></h3>
+<p>开孔腹板补强原则如下：</p>
+<ol class="arabic simple">
+<li><p>圆形孔直径小于或等于1/3梁高时，可不予补强。当大于1/3梁高时，可用环形加劲肋加强（图6.6.2-1a），也可用套管（图6.6.2-1b）或环形补强板（图6.6.2-1c）加强。</p></li>
+</ol>
+<p><img alt="图6.6.2-1 钢梁圆形孔口的补强" src="_images/image95.emf" /></p>
+<ol class="arabic simple" start="2">
+<li><p>圆形孔口加劲肋截面不宜小于100mm×10mm，加劲肋边缘至孔口边缘的距离不宜大于12mm。圆形孔口用套管补强时，其厚度不宜小于梁腹板厚度。用环形板补强时，若在梁腹板两侧设置，环形板的厚度可稍小于腹板厚度，其宽度可取75～125mm；</p></li>
+<li><p>矩形孔口的边缘应采用纵向和横向加劲肋加强。矩形孔口上下边缘的水平加劲肋端部宜伸至孔口边缘以外各300mm，当矩形孔口长度大于梁高时，其横向加劲肋应沿梁全高设置；</p></li>
+<li><p>矩形孔口加劲肋截面不宜小于125mm×18mm。当孔口长度大于500mm时，应在梁腹板两面设置加劲肋。</p></li>
+</ol>
+</section>
+<section id="id40">
+<h3>6.6.4<a class="headerlink" href="#id40" title="Link to this heading">#</a></h3>
+<p>梁材料的屈服强度应不大于440N/mm²。</p>
+</section>
+</section>
+<section id="id41">
+<h2>6.7 梁的构造要求<a class="headerlink" href="#id41" title="Link to this heading">#</a></h2>
+<section id="id42">
+<h3>6.7.1<a class="headerlink" href="#id42" title="Link to this heading">#</a></h3>
+<p>当弧曲杆沿弧面受弯时，应设置加劲肋并在强度计算中考虑翼缘的<span class="math notranslate nohighlight">\(Z\)</span>向效应。</p>
+</section>
+<section id="id43">
+<h3>6.7.2<a class="headerlink" href="#id43" title="Link to this heading">#</a></h3>
+<p>焊接梁的翼缘一般用一层钢板做成，当采用两层钢板时，外层钢板与内层钢板厚度之比宜为0.5~1.0。不沿梁通长设置的外层钢板，其理论截断点处的外伸长度<span class="math notranslate nohighlight">\(l_1\)</span>应符合下列要求：</p>
+<p>端部有正面角焊缝：</p>
+<p>当 <span class="math notranslate nohighlight">\(h_{\rm{f}} \ge 0.75t\)</span> 时：<br />
+$<span class="math notranslate nohighlight">\( l_1 \ge b \)</span>$</p>
+<p>当 <span class="math notranslate nohighlight">\(h_{\rm{f}} \lt 0.75t\)</span> 时：<br />
+$<span class="math notranslate nohighlight">\( l_1 \ge 1.5b \)</span>$</p>
+<p>端部无正面角焊缝：<br />
+$<span class="math notranslate nohighlight">\( l_1 \ge 2b \)</span>$</p>
+<p><span class="math notranslate nohighlight">\(b\)</span> 和 <span class="math notranslate nohighlight">\(t\)</span> 分别为外层翼缘板的宽度和厚度；<span class="math notranslate nohighlight">\(a\)</span> 为侧面角焊缝和正面角焊缝的焊脚尺寸。</p>
+</section>
+<section id="id44">
+<h3>6.7.3<a class="headerlink" href="#id44" title="Link to this heading">#</a></h3>
+<p>焊接梁的横向加劲肋与翼缘板、腹板相接处应切角，当作为焊接工艺孔时，切角宜采用半径 <span class="math notranslate nohighlight">\(r = 25\)</span> mm 的 1/4 圆弧。</p>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="5%20%E7%BB%93%E6%9E%84%E5%88%86%E6%9E%90%E4%B8%8E%E7%A8%B3%E5%AE%9A%E6%80%A7%E8%AE%BE%E8%AE%A1.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">5 结构分析与稳定性设计</p>
+      </div>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">6.1 受弯构件的强度</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">1. 在主平面内，实腹构件的抗弯强度应按下列规定计算：</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">2. 截面塑性发展系数的取值应符合下列规定：</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#s3-s4s5-6-5">3. 在主平面内，腹板截面设计等级达到S3级受弯构件要求的实腹构件，其抗剪强度应按下式计算，腹板截面设计等级为受弯构件S4或S5级时，应按本规范第6.5节的规定计算。</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">4. 当梁上翼缘受有沿腹板平面作用的集中荷载、且该荷载处又未设置支承加劲肋时，腹板计算高度上边缘的局部承压强度应按下式计算：</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">5. 在梁的腹板计算高度边缘处，若同时受有较大的正应力、剪应力和局部压应力，或同时受有较大的正应力和剪应力（如连续梁中部支座处或梁的翼缘截面改变处等）时，其折算应力应按下式计算：</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">6.2 受弯构件的整体稳定</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">6.2.1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">6.2.2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">6.2.3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">6.2.4</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">6.2.5</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">6.2.6</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">6.2.7</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">6.2.8</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">6.2.8.1</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">6.2.8.2</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">6.2.8.3</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">6.3 弯扭构件的强度及整体稳定</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id20">6.3.1 荷载偏离截面弯心但与主轴平行的弯扭构件的抗弯强度应按下列公式计算：</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id21">6.3.2 荷载偏离截面弯心但与主轴平行的弯扭构件的抗剪强度应按下式计算：</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id22">6.3.3 弯扭构件，当不能在构造上保证整体稳定性时，应按下式计算其稳定性：</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id23">6.4 局部稳定</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id24">6.4.1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id25">6.4.2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id26">6.4.3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id27">6.4.4</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id28">6.4.5</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id29">6.4.6 加劲肋的设置应符合下列规定：</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id30">6.4.7 梁的支承加劲肋应符合下列规定：</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id31">6.5 焊接截面梁腹板考虑屈曲后强度的计算</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id32">6.5.1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id33">6.5.1.1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id34">6.5.1.2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id35">6.5.2</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id36">6.6 腹板开孔要求</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id37">6.6.1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id38">6.6.2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id39">6.6.3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id40">6.6.4</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id41">6.7 梁的构造要求</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id42">6.7.1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id43">6.7.2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id44">6.7.3</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By 游田重新排版
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2025.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
