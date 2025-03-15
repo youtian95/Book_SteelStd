@@ -1,0 +1,701 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>5 结构分析与稳定性设计 &#8212; 钢结构设计标准 GB 50017-2017</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '5 结构分析与稳定性设计';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="4 材料和材料选用" href="4%20%E6%9D%90%E6%96%99%E5%92%8C%E6%9D%90%E6%96%99%E9%80%89%E7%94%A8.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="README.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="钢结构设计标准 GB 50017-2017 - Home"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="钢结构设计标准 GB 50017-2017 - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="README.html">
+                    钢结构设计标准 GB 50017-2017
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="%E5%89%8D%E8%A8%80.html">钢结构设计标准 GB 50017—2017</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E7%9B%AE%E5%BD%95.html">目次</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="1%20%E6%80%BB%E5%88%99.html">总则</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2%20%E6%9C%AF%E8%AF%AD%E5%92%8C%E7%AC%A6%E5%8F%B7.html">2 术语和符号</a></li>
+<li class="toctree-l1"><a class="reference internal" href="3%20%E5%9F%BA%E6%9C%AC%E8%AE%BE%E8%AE%A1%E8%A7%84%E5%AE%9A.html">3 基本设计规定</a></li>
+<li class="toctree-l1"><a class="reference internal" href="4%20%E6%9D%90%E6%96%99%E5%92%8C%E6%9D%90%E6%96%99%E9%80%89%E7%94%A8.html">4 材料和材料选用</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">5 结构分析与稳定性设计</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/youtianjava/Standard_for_design_of_steel_structures_GB_50017-2017" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/youtianjava/Standard_for_design_of_steel_structures_GB_50017-2017/issues/new?title=Issue%20on%20page%20%2F5 结构分析与稳定性设计.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/5 结构分析与稳定性设计.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>5 结构分析与稳定性设计</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">5.1 一般规定</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">5.2 初始缺陷</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">5.3 一阶弹性分析与设计</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">5.4 二阶弹性分析与设计</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">5.5 直接分析设计法</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="id1">
+<h1>5 结构分析与稳定性设计<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
+<section id="id2">
+<h2>5.1 一般规定<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<ol class="arabic">
+<li><p>建筑结构的内力和变形可按结构静力学方法进行弹性或弹塑性分析，采用弹性分析时，截面设计等级为S1、S2、S3级的构件可有塑性变形发展。</p></li>
+<li><p><strong>结构稳定性设计应在结构分析中或在构件设计中考虑二阶效应。</strong></p></li>
+<li><p>结构的计算模型和基本假定应与构件连接的实际性能相符合。</p></li>
+<li><p>框架结构进行内力分析时，梁柱连接宜采用刚接或铰接假定进行内力计算。梁柱采用半刚性连接时，应计入梁柱交角变化的影响，在内力分析时，应假定连接的弯矩-转角曲线，并在节点设计时，保证节点的构造与假定的弯矩-转角曲线符合。</p></li>
+<li><p>进行桁架杆件内力计算时，应符合下列规定：</p>
+<ol class="arabic simple">
+<li><p>桁架杆件的轴力可按节点铰接计算；</p></li>
+<li><p>采用节点板连接的桁架腹杆及荷载作用于节点的弦杆，其杆件截面为单角钢、双角钢或T形者，可不考虑节点刚性引起的弯矩效应；</p></li>
+<li><p>除本条第4款规定外，杆件为H形截面和箱形截面的桁架，应计算节点刚性引起的弯矩。在轴力和弯矩共同作用下，杆件端部截面的强度计算可考虑塑性应力重分布，按本规范第7.6.6条计算，杆件的稳定计算应按压弯构件进行；</p></li>
+<li><p>直接相贯连接的钢管结构节点（无斜腹杆的空腹桁架除外），当符合本规范第13章各类节点的几何参数适用范围时，主管节间长度与截面高度（或直径）之比不小于12、支管节间长度与截面高度（或直径）之比不小于24者，可视为节点铰接。</p></li>
+</ol>
+</li>
+<li><p>结构内力分析可采用一阶弹性分析、二阶弹性分析或直接分析，应根据式（5.1.6-1、2）计算的最大二阶效应系数来选用适当的结构分析方法。当<span class="math notranslate nohighlight">\(\eta_{cr} \geq 4\)</span>时，宜采用一阶弹性分析；当<span class="math notranslate nohighlight">\(2 \leq \eta_{cr} &lt; 4\)</span>时，宜采用二阶弹性分析；当<span class="math notranslate nohighlight">\(\eta_{cr} &lt; 2\)</span>时，宜增大结构的刚度或采用直接分析。</p>
+<ol class="arabic">
+<li><p>框架结构的二阶效应系数可按下式计算：</p>
+<p>[
+\eta = \frac{\sum N_{ik} h_i \Delta u_i}{\sum H_{ik} h_i}
+]</p>
+<p>式中：</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\sum N_{ik}\)</span>——所计算<span class="math notranslate nohighlight">\(i\)</span>楼层各柱轴心压力标准值之和；</p></li>
+<li><p><span class="math notranslate nohighlight">\(\sum H_{ik}\)</span>——产生层间侧移<span class="math notranslate nohighlight">\(\Delta u\)</span>的计算楼层及以上各层的水平力标准值之和；</p></li>
+<li><p><span class="math notranslate nohighlight">\(h_i\)</span>——所计算<span class="math notranslate nohighlight">\(i\)</span>楼层的层高；</p></li>
+<li><p><span class="math notranslate nohighlight">\(\Delta u_i\)</span>——<span class="math notranslate nohighlight">\(\sum H_{ki}\)</span>作用下按一阶弹性分析求得的计算楼层的层间侧移。当确定是否采用二阶弹性分析时，<span class="math notranslate nohighlight">\(\Delta u_i\)</span>可近似采用层间相对位移的容许值<span class="math notranslate nohighlight">\(\left[ \Delta u \right]\)</span>，<span class="math notranslate nohighlight">\(\left[ \Delta u \right]\)</span>见本规范附录B第B.2节。</p></li>
+</ul>
+</li>
+<li><p>除1款外的结构，二阶效应系数可按下式计算：</p>
+<p>[
+\eta = \frac{1}{\eta_{cr}}
+]</p>
+<p>式中：<span class="math notranslate nohighlight">\(\eta_{cr}\)</span>——整体结构最低阶弹性临界屈曲荷载与设计荷载的比值。</p>
+</li>
+</ol>
+</li>
+<li><p>二阶弹性分析和直接分析应合理考虑初始几何缺陷和残余应力的影响。</p></li>
+<li><p>当对结构进行连续倒塌分析、抗火分析或在其它极端荷载作用下的结构分析时，应采用静力直接分析或动力直接分析。</p></li>
+<li><p><strong>大跨度钢结构体系、张拉体系、单层球面网壳、柱面网壳和椭圆抛物面网壳应采用二阶弹性分析或直接分析。</strong></p></li>
+<li><p>与塑性开展有关的内力分析按本规范第10章的规定执行。</p></li>
+</ol>
+</section>
+<section id="id3">
+<h2>5.2 初始缺陷<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
+<ol class="arabic">
+<li><p>结构的初始缺陷应包含结构整体的初始几何缺陷和构件的初始几何缺陷及残余应力。</p></li>
+<li><p>结构整体初始几何缺陷模式可通过第一阶弹性屈曲模态确定。框架结构初始几何缺陷代表值可由式(5.2.2-1)确定且不小于<span class="math notranslate nohighlight">\(\frac{h_{\text{i}}}{1000}\)</span>（图5.2.2-1）。框架结构整体初始几何缺陷代表值也可通过在每层柱顶施加假想水平力<span class="math notranslate nohighlight">\(H_{\text{ni}}\)</span>等效考虑，假想水平力可由式（5.2.2-2）计算，施加方向应考虑荷载的最不利组合（图5.2.2-2）。</p>
+<p>[
+\Delta_{\text{i}} = \frac{h_{\text{i}}}{250} \sqrt{0.2 + \frac{1}{n_{\text{s}}}} \frac{1}{\varepsilon_{\text{k}}} \quad \text{（5.2.2-1）}
+]</p>
+<p>[
+H_{\text{ni}} = \frac{Q_{\text{i}}}{250} \sqrt{0.2 + \frac{1}{n_{\text{s}}}} \frac{1}{\varepsilon_{\text{k}}} \quad \text{（5.2.2-2）}
+]</p>
+<p>式中：</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\Delta_{\text{i}}\)</span>——所计算楼层的初始几何缺陷代表值；</p></li>
+<li><p><span class="math notranslate nohighlight">\(n_{\text{s}}\)</span>——框架总层数，当<span class="math notranslate nohighlight">\(\sqrt{0.2 + \frac{1}{n_{\text{s}}}} &lt; \frac{2}{3}\)</span>取此根号值为<span class="math notranslate nohighlight">\(f\)</span>；当<span class="math notranslate nohighlight">\(\sqrt{0.2 + \frac{1}{n_{\text{s}}}} &gt; 1\)</span>时，取此根号值为1.0；</p></li>
+<li><p><span class="math notranslate nohighlight">\(h_{\text{i}}\)</span>——所计算楼层的高度；</p></li>
+<li><p><span class="math notranslate nohighlight">\(Q_{\text{i}}\)</span>——第<span class="math notranslate nohighlight">\(f_{\text{v}}\)</span>楼层的总重力荷载设计值；</p></li>
+<li><p><span class="math notranslate nohighlight">\(\varepsilon_{\text{k}}\)</span>——钢号修正系数。</p></li>
+</ul>
+<p><img alt="" src="_images/image25.emf" />
+（a）框架整体初始几何缺陷代表值         （b）框架结构等效水平力
+图5.2.2-1 框架结构整体初始几何缺陷代表值及等效水平力</p>
+<p><img alt="" src="_images/image26.emf" />
+图5.2.2-2 框架结构计算模型
+1－等效成</p>
+</li>
+<li><p>构件（含支撑构件）的初始缺陷代表值可由式(5.2.3-1)计算确定，该缺陷值包括了残余应力的影响（图5.2.3a）。</p>
+<p>[
+\delta_{\text{0}} = e_0 \sin \frac{\pi x}{l} \quad \text{（5.2.3-1）}
+]</p>
+<p>[
+q_0 = \frac{8N_{\text{k}}e_0}{l^2}  \quad \text{（5.2.3-2）}
+]</p>
+<p>构件（含支撑构件）的初始缺陷也可采用假想均布荷载进行等效简化计算，假想均布荷载由式（5.2.3-2）确定（图5.2.3b）。</p>
+<p>式中：</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\delta_0\)</span>——离构件端部<span class="math notranslate nohighlight">\(x\)</span>处的初始变形值；</p></li>
+<li><p><span class="math notranslate nohighlight">\(e_0\)</span>——构件中点处的初始变形值；</p></li>
+<li><p><span class="math notranslate nohighlight">\(x\)</span>——离构件端部的距离；</p></li>
+<li><p><span class="math notranslate nohighlight">\(l\)</span>——构件的总长度；</p></li>
+<li><p><span class="math notranslate nohighlight">\(q_0\)</span>——等效分布荷载；</p></li>
+<li><p><span class="math notranslate nohighlight">\(\frac{e_0}{l}\)</span>——构件初始弯曲缺陷值，当采用二阶弹性分析时，按表5.2.3取构件综合缺陷代表值，当按本规范第5.5节采用直接分析考虑材料弹塑性发展时，应按本规范第5.5.7条或第5.5.8条考虑构件初始缺陷；</p></li>
+<li><p><span class="math notranslate nohighlight">\(N_{\text{k}}\)</span>——构件承受的轴力，取标准值计算。</p></li>
+</ul>
+</li>
+</ol>
+<p><strong>表5.2.3 构件综合缺陷代表值</strong></p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>对应于表7.2.1-1和表7.2.1-2中的柱子曲线</p></th>
+<th class="head"><p>二阶弹性分析采用的<span class="math notranslate nohighlight">\(\frac{e_0}{l}\)</span>值</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>a类</p></td>
+<td><p>1/400</p></td>
+</tr>
+<tr class="row-odd"><td><p>b类</p></td>
+<td><p>1/350</p></td>
+</tr>
+<tr class="row-even"><td><p>c类</p></td>
+<td><p>1/300</p></td>
+</tr>
+<tr class="row-odd"><td><p>d类</p></td>
+<td><p>1/250</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><img alt="" src="_images/image27.emf" />
+（a）
+<img alt="" src="_images/image28.emf" />
+（b）
+图5.2.2 构件的初始缺陷
+1－构件初始弯曲形状；2－等效成</p>
+</section>
+<section id="id4">
+<h2>5.3 一阶弹性分析与设计<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>根据本规范第5.1.6条的要求，钢结构的内力和位移计算采用一阶弹性分析时，应按照本规范第6、7、8章的有关规定进行构件设计，按照本规范第11、12章的有关规定进行连接和节点设计。</p></li>
+<li><p>对于形式和受力复杂的结构，当采用一阶弹性分析方法进行结构分析与设计时，应按结构弹性稳定理论确定构件的计算长度系数，并按照本规范第6、7、8章的有关规定进行构件设计。</p></li>
+</ol>
+</section>
+<section id="id5">
+<h2>5.4 二阶弹性分析与设计<a class="headerlink" href="#id5" title="Link to this heading">#</a></h2>
+<ol class="arabic">
+<li><p>采用仅考虑<span class="math notranslate nohighlight">\(P-\Delta\)</span>效应的二阶弹性分析时，应按本规范第5.2.2条考虑结构的整体初始缺陷，计算结构在各种设计荷载（作用）下的内力和位移，并应按照本规范第6、7、8章的有关规定进行各结构构件的设计。计算构件稳定承载力时，构件计算长度系数<span class="math notranslate nohighlight">\(\mu\)</span>取1.0或其它认可的值。</p></li>
+<li><p>采用二阶弹性分析，同时按本规范第5.2.2条考虑了结构的整体初始缺陷和按5.2.3条考虑了构件的初始缺陷时，应按式（5.5.6-1）或（5.5.6-2）进行构件的截面承载力验算。</p></li>
+<li><p>二阶<span class="math notranslate nohighlight">\(P-\Delta\)</span>效应可按近似的二阶理论对一阶弯矩进行放大来考虑。对无支撑的纯框架结构，多杆件杆端的弯矩也可采用下列近似公式进行计算：</p>
+<p>[
+M_{q} = \eta M_{H} \quad \text{（5.4.4-1）}
+]</p>
+<p>[
+M_{q} = \eta M_{H} \quad \text{（5.4.4-2）}
+]</p>
+<p>式中：</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(M_{q}\)</span>——结构在竖向荷载作用下的一阶弹性弯矩；</p></li>
+<li><p><span class="math notranslate nohighlight">\(M_{H}\)</span>——结构在水平荷载作用下的一阶弹性弯矩；</p></li>
+<li><p><span class="math notranslate nohighlight">\(\eta\)</span>——二阶效应系数,按本规范第5.1.6条规定采用；</p></li>
+<li><p><span class="math notranslate nohighlight">\(\eta_{i}\)</span>——考虑二阶效应第<span class="math notranslate nohighlight">\(i\)</span>层杆件的侧移弯矩增大系数；当<span class="math notranslate nohighlight">\(\eta_{i} &gt; 1\)</span>时，宜增大结构的抗侧刚度。</p></li>
+</ul>
+</li>
+</ol>
+</section>
+<section id="id6">
+<h2>5.5 直接分析设计法<a class="headerlink" href="#id6" title="Link to this heading">#</a></h2>
+<ol class="arabic">
+<li><p>直接分析设计法应考虑二阶 <span class="math notranslate nohighlight">\(P-\Delta\)</span> 和 <span class="math notranslate nohighlight">\(P-\delta\)</span> 效应、按本规范第5.2.2条、第5.2.3条、第5.5.7条和第5.5.8条同时考虑结构和构件的初始缺陷、节点连接刚度和其它对结构稳定性有显著影响的因素，允许材料的弹塑性发展、内力重分布，获得各种设计荷载（作用）下的内力和位移，并应按照本规范第6、7、8章的有关规定进行各结构构件的设计，但不需要按计算长度法进行构件稳定承载力验算。</p></li>
+<li><p>直接分析法考虑材料弹塑性发展时（以下称为二阶弹塑性分析）宜采用塑性铰法或塑性区法。</p></li>
+<li><p>采用二阶弹塑性分析时，钢材的应力应变曲线可为理想弹塑性，屈服强度取规范规定的强度设计值，弹性模量取标准值。</p></li>
+<li><p>采用二阶弹塑性分析时，钢构件截面应为双轴对称截面或单轴对称截面以对称截面受弯为主，塑性铰处截面设计等级应为S1、S2级，其出现的截面或区域应保证有足够的转动能力。</p></li>
+<li><p>在对结构进行连续倒塌分析时，结构材料的本构关系宜考虑应变率的影响；在结构进行抗火分析时，应考虑结构材料在高温下的本构关系对结构和构件内力产生的影响。</p></li>
+<li><p>结构和构件采用直接分析设计法进行分析和设计时，计算结果可直接作为结构或构件在承载能力极限状态和正常使用极限状态下的设计依据。此时，当构件有足够侧向支撑以防止侧向失稳时，只需按式（5.5.6-1）进行平面内的截面承载力验算；否则，应按式（5.5.6-2）进行平面外的截面承载力验算。</p>
+<p>[
+\begin{aligned}
+\frac{N}{Af}+\frac{M_{\text{x}}}}}f}+\frac{M_{\text{y}}}}}f}\le 1 \quad \text{（5.5.6-1）} \
+\frac{N}{Af}+\frac{M_{\text{x}}}}}}f}+\frac{M_{\text{y}}}}}f}\le 1 \quad \text{（5.5.6-2）}
+\end{aligned}
+]</p>
+<p>式中：</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(M_{x}, M_{y}\)</span>——分别为绕 <span class="math notranslate nohighlight">\(x\)</span> 轴、<span class="math notranslate nohighlight">\(y\)</span> 轴的二阶弯矩设计值，可由结构分析直接得到；</p></li>
+<li><p><span class="math notranslate nohighlight">\(A\)</span>——毛截面面积；</p></li>
+<li><p><span class="math notranslate nohighlight">\(W_{x}, W_{y}\)</span>——绕 <span class="math notranslate nohighlight">\(x\)</span> 轴、<span class="math notranslate nohighlight">\(y\)</span> 轴的毛截面模量（S1、S2、S3级）或有效截面模量（S4、S5级）；</p></li>
+<li><p><span class="math notranslate nohighlight">\(\beta\)</span>——截面塑性发展系数，按本规范第6.1.2条的规定采用；</p></li>
+<li><p><span class="math notranslate nohighlight">\(\varphi_{b}\)</span>——梁的整体稳定性系数，应按本规范第6.2.3条的规定采用。</p></li>
+</ul>
+</li>
+<li><p>二阶弹塑性分析采用塑性铰法时，除应按5.2.2条、5.2.3条考虑初始缺陷外，当受压构件所受轴力满足式（5.5.7）时，其抗弯刚度应乘上刚度折减系数0.8。</p>
+<p>[
+N &gt; 0.5fA \quad \text{（5.5.7）}
+]</p>
+</li>
+<li><p>二阶弹塑性分析采用塑性区法时，应按出厂加工精度要求且不小于1/1000的构件长度考虑构件的初始几何缺陷，同时按有关参考文献或加工工艺水平考虑构件中的初始残余应力。</p></li>
+</ol>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="4%20%E6%9D%90%E6%96%99%E5%92%8C%E6%9D%90%E6%96%99%E9%80%89%E7%94%A8.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">4 材料和材料选用</p>
+      </div>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">5.1 一般规定</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">5.2 初始缺陷</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">5.3 一阶弹性分析与设计</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">5.4 二阶弹性分析与设计</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">5.5 直接分析设计法</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By 游田重新排版
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2025.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
