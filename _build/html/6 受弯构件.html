@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -62,6 +62,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = '6 受弯构件';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="7 轴心受力构件" href="7%20%E8%BD%B4%E5%BF%83%E5%8F%97%E5%8A%9B%E6%9E%84%E4%BB%B6.html" />
     <link rel="prev" title="5 结构分析与稳定性设计" href="5%20%E7%BB%93%E6%9E%84%E5%88%86%E6%9E%90%E4%B8%8E%E7%A8%B3%E5%AE%9A%E6%80%A7%E8%AE%BE%E8%AE%A1.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -190,6 +191,7 @@
 <li class="toctree-l1"><a class="reference internal" href="4%20%E6%9D%90%E6%96%99%E5%92%8C%E6%9D%90%E6%96%99%E9%80%89%E7%94%A8.html">4 材料和材料选用</a></li>
 <li class="toctree-l1"><a class="reference internal" href="5%20%E7%BB%93%E6%9E%84%E5%88%86%E6%9E%90%E4%B8%8E%E7%A8%B3%E5%AE%9A%E6%80%A7%E8%AE%BE%E8%AE%A1.html">5 结构分析与稳定性设计</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">6 受弯构件</a></li>
+<li class="toctree-l1"><a class="reference internal" href="7%20%E8%BD%B4%E5%BF%83%E5%8F%97%E5%8A%9B%E6%9E%84%E4%BB%B6.html">7 轴心受力构件</a></li>
 </ul>
 
     </div>
@@ -732,7 +734,7 @@ W_\omega = \frac{I_\omega}{\omega} \quad \text{（6.3.1-2）}
 <section id="id25">
 <h3>6.4.2<a class="headerlink" href="#id25" title="Link to this heading">#</a></h3>
 <p>直接承受动力荷载的吊车梁及类似构件的焊接截面梁应配置加劲肋，其腹板配置加劲肋应符合下列规定（图6.4.2）：</p>
-<p><img alt="图6.4.2 加劲肋布置" src="_images/image30.png" /></p>
+<p><img alt="图6.4.2 加劲肋布置" src="media/image30.png" /></p>
 <ol class="arabic simple">
 <li><p>当 <span class="math notranslate nohighlight">\(h_0/t_w \le 80\varepsilon_{\rm{k}}\)</span> 时，对有局部压应力的梁，应按构造配置横向加劲肋；当局部压应力较小时，可不配置加劲肋。</p></li>
 <li><p>当 <span class="math notranslate nohighlight">\(h_0/t_w &gt; 80\varepsilon_{\rm{k}}\)</span> 时，应配置横向加劲肋。其中，当 <span class="math notranslate nohighlight">\(h_0/t_w &gt; 170\varepsilon_{\rm{k}}\)</span>（受压翼缘扭转受到约束，如连有刚性铺板、制动板或焊有钢轨时）或 <span class="math notranslate nohighlight">\(h_0/t_w &gt; 150\varepsilon_{\rm{k}}\)</span>（受压翼缘扭转未受到约束时），或按计算需要时，应在弯曲应力较大区格的受压区增加配置纵向加劲肋。局部压应力很大的梁，必要时尚宜在受压区配置短加劲肋。在任何情况下，<span class="math notranslate nohighlight">\(h_0/t_w\)</span> 均不应超过250。此处 <span class="math notranslate nohighlight">\(h_0\)</span> 为腹板的计算高度（对单轴对称梁，当确定是否要配置纵向加劲肋时，<span class="math notranslate nohighlight">\(h_0\)</span> 应取腹板受压区高度 <span class="math notranslate nohighlight">\(\overline{\lambda}_{\rm{b}}\)</span> 的2倍），<span class="math notranslate nohighlight">\(t_w\)</span> 为腹板的厚度。</p></li>
@@ -1081,7 +1083,7 @@ A = \frac{P}{f} \quad \text{（6.5.2-3）}
 <li><p>考虑腹板屈曲后强度的梁，可按构造需要设置中间横向加劲肋。</p></li>
 <li><p>中间横向加劲肋较大（<span class="math notranslate nohighlight">\(h_0\)</span>）和不设中间横向加劲肋的腹板，当满足公式（6.4.3-1）时，可取<span class="math notranslate nohighlight">\(h_0\)</span>。</p></li>
 </ol>
-<p><img alt="图6.5.2 设置封头肋板的梁端构造" src="_images/image94.jpeg" /><br />
+<p><img alt="图6.5.2 设置封头肋板的梁端构造" src="media/image94.jpeg" /><br />
 图6.5.2 设置封头肋板的梁端构造<br />
 1—加劲肋；2—封头肋板</p>
 </section>
@@ -1113,7 +1115,7 @@ A = \frac{P}{f} \quad \text{（6.5.2-3）}
 <ol class="arabic simple">
 <li><p>圆形孔直径小于或等于1/3梁高时，可不予补强。当大于1/3梁高时，可用环形加劲肋加强（图6.6.2-1a），也可用套管（图6.6.2-1b）或环形补强板（图6.6.2-1c）加强。</p></li>
 </ol>
-<p><img alt="图6.6.2-1 钢梁圆形孔口的补强" src="_images/image95.emf" /></p>
+<p><img alt="图6.6.2-1 钢梁圆形孔口的补强" src="media/image95.svg" /></p>
 <ol class="arabic simple" start="2">
 <li><p>圆形孔口加劲肋截面不宜小于100mm×10mm，加劲肋边缘至孔口边缘的距离不宜大于12mm。圆形孔口用套管补强时，其厚度不宜小于梁腹板厚度。用环形板补强时，若在梁腹板两侧设置，环形板的厚度可稍小于腹板厚度，其宽度可取75～125mm；</p></li>
 <li><p>矩形孔口的边缘应采用纵向和横向加劲肋加强。矩形孔口上下边缘的水平加劲肋端部宜伸至孔口边缘以外各300mm，当矩形孔口长度大于梁高时，其横向加劲肋应沿梁全高设置；</p></li>
@@ -1188,6 +1190,15 @@ $<span class="math notranslate nohighlight">\( l_1 \ge 2b \)</span>$</p>
         <p class="prev-next-subtitle">previous</p>
         <p class="prev-next-title">5 结构分析与稳定性设计</p>
       </div>
+    </a>
+    <a class="right-next"
+       href="7%20%E8%BD%B4%E5%BF%83%E5%8F%97%E5%8A%9B%E6%9E%84%E4%BB%B6.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">7 轴心受力构件</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>

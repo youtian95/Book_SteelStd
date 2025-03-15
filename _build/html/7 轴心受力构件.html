@@ -1,0 +1,1133 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>7 轴心受力构件 &#8212; 钢结构设计标准 GB 50017-2017</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '7 轴心受力构件';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="6 受弯构件" href="6%20%E5%8F%97%E5%BC%AF%E6%9E%84%E4%BB%B6.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="README.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="钢结构设计标准 GB 50017-2017 - Home"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="钢结构设计标准 GB 50017-2017 - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="README.html">
+                    钢结构设计标准 GB 50017-2017
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="%E5%89%8D%E8%A8%80.html">钢结构设计标准 GB 50017—2017</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E7%9B%AE%E5%BD%95.html">目次</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="1%20%E6%80%BB%E5%88%99.html">1 总则</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2%20%E6%9C%AF%E8%AF%AD%E5%92%8C%E7%AC%A6%E5%8F%B7.html">2 术语和符号</a></li>
+<li class="toctree-l1"><a class="reference internal" href="3%20%E5%9F%BA%E6%9C%AC%E8%AE%BE%E8%AE%A1%E8%A7%84%E5%AE%9A.html">3 基本设计规定</a></li>
+<li class="toctree-l1"><a class="reference internal" href="4%20%E6%9D%90%E6%96%99%E5%92%8C%E6%9D%90%E6%96%99%E9%80%89%E7%94%A8.html">4 材料和材料选用</a></li>
+<li class="toctree-l1"><a class="reference internal" href="5%20%E7%BB%93%E6%9E%84%E5%88%86%E6%9E%90%E4%B8%8E%E7%A8%B3%E5%AE%9A%E6%80%A7%E8%AE%BE%E8%AE%A1.html">5 结构分析与稳定性设计</a></li>
+<li class="toctree-l1"><a class="reference internal" href="6%20%E5%8F%97%E5%BC%AF%E6%9E%84%E4%BB%B6.html">6 受弯构件</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">7 轴心受力构件</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/youtianjava/Standard_for_design_of_steel_structures_GB_50017-2017" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/youtianjava/Standard_for_design_of_steel_structures_GB_50017-2017/issues/new?title=Issue%20on%20page%20%2F7 轴心受力构件.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/7 轴心受力构件.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>7 轴心受力构件</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">7.1 截面强度计算</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">1. 轴心受拉构件，当端部连接（及中部拼接）处组成截面的各板件都有连接件直接传力时，除采用高强度螺栓摩擦型连接者外，其截面强度计算应符合下列规定：</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">毛截面屈服：</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">净截面断裂：</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">1. 当构件为沿全长都有排列较密螺栓的组合构件时，其截面强度应按下式计算：</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">2. 除第1款的情形外，其毛截面强度计算应采用式（7.1.1-1），净截面强度应按下式计算：</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">2. 轴心受压构件，当端部连接（及中部拼接）处组成截面的各板件都有连接件直接传力时，截面强度应按式（7.1.1-1）计算。但含有虚孔的构件尚需在孔心所在截面按式（7.1.1-2）计算。</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#beta-beta7-1-3">3. 轴拉和轴压构件，当其组成板件在节点或拼接处并非全部直接传力时，应对危险截面的面积乘以有效截面系数<span class="math notranslate nohighlight">\(\beta\)</span>，不同构件截面形式和连接方式的<span class="math notranslate nohighlight">\(\beta\)</span>值应符合表7.1.3的规定。</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">7.2 轴压构件的稳定性计算</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">1. 轴压构件的稳定性应按下式计算：</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lambda">2. 实腹式构件的长细比<span class="math notranslate nohighlight">\(\lambda\)</span>应根据其失稳模式，由下列各款确定：</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">1. 截面形心与剪心重合的构件</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">2. 截面为单轴对称的构件</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">1. 绕非对称主轴的弯曲屈曲，长细比应由式（7.2.2-1、2）确定。绕对称轴主轴的弯扭屈曲，应取下式给出的换算长细比：</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">2. 等边单角钢轴压构件当绕两主轴弯曲的计算长度相等时，可不计算弯扭屈曲。塔架单角钢压杆应符合本规范第7.6节的相关规定。</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#t-lambda-text-yz">3. 双角钢组合T形截面构件绕对称轴的换算长细比<span class="math notranslate nohighlight">\(\lambda_{\text{yz}}\)</span>可用下列简化公式确定：</a></li>
+</ul>
+</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">3. 截面无对称轴且剪心和形心不重合的构件，应采用下列换算长细比：</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">4. 不等边角钢轴压构件的换算长细比可用下列简化公式确定（图7.2.2-2）：</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ax7-2-3bcxy">3. 格构式轴心受压构件对实轴长细比应按本规范第7.2.2条计算，对虚轴（图7.2.3a的x轴和图7.2.3b、c的x轴和y轴）应取换算长细比。换算长细比应按下列公式计算：</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#a">1. 双肢组合构件（图7.2.3a）</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#b">2. 四肢组合构件（图7.2.3b）</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#c">3. 缀件为缀条的三肢组合构件（图7.2.3c）</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#lambda-text-1-lambda-text-max-0-7-98m">4. 缀件面宽度较大的格构式柱宜采用缀条柱，斜缀条与构件轴线间的夹角应在40°~70°范围内。缀条柱的分肢长细比<span class="math notranslate nohighlight">\(\lambda_{\text{1}}\)</span>不应大于构件两方向长细比（对虚轴取换算长细比）的较大值<span class="math notranslate nohighlight">\(\lambda_{\text{max}}\)</span>的0.7倍。格构式柱和大型实腹式柱，在受有较大水平力处和运送单元的端部应设置横隔，横隔的间距不宜大于柱截面长边尺寸的9倍和8m。</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#lambda-text-1-40-varepsilon-text-k-lambda-text-max-0-5-lambda-text-max-50-lambda-text-max-50-6">5. 缀板柱的分肢长细比<span class="math notranslate nohighlight">\(\lambda_{\text{1}}\)</span>不应大于<span class="math notranslate nohighlight">\(40\varepsilon_{\text{k}}\)</span>，并不应大于<span class="math notranslate nohighlight">\(\lambda_{\text{max}}\)</span>的0.5倍（当<span class="math notranslate nohighlight">\(\lambda_{\text{max}} &lt; 50\)</span>时，取<span class="math notranslate nohighlight">\(\lambda_{\text{max}} = 50\)</span>）。缀板柱中同一截面处缀板（或型钢横杆）的线刚度之和不得小于柱较大分肢线刚度的6倍。</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">6. 用填板连接而成的双角钢或双槽钢构件，采用普通螺栓连接时应按格构式构件进行计算，除此之外，可按实腹式构件进行计算，但填板间的距离不应超过下列数值：</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">7. 轴压构件应按下式计算剪力：</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#aa-1-phi">8. 两端铰支的梭形圆管或方管状截面轴压构件（图7.2.8）的稳定性应按式（7.2.1-1）计算。计算时<span class="math notranslate nohighlight">\(A\)</span>取端截面的截面面积<span class="math notranslate nohighlight">\(A_1\)</span>，稳定系数<span class="math notranslate nohighlight">\(\phi\)</span>按下列换算长细比确定：</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#phib">9. 两端铰支的多肢钢管梭形格构柱应按式（7.2.1-1）计算整体稳定。稳定系数<span class="math notranslate nohighlight">\(\phi\)</span>依据b类截面按下列换算长细比确定：</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="id1">
+<h1>7 轴心受力构件<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
+<section id="id2">
+<h2>7.1 截面强度计算<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<section id="id3">
+<h3>1. 轴心受拉构件，当端部连接（及中部拼接）处组成截面的各板件都有连接件直接传力时，除采用高强度螺栓摩擦型连接者外，其截面强度计算应符合下列规定：<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
+<section id="id4">
+<h4>毛截面屈服：<a class="headerlink" href="#id4" title="Link to this heading">#</a></h4>
+<div class="math notranslate nohighlight">
+\[
+F = \sigma \cdot A \tag{7.1.1-1}
+\]</div>
+</section>
+<section id="id5">
+<h4>净截面断裂：<a class="headerlink" href="#id5" title="Link to this heading">#</a></h4>
+<div class="math notranslate nohighlight">
+\[
+F = \sigma_u \cdot A_n \tag{7.1.1-2}
+\]</div>
+<p>式中：</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(F\)</span>——所计算截面的拉力设计值；</p></li>
+<li><p><span class="math notranslate nohighlight">\(\sigma\)</span>——钢材抗拉强度设计值；</p></li>
+<li><p><span class="math notranslate nohighlight">\(A\)</span>——构件的毛截面面积；</p></li>
+<li><p><span class="math notranslate nohighlight">\(A_n\)</span>——构件的净截面面积，当构件多个截面有孔时，取最不利的截面；</p></li>
+<li><p><span class="math notranslate nohighlight">\(\sigma_u\)</span>——钢材极限抗拉强度设计值。</p></li>
+</ul>
+<p>用高强螺栓摩擦型连接的构件，其截面强度计算应符合下列规定：</p>
+</section>
+<section id="id6">
+<h4>1. 当构件为沿全长都有排列较密螺栓的组合构件时，其截面强度应按下式计算：<a class="headerlink" href="#id6" title="Link to this heading">#</a></h4>
+<div class="math notranslate nohighlight">
+\[
+F = \sigma \cdot A \tag{7.1.1-3}
+\]</div>
+</section>
+<section id="id7">
+<h4>2. 除第1款的情形外，其毛截面强度计算应采用式（7.1.1-1），净截面强度应按下式计算：<a class="headerlink" href="#id7" title="Link to this heading">#</a></h4>
+<div class="math notranslate nohighlight">
+\[
+F = \sigma_u \cdot A_n \cdot \frac{n_b}{n} \tag{7.1.1-4}
+\]</div>
+<p>式中：</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(n_b\)</span>——在节点或拼接处，构件一端连接的高强度螺栓数目；</p></li>
+<li><p><span class="math notranslate nohighlight">\(n\)</span>——所计算截面（最外列螺栓处）上高强度螺栓数目。</p></li>
+</ul>
+</section>
+</section>
+<section id="id8">
+<h3>2. 轴心受压构件，当端部连接（及中部拼接）处组成截面的各板件都有连接件直接传力时，截面强度应按式（7.1.1-1）计算。但含有虚孔的构件尚需在孔心所在截面按式（7.1.1-2）计算。<a class="headerlink" href="#id8" title="Link to this heading">#</a></h3>
+</section>
+<section id="beta-beta7-1-3">
+<h3>3. 轴拉和轴压构件，当其组成板件在节点或拼接处并非全部直接传力时，应对危险截面的面积乘以有效截面系数<span class="math notranslate nohighlight">\(\beta\)</span>，不同构件截面形式和连接方式的<span class="math notranslate nohighlight">\(\beta\)</span>值应符合表7.1.3的规定。<a class="headerlink" href="#beta-beta7-1-3" title="Link to this heading">#</a></h3>
+<p><strong>表7.1.3  轴心受力构件节点或拼接处危险截面有效截面系数</strong></p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>构件截面形式</p></th>
+<th class="head"><p>连接形式</p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(\beta\)</span></p></th>
+<th class="head"><p>图例</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>角钢</p></td>
+<td><p>单边连接</p></td>
+<td><p>0.85</p></td>
+<td><p><img alt="" src="media/image118.svg" /></p></td>
+</tr>
+<tr class="row-odd"><td><p>工形、H形</p></td>
+<td><p>翼缘连接</p></td>
+<td><p>0.90</p></td>
+<td><p><img alt="" src="media/image119.svg" /></p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p>腹板连接</p></td>
+<td><p>0.70</p></td>
+<td><p><img alt="" src="media/image120.svg" /></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+<section id="id9">
+<h2>7.2 轴压构件的稳定性计算<a class="headerlink" href="#id9" title="Link to this heading">#</a></h2>
+<section id="id10">
+<h3>1. 轴压构件的稳定性应按下式计算：<a class="headerlink" href="#id10" title="Link to this heading">#</a></h3>
+<p><img alt="image" src="media/image121.svg" />（7.2.1-1）</p>
+<p>式中：<img alt="image" src="media/image122.svg" />——轴心受压构件的稳定系数（取截面两主轴稳定系数中的较小者），根据构件的长细比（或换算长细比）、钢材屈服强度和表7.2.1-1、表7.2.1-2的截面分类，按附录D采用。</p>
+<p>注：板件宽厚比超过7.3.1条规定的实腹式构件应按式（7.3.3-1）计算。</p>
+<p><strong>表7.2.1-1  轴心受压构件的截面分类（板厚<span class="math notranslate nohighlight">\(t \le 40\)</span>mm）</strong></p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>截面形式</p></th>
+<th class="head"><p>对x轴</p></th>
+<th class="head"><p>对y轴</p></th>
+<th class="head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><img alt="image" src="media/image124.svg" /></p></td>
+<td><p>a类</p></td>
+<td><p>a类</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="image" src="media/image124.svg" /></p></td>
+<td><p><span class="math notranslate nohighlight">\(b/h \le 0.8\)</span></p></td>
+<td><p>a类</p></td>
+<td><p>b类</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="image" src="media/image124.svg" /></p></td>
+<td><p><span class="math notranslate nohighlight">\(b/h &gt; 0.8\)</span></p></td>
+<td><p>a*类</p></td>
+<td><p>b*类</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="image" src="media/image124.svg" /></p></td>
+<td><p>a*类</p></td>
+<td><p>a*类</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="image" src="media/image124.svg" /></p></td>
+<td><p>b类</p></td>
+<td><p>b类</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="image" src="media/image125.svg" /></p></td>
+<td><p>b类</p></td>
+<td><p>c类</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="image" src="media/image125.svg" /></p></td>
+<td><p>c类</p></td>
+<td><p>c类</p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>注：1. a<em>类含义为Q235钢取b类，Q345、Q390、Q420和Q460取a类； b</em>类含义为Q235钢取c类，Q345、Q390、Q420和Q460取b类。<br />
+2. 无对称轴构件，截面分类取C类。</p>
+<p><strong>表7.2.1-2  轴心受压构件的截面分类（板厚<span class="math notranslate nohighlight">\(t \ge 40\)</span>mm）</strong></p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>截面形式</p></th>
+<th class="head"><p>对x轴</p></th>
+<th class="head"><p>对y轴</p></th>
+<th class="head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><img alt="image" src="media/image126.svg" /></p></td>
+<td><p><span class="math notranslate nohighlight">\(t &lt; 80\)</span>mm</p></td>
+<td><p>b类</p></td>
+<td><p>c类</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="image" src="media/image126.svg" /></p></td>
+<td><p><span class="math notranslate nohighlight">\(t \ge 80\)</span>mm</p></td>
+<td><p>c类</p></td>
+<td><p>d类</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="image" src="media/image127.svg" /></p></td>
+<td><p>翼缘为焰切边</p></td>
+<td><p>b类</p></td>
+<td><p>b类</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="image" src="media/image127.svg" /></p></td>
+<td><p>翼缘为轧制或剪切边</p></td>
+<td><p>c类</p></td>
+<td><p>d类</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="image" src="media/image127.svg" /></p></td>
+<td><p>板件宽厚比<span class="math notranslate nohighlight">\( &gt; 20\)</span></p></td>
+<td><p>b类</p></td>
+<td><p>b类</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="image" src="media/image127.svg" /></p></td>
+<td><p>板件宽厚比<span class="math notranslate nohighlight">\( \le 20\)</span></p></td>
+<td><p>c类</p></td>
+<td><p>c类</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="lambda">
+<h3>2. 实腹式构件的长细比<span class="math notranslate nohighlight">\(\lambda\)</span>应根据其失稳模式，由下列各款确定：<a class="headerlink" href="#lambda" title="Link to this heading">#</a></h3>
+<section id="id11">
+<h4>1. 截面形心与剪心重合的构件<a class="headerlink" href="#id11" title="Link to this heading">#</a></h4>
+<ol class="arabic simple">
+<li><p>当计算弯曲屈曲时长细比按下式计算：</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+\lambda_{\text{x}} = \frac{l_{\text{0x}}}{i_{\text{x}}} \tag{7.2.2-1}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+\lambda_{\text{y}} = \frac{l_{\text{0y}}}{i_{\text{y}}} \tag{7.2.2-2}
+\]</div>
+<p>式中：<span class="math notranslate nohighlight">\(l_{\text{0x}}\)</span>、<span class="math notranslate nohighlight">\(l_{\text{0y}}\)</span>——分别为构件对截面主轴x和y的计算长度，根据本规范第7.4节的规定采用；<br />
+<span class="math notranslate nohighlight">\(i_{\text{x}}\)</span>、<span class="math notranslate nohighlight">\(i_{\text{y}}\)</span>——分别为构件截面对主轴x和y的回转半径。</p>
+<ol class="arabic simple" start="2">
+<li><p>当计算扭转屈曲时，长细比按下式计算：</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+\lambda_{\text{z}} = \sqrt{\frac{I_0}{I_t/25.7 + I_\omega/l_\omega^2}} \tag{7.2.2-3}
+\]</div>
+<p>式中：<span class="math notranslate nohighlight">\(I_0\)</span>、<span class="math notranslate nohighlight">\(I_t\)</span>、<span class="math notranslate nohighlight">\(I_\omega\)</span>——分别为构件毛截面对剪心的极惯性矩、截面抗扭惯性矩和扇性惯性矩，对十字形截面可近似取<span class="math notranslate nohighlight">\(I_\omega = 0\)</span>；<br />
+<span class="math notranslate nohighlight">\(l_\omega\)</span>——扭转屈曲的计算长度，两端铰支且端截面可自由翘曲者，取几何长度<span class="math notranslate nohighlight">\(l\)</span>；两端嵌固且端部截面的翘曲完全受到约束者，取<span class="math notranslate nohighlight">\(0.5l\)</span>。</p>
+<p>双轴对称十字形截面板件宽厚比不超过<span class="math notranslate nohighlight">\(15\varepsilon_{\text{k}}\)</span>者，可不计算扭转屈曲。</p>
+</section>
+<section id="id12">
+<h4>2. 截面为单轴对称的构件<a class="headerlink" href="#id12" title="Link to this heading">#</a></h4>
+<section id="id13">
+<h5>1. 绕非对称主轴的弯曲屈曲，长细比应由式（7.2.2-1、2）确定。绕对称轴主轴的弯扭屈曲，应取下式给出的换算长细比：<a class="headerlink" href="#id13" title="Link to this heading">#</a></h5>
+<div class="math notranslate nohighlight">
+\[
+\lambda_{\text{yz}} = \frac{1}{\sqrt{2}} \left[ (\lambda_{\text{y}}^2 + \lambda_{\text{z}}^2) + \sqrt{(\lambda_{\text{y}}^2 + \lambda_{\text{z}}^2)^2 - 4\left(1 - \frac{y_s^2}{i_0^2}\right)\lambda_{\text{y}}^2 \lambda_{\text{z}}^2} \right]^{\frac{1}{2}} \tag{7.2.2-4}
+\]</div>
+<p>式中：<span class="math notranslate nohighlight">\(y_s\)</span>——截面形心至剪心的距离；<br />
+<span class="math notranslate nohighlight">\(i_0\)</span>——截面对剪心的极回转半径，单轴对称截面<span class="math notranslate nohighlight">\(i_0^2 = y_s^2 + i_{\text{x}}^2 + i_{\text{y}}^2\)</span>；<br />
+<span class="math notranslate nohighlight">\(\lambda_z\)</span>——扭转屈曲换算长细比，由式（7.2.2-3）确定。</p>
+</section>
+<section id="id14">
+<h5>2. 等边单角钢轴压构件当绕两主轴弯曲的计算长度相等时，可不计算弯扭屈曲。塔架单角钢压杆应符合本规范第7.6节的相关规定。<a class="headerlink" href="#id14" title="Link to this heading">#</a></h5>
+</section>
+<section id="t-lambda-text-yz">
+<h5>3. 双角钢组合T形截面构件绕对称轴的换算长细比<span class="math notranslate nohighlight">\(\lambda_{\text{yz}}\)</span>可用下列简化公式确定：<a class="headerlink" href="#t-lambda-text-yz" title="Link to this heading">#</a></h5>
+<p>等边双角钢（图7.2.1-1a）<br />
+当<span class="math notranslate nohighlight">\(\lambda_{\text{y}} &gt; \lambda_{\text{z}}\)</span>时：</p>
+<div class="math notranslate nohighlight">
+\[
+\lambda_{\text{yz}} = \lambda_{\text{y}} \left[ 1 + 0.16 \left( \frac{\lambda_{\text{z}}}{\lambda_{\text{y}}} \right)^2 \right] \tag{7.2.2-5a}
+\]</div>
+<p>当<span class="math notranslate nohighlight">\(\lambda_{\text{y}} &lt; \lambda_{\text{z}}\)</span>时：</p>
+<div class="math notranslate nohighlight">
+\[
+\lambda_{\text{yz}} = \lambda_{\text{z}} \left[ 1 + 0.16 \left( \frac{\lambda_{\text{y}}}{\lambda_{\text{z}}} \right)^2 \right] \tag{7.2.2-5b}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+\lambda_{\text{z}} = 3.9 \frac{b}{t} \tag{7.2.2-6}
+\]</div>
+<p>长肢相并的不等边双角钢（图7.2.1-1b）<br />
+当<span class="math notranslate nohighlight">\(\lambda_{\text{y}} &gt; \lambda_{\text{z}}\)</span>时：</p>
+<div class="math notranslate nohighlight">
+\[
+\lambda_{\text{yz}} = \lambda_{\text{y}} \left[ 1 + 0.25 \left( \frac{\lambda_{\text{z}}}{\lambda_{\text{y}}} \right)^2 \right] \tag{7.2.2-7a}
+\]</div>
+<p>当<span class="math notranslate nohighlight">\(\lambda_{\text{y}} &lt; \lambda_{\text{z}}\)</span>时：</p>
+<div class="math notranslate nohighlight">
+\[
+\lambda_{\text{yz}} = \lambda_{\text{z}} \left[ 1 + 0.25 \left( \frac{\lambda_{\text{y}}}{\lambda_{\text{z}}} \right)^2 \right] \tag{7.2.2-7b}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+\lambda_{\text{z}} = 5.1 \frac{b_2}{t} \tag{7.2.2-8}
+\]</div>
+<p>短肢相并的不等边双角钢（图7.2.1-1c）<br />
+当<span class="math notranslate nohighlight">\(\lambda_{\text{y}} &gt; \lambda_{\text{z}}\)</span>时：</p>
+<div class="math notranslate nohighlight">
+\[
+\lambda_{\text{yz}} = \lambda_{\text{y}} \left[ 1 + 0.06 \left( \frac{\lambda_{\text{z}}}{\lambda_{\text{y}}} \right)^2 \right] \tag{7.2.2-9a}
+\]</div>
+<p>当<span class="math notranslate nohighlight">\(\lambda_{\text{y}} &lt; \lambda_{\text{z}}\)</span>时：</p>
+<div class="math notranslate nohighlight">
+\[
+\lambda_{\text{yz}} = \lambda_{\text{z}} \left[ 1 + 0.06 \left( \frac{\lambda_{\text{y}}}{\lambda_{\text{z}}} \right)^2 \right] \tag{7.2.2-9b}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+\lambda_{\text{z}} = 3.7 \frac{b_1}{t} \tag{7.2.2-10}
+\]</div>
+<p><img alt="image" src="media/image129.svg" /> <img alt="image" src="media/image130.svg" /> <img alt="image" src="media/image131.svg" /><br />
+(a) (b) (c)<br />
+图7.2.2-1 单角钢截面和双角钢组合T形截面<br />
+<span class="math notranslate nohighlight">\(b\)</span>— 等边角钢肢宽度；<span class="math notranslate nohighlight">\(b_1\)</span>— 不等边角钢长肢宽度；<span class="math notranslate nohighlight">\(b_2\)</span>— 不等边角钢短肢宽度</p>
+</section>
+</section>
+<section id="id15">
+<h4>3. 截面无对称轴且剪心和形心不重合的构件，应采用下列换算长细比：<a class="headerlink" href="#id15" title="Link to this heading">#</a></h4>
+<div class="math notranslate nohighlight">
+\[
+\lambda_{\text{xyz}} = \pi \sqrt{\frac{EA}{N_{\text{xyz}}}} \tag{7.2.2-11}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+(N_{\text{x}} - N_{\text{xyz}})(N_{\text{y}} - N_{\text{xyz}})(N_{\text{z}} - N_{\text{xyz}}) - N_{\text{xyz}}^2 (N_{\text{x}} - N_{\text{xyz}}) \left( \frac{y_s}{i_0} \right)^2 - N_{\text{xyz}}^2 (N_{\text{y}} - N_{\text{xyz}}) \left( \frac{x_s}{i_0} \right)^2 = 0 \tag{7.2.2-12}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+i_0^2 = i_{\text{x}}^2 + i_{\text{y}}^2 + x_s^2 + y_s^2 \tag{7.2.2-13}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+N_{\text{x}} = \frac{\pi^2 EA}{\lambda_{\text{x}}^2} \tag{7.2.2-14}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+N_{\text{y}} = \frac{\pi^2 EA}{\lambda_{\text{y}}^2} \tag{7.2.2-15}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+N_{\text{z}} = \frac{1}{i_0^2} \left( \frac{\pi^2 E I_\omega}{l_\omega^2} + G I_t \right) \tag{7.2.2-16}
+\]</div>
+<p>式中：<span class="math notranslate nohighlight">\(N_{\text{xyz}}\)</span>——弹性完善杆的弯扭屈曲临界力，由式（7.2.2-12）确定；<br />
+<span class="math notranslate nohighlight">\(x_s, y_s\)</span>——截面剪心的坐标；<br />
+<span class="math notranslate nohighlight">\(i_0\)</span>——截面对剪心的极回转半径；<br />
+<span class="math notranslate nohighlight">\(N_{\text{x}}, N_{\text{y}}, N_{\text{z}}\)</span>——分别为绕x轴和y轴的弯曲屈曲临界力和扭转屈曲临界力；<br />
+<span class="math notranslate nohighlight">\(E, G\)</span>——分别为钢材弹性模量和剪变模量。</p>
+</section>
+<section id="id16">
+<h4>4. 不等边角钢轴压构件的换算长细比可用下列简化公式确定（图7.2.2-2）：<a class="headerlink" href="#id16" title="Link to this heading">#</a></h4>
+<p>当<span class="math notranslate nohighlight">\(\lambda_{\text{x}} &gt; \lambda_{\text{z}}\)</span>时：</p>
+<div class="math notranslate nohighlight">
+\[
+\lambda_{\text{xyz}} = \lambda_{\text{x}} \left[ 1 + 0.25 \left( \frac{\lambda_{\text{z}}}{\lambda_{\text{x}}} \right)^2 \right] \tag{7.2.2-17a}
+\]</div>
+<p>当<span class="math notranslate nohighlight">\(\lambda_{\text{x}} &lt; \lambda_{\text{z}}\)</span>时：</p>
+<div class="math notranslate nohighlight">
+\[
+\lambda_{\text{xyz}} = \lambda_{\text{z}} \left[ 1 + 0.25 \left( \frac{\lambda_{\text{x}}}{\lambda_{\text{z}}} \right)^2 \right] \tag{7.2.2-17b}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+\lambda_{\text{z}} = 4.21 \frac{b_1}{t} \tag{7.2.2-18}
+\]</div>
+<p>式中：<span class="math notranslate nohighlight">\(x\)</span>轴为角钢的主轴，<span class="math notranslate nohighlight">\(b_1\)</span>为角钢长肢宽度。</p>
+<p><img alt="image" src="media/image132.svg" /><br />
+图7.2.2-2 不等边角钢</p>
+</section>
+</section>
+<section id="ax7-2-3bcxy">
+<h3>3. 格构式轴心受压构件对实轴长细比应按本规范第7.2.2条计算，对虚轴（图7.2.3a的x轴和图7.2.3b、c的x轴和y轴）应取换算长细比。换算长细比应按下列公式计算：<a class="headerlink" href="#ax7-2-3bcxy" title="Link to this heading">#</a></h3>
+<section id="a">
+<h4>1. 双肢组合构件（图7.2.3a）<a class="headerlink" href="#a" title="Link to this heading">#</a></h4>
+<p>当缀件为缀板时：</p>
+<div class="math notranslate nohighlight">
+\[
+\lambda_{\text{0x}} = \sqrt{\lambda_{\text{x}}^2 + \lambda_{\text{1}}^2} \tag{7.2.3-1}
+\]</div>
+<p>当缀件为缀条时：</p>
+<div class="math notranslate nohighlight">
+\[
+\lambda_{\text{0x}} = \sqrt{\lambda_{\text{x}}^2 + 27\frac{A}{A_{\text{1x}}}} \tag{7.2.3-2}
+\]</div>
+<p>式中：</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\lambda_{\text{x}}\)</span>——整个构件对x轴的长细比；</p></li>
+<li><p><span class="math notranslate nohighlight">\(\lambda_{\text{1}}\)</span>——分肢对最小刚度轴1-1的长细比，其计算长度取为：焊接时，为相邻两缀板的净距离；螺栓连接时，为相邻两缀板边缘螺栓的距离；</p></li>
+<li><p><span class="math notranslate nohighlight">\(A_{\text{1x}}\)</span>——构件截面中垂直于x轴的各斜缀条毛截面面积之和。</p></li>
+</ul>
+</section>
+<section id="b">
+<h4>2. 四肢组合构件（图7.2.3b）<a class="headerlink" href="#b" title="Link to this heading">#</a></h4>
+<p>当缀件为缀板时：</p>
+<div class="math notranslate nohighlight">
+\[
+\lambda_{\text{0x}} = \sqrt{\lambda_{\text{x}}^2 + \lambda_{\text{1}}^2} \tag{7.2.3-3}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+\lambda_{\text{0y}} = \sqrt{\lambda_{\text{y}}^2 + \lambda_{\text{1}}^2} \tag{7.2.3-4}
+\]</div>
+<p>当缀件为缀条时：</p>
+<div class="math notranslate nohighlight">
+\[
+\lambda_{\text{0x}} = \sqrt{\lambda_{\text{x}}^2 + 40\frac{A}{A_{\text{1x}}}} \tag{7.2.3-5}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+\lambda_{\text{0y}} = \sqrt{\lambda_{\text{y}}^2 + 40\frac{A}{A_{\text{1y}}}} \tag{7.2.3-6}
+\]</div>
+<p>式中：</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\lambda_{\text{y}}\)</span>——整个构件对y轴的长细比；</p></li>
+<li><p><span class="math notranslate nohighlight">\(A_{\text{1y}}\)</span>——构件截面中垂直于y轴的各斜缀条毛截面面积之和。</p></li>
+</ul>
+</section>
+<section id="c">
+<h4>3. 缀件为缀条的三肢组合构件（图7.2.3c）<a class="headerlink" href="#c" title="Link to this heading">#</a></h4>
+<div class="math notranslate nohighlight">
+\[
+\lambda_{\text{0x}} = \sqrt{\lambda_{\text{x}}^2 + \frac{42A}{A_{\text{1}}(1.5 - \cos^2\theta)}} \tag{7.2.3-7}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+\lambda_{\text{0y}} = \sqrt{\lambda_{\text{y}}^2 + \frac{42A}{A_{\text{1}}\cos^2\theta}} \tag{7.2.3-8}
+\]</div>
+<p>式中：</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(A_{\text{1}}\)</span>——构件截面中各斜缀条毛截面面积之和；</p></li>
+<li><p><span class="math notranslate nohighlight">\(\theta\)</span>——构件截面内缀条所在平面与x轴的夹角。</p></li>
+</ul>
+<p><img alt="image" src="media/image133.svg" />
+图7.2.3  格构式组合构件截面</p>
+</section>
+<section id="lambda-text-1-lambda-text-max-0-7-98m">
+<h4>4. 缀件面宽度较大的格构式柱宜采用缀条柱，斜缀条与构件轴线间的夹角应在40°~70°范围内。缀条柱的分肢长细比<span class="math notranslate nohighlight">\(\lambda_{\text{1}}\)</span>不应大于构件两方向长细比（对虚轴取换算长细比）的较大值<span class="math notranslate nohighlight">\(\lambda_{\text{max}}\)</span>的0.7倍。格构式柱和大型实腹式柱，在受有较大水平力处和运送单元的端部应设置横隔，横隔的间距不宜大于柱截面长边尺寸的9倍和8m。<a class="headerlink" href="#lambda-text-1-lambda-text-max-0-7-98m" title="Link to this heading">#</a></h4>
+</section>
+<section id="lambda-text-1-40-varepsilon-text-k-lambda-text-max-0-5-lambda-text-max-50-lambda-text-max-50-6">
+<h4>5. 缀板柱的分肢长细比<span class="math notranslate nohighlight">\(\lambda_{\text{1}}\)</span>不应大于<span class="math notranslate nohighlight">\(40\varepsilon_{\text{k}}\)</span>，并不应大于<span class="math notranslate nohighlight">\(\lambda_{\text{max}}\)</span>的0.5倍（当<span class="math notranslate nohighlight">\(\lambda_{\text{max}} &lt; 50\)</span>时，取<span class="math notranslate nohighlight">\(\lambda_{\text{max}} = 50\)</span>）。缀板柱中同一截面处缀板（或型钢横杆）的线刚度之和不得小于柱较大分肢线刚度的6倍。<a class="headerlink" href="#lambda-text-1-40-varepsilon-text-k-lambda-text-max-0-5-lambda-text-max-50-lambda-text-max-50-6" title="Link to this heading">#</a></h4>
+</section>
+<section id="id17">
+<h4>6. 用填板连接而成的双角钢或双槽钢构件，采用普通螺栓连接时应按格构式构件进行计算，除此之外，可按实腹式构件进行计算，但填板间的距离不应超过下列数值：<a class="headerlink" href="#id17" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p>受压构件：<span class="math notranslate nohighlight">\(40i\varepsilon_{\text{k}}\)</span>；</p></li>
+<li><p>受拉构件：<span class="math notranslate nohighlight">\(80i\)</span>。</p></li>
+</ul>
+<p><span class="math notranslate nohighlight">\(i\)</span>为单肢回转半径，应按下列规定采用：</p>
+<ol class="arabic simple">
+<li><p>当为图7.2.6a、b所示的双角钢或双槽钢截面时，取一个角钢或一个槽钢对与填板平行的形心轴的回转半径；</p></li>
+<li><p>当为图7.2.6c所示的十字形截面时，取一个角钢的最小回转半径。</p></li>
+</ol>
+<p>受压构件的两个侧向支承点之间的填板数不应少于2个。</p>
+<p><img alt="image" src="media/image134.svg" />
+图7.2.6  计算截面回转半径时的轴线示意图</p>
+</section>
+<section id="id18">
+<h4>7. 轴压构件应按下式计算剪力：<a class="headerlink" href="#id18" title="Link to this heading">#</a></h4>
+<div class="math notranslate nohighlight">
+\[
+V = \frac{Af}{85} \tag{7.2.7}
+\]</div>
+<p>剪力<span class="math notranslate nohighlight">\(V\)</span>值可认为沿构件全长不变。对格构式轴压构件，剪力<span class="math notranslate nohighlight">\(V\)</span>应由承受该剪力的缀材面（包括用整体板连接的面）分担。</p>
+</section>
+<section id="aa-1-phi">
+<h4>8. 两端铰支的梭形圆管或方管状截面轴压构件（图7.2.8）的稳定性应按式（7.2.1-1）计算。计算时<span class="math notranslate nohighlight">\(A\)</span>取端截面的截面面积<span class="math notranslate nohighlight">\(A_1\)</span>，稳定系数<span class="math notranslate nohighlight">\(\phi\)</span>按下列换算长细比确定：<a class="headerlink" href="#aa-1-phi" title="Link to this heading">#</a></h4>
+<div class="math notranslate nohighlight">
+\[
+\lambda_s = \frac{l_0/i_1}{(1 + \gamma)^{3/4}} \tag{7.2.8-1}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+l_0 = \frac{l}{2}\left[1 + (1 + 0.853\gamma)^{-1}\right] \tag{7.2.8-2}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+\gamma = \frac{d_2 - d_1}{d_1} \text{或} \frac{b_2 - b_1}{b_1} \tag{7.2.8-3}
+\]</div>
+<p><img alt="image" src="media/image137.svg" />
+图7.2.8  梭形管状轴压构件</p>
+<p>式中：</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(l_0\)</span>——构件计算长度；</p></li>
+<li><p><span class="math notranslate nohighlight">\(i_1\)</span>——端截面回转半径；</p></li>
+<li><p><span class="math notranslate nohighlight">\(\gamma\)</span>——构件楔率；</p></li>
+<li><p><span class="math notranslate nohighlight">\(d_2\)</span>——中央截面外径（圆管），边长（方管）；</p></li>
+<li><p><span class="math notranslate nohighlight">\(d_1\)</span>——端截面外径（圆管），边长（方管）。</p></li>
+</ul>
+</section>
+<section id="phib">
+<h4>9. 两端铰支的多肢钢管梭形格构柱应按式（7.2.1-1）计算整体稳定。稳定系数<span class="math notranslate nohighlight">\(\phi\)</span>依据b类截面按下列换算长细比确定：<a class="headerlink" href="#phib" title="Link to this heading">#</a></h4>
+<div class="math notranslate nohighlight">
+\[
+\lambda_0 = \pi \sqrt{\frac{nA_sE}{N_{\text{cr}}}} \tag{7.2.9-1}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+N_{\text{cr}} = \min(N_{\text{cr,s}}, N_{\text{cr,a}}) \tag{7.2.9-2}
+\]</div>
+<p><img alt="image" src="media/image139.svg" />
+图7.2.9  钢管梭形格构柱</p>
+<p>式中：</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(n\)</span>——钢管分肢数；</p></li>
+<li><p><span class="math notranslate nohighlight">\(A_s\)</span>——单根分肢的截面面积；</p></li>
+<li><p><span class="math notranslate nohighlight">\(N_{\text{cr,s}}\)</span>、<span class="math notranslate nohighlight">\(N_{\text{cr,a}}\)</span>——分别为特征值屈曲荷载、对称屈曲模态与反对称屈曲模态对应的特征值屈曲荷载。</p></li>
+</ul>
+<p>应按下列方法计算。</p>
+<ol class="arabic simple">
+<li><p><span class="math notranslate nohighlight">\(N_{\text{cr,s}}\)</span>按下列公式计算：</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+N_{\text{cr,s}} = \frac{N_{\text{cr0,s}}}{1 + \frac{N_{\text{cr0,s}}}{K_{\text{v,s}}}} \tag{7.2.9-3}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+N_{\text{cr0,s}} = \frac{\pi^2 E I_0}{L^2}(1 + 0.72\eta_1 + 0.28\eta_2) \tag{7.2.9-4}
+\]</div>
+<ol class="arabic simple" start="2">
+<li><p><span class="math notranslate nohighlight">\(N_{\text{cr,a}}\)</span>按下列公式计算：</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+N_{\text{cr,a}} = \frac{N_{\text{cr0,a}}}{1 + \frac{N_{\text{cr0,a}}}{K_{\text{v,a}}}} \tag{7.2.9-5}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+N_{\text{cr0,a}} = \frac{4\pi^2 E I_0}{L^2}(1 + 0.48\eta_1 + 0.12\eta_2) \tag{7.2.9-6}
+\]</div>
+<p>式中：</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(I_0, I_1, I_m\)</span>——分别为钢管梭形格构柱柱端（小头）、柱在1/4跨处以及跨中（大头）对应的惯性矩（图7.2.9）；</p></li>
+<li><p><span class="math notranslate nohighlight">\(K_{\text{v,s}}, K_{\text{v,a}}\)</span>——分别为对称屈曲与反对称屈曲对应的截面抗剪刚度；</p></li>
+<li><p><span class="math notranslate nohighlight">\(\eta_1, \eta_2\)</span>——与截面惯性矩有关的计算系数，三肢时按下列公式计算：</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+\eta_1 = \frac{4I_m - I_1 - 3I_0}{I_0} \tag{7.2.9-7}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+\eta_2 = 2\frac{I_0 + I_1 - 2I_m}{I_0} \tag{7.2.9-8}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+I_0 = 3I_s + 0.5b_0^2A_s \tag{7.2.9-9}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+I_m = 3I_s + 0.5b_m^2A_s \tag{7.2.9-10}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+I_1 = 3I_s + 0.5b_1^2A_s \tag{7.2.9-11}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+K_{\text{v,s}} = \frac{1}{\frac{l_{\text{s0}}b_0}{18EI_{\text{d}}} + \frac{5l_{\text{s0}}^2}{144EI_{\text{s}}}} \tag{7.2.9-12}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+K_{\text{v,a}} = \frac{1}{\frac{l_{\text{s0}}b_0}{18EI_{\text{d}}} + \frac{5l_{\text{s0}}^2}{144EI_{\text{s}}}} \tag{7.2.9-13}
+\]</div>
+<p>式中：</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(b_0, b_1, b_m\)</span>——分别为梭形柱柱头、1/4跨截面和跨中截面的边长；</p></li>
+<li><p><span class="math notranslate nohighlight">\(l_{\text{s0}}\)</span>——梭形柱节间高度；</p></li>
+<li><p><span class="math notranslate nohighlight">\(I_{\text{d}}, I_{\text{s}}\)</span>——横缀杆和弦杆的惯性矩；</p></li>
+<li><p><span class="math notranslate nohighlight">\(A_s\)</span>——单个分肢的截面面积；</p></li>
+<li><p><span class="math notranslate nohighlight">\(E\)</span>——材料的弹性模量。</p></li>
+</ul>
+<ol class="arabic simple" start="3">
+<li><p>钢管梭形格构柱的跨中截面应设置横隔。横隔可采用水平放置的钢板且与周边缀管焊接，或采用水平放置的钢管并使跨中截面成为稳定截面。</p></li>
+</ol>
+</section>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="6%20%E5%8F%97%E5%BC%AF%E6%9E%84%E4%BB%B6.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">6 受弯构件</p>
+      </div>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">7.1 截面强度计算</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">1. 轴心受拉构件，当端部连接（及中部拼接）处组成截面的各板件都有连接件直接传力时，除采用高强度螺栓摩擦型连接者外，其截面强度计算应符合下列规定：</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">毛截面屈服：</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">净截面断裂：</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">1. 当构件为沿全长都有排列较密螺栓的组合构件时，其截面强度应按下式计算：</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">2. 除第1款的情形外，其毛截面强度计算应采用式（7.1.1-1），净截面强度应按下式计算：</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">2. 轴心受压构件，当端部连接（及中部拼接）处组成截面的各板件都有连接件直接传力时，截面强度应按式（7.1.1-1）计算。但含有虚孔的构件尚需在孔心所在截面按式（7.1.1-2）计算。</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#beta-beta7-1-3">3. 轴拉和轴压构件，当其组成板件在节点或拼接处并非全部直接传力时，应对危险截面的面积乘以有效截面系数<span class="math notranslate nohighlight">\(\beta\)</span>，不同构件截面形式和连接方式的<span class="math notranslate nohighlight">\(\beta\)</span>值应符合表7.1.3的规定。</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">7.2 轴压构件的稳定性计算</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">1. 轴压构件的稳定性应按下式计算：</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lambda">2. 实腹式构件的长细比<span class="math notranslate nohighlight">\(\lambda\)</span>应根据其失稳模式，由下列各款确定：</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">1. 截面形心与剪心重合的构件</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">2. 截面为单轴对称的构件</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">1. 绕非对称主轴的弯曲屈曲，长细比应由式（7.2.2-1、2）确定。绕对称轴主轴的弯扭屈曲，应取下式给出的换算长细比：</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">2. 等边单角钢轴压构件当绕两主轴弯曲的计算长度相等时，可不计算弯扭屈曲。塔架单角钢压杆应符合本规范第7.6节的相关规定。</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#t-lambda-text-yz">3. 双角钢组合T形截面构件绕对称轴的换算长细比<span class="math notranslate nohighlight">\(\lambda_{\text{yz}}\)</span>可用下列简化公式确定：</a></li>
+</ul>
+</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">3. 截面无对称轴且剪心和形心不重合的构件，应采用下列换算长细比：</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">4. 不等边角钢轴压构件的换算长细比可用下列简化公式确定（图7.2.2-2）：</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ax7-2-3bcxy">3. 格构式轴心受压构件对实轴长细比应按本规范第7.2.2条计算，对虚轴（图7.2.3a的x轴和图7.2.3b、c的x轴和y轴）应取换算长细比。换算长细比应按下列公式计算：</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#a">1. 双肢组合构件（图7.2.3a）</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#b">2. 四肢组合构件（图7.2.3b）</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#c">3. 缀件为缀条的三肢组合构件（图7.2.3c）</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#lambda-text-1-lambda-text-max-0-7-98m">4. 缀件面宽度较大的格构式柱宜采用缀条柱，斜缀条与构件轴线间的夹角应在40°~70°范围内。缀条柱的分肢长细比<span class="math notranslate nohighlight">\(\lambda_{\text{1}}\)</span>不应大于构件两方向长细比（对虚轴取换算长细比）的较大值<span class="math notranslate nohighlight">\(\lambda_{\text{max}}\)</span>的0.7倍。格构式柱和大型实腹式柱，在受有较大水平力处和运送单元的端部应设置横隔，横隔的间距不宜大于柱截面长边尺寸的9倍和8m。</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#lambda-text-1-40-varepsilon-text-k-lambda-text-max-0-5-lambda-text-max-50-lambda-text-max-50-6">5. 缀板柱的分肢长细比<span class="math notranslate nohighlight">\(\lambda_{\text{1}}\)</span>不应大于<span class="math notranslate nohighlight">\(40\varepsilon_{\text{k}}\)</span>，并不应大于<span class="math notranslate nohighlight">\(\lambda_{\text{max}}\)</span>的0.5倍（当<span class="math notranslate nohighlight">\(\lambda_{\text{max}} &lt; 50\)</span>时，取<span class="math notranslate nohighlight">\(\lambda_{\text{max}} = 50\)</span>）。缀板柱中同一截面处缀板（或型钢横杆）的线刚度之和不得小于柱较大分肢线刚度的6倍。</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">6. 用填板连接而成的双角钢或双槽钢构件，采用普通螺栓连接时应按格构式构件进行计算，除此之外，可按实腹式构件进行计算，但填板间的距离不应超过下列数值：</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">7. 轴压构件应按下式计算剪力：</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#aa-1-phi">8. 两端铰支的梭形圆管或方管状截面轴压构件（图7.2.8）的稳定性应按式（7.2.1-1）计算。计算时<span class="math notranslate nohighlight">\(A\)</span>取端截面的截面面积<span class="math notranslate nohighlight">\(A_1\)</span>，稳定系数<span class="math notranslate nohighlight">\(\phi\)</span>按下列换算长细比确定：</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#phib">9. 两端铰支的多肢钢管梭形格构柱应按式（7.2.1-1）计算整体稳定。稳定系数<span class="math notranslate nohighlight">\(\phi\)</span>依据b类截面按下列换算长细比确定：</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By 游田重新排版
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2025.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
