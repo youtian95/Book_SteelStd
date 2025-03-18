@@ -1,0 +1,726 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>9 加劲钢板剪力墙 &#8212; 钢结构设计标准 GB 50017-2017</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="_static/mystyle.css?v=63ecd79b" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '9 加劲钢板剪力墙';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="10 塑性及弯矩调幅设计" href="10%20%E5%A1%91%E6%80%A7%E5%8F%8A%E5%BC%AF%E7%9F%A9%E8%B0%83%E5%B9%85%E8%AE%BE%E8%AE%A1.html" />
+    <link rel="prev" title="8 拉弯、压弯构件" href="8%20%E6%8B%89%E5%BC%AF%E3%80%81%E5%8E%8B%E5%BC%AF%E6%9E%84%E4%BB%B6.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="README.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="钢结构设计标准 GB 50017-2017 - Home"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="钢结构设计标准 GB 50017-2017 - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="README.html">
+                    《钢结构设计标准 GB 50017-2017》
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="%E5%89%8D%E8%A8%80.html">前言</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E7%9B%AE%E5%BD%95.html">目次</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="1%20%E6%80%BB%E5%88%99.html">1 总则</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2%20%E6%9C%AF%E8%AF%AD%E5%92%8C%E7%AC%A6%E5%8F%B7.html">2 术语和符号</a></li>
+<li class="toctree-l1"><a class="reference internal" href="3%20%E5%9F%BA%E6%9C%AC%E8%AE%BE%E8%AE%A1%E8%A7%84%E5%AE%9A.html">3 基本设计规定</a></li>
+<li class="toctree-l1"><a class="reference internal" href="4%20%E6%9D%90%E6%96%99%E5%92%8C%E6%9D%90%E6%96%99%E9%80%89%E7%94%A8.html">4 材料和材料选用</a></li>
+<li class="toctree-l1"><a class="reference internal" href="5%20%E7%BB%93%E6%9E%84%E5%88%86%E6%9E%90%E4%B8%8E%E7%A8%B3%E5%AE%9A%E6%80%A7%E8%AE%BE%E8%AE%A1.html">5 结构分析与稳定性设计</a></li>
+<li class="toctree-l1"><a class="reference internal" href="6%20%E5%8F%97%E5%BC%AF%E6%9E%84%E4%BB%B6.html">6 受弯构件</a></li>
+<li class="toctree-l1"><a class="reference internal" href="7%20%E8%BD%B4%E5%BF%83%E5%8F%97%E5%8A%9B%E6%9E%84%E4%BB%B6.html">7 轴心受力构件</a></li>
+<li class="toctree-l1"><a class="reference internal" href="8%20%E6%8B%89%E5%BC%AF%E3%80%81%E5%8E%8B%E5%BC%AF%E6%9E%84%E4%BB%B6.html">8 拉弯、压弯构件</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">9 加劲钢板剪力墙</a></li>
+<li class="toctree-l1"><a class="reference internal" href="10%20%E5%A1%91%E6%80%A7%E5%8F%8A%E5%BC%AF%E7%9F%A9%E8%B0%83%E5%B9%85%E8%AE%BE%E8%AE%A1.html">10 塑性及弯矩调幅设计</a></li>
+<li class="toctree-l1"><a class="reference internal" href="11%20%E8%BF%9E%E6%8E%A5.html">11 连接</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/youtian95/Book_SteelStd" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/youtian95/Book_SteelStd/issues/new?title=Issue%20on%20page%20%2F9 加劲钢板剪力墙.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/9 加劲钢板剪力墙.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>9 加劲钢板剪力墙</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">9.1 一般规定</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">9.2 加劲钢板剪力墙的计算</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">9.2.1 本节适用于不考虑屈曲后强度的钢板剪力墙。</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">9.2.2 竖直方向加劲肋在构造上宜采取不承受竖向力的措施。</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">9.2.3 同时设置水平和竖直方向加劲肋的钢板剪力墙</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">9.2.4 同时设置水平和竖直方向加劲肋的钢板剪力墙</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">9.2.5 设置加劲的钢板剪力墙</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">9.2.5.1 正则化长细比应根据下列公式计算：</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">9.2.5.2 弹塑性稳定系数应根据下列公式计算：</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">9.2.5.3 稳定性计算应符合下列公式要求：</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">9.2.6 双向加劲钢板剪力墙</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">9.3 构造要求</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="id1">
+<h1>9 加劲钢板剪力墙<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
+<section id="id2">
+<h2>9.1 一般规定<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>钢板剪力墙可采用纯钢板剪力墙、防屈曲钢板剪力墙及组合剪力墙，纯钢板剪力墙可采用非加劲钢板剪力墙和加劲钢板剪力墙。</p></li>
+<li><p>钢板剪力墙不宜承受恒荷载。竖直方向加劲肋宜双面设置或交替双面设置，水平方向加劲肋可单面、双面或交替双面设置。</p></li>
+</ol>
+</section>
+<section id="id3">
+<h2>9.2 加劲钢板剪力墙的计算<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
+<section id="id4">
+<h3>9.2.1 本节适用于不考虑屈曲后强度的钢板剪力墙。<a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
+</section>
+<section id="id5">
+<h3>9.2.2 竖直方向加劲肋在构造上宜采取不承受竖向力的措施。<a class="headerlink" href="#id5" title="Link to this heading">#</a></h3>
+</section>
+<section id="id6">
+<h3>9.2.3 同时设置水平和竖直方向加劲肋的钢板剪力墙<a class="headerlink" href="#id6" title="Link to this heading">#</a></h3>
+<p>纵横加劲肋划分的剪力墙板区格的宽高比宜接近1，剪力墙板区格的宽厚比应符合下列规定：</p>
+<ol class="arabic simple">
+<li><p><strong>采用开口加劲肋时</strong>：
+$<span class="math notranslate nohighlight">\(
+ \frac{{a_1 + h_1}}{{t_{\rm{w}}}} \leq 220\varepsilon_{\rm{k}} \tag{9.2.3-1}
+ \)</span>$</p></li>
+<li><p><strong>采用闭口加劲肋时</strong>：
+$<span class="math notranslate nohighlight">\(
+ \frac{{a_1 + h_1}}{{t_{\rm{w}}}} \leq 250\varepsilon_{\rm{k}} \tag{9.2.3-2}
+ \)</span>$</p></li>
+</ol>
+<p>式中：</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(a_1\)</span> —— 剪力墙板区格宽度；</p></li>
+<li><p><span class="math notranslate nohighlight">\(h_1\)</span> —— 剪力墙板区格高度；</p></li>
+<li><p><span class="math notranslate nohighlight">\(\varepsilon_{\rm{k}}\)</span> —— 钢号调整系数；</p></li>
+<li><p><span class="math notranslate nohighlight">\(t_{\rm{w}}\)</span> —— 钢板剪力墙的厚度。</p></li>
+</ul>
+</section>
+<section id="id7">
+<h3>9.2.4 同时设置水平和竖直方向加劲肋的钢板剪力墙<a class="headerlink" href="#id7" title="Link to this heading">#</a></h3>
+<p>当加劲肋的刚度参数满足下列公式时，应验算区格的稳定性：</p>
+<ol class="arabic simple">
+<li><p>水平方向加劲肋刚度参数：
+$<span class="math notranslate nohighlight">\(
+ \eta_x = \frac{{E I_{sx}}}{{D h_1}} \geq 33 \tag{9.2.4-1}
+ \)</span>$</p></li>
+<li><p>竖直方向加劲肋刚度参数：
+$<span class="math notranslate nohighlight">\(
+ \eta_y = \frac{{E I_{sy}}}{{D a_1}} \geq 50 \tag{9.2.4-2}
+ \)</span>$</p></li>
+<li><p>单位宽度的弯曲刚度：
+$<span class="math notranslate nohighlight">\(
+ D = \frac{{E t_{\rm{w}}^3}}{{12 \left( 1 - \nu^2 \right)}} \tag{9.2.4-3}
+ \)</span>$</p></li>
+</ol>
+<p>式中：</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\eta_x, \eta_y\)</span> —— 分别为水平、竖直方向加劲肋的刚度参数；</p></li>
+<li><p><span class="math notranslate nohighlight">\(E\)</span> —— 钢材的弹性模量；</p></li>
+<li><p><span class="math notranslate nohighlight">\(I_{sx}, I_{sy}\)</span> —— 分别为水平、竖直方向加劲肋的惯性矩，可考虑加劲肋与钢板剪力墙有效宽度组合截面，单侧钢板剪力墙的有效宽度取15倍的钢板厚度；</p></li>
+<li><p><span class="math notranslate nohighlight">\(D\)</span> —— 单位宽度的弯曲刚度；</p></li>
+<li><p><span class="math notranslate nohighlight">\(\nu\)</span> —— 钢材的泊松比。</p></li>
+</ul>
+</section>
+<section id="id8">
+<h3>9.2.5 设置加劲的钢板剪力墙<a class="headerlink" href="#id8" title="Link to this heading">#</a></h3>
+<p>当加劲肋的刚度参数不满足本规范第9.2.4条的规定时，应根据下列规定计算其稳定性：</p>
+<section id="id9">
+<h4>9.2.5.1 正则化长细比应根据下列公式计算：<a class="headerlink" href="#id9" title="Link to this heading">#</a></h4>
+<ol class="arabic simple">
+<li><p>剪切屈曲正则化长细比：
+$<span class="math notranslate nohighlight">\(
+ \lambda_{\rm{s}}^{\rm{re}} = \sqrt{\frac{{f_{\rm{yv}}}}{{\tau_{\rm{cr}}}}} \tag{9.2.5-1a}
+ \)</span>$</p></li>
+<li><p>竖向受压正则化长细比：
+$<span class="math notranslate nohighlight">\(
+ \lambda_\sigma^{\rm{re}} = \sqrt{\frac{{f_{\rm{y}}}}{{\sigma_{\rm{cr}}}}} \tag{9.2.5-1b}
+ \)</span>$</p></li>
+<li><p>竖向受弯正则化长细比：
+$<span class="math notranslate nohighlight">\(
+ \lambda_{\rm{b}}^{\rm{re}} = \sqrt{\frac{{f_{\rm{y}}}}{{\sigma_{\rm{bcr}}}}} \tag{9.2.5-1c}
+ \)</span>$</p></li>
+</ol>
+<p>式中：</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(f_{\rm{yv}}\)</span> —— 钢材的屈服抗剪强度，取钢材屈服强度的0.58倍；</p></li>
+<li><p><span class="math notranslate nohighlight">\(f_{\rm{y}}\)</span> —— 钢材屈服强度；</p></li>
+<li><p><span class="math notranslate nohighlight">\(\tau_{\rm{cr}}\)</span> —— 弹性剪切屈曲临界应力，按本规范附录F的规定计算；</p></li>
+<li><p><span class="math notranslate nohighlight">\(\sigma_{\rm{cr}}\)</span> —— 竖向受压弹性屈曲临界应力，按本规范附录F的规定计算；</p></li>
+<li><p><span class="math notranslate nohighlight">\(\sigma_{\rm{bcr}}\)</span> —— 竖向受弯弹性屈曲临界应力，按本规范附录F的规定计算。</p></li>
+</ul>
+</section>
+<section id="id10">
+<h4>9.2.5.2 弹塑性稳定系数应根据下列公式计算：<a class="headerlink" href="#id10" title="Link to this heading">#</a></h4>
+<ol class="arabic simple">
+<li><p>剪切弹塑性稳定系数：
+$<span class="math notranslate nohighlight">\(
+ \varphi_{\rm{s}} = \frac{1}{{\sqrt[3]{{0.738 + \left( \lambda_{\rm{s}}^{\rm{re}} \right)^6}}}} \leq 1.0 \tag{9.2.5-2a}
+ \)</span>$</p></li>
+<li><p>受压弹塑性稳定系数：
+$<span class="math notranslate nohighlight">\(
+ \varphi_\sigma = \frac{1}{{1 + \left( \lambda_\sigma^{\rm{re}} \right)^{2.4}}} \leq 1.0 \tag{9.2.5-2b}
+ \)</span>$</p></li>
+<li><p>受弯弹塑性稳定系数：
+$<span class="math notranslate nohighlight">\(
+ \varphi_{\rm{bs}} = \frac{1}{{\sqrt[3]{{0.738 + \left( \lambda_{\rm{b}}^{\rm{re}} \right)^6}}}} \leq 1.0 \tag{9.2.5-2c}
+ \)</span>$</p></li>
+</ol>
+</section>
+<section id="id11">
+<h4>9.2.5.3 稳定性计算应符合下列公式要求：<a class="headerlink" href="#id11" title="Link to this heading">#</a></h4>
+<ol class="arabic simple">
+<li><p>弯曲压应力设计值：
+$<span class="math notranslate nohighlight">\(
+ \frac{{\sigma_{\rm{b}}}}{{\varphi_{\rm{bs}} f}} \leq 1.0 \tag{9.2.5-3a}
+ \)</span>$</p></li>
+<li><p>剪应力设计值：
+$<span class="math notranslate nohighlight">\(
+ \frac{\tau}{{\varphi_{\rm{s}} f_{\rm{v}}}} \leq 1.0 \tag{9.2.5-3b}
+ \)</span>$</p></li>
+<li><p>竖向重力荷载应力设计值：
+$<span class="math notranslate nohighlight">\(
+ \frac{{\sigma_{\rm{Gra}}}}{{0.3 \varphi_\sigma f}} \leq 1.0 \tag{9.2.5-3c}
+ \)</span>$</p></li>
+<li><p>综合稳定性要求：
+$<span class="math notranslate nohighlight">\(
+ \left( \frac{{\sigma_{\rm{b}}}}{{\varphi_{\rm{bs}} f}} \right)^2 + \left( \frac{\tau}{{\varphi_{\rm{s}} f_{\rm{v}}}} \right)^2 + \frac{{\sigma_{\rm{Gra}}}}{{\varphi_\sigma f}} \leq 1.0 \tag{9.2.5-3d}
+ \)</span>$</p></li>
+</ol>
+<p>式中：</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\sigma_{\rm{b}}\)</span> —— 由弯矩产生的弯曲压应力设计值；</p></li>
+<li><p><span class="math notranslate nohighlight">\(\tau\)</span> —— 钢板剪力墙的剪应力设计值；</p></li>
+<li><p><span class="math notranslate nohighlight">\(\sigma_{\rm{Gra}}\)</span> —— 竖向重力荷载产生的应力设计值；</p></li>
+<li><p><span class="math notranslate nohighlight">\(f_{\rm{v}}\)</span> —— 钢板剪力墙的抗剪强度设计值；</p></li>
+<li><p><span class="math notranslate nohighlight">\(f\)</span> —— 钢板剪力墙的抗压和抗弯强度设计值。</p></li>
+</ul>
+</section>
+</section>
+<section id="id12">
+<h3>9.2.6 双向加劲钢板剪力墙<a class="headerlink" href="#id12" title="Link to this heading">#</a></h3>
+<p>竖向重力荷载产生的应力设计值，不宜大于竖向弹塑性稳定承载力设计值的0.3倍。</p>
+</section>
+</section>
+<section id="id13">
+<h2>9.3 构造要求<a class="headerlink" href="#id13" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>加劲钢板墙可采用横向加劲、竖向加劲、井字加劲等形式。加劲肋宜采用型钢且与钢板墙焊接。</p></li>
+<li><p>加劲钢板剪力墙与边缘构件的连接应符合下列要求：</p>
+<ol class="arabic simple">
+<li><p>钢柱上应焊接鱼尾板作为钢板剪力墙的安装临时固定用，鱼尾板与钢柱应采用熔透焊缝焊接，鱼尾板与钢板剪力墙的安装应采用水平槽孔。</p></li>
+<li><p>当设置水平加劲肋时，可采用横向加劲肋贯通，钢板剪力墙水平切断的形式。</p></li>
+<li><p>钢板剪力墙跨的钢梁，腹板厚度不应小于钢板剪力墙厚度，翼缘可采用加劲肋代替，其截面应不小于所需要的钢梁截面。</p></li>
+</ol>
+</li>
+<li><p>加劲钢板剪力墙在有洞口时应符合下列规定：</p>
+<ol class="arabic simple">
+<li><p>计算钢板剪力墙的抗剪承载力时，不应计算洞口以上或以下的部分的水平投影面积。</p></li>
+<li><p>钢板剪力墙上开设门洞时，门洞口边的加劲肋应符合下列规定：</p>
+<ol class="arabic simple">
+<li><p>加劲肋的刚度参数不应小于150；</p></li>
+<li><p>竖向边加劲肋应延伸至整个楼层高度。门洞上边的边缘加劲肋，宜延伸600mm以上。</p></li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="8%20%E6%8B%89%E5%BC%AF%E3%80%81%E5%8E%8B%E5%BC%AF%E6%9E%84%E4%BB%B6.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">8 拉弯、压弯构件</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="10%20%E5%A1%91%E6%80%A7%E5%8F%8A%E5%BC%AF%E7%9F%A9%E8%B0%83%E5%B9%85%E8%AE%BE%E8%AE%A1.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">10 塑性及弯矩调幅设计</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">9.1 一般规定</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">9.2 加劲钢板剪力墙的计算</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">9.2.1 本节适用于不考虑屈曲后强度的钢板剪力墙。</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">9.2.2 竖直方向加劲肋在构造上宜采取不承受竖向力的措施。</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">9.2.3 同时设置水平和竖直方向加劲肋的钢板剪力墙</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">9.2.4 同时设置水平和竖直方向加劲肋的钢板剪力墙</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">9.2.5 设置加劲的钢板剪力墙</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">9.2.5.1 正则化长细比应根据下列公式计算：</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">9.2.5.2 弹塑性稳定系数应根据下列公式计算：</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">9.2.5.3 稳定性计算应符合下列公式要求：</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">9.2.6 双向加劲钢板剪力墙</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">9.3 构造要求</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By 游田重新排版
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2025.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

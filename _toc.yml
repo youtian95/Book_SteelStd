@@ -14,3 +14,6 @@ chapters:
 - file: 6 受弯构件
 - file: 7 轴心受力构件
 - file: 8 拉弯、压弯构件
+- file: 9 加劲钢板剪力墙
+- file: 10 塑性及弯矩调幅设计
+- file: 11 连接
