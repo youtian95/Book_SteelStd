@@ -1,0 +1,796 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>16 疲劳计算及防脆断设计 &#8212; 钢结构设计标准 GB 50017-2017</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="_static/mystyle.css?v=63ecd79b" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '16 疲劳计算及防脆断设计';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="17 钢结构构件和节点抗震设计" href="17%20%E9%92%A2%E7%BB%93%E6%9E%84%E6%9E%84%E4%BB%B6%E5%92%8C%E8%8A%82%E7%82%B9%E6%8A%97%E9%9C%87%E8%AE%BE%E8%AE%A1.html" />
+    <link rel="prev" title="15 钢管混凝土柱及节点" href="15%20%E9%92%A2%E7%AE%A1%E6%B7%B7%E5%87%9D%E5%9C%9F%E6%9F%B1%E5%8F%8A%E8%8A%82%E7%82%B9.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="README.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="钢结构设计标准 GB 50017-2017 - Home"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="钢结构设计标准 GB 50017-2017 - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="README.html">
+                    《钢结构设计标准 GB 50017-2017》
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="%E5%89%8D%E8%A8%80.html">前言</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E7%9B%AE%E5%BD%95.html">目次</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="1%20%E6%80%BB%E5%88%99.html">1 总则</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2%20%E6%9C%AF%E8%AF%AD%E5%92%8C%E7%AC%A6%E5%8F%B7.html">2 术语和符号</a></li>
+<li class="toctree-l1"><a class="reference internal" href="3%20%E5%9F%BA%E6%9C%AC%E8%AE%BE%E8%AE%A1%E8%A7%84%E5%AE%9A.html">3 基本设计规定</a></li>
+<li class="toctree-l1"><a class="reference internal" href="4%20%E6%9D%90%E6%96%99%E5%92%8C%E6%9D%90%E6%96%99%E9%80%89%E7%94%A8.html">4 材料和材料选用</a></li>
+<li class="toctree-l1"><a class="reference internal" href="5%20%E7%BB%93%E6%9E%84%E5%88%86%E6%9E%90%E4%B8%8E%E7%A8%B3%E5%AE%9A%E6%80%A7%E8%AE%BE%E8%AE%A1.html">5 结构分析与稳定性设计</a></li>
+<li class="toctree-l1"><a class="reference internal" href="6%20%E5%8F%97%E5%BC%AF%E6%9E%84%E4%BB%B6.html">6 受弯构件</a></li>
+<li class="toctree-l1"><a class="reference internal" href="7%20%E8%BD%B4%E5%BF%83%E5%8F%97%E5%8A%9B%E6%9E%84%E4%BB%B6.html">7 轴心受力构件</a></li>
+<li class="toctree-l1"><a class="reference internal" href="8%20%E6%8B%89%E5%BC%AF%E3%80%81%E5%8E%8B%E5%BC%AF%E6%9E%84%E4%BB%B6.html">8 拉弯、压弯构件</a></li>
+<li class="toctree-l1"><a class="reference internal" href="9%20%E5%8A%A0%E5%8A%B2%E9%92%A2%E6%9D%BF%E5%89%AA%E5%8A%9B%E5%A2%99.html">9 加劲钢板剪力墙</a></li>
+<li class="toctree-l1"><a class="reference internal" href="10%20%E5%A1%91%E6%80%A7%E5%8F%8A%E5%BC%AF%E7%9F%A9%E8%B0%83%E5%B9%85%E8%AE%BE%E8%AE%A1.html">10 塑性及弯矩调幅设计</a></li>
+<li class="toctree-l1"><a class="reference internal" href="11%20%E8%BF%9E%E6%8E%A5.html">11 连接</a></li>
+<li class="toctree-l1"><a class="reference internal" href="12%20%E8%8A%82%E7%82%B9.html">12 节点</a></li>
+<li class="toctree-l1"><a class="reference internal" href="13%20%E9%92%A2%E7%AE%A1%E8%BF%9E%E6%8E%A5%E8%8A%82%E7%82%B9.html">13 钢管连接节点</a></li>
+<li class="toctree-l1"><a class="reference internal" href="14%20%E9%92%A2%E4%B8%8E%E6%B7%B7%E5%87%9D%E5%9C%9F%E7%BB%84%E5%90%88%E6%A2%81.html">14 钢与混凝土组合梁</a></li>
+<li class="toctree-l1"><a class="reference internal" href="15%20%E9%92%A2%E7%AE%A1%E6%B7%B7%E5%87%9D%E5%9C%9F%E6%9F%B1%E5%8F%8A%E8%8A%82%E7%82%B9.html">15 钢管混凝土柱及节点</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">16 疲劳计算及防脆断设计</a></li>
+<li class="toctree-l1"><a class="reference internal" href="17%20%E9%92%A2%E7%BB%93%E6%9E%84%E6%9E%84%E4%BB%B6%E5%92%8C%E8%8A%82%E7%82%B9%E6%8A%97%E9%9C%87%E8%AE%BE%E8%AE%A1.html">17 钢结构构件和节点抗震设计</a></li>
+<li class="toctree-l1"><a class="reference internal" href="18%20%E9%92%A2%E7%BB%93%E6%9E%84%E9%98%B2%E6%8A%A4.html">18 钢结构防护</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E9%99%84%E5%BD%95A%20%E5%B8%B8%E7%94%A8%E5%BB%BA%E7%AD%91%E7%BB%93%E6%9E%84%E4%BD%93%E7%B3%BB.html">附录A 常用建筑结构体系</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E9%99%84%E5%BD%95B%20%E7%BB%93%E6%9E%84%E6%88%96%E6%9E%84%E4%BB%B6%E7%9A%84%E5%8F%98%E5%BD%A2%E5%AE%B9%E8%AE%B8%E5%80%BC.html">附录B  结构或构件的变形容许值</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E9%99%84%E5%BD%95C%20%E7%AE%80%E6%94%AF%E6%A2%81%E3%80%81%E6%82%AC%E8%87%82%E6%A2%81%E5%8F%8A%E6%A1%86%E6%9E%B6%E6%A2%81%E7%9A%84%E5%BC%B9%E6%80%A7%E5%B1%88%E6%9B%B2%E4%B8%B4%E7%95%8C%E5%BC%AF%E7%9F%A9.html">附录C  简支梁、悬臂梁及框架梁的弹性屈曲临界弯矩</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E9%99%84%E5%BD%95D%20%E8%BD%B4%E5%BF%83%E5%8F%97%E5%8E%8B%E6%9E%84%E4%BB%B6%E7%9A%84%E7%A8%B3%E5%AE%9A%E7%B3%BB%E6%95%B0.html">附录D  轴心受压构件的稳定系数</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E9%99%84%E5%BD%95E%20%E6%9F%B1%E7%9A%84%E8%AE%A1%E7%AE%97%E9%95%BF%E5%BA%A6%E7%B3%BB%E6%95%B0.html">附录E  柱的计算长度系数</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E9%99%84%E5%BD%95F%20%E8%AE%BE%E7%BD%AE%E5%8A%A0%E5%8A%B2%E7%9A%84%E9%92%A2%E6%9D%BF%E5%89%AA%E5%8A%9B%E5%A2%99%E7%9A%84%E5%BC%B9%E6%80%A7%E5%B1%88%E6%9B%B2%E4%B8%B4%E7%95%8C%E5%BA%94%E5%8A%9B.html">附录F  设置加劲的钢板剪力墙的弹性屈曲临界应力</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E9%99%84%E5%BD%95G%20%E6%A1%81%E6%9E%B6%E8%8A%82%E7%82%B9%E6%9D%BF%E5%9C%A8%E6%96%9C%E8%85%B9%E6%9D%86%E5%8E%8B%E5%8A%9B%E4%BD%9C%E7%94%A8%E4%B8%8B%E7%9A%84%E7%A8%B3%E5%AE%9A%E8%AE%A1%E7%AE%97.html">附录G 桁架节点板在斜腹杆压力作用下的稳定计算</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E9%99%84%E5%BD%95H%20%E6%97%A0%E5%8A%A0%E5%8A%B2%E9%92%A2%E7%AE%A1%E7%9B%B4%E6%8E%A5%E7%84%8A%E6%8E%A5%E8%8A%82%E7%82%B9%E5%88%9A%E5%BA%A6%E5%88%A4%E5%88%AB.html">附录H  无加劲钢管直接焊接节点刚度判别</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E9%99%84%E5%BD%95J%20%E9%92%A2%E4%B8%8E%E6%B7%B7%E5%87%9D%E5%9C%9F%E7%BB%84%E5%90%88%E6%A2%81%E7%9A%84%E7%96%B2%E5%8A%B3%E9%AA%8C%E7%AE%97.html">附录J  钢与混凝土组合梁的疲劳验算</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E9%99%84%E5%BD%95K%20%E7%96%B2%E5%8A%B3%E8%AE%A1%E7%AE%97%E7%9A%84%E6%9E%84%E4%BB%B6%E5%92%8C%E8%BF%9E%E6%8E%A5%E5%88%86%E7%B1%BB.html">附录K  疲劳计算的构件和连接分类</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E9%99%84%E5%BD%95L%20%E5%BB%B6%E6%80%A7%E7%AD%89%E7%BA%A7.html">附录L  延性等级</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E9%99%84%E5%BD%95M%20%E7%BD%95%E9%81%87%E5%9C%B0%E9%9C%87%E4%BD%9C%E7%94%A8%E4%B8%8B%E7%9A%84%E4%BE%A7%E7%A7%BB%E8%AE%A1%E7%AE%97.html">附录M 罕遇地震作用下的侧移计算</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E6%9C%AC%E8%A7%84%E8%8C%83%E7%94%A8%E8%AF%8D%E8%AF%B4%E6%98%8E.html">本规范用词说明</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E5%BC%95%E7%94%A8%E6%A0%87%E5%87%86%E5%90%8D%E5%BD%95.html">引用标准名录</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/youtian95/Book_SteelStd" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/youtian95/Book_SteelStd/issues/new?title=Issue%20on%20page%20%2F16 疲劳计算及防脆断设计.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/16 疲劳计算及防脆断设计.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>16 疲劳计算及防脆断设计</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">16.1 一般规定</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">16.2 疲劳计算</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">16.3 构造要求</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">16.3.1 一般要求</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">16.4 防脆断设计</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">16.4.1 钢结构设计时应符合下列要求：</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#circ-text-c">16.4.2 在工作环境温度等于或低于 <span class="math notranslate nohighlight">\(-30^\circ\text{C}\)</span> 的地区，焊接构件宜采用实腹式构件，避免采用手工焊接的格构式构件。</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">16.4.3 在工作环境温度等于或低于 <span class="math notranslate nohighlight">\(-20^\circ\text{C}\)</span> 的地区，焊接接头的构造应符合下列要求：</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">16.4.4 在工作环境温度等于或低于 <span class="math notranslate nohighlight">\(-20^\circ\text{C}\)</span> 的地区，结构设计及施工应符合下列要求：</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">16.4.5 对于特别重要或特殊的结构构件和连接节点，可采用断裂力学和损伤力学的方法对其进行抗脆断验算。</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="id1">
+<h1>16 疲劳计算及防脆断设计<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
+<section id="id2">
+<h2>16.1 一般规定<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>直接承受动力荷载重复作用的钢结构构件及其连接，当应力变化的循环次数 <span class="math notranslate nohighlight">\(n\)</span> 等于或大于 <img alt="" src="_images/image681.svg" /> 次时，应进行疲劳计算。</p></li>
+<li><p>本章规定不适用于下列条件下结构构件及其连接的疲劳计算：</p>
+<ol class="arabic simple">
+<li><p>构件表面温度大于 150℃；</p></li>
+<li><p>处于海水腐蚀环境；</p></li>
+<li><p>焊后经热处理消除残余应力；</p></li>
+<li><p>构件处于低周-高应变疲劳状态。</p></li>
+</ol>
+</li>
+<li><p>疲劳计算应采用容许应力幅法，应力按弹性状态计算，容许应力幅按构件和连接类别、应力循环次数以及计算部位的板件厚度确定。对非焊接的构件和连接，其应力循环中不出现拉应力的部位可不计算疲劳强度。</p></li>
+<li><p>在低温下工作或制作安装的钢结构构件，应进行防脆断设计。</p></li>
+<li><p>需计算疲劳构件所用钢材应具有冲击韧性的合格保证，钢材质量等级的选用应符合本规范第 4.3.3 条的规定。</p></li>
+</ol>
+</section>
+<section id="id3">
+<h2>16.2 疲劳计算<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
+<ol class="arabic">
+<li><p>常幅疲劳与变幅疲劳条件下的构件及其连接的疲劳计算应符合以下规定：</p>
+<ol class="arabic">
+<li><p>常幅疲劳条件下构件及其连接的名义正应力幅或剪应力幅应符合下列公式的要求：</p>
+<div class="math notranslate nohighlight">
+\[
+        \sigma_a \leq \sigma_{ac} \tag{16.2.1-1}
+        \]</div>
+<div class="math notranslate nohighlight">
+\[
+        \tau_a \leq \tau_{ac} \tag{16.2.1-2}
+        \]</div>
+<p>对焊接部位：</p>
+<div class="math notranslate nohighlight">
+\[
+        \sigma_a \leq \frac{\sigma_{ac}}{h_t} \tag{16.2.1-3a}
+        \]</div>
+<div class="math notranslate nohighlight">
+\[
+        \tau_a \leq \frac{\tau_{ac}}{h_t} \tag{16.2.1-3b}
+        \]</div>
+<p>对非焊接部位：</p>
+<div class="math notranslate nohighlight">
+\[
+        \sigma_a \leq \sigma_{ac} \tag{16.2.1-3c}
+        \]</div>
+<div class="math notranslate nohighlight">
+\[
+        \tau_a \leq \tau_{ac} \tag{16.2.1-3d}
+        \]</div>
+<p>式中：</p>
+<ul>
+<li><p><span class="math notranslate nohighlight">\(\sigma_a\)</span> —— 构件验算部位的名义正应力幅；</p></li>
+<li><p><span class="math notranslate nohighlight">\(\sigma_{\text{max}}\)</span> —— 计算部位应力循环中的最大名义拉应力（取正值）；</p></li>
+<li><p><span class="math notranslate nohighlight">\(\sigma_{\text{min}}\)</span> —— 计算部位应力循环中的最小名义拉应力或压应力（拉应力取正值，压应力取负值）；</p></li>
+<li><p><span class="math notranslate nohighlight">\(\tau_a\)</span> —— 构件验算部位的名义剪应力幅；</p></li>
+<li><p><span class="math notranslate nohighlight">\(\tau_{\text{max}}\)</span> —— 计算部位应力循环中的最大名义剪应力；</p></li>
+<li><p><span class="math notranslate nohighlight">\(\tau_{\text{min}}\)</span> —— 计算部位应力循环中的最小名义剪应力；</p></li>
+<li><p><span class="math notranslate nohighlight">\(\sigma_{ac}\)</span> —— 正应力常幅疲劳极限（<span class="math notranslate nohighlight">\(N/\text{mm}^2\)</span>），根据本规范附录 K 规定的构件和连接类别按表 16.2.1-1 采用；</p></li>
+<li><p><span class="math notranslate nohighlight">\(\tau_{ac}\)</span> —— 剪应力常幅疲劳极限（<span class="math notranslate nohighlight">\(N/\text{mm}^2\)</span>），根据本规范附录 K 规定的构件和连接类别按表 16.2.1-2 采用；</p></li>
+<li><p><span class="math notranslate nohighlight">\(h_t\)</span> —— 板厚（或直径）修正系数，应按下列规定采用：</p>
+<ol class="arabic">
+<li><p>对于横向角焊缝连接和对接焊缝连接，当连接板厚超过 25mm 时，应按下式计算：</p>
+<div class="math notranslate nohighlight">
+\[
+              h_t = \left( \frac{25}{t} \right)^{0.25} \tag{16.2.1-4a}
+              \]</div>
+</li>
+<li><p>对于螺栓轴向受拉连接，当螺栓的公称直径 <span class="math notranslate nohighlight">\(d\)</span> 大于 30mm 时，应按下式计算：</p>
+<div class="math notranslate nohighlight">
+\[
+              h_t = \left( \frac{30}{d} \right)^{0.25} \tag{16.2.1-4b}
+              \]</div>
+</li>
+<li><p>其余情况取 <span class="math notranslate nohighlight">\(h_t = 1.0\)</span>。</p></li>
+</ol>
+</li>
+</ul>
+</li>
+<li><p>变幅疲劳条件下构件的最大正应力幅或最大剪应力幅应按下列公式验算：</p>
+<div class="math notranslate nohighlight">
+\[
+        \sigma_a \leq \sigma_{av} \tag{16.2.1-4}
+        \]</div>
+<div class="math notranslate nohighlight">
+\[
+        \tau_a \leq \tau_{av} \tag{16.2.1-5}
+        \]</div>
+<p>式中：</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\sigma_{av}\)</span> —— 正应力变幅疲劳极限（<span class="math notranslate nohighlight">\(N/\text{mm}^2\)</span>），根据构件和连接类别按表 16.2.1-1 采用；</p></li>
+<li><p><span class="math notranslate nohighlight">\(\tau_{av}\)</span> —— 剪应力变幅疲劳极限（<span class="math notranslate nohighlight">\(N/\text{mm}^2\)</span>），根据构件和连接类别按表 16.2.1-2 采用。</p></li>
+</ul>
+</li>
+</ol>
+</li>
+<li><p>当构件或连接的常幅疲劳计算不满足式（16.2.1-1）与式（16.2.1-2）要求时，应按下列规定进行疲劳计算：</p>
+<ol class="arabic">
+<li><p>正应力常幅疲劳应符合下列要求：</p>
+<div class="math notranslate nohighlight">
+\[
+        \sigma_a \leq \sigma_{ac} \cdot \left( \frac{N}{n} \right)^{1/\beta} \tag{16.2.2-1}
+        \]</div>
+<div class="math notranslate nohighlight">
+\[
+        \sigma_a \leq \sigma_{ac} \cdot \left( \frac{N}{n} \right)^{1/\beta} \cdot h_t \tag{16.2.2-2}
+        \]</div>
+<p>式中：</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\sigma_{ac}\)</span> —— 常幅疲劳的容许正应力幅（<span class="math notranslate nohighlight">\(N/\text{mm}^2\)</span>）；</p></li>
+<li><p><span class="math notranslate nohighlight">\(n\)</span> —— 应力循环次数；</p></li>
+<li><p><span class="math notranslate nohighlight">\(h_t\)</span> —— 板厚修正系数；</p></li>
+<li><p><span class="math notranslate nohighlight">\(\beta\)</span> —— 构件和连接相关参数，按表 16.2.1-1 采用。</p></li>
+</ul>
+</li>
+<li><p>剪应力常幅疲劳应符合下式要求：</p>
+<div class="math notranslate nohighlight">
+\[
+        \tau_a \leq \tau_{ac} \cdot \left( \frac{N}{n} \right)^{1/\beta} \tag{16.2.2-3}
+        \]</div>
+<div class="math notranslate nohighlight">
+\[
+        \tau_a \leq \tau_{ac} \cdot \left( \frac{N}{n} \right)^{1/\beta} \cdot h_t \tag{16.2.2-4}
+        \]</div>
+<p>式中：</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\tau_{ac}\)</span> —— 常幅疲劳的容许剪应力幅（<span class="math notranslate nohighlight">\(N/\text{mm}^2\)</span>）；</p></li>
+<li><p><span class="math notranslate nohighlight">\(h_t\)</span> —— 板厚修正系数；</p></li>
+<li><p><span class="math notranslate nohighlight">\(\beta\)</span> —— 构件和连接相关系数，按表 16.2.1-2 采用。</p></li>
+</ul>
+</li>
+</ol>
+</li>
+</ol>
+</section>
+<section id="id4">
+<h2>16.3 构造要求<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
+<section id="id5">
+<h3>16.3.1 一般要求<a class="headerlink" href="#id5" title="Link to this heading">#</a></h3>
+<ol class="arabic">
+<li><p>直接承受动力重复作用并需进行疲劳验算的焊接连接除应符合本规范第11.3.4的规定外，尚应符合以下规定：</p>
+<ol class="arabic simple">
+<li><p>严禁使用塞焊、槽焊、电渣焊和气电立焊接头；</p></li>
+<li><p>焊接接头中，当拉应力与焊缝轴线垂直时，严禁采用部分焊透对接焊缝、背面不清根的无衬垫焊缝；</p></li>
+<li><p>不同厚度板材或管材对接时，均应加工成斜坡过渡。接口的错边量小于较薄板件厚度时，宜将焊缝焊成斜坡状，或将较厚板的一面（或两面）及管材的外壁（或内壁）在焊前加工成斜坡，其坡度最大允许值为1：4。</p></li>
+</ol>
+</li>
+<li><p>吊车梁、吊车桁架及类似结构应满足下列要求：</p>
+<ol class="arabic">
+<li><p>焊接吊车梁的翼缘板宜用一层钢板，当采用两层钢板时，外层钢板宜沿梁通长设置，并应在设计和施工中采用措施使上翼缘两层钢板紧密接触；</p></li>
+<li><p>支承夹钳或刚性料耙硬钩起重机以及类似起重机的结构，不宜采用吊车桁架和制动桁架；</p></li>
+<li><p>焊接吊车桁架应符合下列要求：</p>
+<ol class="arabic simple">
+<li><p>在桁架节点处，腹杆与弦杆之间的间隙 <span class="math notranslate nohighlight">\(a\)</span> 不宜小于 50mm，节点板的两侧边宜做成半径 <span class="math notranslate nohighlight">\(r \geq 60\text{mm}\)</span> 的圆弧；节点板边缘与腹杆轴线的夹角 <span class="math notranslate nohighlight">\(\alpha\)</span> 不应小于 <span class="math notranslate nohighlight">\(30^\circ\)</span>（见图16.3.2‐1）；节点板与角钢弦杆的连接焊缝，起落弧点应至少缩进 5mm（见图16.3.2‐1a）；节点板与H形截面弦杆的T形对接与角接组合焊缝应予焊透，圆弧处不得有起落弧缺陷，其中重级工作制吊车桁架的圆弧处应予打磨，使之与弦杆平缓过渡（见图16.3.2‐1b）；</p></li>
+<li><p>杆件的填板当用焊缝连接时，焊缝起落弧点应缩进至少5mm（见图16.3.2‐1c），重级工作制吊车桁架杆件的填板应采用高强度螺栓连接。</p></li>
+</ol>
+<p><img alt="" src="media/image765.svg" /></p>
+<p><strong>图16.3.2-1 吊车桁架节点</strong></p>
+<p>1—用砂轮磨去</p>
+</li>
+<li><p>吊车梁翼缘板或腹板的焊接拼接应采用加引弧板和引出板的焊透对接焊缝，引弧板和引出板割去处应予打磨平整。焊接吊车梁和焊接吊车桁架的工地整段拼接应采用焊接或高强度螺栓的摩擦型连接；</p></li>
+<li><p>在焊接吊车梁或吊车桁架中，对11.1.5条中要求焊透的T形接头对接与角接组合焊缝形式宜如图16.3.2-2所示。</p>
+<p><img alt="" src="_images/image766.jpeg" /></p>
+<p><strong>图16.3.2-2 焊透的T形接头对接与角接组合焊缝</strong></p>
+</li>
+<li><p>吊车梁横向加劲肋宽度不宜小于90mm。在支座处的横向加劲肋应在腹板两侧成对设置，并与梁上下翼缘刨平顶紧。中间横向加劲肋的上端应与梁上翼缘刨平顶紧，在重级工作制吊车梁中，中间横向加劲肋亦应在腹板两侧成对布置，而中、轻级工作制吊车梁则可单侧设置或两侧错开设置。在焊接吊车梁中，横向加劲肋（含短加劲肋）不得与受拉翼缘相焊，但可与受压翼缘焊接。端加劲肋可与梁上下翼缘相焊，中间横向加劲肋的下端宜在距受拉下翼缘50～100mm处断开，其与腹板的连接焊缝不宜在肋下端起落弧。当吊车梁受拉翼缘（或吊车桁架下弦）与支撑连接时，不宜采用焊接；</p></li>
+<li><p>直接铺设轨道的吊车桁架上弦，其构造要求应与连续吊车梁相同；</p></li>
+<li><p>重级工作制吊车梁中，上翼缘与柱或制动桁架传递水平力的连接宜采用高强度螺栓的摩擦型连接，而上翼缘与制动梁的连接，可采用高强度螺栓摩擦型连接或焊缝连接。吊车梁端部与柱的连接构造应设法减少由于吊车梁弯曲变形而在连接处产生的附加应力；</p></li>
+<li><p>当吊车桁架和重级工作制吊车梁跨度等于或大于12m，或轻、中级工作制吊车梁跨度等于或大于18m时，宜设置辅助桁架和下翼缘（下弦）水平支撑系统。当设置垂直支撑时，其位置不宜在吊车梁或吊车桁架竖向挠度较大处。对吊车桁架，应采取构造措施，以防止其上弦因轨道偏心而扭转；</p></li>
+<li><p>重级工作制吊车梁的受拉翼缘板（或吊车桁架的受拉弦杆）边缘，宜为轧制边或自动气割边，当用手工气割或剪切机切割时，应沿全长刨边；</p></li>
+<li><p>吊车梁的受拉翼缘（或吊车桁架的受拉弦杆）上不得焊接悬挂设备的零件，并不宜在该处打火或焊接夹具；</p></li>
+<li><p>起重机钢轨的接头构造应保证车轮平稳通过。当采用焊接长轨且用压板与吊车梁连接时，轨道底面宜铺设橡胶垫，轨道接缝应不小于1m；</p></li>
+<li><p>简支变截面吊车梁，不宜采用圆弧式突变支座，宜采用直角式突变支座。重级工作制（A6~A8级）简支变截面吊车梁，应采用直角式突变支座。直角式突变支座的构造宜满足图16.3.2-3的要求。</p>
+<p><img alt="" src="_images/image767.svg" />
+<img alt="" src="_images/image768.svg" /></p>
+<p><strong>图16.3.2-3 直角式突变支座构造</strong></p>
+</li>
+</ol>
+</li>
+</ol>
+</section>
+</section>
+<section id="id6">
+<h2>16.4 防脆断设计<a class="headerlink" href="#id6" title="Link to this heading">#</a></h2>
+<section id="id7">
+<h3>16.4.1 钢结构设计时应符合下列要求：<a class="headerlink" href="#id7" title="Link to this heading">#</a></h3>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>1. 钢结构连接构造和加工工艺的选择应减少结构的应力集中和焊接约束应力，焊接构件宜采用较薄的板件组成；
+2. 应避免现场低温焊接；
+3. 减少焊缝的数量和降低焊缝尺寸，同时避免焊缝过分集中或多条焊缝交汇。
+</pre></div>
+</div>
+</section>
+<section id="circ-text-c">
+<h3>16.4.2 在工作环境温度等于或低于 <span class="math notranslate nohighlight">\(-30^\circ\text{C}\)</span> 的地区，焊接构件宜采用实腹式构件，避免采用手工焊接的格构式构件。<a class="headerlink" href="#circ-text-c" title="Link to this heading">#</a></h3>
+</section>
+<section id="id8">
+<h3>16.4.3 在工作环境温度等于或低于 <span class="math notranslate nohighlight">\(-20^\circ\text{C}\)</span> 的地区，焊接接头的构造应符合下列要求：<a class="headerlink" href="#id8" title="Link to this heading">#</a></h3>
+<ol class="arabic">
+<li><p>在桁架节点板上，腹杆与弦杆相邻焊缝焊趾间净距不宜小于 <span class="math notranslate nohighlight">\(2.5t\)</span>，<span class="math notranslate nohighlight">\(t\)</span> 为节点板厚度；</p></li>
+<li><p>节点板与构件主材的焊接连接处（见图16.3.2-1）宜做成半径 <span class="math notranslate nohighlight">\(r \geq 60\text{mm}\)</span> 的圆弧并予以打磨，使之平缓过渡；</p></li>
+<li><p>在构件拼接接头部位，应使拼接件自由段的长度不小于 <span class="math notranslate nohighlight">\(5t\)</span>，<span class="math notranslate nohighlight">\(t\)</span> 为拼接件厚度（见图16.4.3）。</p>
+<p><img alt="" src="media/image769.svg" /></p>
+<p><strong>图16.4.3 盖板拼接处的构造</strong></p>
+</li>
+</ol>
+</section>
+<section id="id9">
+<h3>16.4.4 在工作环境温度等于或低于 <span class="math notranslate nohighlight">\(-20^\circ\text{C}\)</span> 的地区，结构设计及施工应符合下列要求：<a class="headerlink" href="#id9" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>承重构件和节点的连接宜采用螺栓连接，施工临时安装连接应避免采用焊缝连接；</p></li>
+<li><p>受拉构件的钢材边缘宜为轧制边或自动气割边。对厚度大于10mm的钢材采用手工气割或剪切边时，应沿全长刨边；</p></li>
+<li><p>板件制孔应采用钻成孔或先冲后扩钻孔；</p></li>
+<li><p>受拉构件或受弯构件的拉应力区，宜避免使用角焊缝；</p></li>
+<li><p>对接焊缝的质量等级不得低于二级。</p></li>
+</ol>
+</section>
+<section id="id10">
+<h3>16.4.5 对于特别重要或特殊的结构构件和连接节点，可采用断裂力学和损伤力学的方法对其进行抗脆断验算。<a class="headerlink" href="#id10" title="Link to this heading">#</a></h3>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="15%20%E9%92%A2%E7%AE%A1%E6%B7%B7%E5%87%9D%E5%9C%9F%E6%9F%B1%E5%8F%8A%E8%8A%82%E7%82%B9.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">15 钢管混凝土柱及节点</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="17%20%E9%92%A2%E7%BB%93%E6%9E%84%E6%9E%84%E4%BB%B6%E5%92%8C%E8%8A%82%E7%82%B9%E6%8A%97%E9%9C%87%E8%AE%BE%E8%AE%A1.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">17 钢结构构件和节点抗震设计</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">16.1 一般规定</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">16.2 疲劳计算</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">16.3 构造要求</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">16.3.1 一般要求</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">16.4 防脆断设计</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">16.4.1 钢结构设计时应符合下列要求：</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#circ-text-c">16.4.2 在工作环境温度等于或低于 <span class="math notranslate nohighlight">\(-30^\circ\text{C}\)</span> 的地区，焊接构件宜采用实腹式构件，避免采用手工焊接的格构式构件。</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">16.4.3 在工作环境温度等于或低于 <span class="math notranslate nohighlight">\(-20^\circ\text{C}\)</span> 的地区，焊接接头的构造应符合下列要求：</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">16.4.4 在工作环境温度等于或低于 <span class="math notranslate nohighlight">\(-20^\circ\text{C}\)</span> 的地区，结构设计及施工应符合下列要求：</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">16.4.5 对于特别重要或特殊的结构构件和连接节点，可采用断裂力学和损伤力学的方法对其进行抗脆断验算。</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By 游田重新排版
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2025.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

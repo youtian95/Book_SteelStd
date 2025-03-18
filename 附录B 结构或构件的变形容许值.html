@@ -1,0 +1,951 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>附录B 结构或构件的变形容许值 &#8212; 钢结构设计标准 GB 50017-2017</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="_static/mystyle.css?v=63ecd79b" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '附录B 结构或构件的变形容许值';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="附录C 简支梁、悬臂梁及框架梁的弹性屈曲临界弯矩" href="%E9%99%84%E5%BD%95C%20%E7%AE%80%E6%94%AF%E6%A2%81%E3%80%81%E6%82%AC%E8%87%82%E6%A2%81%E5%8F%8A%E6%A1%86%E6%9E%B6%E6%A2%81%E7%9A%84%E5%BC%B9%E6%80%A7%E5%B1%88%E6%9B%B2%E4%B8%B4%E7%95%8C%E5%BC%AF%E7%9F%A9.html" />
+    <link rel="prev" title="附录A 常用建筑结构体系" href="%E9%99%84%E5%BD%95A%20%E5%B8%B8%E7%94%A8%E5%BB%BA%E7%AD%91%E7%BB%93%E6%9E%84%E4%BD%93%E7%B3%BB.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="README.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="钢结构设计标准 GB 50017-2017 - Home"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="钢结构设计标准 GB 50017-2017 - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="README.html">
+                    《钢结构设计标准 GB 50017-2017》
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="%E5%89%8D%E8%A8%80.html">前言</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E7%9B%AE%E5%BD%95.html">目次</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="1%20%E6%80%BB%E5%88%99.html">1 总则</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2%20%E6%9C%AF%E8%AF%AD%E5%92%8C%E7%AC%A6%E5%8F%B7.html">2 术语和符号</a></li>
+<li class="toctree-l1"><a class="reference internal" href="3%20%E5%9F%BA%E6%9C%AC%E8%AE%BE%E8%AE%A1%E8%A7%84%E5%AE%9A.html">3 基本设计规定</a></li>
+<li class="toctree-l1"><a class="reference internal" href="4%20%E6%9D%90%E6%96%99%E5%92%8C%E6%9D%90%E6%96%99%E9%80%89%E7%94%A8.html">4 材料和材料选用</a></li>
+<li class="toctree-l1"><a class="reference internal" href="5%20%E7%BB%93%E6%9E%84%E5%88%86%E6%9E%90%E4%B8%8E%E7%A8%B3%E5%AE%9A%E6%80%A7%E8%AE%BE%E8%AE%A1.html">5 结构分析与稳定性设计</a></li>
+<li class="toctree-l1"><a class="reference internal" href="6%20%E5%8F%97%E5%BC%AF%E6%9E%84%E4%BB%B6.html">6 受弯构件</a></li>
+<li class="toctree-l1"><a class="reference internal" href="7%20%E8%BD%B4%E5%BF%83%E5%8F%97%E5%8A%9B%E6%9E%84%E4%BB%B6.html">7 轴心受力构件</a></li>
+<li class="toctree-l1"><a class="reference internal" href="8%20%E6%8B%89%E5%BC%AF%E3%80%81%E5%8E%8B%E5%BC%AF%E6%9E%84%E4%BB%B6.html">8 拉弯、压弯构件</a></li>
+<li class="toctree-l1"><a class="reference internal" href="9%20%E5%8A%A0%E5%8A%B2%E9%92%A2%E6%9D%BF%E5%89%AA%E5%8A%9B%E5%A2%99.html">9 加劲钢板剪力墙</a></li>
+<li class="toctree-l1"><a class="reference internal" href="10%20%E5%A1%91%E6%80%A7%E5%8F%8A%E5%BC%AF%E7%9F%A9%E8%B0%83%E5%B9%85%E8%AE%BE%E8%AE%A1.html">10 塑性及弯矩调幅设计</a></li>
+<li class="toctree-l1"><a class="reference internal" href="11%20%E8%BF%9E%E6%8E%A5.html">11 连接</a></li>
+<li class="toctree-l1"><a class="reference internal" href="12%20%E8%8A%82%E7%82%B9.html">12 节点</a></li>
+<li class="toctree-l1"><a class="reference internal" href="13%20%E9%92%A2%E7%AE%A1%E8%BF%9E%E6%8E%A5%E8%8A%82%E7%82%B9.html">13 钢管连接节点</a></li>
+<li class="toctree-l1"><a class="reference internal" href="14%20%E9%92%A2%E4%B8%8E%E6%B7%B7%E5%87%9D%E5%9C%9F%E7%BB%84%E5%90%88%E6%A2%81.html">14 钢与混凝土组合梁</a></li>
+<li class="toctree-l1"><a class="reference internal" href="15%20%E9%92%A2%E7%AE%A1%E6%B7%B7%E5%87%9D%E5%9C%9F%E6%9F%B1%E5%8F%8A%E8%8A%82%E7%82%B9.html">15 钢管混凝土柱及节点</a></li>
+<li class="toctree-l1"><a class="reference internal" href="16%20%E7%96%B2%E5%8A%B3%E8%AE%A1%E7%AE%97%E5%8F%8A%E9%98%B2%E8%84%86%E6%96%AD%E8%AE%BE%E8%AE%A1.html">16 疲劳计算及防脆断设计</a></li>
+<li class="toctree-l1"><a class="reference internal" href="17%20%E9%92%A2%E7%BB%93%E6%9E%84%E6%9E%84%E4%BB%B6%E5%92%8C%E8%8A%82%E7%82%B9%E6%8A%97%E9%9C%87%E8%AE%BE%E8%AE%A1.html">17 钢结构构件和节点抗震设计</a></li>
+<li class="toctree-l1"><a class="reference internal" href="18%20%E9%92%A2%E7%BB%93%E6%9E%84%E9%98%B2%E6%8A%A4.html">18 钢结构防护</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E9%99%84%E5%BD%95A%20%E5%B8%B8%E7%94%A8%E5%BB%BA%E7%AD%91%E7%BB%93%E6%9E%84%E4%BD%93%E7%B3%BB.html">附录A 常用建筑结构体系</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">附录B  结构或构件的变形容许值</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E9%99%84%E5%BD%95C%20%E7%AE%80%E6%94%AF%E6%A2%81%E3%80%81%E6%82%AC%E8%87%82%E6%A2%81%E5%8F%8A%E6%A1%86%E6%9E%B6%E6%A2%81%E7%9A%84%E5%BC%B9%E6%80%A7%E5%B1%88%E6%9B%B2%E4%B8%B4%E7%95%8C%E5%BC%AF%E7%9F%A9.html">附录C  简支梁、悬臂梁及框架梁的弹性屈曲临界弯矩</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E9%99%84%E5%BD%95D%20%E8%BD%B4%E5%BF%83%E5%8F%97%E5%8E%8B%E6%9E%84%E4%BB%B6%E7%9A%84%E7%A8%B3%E5%AE%9A%E7%B3%BB%E6%95%B0.html">附录D  轴心受压构件的稳定系数</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E9%99%84%E5%BD%95E%20%E6%9F%B1%E7%9A%84%E8%AE%A1%E7%AE%97%E9%95%BF%E5%BA%A6%E7%B3%BB%E6%95%B0.html">附录E  柱的计算长度系数</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E9%99%84%E5%BD%95F%20%E8%AE%BE%E7%BD%AE%E5%8A%A0%E5%8A%B2%E7%9A%84%E9%92%A2%E6%9D%BF%E5%89%AA%E5%8A%9B%E5%A2%99%E7%9A%84%E5%BC%B9%E6%80%A7%E5%B1%88%E6%9B%B2%E4%B8%B4%E7%95%8C%E5%BA%94%E5%8A%9B.html">附录F  设置加劲的钢板剪力墙的弹性屈曲临界应力</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E9%99%84%E5%BD%95G%20%E6%A1%81%E6%9E%B6%E8%8A%82%E7%82%B9%E6%9D%BF%E5%9C%A8%E6%96%9C%E8%85%B9%E6%9D%86%E5%8E%8B%E5%8A%9B%E4%BD%9C%E7%94%A8%E4%B8%8B%E7%9A%84%E7%A8%B3%E5%AE%9A%E8%AE%A1%E7%AE%97.html">附录G 桁架节点板在斜腹杆压力作用下的稳定计算</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E9%99%84%E5%BD%95H%20%E6%97%A0%E5%8A%A0%E5%8A%B2%E9%92%A2%E7%AE%A1%E7%9B%B4%E6%8E%A5%E7%84%8A%E6%8E%A5%E8%8A%82%E7%82%B9%E5%88%9A%E5%BA%A6%E5%88%A4%E5%88%AB.html">附录H  无加劲钢管直接焊接节点刚度判别</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E9%99%84%E5%BD%95J%20%E9%92%A2%E4%B8%8E%E6%B7%B7%E5%87%9D%E5%9C%9F%E7%BB%84%E5%90%88%E6%A2%81%E7%9A%84%E7%96%B2%E5%8A%B3%E9%AA%8C%E7%AE%97.html">附录J  钢与混凝土组合梁的疲劳验算</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E9%99%84%E5%BD%95K%20%E7%96%B2%E5%8A%B3%E8%AE%A1%E7%AE%97%E7%9A%84%E6%9E%84%E4%BB%B6%E5%92%8C%E8%BF%9E%E6%8E%A5%E5%88%86%E7%B1%BB.html">附录K  疲劳计算的构件和连接分类</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E9%99%84%E5%BD%95L%20%E5%BB%B6%E6%80%A7%E7%AD%89%E7%BA%A7.html">附录L  延性等级</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E9%99%84%E5%BD%95M%20%E7%BD%95%E9%81%87%E5%9C%B0%E9%9C%87%E4%BD%9C%E7%94%A8%E4%B8%8B%E7%9A%84%E4%BE%A7%E7%A7%BB%E8%AE%A1%E7%AE%97.html">附录M 罕遇地震作用下的侧移计算</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E6%9C%AC%E8%A7%84%E8%8C%83%E7%94%A8%E8%AF%8D%E8%AF%B4%E6%98%8E.html">本规范用词说明</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E5%BC%95%E7%94%A8%E6%A0%87%E5%87%86%E5%90%8D%E5%BD%95.html">引用标准名录</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/youtian95/Book_SteelStd" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/youtian95/Book_SteelStd/issues/new?title=Issue%20on%20page%20%2F附录B 结构或构件的变形容许值.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/附录B 结构或构件的变形容许值.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>附录B  结构或构件的变形容许值</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#b-1">B.1 受弯构件的挠度容许值</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#b-2">B.2 结构的位移容许值</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#b-2-1">B.2.1 单层钢结构柱顶水平位移限值</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#b-2-2">B.2.2 多层钢结构层间位移角限值</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#b-2-3">B.2.3 高层钢结构层间位移角限值</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#b-2-4">B.2.4 大跨度钢结构位移限值</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="b">
+<h1>附录B  结构或构件的变形容许值<a class="headerlink" href="#b" title="Link to this heading">#</a></h1>
+<section id="b-1">
+<h2>B.1 受弯构件的挠度容许值<a class="headerlink" href="#b-1" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>吊车梁、楼盖梁、屋盖梁、工作平台梁以及墙架构件的挠度不宜超过表B.1.1所列的容许值。</p></li>
+</ol>
+<p><strong>表B.1.1 受弯构件的挠度容许值</strong></p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>项次</p></th>
+<th class="head"><p>构件类别</p></th>
+<th class="head"><p>挠度容许值</p></th>
+<th class="head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>吊车梁和吊车桁架（按自重和起重量最大的一台吊车计算挠度）</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p>（1）手动起重机和单梁起重机（含悬挂起重机）</p></td>
+<td><p><span class="math notranslate nohighlight">\(l/500\)</span></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p>（2）轻级工作制桥式起重机</p></td>
+<td><p><span class="math notranslate nohighlight">\(l/750\)</span></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p>（3）中级工作制桥式起重机</p></td>
+<td><p><span class="math notranslate nohighlight">\(l/900\)</span></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p>（4）重级工作制桥式起重机</p></td>
+<td><p><span class="math notranslate nohighlight">\(l/1000\)</span></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>手动或电动葫芦的轨道梁</p></td>
+<td><p><span class="math notranslate nohighlight">\(l/400\)</span></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>有重轨（重量等于或大于38kg/m）轨道的工作平台梁</p></td>
+<td><p><span class="math notranslate nohighlight">\(l/600\)</span></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p>有轻轨（重量等于或小于24kg/m）轨道的工作平台梁</p></td>
+<td><p><span class="math notranslate nohighlight">\(l/400\)</span></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>4</p></td>
+<td><p>楼（屋）盖梁或桁架、工作平台梁（第3项除外）和平台板</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p>（1）主梁或桁架（包括设有悬挂起重设备的梁和桁架）</p></td>
+<td><p><span class="math notranslate nohighlight">\(l/400\)</span></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p>（2）仅支承压型金属板屋面和冷弯型钢檩条</p></td>
+<td><p><span class="math notranslate nohighlight">\(l/180\)</span></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p>（3）除支承压型金属板屋面和冷弯型钢檩条外，尚有吊顶</p></td>
+<td><p><span class="math notranslate nohighlight">\(l/240\)</span></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p>（4）抹灰顶棚的次梁</p></td>
+<td><p><span class="math notranslate nohighlight">\(l/250\)</span></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p>（5）除（1）~（4）款外的其他梁（包括楼梯梁）</p></td>
+<td><p><span class="math notranslate nohighlight">\(l/250\)</span></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p>（6）屋盖檩条</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p>支承压型金属板屋面者</p></td>
+<td><p><span class="math notranslate nohighlight">\(l/150\)</span></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p>支承其他屋面材料者</p></td>
+<td><p><span class="math notranslate nohighlight">\(l/200\)</span></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p>有吊顶</p></td>
+<td><p><span class="math notranslate nohighlight">\(l/240\)</span></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p>（7）平台板</p></td>
+<td><p><span class="math notranslate nohighlight">\(l/150\)</span></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>5</p></td>
+<td><p>墙架构件（风荷载不考虑阵风系数）</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p>（1）支柱（水平方向）</p></td>
+<td><p><span class="math notranslate nohighlight">\(l/400\)</span></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p>（2）抗风桁架（作为连续支柱的支承时，水平位移）</p></td>
+<td><p><span class="math notranslate nohighlight">\(l/1000\)</span></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p>（3）砌体墙的横梁（水平方向）</p></td>
+<td><p><span class="math notranslate nohighlight">\(l/300\)</span></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p>（4）支承压型金属板的横梁（水平方向）</p></td>
+<td><p><span class="math notranslate nohighlight">\(l/100\)</span></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p>（5）支承其它墙面材料的横梁（水平方向）</p></td>
+<td><p><span class="math notranslate nohighlight">\(l/200\)</span></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p>（6）带有玻璃窗的横梁（竖直和水平方向）</p></td>
+<td><p><span class="math notranslate nohighlight">\(l/200\)</span></p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>注：</p>
+<ol class="arabic simple">
+<li><p><span class="math notranslate nohighlight">\(l\)</span> 为受弯构件的跨度（对悬臂梁和伸臂梁为悬臂长度的2倍）。</p></li>
+<li><p><span class="math notranslate nohighlight">\(\Delta_1\)</span> 为永久和可变荷载标准值产生的挠度（如有起拱应减去拱度）的容许值；<span class="math notranslate nohighlight">\(\Delta_2\)</span> 为可变荷载标准值产生的挠度的容许值。</p></li>
+<li><p>当吊车梁或吊车桁架跨度大于12m时，其挠度容许值 <span class="math notranslate nohighlight">\(\Delta_1\)</span> 应乘以0.9的系数。</p></li>
+<li><p>当墙面采用延性材料或与结构采用柔性连接时，墙架构件的支柱水平位移容许值可采用 <span class="math notranslate nohighlight">\(l/300\)</span>，抗风桁架（作为连续支柱的支承时）水平位移容许值可采用 <span class="math notranslate nohighlight">\(l/800\)</span>。</p></li>
+<li><p>冶金厂房或类似车间中设有工作级别为A7、A8级起重机的车间，其跨间每侧吊车梁或吊车桁架的制动结构，由一台最大起重机横向水平荷载（按荷载规范取值）所产生的挠度不宜超过制动结构跨度的 <span class="math notranslate nohighlight">\(1/2200\)</span>。</p></li>
+</ol>
+</section>
+<section id="b-2">
+<h2>B.2 结构的位移容许值<a class="headerlink" href="#b-2" title="Link to this heading">#</a></h2>
+<section id="b-2-1">
+<h3>B.2.1 单层钢结构柱顶水平位移限值<a class="headerlink" href="#b-2-1" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>在风荷载标准值作用下，单层钢结构柱顶水平位移不宜超过表B.2.1-1的数值。</p></li>
+</ol>
+<p><strong>表B.2.1-1 风荷载作用下柱顶水平位移容许值</strong></p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>结构体系</p></th>
+<th class="head"><p>吊车情况</p></th>
+<th class="head"><p>柱顶水平位移</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>排架、框架</p></td>
+<td><p>无桥式起重机</p></td>
+<td><p><span class="math notranslate nohighlight">\(H/150\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p>有桥式起重机</p></td>
+<td><p><span class="math notranslate nohighlight">\(H/400\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>门式刚架</p></td>
+<td><p>无桥式起重机</p></td>
+<td><p>当采用轻型钢墙板时 <span class="math notranslate nohighlight">\(H/60\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p></p></td>
+<td><p>当采用砌体墙时 <span class="math notranslate nohighlight">\(H/100\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p>有桥式起重机</p></td>
+<td><p>当吊车有驾驶室时 <span class="math notranslate nohighlight">\(H/400\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p></p></td>
+<td><p>当吊车由地面操作时 <span class="math notranslate nohighlight">\(H/180\)</span></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>注：</p>
+<ol class="arabic simple">
+<li><p><span class="math notranslate nohighlight">\(H\)</span> 为柱高度。</p></li>
+<li><p>轻型框架结构的柱顶水平位移可适当放宽。</p></li>
+<li><p>在冶金厂房或类似车间中设有 A7、A8 级吊车的厂房柱和设有中级和重级工作制吊车的露天栈桥柱，在吊车梁或吊车桁架的顶面标高处，由一台最大吊车水平荷载（按荷载规范取值）所产生的计算变形值，不宜超过表B.2.1-2所列的容许值。</p></li>
+</ol>
+<p><strong>表B.2.1-2 吊车水平荷载作用下柱顶水平位移（计算值）容许值</strong></p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>项次</p></th>
+<th class="head"><p>位移的种类</p></th>
+<th class="head"><p>按平面结构图形计算</p></th>
+<th class="head"><p>按空间结构图形计算</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>厂房柱的横向位移</p></td>
+<td><p><img alt="" src="_images/image850.svg" /></p></td>
+<td><p><img alt="" src="_images/image851.svg" /></p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>露天栈桥柱的横向位移</p></td>
+<td><p><img alt="" src="_images/image852.svg" /></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>厂房和露天栈桥柱的纵向位移</p></td>
+<td><p><img alt="" src="_images/image853.svg" /></p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>注：</p>
+<ol class="arabic simple">
+<li><p><img alt="" src="_images/image854.svg" /> 为基础顶面至吊车梁或吊车桁架的顶面的高度。</p></li>
+<li><p>计算厂房或露天栈桥柱的纵向位移时，可假定吊车的纵向水平制动力分配在温度区段内所有的柱间支撑或纵向框架上。</p></li>
+<li><p>在设有 A8 级吊车的厂房中，厂房柱的水平位移（计算值）容许值宜减小 10%。</p></li>
+<li><p>在设有 A6 级吊车的厂房柱的纵向位移宜符合表中的要求。</p></li>
+</ol>
+</section>
+<section id="b-2-2">
+<h3>B.2.2 多层钢结构层间位移角限值<a class="headerlink" href="#b-2-2" title="Link to this heading">#</a></h3>
+<p>在风荷载标准值作用下，多层钢结构的层间位移角不宜超过表B.2.2的数值。</p>
+<p><strong>表B.2.2 层间位移角容许值</strong></p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>结构体系</p></th>
+<th class="head"><p>层间位移角</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>框架、框架-支撑</p></td>
+<td><p><span class="math notranslate nohighlight">\(1/250\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>框-排架</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p>侧向框-排架</p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p>竖向框-排架</p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p>排架</p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p>框架</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>注：</p>
+<ol class="arabic simple">
+<li><p>有桥式起重机时，层间位移角不宜超过 <span class="math notranslate nohighlight">\(1/400\)</span>。</p></li>
+<li><p>对室内装修要求较高的建筑，层间位移角宜适当减小；无墙壁的建筑，层间位移角可适当放宽。</p></li>
+<li><p>轻型钢结构的层间位移角可适当放宽。</p></li>
+</ol>
+</section>
+<section id="b-2-3">
+<h3>B.2.3 高层钢结构层间位移角限值<a class="headerlink" href="#b-2-3" title="Link to this heading">#</a></h3>
+<p>高层建筑钢结构在风荷载和多遇地震作用下，首层的质心处弹性层间位移角不宜超过 <span class="math notranslate nohighlight">\(1/1000\)</span>，其它层的弹性层间位移角不宜超过表B.2.3的数值：</p>
+<p><strong>表B.2.3 层间位移角容许值</strong></p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>脆性非结构构件与主体结构刚性连接时</p></td>
+<td><p>延性非结构构件与主体结构刚性连接时</p></td>
+<td><p>当延性非结构构件与主体结构柔性连接时</p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(1/300\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(1/250\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(1/200\)</span></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="b-2-4">
+<h3>B.2.4 大跨度钢结构位移限值<a class="headerlink" href="#b-2-4" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>在永久荷载与可变荷载的标准组合下，结构的最大挠度值不宜超过表B.2.4-1中的容许挠度值。</p></li>
+<li><p>在重力荷载代表值与多遇竖向地震作用标准值下的组合最大挠度值不宜超过表B.2.4-2的限值。</p></li>
+</ol>
+<p><strong>表B.2.4-1 非抗震组合时大跨度钢结构容许挠度值</strong></p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>结构类型</p></th>
+<th class="head"><p>跨中区域</p></th>
+<th class="head"><p>悬挑结构</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>受弯为主的结构</p></td>
+<td><p>桁架、网架、斜拉结构、张弦结构等</p></td>
+<td><p><span class="math notranslate nohighlight">\(L/250\)</span>（屋盖）<span class="math notranslate nohighlight">\(L/300\)</span>（楼盖）</p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p></p></td>
+<td><p><span class="math notranslate nohighlight">\(L/125\)</span>（屋盖）<span class="math notranslate nohighlight">\(L/150\)</span>（楼盖）</p></td>
+</tr>
+<tr class="row-even"><td><p>受压为主的结构</p></td>
+<td><p>双层网壳</p></td>
+<td><p><span class="math notranslate nohighlight">\(L/250\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p>拱架、单层网壳</p></td>
+<td><p><span class="math notranslate nohighlight">\(L/400\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>受拉为主的结构</p></td>
+<td><p>单层单索屋盖</p></td>
+<td><p><span class="math notranslate nohighlight">\(L/200\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p>单层索网、双层索系以及横向加劲索系的屋盖、索穹顶屋盖</p></td>
+<td><p><span class="math notranslate nohighlight">\(L/250\)</span></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>注：</p>
+<ol class="arabic simple">
+<li><p>表中 <span class="math notranslate nohighlight">\(L\)</span> 为短向跨度或者悬挑跨度。</p></li>
+<li><p>网架与桁架可预先起拱，起拱值可取不大于短向跨度的 <span class="math notranslate nohighlight">\(1/300\)</span>。当仅为改善外观条件时，结构挠度可取永久荷载与可变荷载标准值作用下的挠度计算值减去起拱值，但结构在可变荷载下的挠度不宜大于结构跨度的 <span class="math notranslate nohighlight">\(1/400\)</span>。</p></li>
+<li><p>对于设有悬挂起重设备的屋盖结构，其最大挠度值不宜大于结构跨度的 <span class="math notranslate nohighlight">\(1/400\)</span>，在可变荷载下的挠度不宜大于结构跨度的 <span class="math notranslate nohighlight">\(1/500\)</span>。</p></li>
+<li><p>索网结构的挠度为预应力之后的挠度。</p></li>
+</ol>
+<p><strong>表B.2.4-2 地震作用组合时大跨度钢结构容许挠度值</strong></p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>结构类型</p></th>
+<th class="head"><p>跨中区域</p></th>
+<th class="head"><p>悬挑结构</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>受弯为主的结构</p></td>
+<td><p>桁架、网架、斜拉结构、张弦结构等</p></td>
+<td><p><span class="math notranslate nohighlight">\(L/250\)</span>（屋盖）<span class="math notranslate nohighlight">\(L/300\)</span>（楼盖）</p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p></p></td>
+<td><p><span class="math notranslate nohighlight">\(L/125\)</span>（屋盖）<span class="math notranslate nohighlight">\(L/150\)</span>（楼盖）</p></td>
+</tr>
+<tr class="row-even"><td><p>受压为主的结构</p></td>
+<td><p>双层网壳、弦支穹顶</p></td>
+<td><p><span class="math notranslate nohighlight">\(L/300\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p>拱架、单层网壳</p></td>
+<td><p><span class="math notranslate nohighlight">\(L/400\)</span></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>注：<br />
+表中 <span class="math notranslate nohighlight">\(L\)</span> 为短向跨度或者悬挑跨度。</p>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="%E9%99%84%E5%BD%95A%20%E5%B8%B8%E7%94%A8%E5%BB%BA%E7%AD%91%E7%BB%93%E6%9E%84%E4%BD%93%E7%B3%BB.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">附录A 常用建筑结构体系</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="%E9%99%84%E5%BD%95C%20%E7%AE%80%E6%94%AF%E6%A2%81%E3%80%81%E6%82%AC%E8%87%82%E6%A2%81%E5%8F%8A%E6%A1%86%E6%9E%B6%E6%A2%81%E7%9A%84%E5%BC%B9%E6%80%A7%E5%B1%88%E6%9B%B2%E4%B8%B4%E7%95%8C%E5%BC%AF%E7%9F%A9.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">附录C  简支梁、悬臂梁及框架梁的弹性屈曲临界弯矩</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#b-1">B.1 受弯构件的挠度容许值</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#b-2">B.2 结构的位移容许值</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#b-2-1">B.2.1 单层钢结构柱顶水平位移限值</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#b-2-2">B.2.2 多层钢结构层间位移角限值</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#b-2-3">B.2.3 高层钢结构层间位移角限值</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#b-2-4">B.2.4 大跨度钢结构位移限值</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By 游田重新排版
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2025.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

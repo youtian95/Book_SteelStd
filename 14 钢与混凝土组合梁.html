@@ -1,0 +1,941 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>14 钢与混凝土组合梁 &#8212; 钢结构设计标准 GB 50017-2017</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="_static/mystyle.css?v=63ecd79b" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '14 钢与混凝土组合梁';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="15 钢管混凝土柱及节点" href="15%20%E9%92%A2%E7%AE%A1%E6%B7%B7%E5%87%9D%E5%9C%9F%E6%9F%B1%E5%8F%8A%E8%8A%82%E7%82%B9.html" />
+    <link rel="prev" title="13 钢管连接节点" href="13%20%E9%92%A2%E7%AE%A1%E8%BF%9E%E6%8E%A5%E8%8A%82%E7%82%B9.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="README.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="钢结构设计标准 GB 50017-2017 - Home"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="钢结构设计标准 GB 50017-2017 - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="README.html">
+                    《钢结构设计标准 GB 50017-2017》
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="%E5%89%8D%E8%A8%80.html">前言</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E7%9B%AE%E5%BD%95.html">目次</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="1%20%E6%80%BB%E5%88%99.html">1 总则</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2%20%E6%9C%AF%E8%AF%AD%E5%92%8C%E7%AC%A6%E5%8F%B7.html">2 术语和符号</a></li>
+<li class="toctree-l1"><a class="reference internal" href="3%20%E5%9F%BA%E6%9C%AC%E8%AE%BE%E8%AE%A1%E8%A7%84%E5%AE%9A.html">3 基本设计规定</a></li>
+<li class="toctree-l1"><a class="reference internal" href="4%20%E6%9D%90%E6%96%99%E5%92%8C%E6%9D%90%E6%96%99%E9%80%89%E7%94%A8.html">4 材料和材料选用</a></li>
+<li class="toctree-l1"><a class="reference internal" href="5%20%E7%BB%93%E6%9E%84%E5%88%86%E6%9E%90%E4%B8%8E%E7%A8%B3%E5%AE%9A%E6%80%A7%E8%AE%BE%E8%AE%A1.html">5 结构分析与稳定性设计</a></li>
+<li class="toctree-l1"><a class="reference internal" href="6%20%E5%8F%97%E5%BC%AF%E6%9E%84%E4%BB%B6.html">6 受弯构件</a></li>
+<li class="toctree-l1"><a class="reference internal" href="7%20%E8%BD%B4%E5%BF%83%E5%8F%97%E5%8A%9B%E6%9E%84%E4%BB%B6.html">7 轴心受力构件</a></li>
+<li class="toctree-l1"><a class="reference internal" href="8%20%E6%8B%89%E5%BC%AF%E3%80%81%E5%8E%8B%E5%BC%AF%E6%9E%84%E4%BB%B6.html">8 拉弯、压弯构件</a></li>
+<li class="toctree-l1"><a class="reference internal" href="9%20%E5%8A%A0%E5%8A%B2%E9%92%A2%E6%9D%BF%E5%89%AA%E5%8A%9B%E5%A2%99.html">9 加劲钢板剪力墙</a></li>
+<li class="toctree-l1"><a class="reference internal" href="10%20%E5%A1%91%E6%80%A7%E5%8F%8A%E5%BC%AF%E7%9F%A9%E8%B0%83%E5%B9%85%E8%AE%BE%E8%AE%A1.html">10 塑性及弯矩调幅设计</a></li>
+<li class="toctree-l1"><a class="reference internal" href="11%20%E8%BF%9E%E6%8E%A5.html">11 连接</a></li>
+<li class="toctree-l1"><a class="reference internal" href="12%20%E8%8A%82%E7%82%B9.html">12 节点</a></li>
+<li class="toctree-l1"><a class="reference internal" href="13%20%E9%92%A2%E7%AE%A1%E8%BF%9E%E6%8E%A5%E8%8A%82%E7%82%B9.html">13 钢管连接节点</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">14 钢与混凝土组合梁</a></li>
+<li class="toctree-l1"><a class="reference internal" href="15%20%E9%92%A2%E7%AE%A1%E6%B7%B7%E5%87%9D%E5%9C%9F%E6%9F%B1%E5%8F%8A%E8%8A%82%E7%82%B9.html">15 钢管混凝土柱及节点</a></li>
+<li class="toctree-l1"><a class="reference internal" href="16%20%E7%96%B2%E5%8A%B3%E8%AE%A1%E7%AE%97%E5%8F%8A%E9%98%B2%E8%84%86%E6%96%AD%E8%AE%BE%E8%AE%A1.html">16 疲劳计算及防脆断设计</a></li>
+<li class="toctree-l1"><a class="reference internal" href="17%20%E9%92%A2%E7%BB%93%E6%9E%84%E6%9E%84%E4%BB%B6%E5%92%8C%E8%8A%82%E7%82%B9%E6%8A%97%E9%9C%87%E8%AE%BE%E8%AE%A1.html">17 钢结构构件和节点抗震设计</a></li>
+<li class="toctree-l1"><a class="reference internal" href="18%20%E9%92%A2%E7%BB%93%E6%9E%84%E9%98%B2%E6%8A%A4.html">18 钢结构防护</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E9%99%84%E5%BD%95A%20%E5%B8%B8%E7%94%A8%E5%BB%BA%E7%AD%91%E7%BB%93%E6%9E%84%E4%BD%93%E7%B3%BB.html">附录A 常用建筑结构体系</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E9%99%84%E5%BD%95B%20%E7%BB%93%E6%9E%84%E6%88%96%E6%9E%84%E4%BB%B6%E7%9A%84%E5%8F%98%E5%BD%A2%E5%AE%B9%E8%AE%B8%E5%80%BC.html">附录B  结构或构件的变形容许值</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E9%99%84%E5%BD%95C%20%E7%AE%80%E6%94%AF%E6%A2%81%E3%80%81%E6%82%AC%E8%87%82%E6%A2%81%E5%8F%8A%E6%A1%86%E6%9E%B6%E6%A2%81%E7%9A%84%E5%BC%B9%E6%80%A7%E5%B1%88%E6%9B%B2%E4%B8%B4%E7%95%8C%E5%BC%AF%E7%9F%A9.html">附录C  简支梁、悬臂梁及框架梁的弹性屈曲临界弯矩</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E9%99%84%E5%BD%95D%20%E8%BD%B4%E5%BF%83%E5%8F%97%E5%8E%8B%E6%9E%84%E4%BB%B6%E7%9A%84%E7%A8%B3%E5%AE%9A%E7%B3%BB%E6%95%B0.html">附录D  轴心受压构件的稳定系数</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E9%99%84%E5%BD%95E%20%E6%9F%B1%E7%9A%84%E8%AE%A1%E7%AE%97%E9%95%BF%E5%BA%A6%E7%B3%BB%E6%95%B0.html">附录E  柱的计算长度系数</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E9%99%84%E5%BD%95F%20%E8%AE%BE%E7%BD%AE%E5%8A%A0%E5%8A%B2%E7%9A%84%E9%92%A2%E6%9D%BF%E5%89%AA%E5%8A%9B%E5%A2%99%E7%9A%84%E5%BC%B9%E6%80%A7%E5%B1%88%E6%9B%B2%E4%B8%B4%E7%95%8C%E5%BA%94%E5%8A%9B.html">附录F  设置加劲的钢板剪力墙的弹性屈曲临界应力</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E9%99%84%E5%BD%95G%20%E6%A1%81%E6%9E%B6%E8%8A%82%E7%82%B9%E6%9D%BF%E5%9C%A8%E6%96%9C%E8%85%B9%E6%9D%86%E5%8E%8B%E5%8A%9B%E4%BD%9C%E7%94%A8%E4%B8%8B%E7%9A%84%E7%A8%B3%E5%AE%9A%E8%AE%A1%E7%AE%97.html">附录G 桁架节点板在斜腹杆压力作用下的稳定计算</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E9%99%84%E5%BD%95H%20%E6%97%A0%E5%8A%A0%E5%8A%B2%E9%92%A2%E7%AE%A1%E7%9B%B4%E6%8E%A5%E7%84%8A%E6%8E%A5%E8%8A%82%E7%82%B9%E5%88%9A%E5%BA%A6%E5%88%A4%E5%88%AB.html">附录H  无加劲钢管直接焊接节点刚度判别</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E9%99%84%E5%BD%95J%20%E9%92%A2%E4%B8%8E%E6%B7%B7%E5%87%9D%E5%9C%9F%E7%BB%84%E5%90%88%E6%A2%81%E7%9A%84%E7%96%B2%E5%8A%B3%E9%AA%8C%E7%AE%97.html">附录J  钢与混凝土组合梁的疲劳验算</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E9%99%84%E5%BD%95K%20%E7%96%B2%E5%8A%B3%E8%AE%A1%E7%AE%97%E7%9A%84%E6%9E%84%E4%BB%B6%E5%92%8C%E8%BF%9E%E6%8E%A5%E5%88%86%E7%B1%BB.html">附录K  疲劳计算的构件和连接分类</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E9%99%84%E5%BD%95L%20%E5%BB%B6%E6%80%A7%E7%AD%89%E7%BA%A7.html">附录L  延性等级</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E9%99%84%E5%BD%95M%20%E7%BD%95%E9%81%87%E5%9C%B0%E9%9C%87%E4%BD%9C%E7%94%A8%E4%B8%8B%E7%9A%84%E4%BE%A7%E7%A7%BB%E8%AE%A1%E7%AE%97.html">附录M 罕遇地震作用下的侧移计算</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E6%9C%AC%E8%A7%84%E8%8C%83%E7%94%A8%E8%AF%8D%E8%AF%B4%E6%98%8E.html">本规范用词说明</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E5%BC%95%E7%94%A8%E6%A0%87%E5%87%86%E5%90%8D%E5%BD%95.html">引用标准名录</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/youtian95/Book_SteelStd" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/youtian95/Book_SteelStd/issues/new?title=Issue%20on%20page%20%2F14 钢与混凝土组合梁.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/14 钢与混凝土组合梁.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>14 钢与混凝土组合梁</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">14.1 一般规定</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">14.2 组合梁设计</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">14.3 抗剪连接件的计算</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">14.4 挠度计算</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">14.5 负弯矩区裂缝宽度计算</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">14.6 纵向抗剪计算</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">14.7 构造要求</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="id1">
+<h1>14 钢与混凝土组合梁<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
+<section id="id2">
+<h2>14.1 一般规定<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>本章规定适用于不直接承受动力荷载，由混凝土翼板与钢梁通过抗剪连接件组成的组合梁。对于直接承受动力荷载的组合梁，应按本规范附录J的要求进行疲劳计算，其承载能力应按弹性方法进行计算。组合梁的翼板可采用现浇混凝土板、混凝土叠合板或压型钢板混凝土组合板等，其中混凝土板应根据国家现行标准《混凝土结构设计规范》GB50010的规定进行设计。</p></li>
+<li><p>在进行组合梁截面承载能力验算时，跨中及中间支座处混凝土翼板的有效宽度 <span class="math notranslate nohighlight">\(b_e\)</span>（图14.1.2）应按下式计算：</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+b_e = b_0 + b_1 + b_2 \tag{14.1.2}
+\]</div>
+<p>式中：</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(b_0\)</span> —— 板托顶部的宽度: 当板托倾角 <span class="math notranslate nohighlight">\(\alpha &lt; 45^\circ\)</span> 时，应按 <span class="math notranslate nohighlight">\(\alpha = 45^\circ\)</span> 计算；当无板托时，则取钢梁上翼缘的宽度；当混凝土板和钢梁不直接接触（如之间有压型钢板分隔）时，取栓钉的横向间距，仅有一列栓钉时取 <span class="math notranslate nohighlight">\(0\)</span>；</p></li>
+<li><p><span class="math notranslate nohighlight">\(b_1, b_2\)</span> —— 梁外侧和内侧的翼板计算宽度，当塑性中和轴位于混凝土板内时，各取梁等效跨径 <span class="math notranslate nohighlight">\(l_e\)</span> 的 <span class="math notranslate nohighlight">\(1/6\)</span>。此外，<span class="math notranslate nohighlight">\(b_1\)</span> 尚不应超过翼板实际外伸宽度 <span class="math notranslate nohighlight">\(S_1\)</span>；<span class="math notranslate nohighlight">\(b_2\)</span> 不应超过相邻钢梁上翼缘或板托间净距 <span class="math notranslate nohighlight">\(S_0\)</span> 的 <span class="math notranslate nohighlight">\(1/2\)</span>；</p></li>
+<li><p><span class="math notranslate nohighlight">\(l_e\)</span> —— 等效跨径。对于简支组合梁，取为简支组合梁的跨度 <span class="math notranslate nohighlight">\(l\)</span>。对于连续组合梁，中间跨正弯矩区取为 <span class="math notranslate nohighlight">\(0.85l\)</span>，边跨正弯矩区取为 <span class="math notranslate nohighlight">\(0.7l\)</span>，支座负弯矩区取为相邻两跨跨度之和的 <span class="math notranslate nohighlight">\(0.2\)</span> 倍。</p></li>
+</ul>
+<p><img alt="不设板托的组合梁" src="media/image608.svg" /><br />
+(a) 不设板托的组合梁</p>
+<p><img alt="设板托的组合梁" src="media/image609.svg" /><br />
+(b) 设板托的组合梁</p>
+<p>图14.1.2 混凝土翼板的计算宽度<br />
+1—混凝土翼板；2—板托；3—钢梁</p>
+<ol class="arabic simple" start="3">
+<li><p>组合梁进行正常使用极限状态验算时应符合下列要求：</p>
+<ol class="arabic simple">
+<li><p>组合梁的挠度应按弹性方法进行计算，并应根据本规范第14.4.2条的规定对抗弯刚度进行折减。对于连续组合梁，在距中间支座两侧各 <span class="math notranslate nohighlight">\(0.15l\)</span>（<span class="math notranslate nohighlight">\(l\)</span> 为梁的跨度）范围内，不计受拉区混凝土对刚度的影响，但宜计入翼板有效宽度 <span class="math notranslate nohighlight">\(b_e\)</span> 范围内纵向钢筋的作用，其余区段仍取折减刚度。</p></li>
+<li><p>连续组合梁应按本规范第14.5节的规定验算负弯矩区段混凝土最大裂缝宽度 <span class="math notranslate nohighlight">\(w_{\text{max}}\)</span>。其负弯矩内力按不考虑混凝土开裂的弹性分析方法计算得到，并通过弯矩调幅法来考虑负弯矩区混凝土开裂导致的内力重分布。</p></li>
+<li><p>对于露天环境下使用的组合梁以及直接受热源辐射作用的组合梁，应考虑温度效应的影响，一般情况下钢梁和混凝土翼板间的计算温度差可采用 <span class="math notranslate nohighlight">\(10^\circ \sim 15^\circ\)</span>，在有可能发生更显著温差的情况下则按实际温差考虑。</p></li>
+<li><p>混凝土收缩产生的内力及变形可按组合梁混凝土板与钢梁之间的温差 <span class="math notranslate nohighlight">\(-15^\circ\)</span> 计算。</p></li>
+<li><p>可采用调整钢材与混凝土弹性模量比 <span class="math notranslate nohighlight">\(\alpha_E\)</span> 的方法考虑混凝土徐变的影响，一般情况下可取钢与混凝土的长期弹性模量比为 <span class="math notranslate nohighlight">\(2\alpha_E\)</span>。</p></li>
+</ol>
+</li>
+<li><p>组合梁施工时，混凝土硬结前的材料重量和施工荷载应由钢梁承受，钢梁应根据实际临时支撑的情况按本规范第3章和第7章的规定验算其强度、稳定性和变形。计算组合梁挠度和负弯矩区裂缝宽度时应考虑施工方法及工序的影响。计算组合梁挠度时，应将施工阶段的挠度和使用阶段续加荷载产生的挠度相叠加，当钢梁下有临时支撑时，应考虑拆除临时支撑时引起的附加变形。计算组合梁负弯矩区裂缝宽度时，仅考虑形成组合截面后引入的支座负弯矩值。</p></li>
+<li><p>在强度和变形满足要求的前提下，组合梁可按照部分抗剪连接进行设计。</p></li>
+<li><p>按本章进行设计的组合梁，钢梁的板件宽厚比应符合本规范第10章中塑性设计的相关规定。当组合梁受压上翼缘不符合塑性设计要求的板件宽厚比限值，但连接件最大间距满足如下要求时，仍能采用塑性方法进行设计：</p>
+<ol class="arabic simple">
+<li><p>当混凝土板沿全长和组合梁接触（如现浇楼板）：<br />
+$<span class="math notranslate nohighlight">\(
+ \frac{b}{t_f} \leq 0.56\sqrt{\frac{E}{f_y}} \cdot \phi
+ \)</span>$</p></li>
+<li><p>当混凝土板和组合梁部分接触（如压型钢板横肋垂直于钢梁）：<br />
+$<span class="math notranslate nohighlight">\(
+ \frac{b}{t_f} \leq 0.48\sqrt{\frac{E}{f_y}} \cdot \phi
+ \)</span>$</p></li>
+<li><p>连接件的外侧边缘与钢梁翼缘边缘之间的距离不大于 <span class="math notranslate nohighlight">\(0.5t_f\)</span>。</p></li>
+</ol>
+</li>
+<li><p>组合梁承载能力按塑性分析方法进行计算时，连续组合梁和框架组合梁在竖向荷载作用下的内力采用不考虑混凝土开裂的模型进行弹性分析，按本规范第10章的规定采用弯矩调幅法考虑负弯矩区混凝土开裂以及截面塑性发展的影响，楼板的设计应符合国家现行标准《混凝土设计规范》GB50011的要求。</p></li>
+<li><p>组合梁尚应按本规范第14.6节的规定进行混凝土翼板的纵向抗剪验算；在组合梁的强度、挠度和裂缝计算中，可不考虑板托截面。</p></li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="id3">
+<h2>14.2 组合梁设计<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
+<ol class="arabic">
+<li><p>完全抗剪连接组合梁的抗弯强度应按下列规定计算：</p>
+<ol class="arabic">
+<li><p><strong>正弯矩作用区段</strong>：</p>
+<ol class="arabic">
+<li><p>塑性中和轴在混凝土翼板内（图14.2.1-1），即 <span class="math notranslate nohighlight">\(x \leq h_c\)</span> 时：</p>
+<div class="math notranslate nohighlight">
+\[
+            M = A f_y y + 0.85 f_c b_e x (h_c - \frac{x}{2}) \tag{14.2.1-1}
+            \]</div>
+<div class="math notranslate nohighlight">
+\[
+            x = \frac{A f_y}{0.85 f_c b_e} \tag{14.2.1-2}
+            \]</div>
+<p><img alt="塑性中和轴在混凝土翼板内时的组合梁截面及应力图形" src="media/image617.svg" /></p>
+<p>图14.2.1-1 塑性中和轴在混凝土翼板内时的组合梁截面及应力图形</p>
+</li>
+<li><p>塑性中和轴在钢梁截面内（图14.2.1-2），即 <span class="math notranslate nohighlight">\(x &gt; h_c\)</span> 时：</p>
+<div class="math notranslate nohighlight">
+\[
+            M = A_c f_y y_1 + A_t f_y y_2 \tag{14.2.1-3}
+            \]</div>
+<div class="math notranslate nohighlight">
+\[
+            A_c = A - A_t \tag{14.2.1-4}
+            \]</div>
+<p><img alt="塑性中和轴在钢梁内时的组合梁截面及应力图形" src="media/image621.svg" /></p>
+<p>图14.2.1-2 塑性中和轴在钢梁内时的组合梁截面及应力图形</p>
+</li>
+</ol>
+</li>
+<li><p><strong>负弯矩作用区段（图14.2.1-3）</strong>：</p>
+<div class="math notranslate nohighlight">
+\[
+        M' = A f_y y_3 + A_{st} f_{st} y_4 \tag{14.2.1-5}
+        \]</div>
+<div class="math notranslate nohighlight">
+\[
+        y_3 = \frac{A_{st} f_{st}}{A f_y} \tag{14.2.1-6}
+        \]</div>
+<div class="math notranslate nohighlight">
+\[
+        A_c = A - A_{st} \tag{14.2.1-7}
+        \]</div>
+<p><img alt="负弯矩作用时组合梁截面及应力图形" src="media/image626.svg" /></p>
+<p>图14.2.1-3 负弯矩作用时组合梁截面及应力图形<br />
+1—组合截面塑性中和轴；2—钢梁截面塑性中和轴</p>
+</li>
+</ol>
+</li>
+<li><p>部分抗剪连接组合梁在正弯矩区段的抗弯强度宜按下列公式计算（图14.2.2）：</p>
+<div class="math notranslate nohighlight">
+\[
+    M_{u,r} = n_r Q_r y_1 \tag{14.2.2-1}
+    \]</div>
+<div class="math notranslate nohighlight">
+\[
+    y_1 = \frac{A f_y}{n_r Q_r} \tag{14.2.2-2}
+    \]</div>
+<div class="math notranslate nohighlight">
+\[
+    n_r = \frac{V_s}{Q_r} \tag{14.2.2-3}
+    \]</div>
+<p><img alt="部分抗剪连接组合梁计算简图" src="media/image633.svg" /></p>
+<p>图14.2.2 部分抗剪连接组合梁计算简图<br />
+1—组合梁塑性中和轴</p>
+</li>
+<li><p>组合梁截面上的全部剪力，假定仅由钢梁腹板承受，应按本规范公式（10.2.2）进行计算。</p></li>
+<li><p>用弯矩调幅设计法计算组合梁强度时，按下列规定考虑弯矩与剪力的相互影响：</p>
+<ol class="arabic">
+<li><p>受正弯矩的组合梁截面不考虑弯矩和剪力的相互影响；</p></li>
+<li><p>受负弯矩的组合梁截面，当 <span class="math notranslate nohighlight">\(V \leq 0.5V_u\)</span> 时，可不对验算负弯矩抗弯承载力所用的腹板钢材强度设计值进行折减；当剪力设计值 <span class="math notranslate nohighlight">\(V &gt; 0.5V_u\)</span> 时，验算负弯矩抗弯承载力所用的腹板钢材强度设计值 <span class="math notranslate nohighlight">\(f_y\)</span> 折减为 <span class="math notranslate nohighlight">\(f_y' = f_y \cdot \phi\)</span>，折减系数 <span class="math notranslate nohighlight">\(\phi\)</span> 按下式计算：</p>
+<div class="math notranslate nohighlight">
+\[
+        \phi = 1 - \frac{V}{V_u} \tag{14.2.4}
+        \]</div>
+</li>
+</ol>
+</li>
+</ol>
+</section>
+<section id="id4">
+<h2>14.3 抗剪连接件的计算<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
+<ol class="arabic">
+<li><p>组合梁的抗剪连接件宜采用圆柱头焊钉，也可采用槽钢或有可靠依据的其它类型连接件（图14.3.1）。单个抗剪连接件的抗剪承载力设计值由下列公式确定：</p>
+<p><img alt="圆柱头焊钉连接件" src="_images/image640.svg" /><br />
+(a) 圆柱头焊钉连接件</p>
+<p><img alt="槽钢连接件" src="_images/image641.svg" /><br />
+(b) 槽钢连接件</p>
+<p>图14.3.1 连接件的外形</p>
+<ol class="arabic">
+<li><p><strong>圆柱头焊钉连接件</strong>：</p>
+<div class="math notranslate nohighlight">
+\[
+        P = 0.5 \cdot E_c \cdot A_s \cdot f_u \tag{14.3.1-1}
+        \]</div>
+<p>式中：<br />
+<span class="math notranslate nohighlight">\(E_c\)</span> —— 混凝土的弹性模量；<br />
+<span class="math notranslate nohighlight">\(A_s\)</span> —— 圆柱头焊钉钉杆截面面积；<br />
+<span class="math notranslate nohighlight">\(f_u\)</span> —— 圆柱头焊钉极限抗拉强度设计值，需满足《电弧螺柱焊用圆柱头焊钉》GB/T 10433的要求。</p>
+</li>
+<li><p><strong>槽钢连接件</strong>：</p>
+<div class="math notranslate nohighlight">
+\[
+        P = 0.6 \cdot t \cdot t_w \cdot l_c \tag{14.3.1-2}
+        \]</div>
+<p>式中：<br />
+<span class="math notranslate nohighlight">\(t\)</span> —— 槽钢翼缘的平均厚度；<br />
+<span class="math notranslate nohighlight">\(t_w\)</span> —— 槽钢腹板的厚度；<br />
+<span class="math notranslate nohighlight">\(l_c\)</span> —— 槽钢的长度。</p>
+<p>槽钢连接件通过肢尖肢背两条通长角焊缝与钢梁连接，角焊缝按承受该连接件的抗剪承载力设计值 <span class="math notranslate nohighlight">\(P\)</span> 进行计算。</p>
+</li>
+</ol>
+</li>
+<li><p>对于用压型钢板混凝土组合板做翼板的组合梁（图14.3.2），其焊钉连接件的抗剪承载力设计值应分别按以下两种情况予以降低：</p>
+<p><img alt="用压型钢板作混凝土翼板底模的组合梁" src="media/image645.svg" /><br />
+(a) 肋与钢梁平行的组合梁截面<br />
+(b) 肋与钢梁垂直的组合梁截面<br />
+(c) 压型钢板作底模的楼板剖面</p>
+<p>图14.3.2 用压型钢板作混凝土翼板底模的组合梁</p>
+<ol class="arabic">
+<li><p>当压型钢板肋平行于钢梁布置（图14.3.2a），<span class="math notranslate nohighlight">\(b_w / h_e &lt; 1.5\)</span> 时，按公式（14.3.1-1）算得的 <span class="math notranslate nohighlight">\(P\)</span> 应乘以折减系数 <span class="math notranslate nohighlight">\(\eta\)</span> 后取用。<span class="math notranslate nohighlight">\(\eta\)</span> 值按下式计算：</p>
+<div class="math notranslate nohighlight">
+\[
+        \eta = 0.7 + 0.3 \cdot \frac{b_w}{h_e} \tag{14.3.2-1}
+        \]</div>
+<p>式中：<br />
+<span class="math notranslate nohighlight">\(b_w\)</span> —— 混凝土凸肋的平均宽度，当肋的上部宽度小于下部宽度时（图14.3.2c），改取上部宽度；<br />
+<span class="math notranslate nohighlight">\(h_e\)</span> —— 混凝土凸肋高度；<br />
+<span class="math notranslate nohighlight">\(h_d\)</span> —— 焊钉高度。</p>
+</li>
+<li><p>当压型钢板肋垂直于钢梁布置时（图14.3.2b），焊钉连接件承载力设计值的折减系数按下式计算：</p>
+<div class="math notranslate nohighlight">
+\[
+        \eta = 0.85 - 0.05 \cdot n_0 \tag{14.3.2-2}
+        \]</div>
+<p>式中：<br />
+<span class="math notranslate nohighlight">\(n_0\)</span> —— 在梁某截面处一个肋中布置的焊钉数，当多于3个时，按3个计算。</p>
+</li>
+</ol>
+</li>
+<li><p>位于负弯矩区段的抗剪连接件，其抗剪承载力设计值 <span class="math notranslate nohighlight">\(P\)</span> 应乘以折减系数 0.9。</p></li>
+<li><p>当采用柔性抗剪连接件时，抗剪连接件的计算应以弯矩绝对值最大点及支座为界限，划分为若干个区段（图14.3.4），逐段进行布置。每个剪跨区段内钢梁与混凝土上翼板交界面的纵向剪力 <span class="math notranslate nohighlight">\(V_s\)</span> 按下列公式确定：</p>
+<p><img alt="连续梁剪跨区划分图" src="media/image651.svg" /></p>
+<p>图14.3.4 连续梁剪跨区划分图</p>
+<ol class="arabic">
+<li><p>正弯矩最大点到边支座区段，即 <span class="math notranslate nohighlight">\(m_1\)</span> 区段，<span class="math notranslate nohighlight">\(V_s\)</span> 取 <span class="math notranslate nohighlight">\(A f\)</span> 和 <span class="math notranslate nohighlight">\(b_e h_c f_c\)</span> 中的较小者。</p></li>
+<li><p>正弯矩最大点到中支座（负弯矩最大点）区段，即 <span class="math notranslate nohighlight">\(m_2\)</span> 和 <span class="math notranslate nohighlight">\(m_3\)</span> 区段：</p>
+<div class="math notranslate nohighlight">
+\[
+        V_s = \frac{M}{l} \tag{14.3.4-1}
+        \]</div>
+<p>按照完全抗剪连接设计时，每个剪跨区段内需要的连接件总数 <span class="math notranslate nohighlight">\(n_f\)</span>，按下式计算：</p>
+<div class="math notranslate nohighlight">
+\[
+        n_f = \frac{V_s}{P} \tag{14.3.4-2}
+        \]</div>
+<p>部分抗剪连接组合梁，其连接件的实配个数不得少于 <span class="math notranslate nohighlight">\(n_f\)</span> 的 50%。<br />
+按公式（14.3.4-2）算得的连接件数量，可在对应的剪跨区段内均匀布置。当在此剪跨区段内有较大集中荷载作用时，应将连接件个数 <span class="math notranslate nohighlight">\(n_f\)</span> 按剪力图面积比例分配后再各自均匀布置。</p>
+</li>
+</ol>
+</li>
+</ol>
+</section>
+<section id="id5">
+<h2>14.4 挠度计算<a class="headerlink" href="#id5" title="Link to this heading">#</a></h2>
+<ol class="arabic">
+<li><p>组合梁的挠度应分别按荷载的标准组合和准永久组合进行计算，以其中的较大值作为依据。挠度可按结构力学方法进行计算，仅受正弯矩作用的组合梁，其抗弯刚度应取考虑滑移效应的折减刚度，连续组合梁应按变截面刚度梁（见第14.1.4条）进行计算。在上述两种荷载组合中，组合梁应各取其相应的折减刚度。</p></li>
+<li><p>组合梁考虑滑移效应的折减刚度 <span class="math notranslate nohighlight">\(B\)</span> 可按下式确定：</p>
+<div class="math notranslate nohighlight">
+\[
+    B = \frac{EI_{\text{eq}}}{1 + \xi}
+    \]</div>
+<p>式中：<br />
+<span class="math notranslate nohighlight">\(E\)</span> —— 钢梁的弹性模量；<br />
+<span class="math notranslate nohighlight">\(I_{\text{eq}}\)</span> —— 组合梁的换算截面惯性矩；对荷载的标准组合，可将截面中的混凝土翼板有效宽度除以钢与混凝土弹性模量的比值 <span class="math notranslate nohighlight">\(\alpha_E\)</span> 换算为钢截面宽度后，计算整个截面的惯性矩；对荷载的准永久组合，则除以 <span class="math notranslate nohighlight">\(2\alpha_E\)</span> 进行换算；对于钢梁与压型钢板混凝土组合板构成的组合梁，取其较弱截面的换算截面进行计算，且不计压型钢板的作用。<br />
+<span class="math notranslate nohighlight">\(\xi\)</span> —— 刚度折减系数，按14.4.3条进行计算。</p>
+</li>
+<li><p>刚度折减系数 <span class="math notranslate nohighlight">\(\xi\)</span> 按下式计算（当 <span class="math notranslate nohighlight">\(\xi \leq 0\)</span> 时，取 <span class="math notranslate nohighlight">\(\xi = 0\)</span>）：</p>
+<div class="math notranslate nohighlight">
+\[
+    \xi = \frac{1}{1 + \frac{A_{\text{cf}}}{A} + \frac{I_{\text{cf}}}{I} + \frac{d_c^2}{h^2} + \frac{l}{p} \cdot \frac{1}{n_s} \cdot \frac{P}{A_{\text{cf}}}}
+    \]</div>
+<p>式中：<br />
+<span class="math notranslate nohighlight">\(A_{\text{cf}}\)</span> —— 混凝土翼板截面面积；对压型钢板混凝土组合板的翼板，取其较弱截面的面积，且不考虑压型钢板；<br />
+<span class="math notranslate nohighlight">\(A\)</span> —— 钢梁截面面积；<br />
+<span class="math notranslate nohighlight">\(I\)</span> —— 钢梁截面惯性矩；<br />
+<span class="math notranslate nohighlight">\(I_{\text{cf}}\)</span> —— 混凝土翼板的截面惯性矩；对压型钢板混凝土组合板的翼板，取其较弱截面的惯性矩，且不考虑压型钢板；<br />
+<span class="math notranslate nohighlight">\(d_c\)</span> —— 钢梁截面形心到混凝土翼板截面（对压型钢板混凝土组合板为其较弱截面）形心的距离；<br />
+<span class="math notranslate nohighlight">\(h\)</span> —— 组合梁截面高度；<br />
+<span class="math notranslate nohighlight">\(l\)</span> —— 组合梁的跨度（mm）；<br />
+<span class="math notranslate nohighlight">\(P\)</span> —— 抗剪连接件的承载力设计值，按14.3.1条的规定计算（单位取N）；<br />
+<span class="math notranslate nohighlight">\(p\)</span> —— 抗剪连接件的纵向平均间距（mm）；<br />
+<span class="math notranslate nohighlight">\(n_s\)</span> —— 抗剪连接件在一根梁上的列数；<br />
+<span class="math notranslate nohighlight">\(\alpha_E\)</span> —— 钢梁与混凝土弹性模量的比值。</p>
+<p>注：当按荷载效应的准永久组合进行计算时，公式中的 <span class="math notranslate nohighlight">\(\alpha_E\)</span> 应乘以 2。</p>
+</li>
+</ol>
+</section>
+<section id="id6">
+<h2>14.5 负弯矩区裂缝宽度计算<a class="headerlink" href="#id6" title="Link to this heading">#</a></h2>
+<ol class="arabic">
+<li><p>组合梁负弯矩区段混凝土在正常使用极限状态下考虑长期作用影响的最大裂缝宽度 <span class="math notranslate nohighlight">\(w_{\text{max}}\)</span> 应按国家现行标准《混凝土结构设计规范》GB50010的规定按轴心受拉构件进行计算，其值不得大于《混凝土结构设计规范》GB50010所规定的限值。</p></li>
+<li><p>按荷载效应的标准组合计算的开裂截面纵向受拉钢筋的应力 <span class="math notranslate nohighlight">\(\sigma_{\text{sk}}\)</span> 按下式计算：</p>
+<div class="math notranslate nohighlight">
+\[
+    \sigma_{\text{sk}} = \frac{M_k}{I_{\text{cr}} \cdot y_s}
+    \]</div>
+<div class="math notranslate nohighlight">
+\[
+    M_k = M_e \cdot \beta
+    \]</div>
+<p>式中：<br />
+<span class="math notranslate nohighlight">\(I_{\text{cr}}\)</span> —— 由纵向普通钢筋与钢梁形成的组合截面的惯性矩；<br />
+<span class="math notranslate nohighlight">\(y_s\)</span> —— 钢筋截面重心至钢筋和钢梁形成的组合截面中和轴的距离；<br />
+<span class="math notranslate nohighlight">\(M_k\)</span> —— 钢与混凝土形成组合截面之后，考虑了弯矩调幅的标准荷载作用下支座截面负弯矩组合值，对于悬臂组合梁，公式中的 <span class="math notranslate nohighlight">\(M_k\)</span> 应根据平衡条件计算得到；<br />
+<span class="math notranslate nohighlight">\(M_e\)</span> —— 钢与混凝土形成组合截面之后，标准荷载作用下按照未开裂模型进行弹性计算得到的连续组合梁中支座负弯矩值；<br />
+<span class="math notranslate nohighlight">\(\beta\)</span> —— 正常使用极限状态连续组合梁中支座负弯矩调幅系数，其取值不宜超过 15%。</p>
+</li>
+</ol>
+</section>
+<section id="id7">
+<h2>14.6 纵向抗剪计算<a class="headerlink" href="#id7" title="Link to this heading">#</a></h2>
+<ol class="arabic">
+<li><p>组合梁板托及翼缘板纵向抗剪承载力验算时，应分别验算图14.6.1所示的纵向受剪界面 <span class="math notranslate nohighlight">\(a\)</span>-<span class="math notranslate nohighlight">\(a\)</span>、<span class="math notranslate nohighlight">\(b\)</span>-<span class="math notranslate nohighlight">\(b\)</span>、<span class="math notranslate nohighlight">\(c\)</span>-<span class="math notranslate nohighlight">\(c\)</span> 及 <span class="math notranslate nohighlight">\(d\)</span>-<span class="math notranslate nohighlight">\(d\)</span>。</p>
+<p><img alt="混凝土板纵向受剪界面" src="media/image669.svg" /></p>
+<p>图中：<br />
+<span class="math notranslate nohighlight">\(A_{cf}\)</span> —— 混凝土板顶部附近单位长度内钢筋面积的总和（mm²/mm），包括混凝土板内抗弯和构造钢筋；<br />
+<span class="math notranslate nohighlight">\(A_b\)</span>、<span class="math notranslate nohighlight">\(A_t\)</span> —— 分别为混凝土板底部、承托底部单位长度内钢筋面积的总和（mm²/mm）。</p>
+</li>
+<li><p>单位纵向长度内受剪界面上的纵向剪力设计值应按下列公式计算：</p>
+<ol class="arabic">
+<li><p>单位纵向长度上 <span class="math notranslate nohighlight">\(b\)</span>-<span class="math notranslate nohighlight">\(b\)</span>、<span class="math notranslate nohighlight">\(c\)</span>-<span class="math notranslate nohighlight">\(c\)</span> 及 <span class="math notranslate nohighlight">\(d\)</span>-<span class="math notranslate nohighlight">\(d\)</span> 受剪界面的计算纵向剪力为：</p>
+<div class="math notranslate nohighlight">
+\[
+        v_{l,1} = \frac{V_s}{m_i \cdot b_e}
+        \]</div>
+</li>
+<li><p>单位纵向长度上 <span class="math notranslate nohighlight">\(a\)</span>-<span class="math notranslate nohighlight">\(a\)</span> 受剪界面的计算纵向剪力为：</p>
+<div class="math notranslate nohighlight">
+\[
+        v_{l,1} = \frac{V_s}{m_i \cdot (b_1 + b_2)}
+        \]</div>
+</li>
+</ol>
+<p>式中：<br />
+<span class="math notranslate nohighlight">\(v_{l,1}\)</span> —— 单位纵向长度内受剪界面上的纵向剪力设计值；<br />
+<span class="math notranslate nohighlight">\(V_s\)</span> —— 每个剪跨区段内钢梁与混凝土上翼板交界面的纵向剪力，按本规范14.3.4条的规定计算；<br />
+<span class="math notranslate nohighlight">\(m_i\)</span> —— 剪跨区段长度，如图14.3.4所示；<br />
+<span class="math notranslate nohighlight">\(b_1\)</span>、<span class="math notranslate nohighlight">\(b_2\)</span> —— 分别为混凝土翼板左右两侧挑出的宽度；<br />
+<span class="math notranslate nohighlight">\(b_e\)</span> —— 混凝土翼板有效宽度，按第14.1.2条的规定取为对应跨的跨中有效宽度取值。</p>
+</li>
+<li><p>组合梁承托及翼缘板界面纵向受剪承载力计算应符合下列规定：</p>
+<div class="math notranslate nohighlight">
+\[
+    v_{l,u,1} = \min \left( f_t \cdot b_f, \frac{A_e \cdot f_r}{b_f} \right)
+    \]</div>
+<p>式中：<br />
+<span class="math notranslate nohighlight">\(v_{l,u,1}\)</span> —— 单位纵向长度内界面抗剪承载力（N/mm），取上述公式中的较小值；<br />
+<span class="math notranslate nohighlight">\(f_t\)</span> —— 混凝土抗拉强度设计值（N/mm²）；<br />
+<span class="math notranslate nohighlight">\(b_f\)</span> —— 受剪界面的横向长度，按图14.6.1所示的 <span class="math notranslate nohighlight">\(a\)</span>-<span class="math notranslate nohighlight">\(a\)</span>、<span class="math notranslate nohighlight">\(b\)</span>-<span class="math notranslate nohighlight">\(b\)</span>、<span class="math notranslate nohighlight">\(c\)</span>-<span class="math notranslate nohighlight">\(c\)</span> 及 <span class="math notranslate nohighlight">\(d\)</span>-<span class="math notranslate nohighlight">\(d\)</span> 连线在抗剪连接件以外的最短长度取值（mm）；<br />
+<span class="math notranslate nohighlight">\(A_e\)</span> —— 单位长度上横向钢筋的截面面积（mm²/mm），按图14.6.1和表14.6.3取值；<br />
+<span class="math notranslate nohighlight">\(f_r\)</span> —— 横向钢筋的强度设计值（N/mm²）。</p>
+<p><strong>表14.6.3 单位长度上横向钢筋的截面积 <span class="math notranslate nohighlight">\(A_e\)</span></strong></p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>剪切面</p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(a\)</span>-<span class="math notranslate nohighlight">\(a\)</span></p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(b\)</span>-<span class="math notranslate nohighlight">\(b\)</span></p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(c\)</span>-<span class="math notranslate nohighlight">\(c\)</span></p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(d\)</span>-<span class="math notranslate nohighlight">\(d\)</span></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(A_e\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(A_b + A_t\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(2A_b\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(2(A_b + A_{bh})\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(2A_{bh}\)</span></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li><p>横向钢筋应满足如下最小配筋率的要求：</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+\rho_{\text{min}} = \frac{A_e}{b_f \cdot h}
+\]</div>
+</section>
+<section id="id8">
+<h2>14.7 构造要求<a class="headerlink" href="#id8" title="Link to this heading">#</a></h2>
+<ol class="arabic">
+<li><p>组合梁截面高度不宜超过钢梁截面高度的 2 倍；混凝土板托高度 <span class="math notranslate nohighlight">\(h_{c2}\)</span> 不宜超过翼板厚度 <span class="math notranslate nohighlight">\(h_{c1}\)</span> 的 1.5 倍。</p></li>
+<li><p>组合梁边梁混凝土翼板的构造应满足图 14.7.2 的要求。有板托时，伸出长度不宜小于 <span class="math notranslate nohighlight">\(h_{c2}\)</span>；无板托时，应同时满足伸出钢梁中心线不小于 150 mm、伸出钢梁翼缘边不小于 50 mm 的要求。</p>
+<p><img alt="" src="media/image678.svg" /><br />
+图 14.7.2 边梁构造图</p>
+</li>
+<li><p>连续组合梁在中间支座负弯矩区的上部纵向钢筋及分布钢筋，应按国家现行标准《混凝土结构设计规范》GB50010 的规定设置。</p></li>
+<li><p>抗剪连接件的设置应符合以下规定：</p>
+<ol class="arabic simple">
+<li><p>圆柱头焊钉连接件钉头下表面或槽钢连接件上翼缘下表面高出翼板底部钢筋顶面 <span class="math notranslate nohighlight">\(h_{e0}\)</span> 不宜小于 30 mm；</p></li>
+<li><p>连接件沿梁跨度方向的最大间距不应大于混凝土翼板（包括板托）厚度的 3 倍，且不大于 300 mm；连接件的外侧边缘与钢梁翼缘边缘之间的距离不应小于 20 mm；连接件的外侧边缘至混凝土翼板边缘间的距离不应小于 100 mm；连接件顶面的混凝土保护层厚度不应小于 15 mm。</p></li>
+</ol>
+</li>
+<li><p>圆柱头焊钉连接件除应满足 14.7.4 条要求外，尚应符合下列规定：</p>
+<ol class="arabic simple">
+<li><p>当焊钉位置不正对钢梁腹板时，如钢梁上翼缘承受拉力，则焊钉钉杆直径不应大于钢梁上翼缘厚度的 1.5 倍；如钢梁上翼缘不承受拉力，则焊钉钉杆直径不应大于钢梁上翼缘厚度的 2.5 倍；</p></li>
+<li><p>焊钉长度不应小于其杆径的 4 倍；</p></li>
+<li><p>焊钉沿梁轴线方向的间距不应小于杆径的 6 倍；垂直于梁轴线方向的间距不应小于杆径的 4 倍；</p></li>
+<li><p>用压型钢板作底模的组合梁，焊钉钉杆直径不宜大于 19 mm，混凝土凸肋宽度不应小于焊钉钉杆直径的 2.5 倍；焊钉高度 <span class="math notranslate nohighlight">\(h_d\)</span> 应符合 <span class="math notranslate nohighlight">\(h_d \geq h_e + 2d\)</span> 的要求（图 14.3.2）。</p></li>
+</ol>
+</li>
+<li><p>槽钢连接件一般采用 Q235 钢，截面不宜大于 12.6。</p></li>
+<li><p>横向钢筋应满足如下构造要求：</p>
+<ol class="arabic simple">
+<li><p>横向钢筋的间距不应大于 <span class="math notranslate nohighlight">\(4h_{e0}\)</span>，且不应大于 200 mm。<span class="math notranslate nohighlight">\(h_{e0}\)</span> 的定义见本规范第 14.7.4 条第 1 款；</p></li>
+<li><p>板托中应配 U 型横向钢筋加强（图 14.6.1）。板托中横向钢筋的下部水平段应该设置在距钢梁上翼缘 50 mm 的范围以内。</p></li>
+</ol>
+</li>
+<li><p>对于承受负弯矩的箱形截面组合梁，可在钢箱梁底板上方或腹板内侧设置抗剪连接件并浇筑混凝土。</p></li>
+</ol>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="13%20%E9%92%A2%E7%AE%A1%E8%BF%9E%E6%8E%A5%E8%8A%82%E7%82%B9.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">13 钢管连接节点</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="15%20%E9%92%A2%E7%AE%A1%E6%B7%B7%E5%87%9D%E5%9C%9F%E6%9F%B1%E5%8F%8A%E8%8A%82%E7%82%B9.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">15 钢管混凝土柱及节点</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">14.1 一般规定</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">14.2 组合梁设计</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">14.3 抗剪连接件的计算</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">14.4 挠度计算</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">14.5 负弯矩区裂缝宽度计算</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">14.6 纵向抗剪计算</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">14.7 构造要求</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By 游田重新排版
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2025.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
