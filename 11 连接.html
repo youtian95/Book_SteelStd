@@ -1,0 +1,1652 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>11 连接 &#8212; 钢结构设计标准 GB 50017-2017</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="_static/mystyle.css?v=63ecd79b" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '11 连接';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="10 塑性及弯矩调幅设计" href="10%20%E5%A1%91%E6%80%A7%E5%8F%8A%E5%BC%AF%E7%9F%A9%E8%B0%83%E5%B9%85%E8%AE%BE%E8%AE%A1.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="README.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="钢结构设计标准 GB 50017-2017 - Home"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="钢结构设计标准 GB 50017-2017 - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="README.html">
+                    《钢结构设计标准 GB 50017-2017》
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="%E5%89%8D%E8%A8%80.html">前言</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E7%9B%AE%E5%BD%95.html">目次</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="1%20%E6%80%BB%E5%88%99.html">1 总则</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2%20%E6%9C%AF%E8%AF%AD%E5%92%8C%E7%AC%A6%E5%8F%B7.html">2 术语和符号</a></li>
+<li class="toctree-l1"><a class="reference internal" href="3%20%E5%9F%BA%E6%9C%AC%E8%AE%BE%E8%AE%A1%E8%A7%84%E5%AE%9A.html">3 基本设计规定</a></li>
+<li class="toctree-l1"><a class="reference internal" href="4%20%E6%9D%90%E6%96%99%E5%92%8C%E6%9D%90%E6%96%99%E9%80%89%E7%94%A8.html">4 材料和材料选用</a></li>
+<li class="toctree-l1"><a class="reference internal" href="5%20%E7%BB%93%E6%9E%84%E5%88%86%E6%9E%90%E4%B8%8E%E7%A8%B3%E5%AE%9A%E6%80%A7%E8%AE%BE%E8%AE%A1.html">5 结构分析与稳定性设计</a></li>
+<li class="toctree-l1"><a class="reference internal" href="6%20%E5%8F%97%E5%BC%AF%E6%9E%84%E4%BB%B6.html">6 受弯构件</a></li>
+<li class="toctree-l1"><a class="reference internal" href="7%20%E8%BD%B4%E5%BF%83%E5%8F%97%E5%8A%9B%E6%9E%84%E4%BB%B6.html">7 轴心受力构件</a></li>
+<li class="toctree-l1"><a class="reference internal" href="8%20%E6%8B%89%E5%BC%AF%E3%80%81%E5%8E%8B%E5%BC%AF%E6%9E%84%E4%BB%B6.html">8 拉弯、压弯构件</a></li>
+<li class="toctree-l1"><a class="reference internal" href="9%20%E5%8A%A0%E5%8A%B2%E9%92%A2%E6%9D%BF%E5%89%AA%E5%8A%9B%E5%A2%99.html">9 加劲钢板剪力墙</a></li>
+<li class="toctree-l1"><a class="reference internal" href="10%20%E5%A1%91%E6%80%A7%E5%8F%8A%E5%BC%AF%E7%9F%A9%E8%B0%83%E5%B9%85%E8%AE%BE%E8%AE%A1.html">10 塑性及弯矩调幅设计</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">11 连接</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/youtian95/Book_SteelStd" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/youtian95/Book_SteelStd/issues/new?title=Issue%20on%20page%20%2F11 连接.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/11 连接.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>11 连接</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">11.1 一般规定</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">11.1.1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">11.1.2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">11.1.3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">11.1.4</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">11.1.5</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">11.1.6</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">11.1.7</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">11.1.8</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">11.2 焊接连接计算</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">11.2.1 全熔透对接焊缝或对接与角接组合焊缝的强度计算</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">11.2.2 直角角焊缝的强度计算</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#t">11.2.3 T形接头的斜角角焊缝</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">11.2.4 部分熔透的对接焊缝和其与角接焊缝的组合焊缝</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">11.2.5 圆形塞焊焊缝和圆孔或槽孔内角焊缝的强度计算</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">11.2.6 角焊缝的搭接焊接接头</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">11.2.7 焊接截面工字形梁翼缘与腹板的双面角焊缝连接</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tyk">11.2.8 圆管与矩形管T、Y、K形相贯节点焊缝</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">11.3 焊接连接构造要求</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">11.3.1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id20">11.3.2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id21">11.3.3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id22">11.3.4</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id23">11.3.4.1</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id24">11.3.4.2</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id25">11.3.4.3</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id26">11.3.4.4</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id27">11.3.4.5</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id28">11.3.4.6</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id29">11.3.4.7</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id30">11.3.5</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id31">11.3.5.1</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id32">11.3.5.2</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id33">11.3.5.3</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id34">11.3.5.4</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id35">11.3.5.5</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id36">11.3.5.6</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id37">11.3.6</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id38">11.3.6.1</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id39">11.3.6.2</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id40">11.3.6.3</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id41">11.3.6.4</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id42">11.3.6.5</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id43">11.3.7</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id44">11.3.7.1</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id45">11.3.7.2</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id46">11.3.7.3</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id47">11.3.7.4</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id48">11.3.7.5</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id49">11.3.8</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id50">11.4 紧固件连接计算</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id51">11.4.1 普通螺栓、锚栓或铆钉的连接承载力</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id52">11.4.2 高强度螺栓摩擦型连接</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id53">11.4.3 高强度螺栓承压型连接</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id54">11.4.4 螺栓或铆钉数目的增加情况</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#l-1-15d-0-d-0-left-1-1-frac-l-1-150d-0-right-60d-0-0-7">11.4.5 在构件的接头的一端，当螺栓沿轴向受力方向的连接长度 <span class="math notranslate nohighlight">\(l_1\)</span> 大于 <span class="math notranslate nohighlight">\(15d_0\)</span> 时（<span class="math notranslate nohighlight">\(d_0\)</span> 为孔径），应将螺栓的承载力设计值乘以折减系数<span class="math notranslate nohighlight">\(\left(1.1 - \frac{l_1}{150d_0}\right)\)</span>，当大于 <span class="math notranslate nohighlight">\(60d_0\)</span> 时，折减系数取为定值 0.7。</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id55">11.5 紧固件连接构造要求</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id56">11.5.1 螺栓孔的孔径与孔型应符合下列规定：</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id57">11.5.2 螺栓（铆钉）连接的布置要求</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id58">11.5.3 动力荷载构件的螺栓连接要求</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id59">11.5.4 高强度螺栓连接设计要求</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id60">11.5.5 型钢构件拼接的高强度螺栓连接</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id61">11.5.6 螺栓连接设计的其他要求</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id62">11.6 销轴连接</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id63">11.6.1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id64">11.6.2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id65">11.6.3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id66">11.6.4</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id67">11.7 钢管法兰连接构造</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id68">11.7.1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id69">11.7.2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id70">11.7.3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id71">11.7.4</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id72">11.7.5</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="id1">
+<h1>11 连接<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
+<section id="id2">
+<h2>11.1 一般规定<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<section id="id3">
+<h3>11.1.1<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
+<p>钢结构构件的连接应根据作用力的性质和施工环境条件选择合理的连接方法。工厂加工构件的连接宜采用焊接；现场连接宜采用螺栓连接，主要承重构件的现场连接或拼接应采用高强度螺栓连接或同一接头中高强螺栓与焊接用于不同部位的栓焊共同连接。</p>
+</section>
+<section id="id4">
+<h3>11.1.2<a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
+<p>同一连接接头中不得采用普通螺栓与焊接共用的连接；在改、扩建工程中作为加固补强措施，可采用高强螺栓与焊接承受同一作用力的栓焊并用连接。</p>
+</section>
+<section id="id5">
+<h3>11.1.3<a class="headerlink" href="#id5" title="Link to this heading">#</a></h3>
+<p>高强螺栓的承压型连接不应用于直接承受动力荷载的构件连接，承压型连接也不应与焊接并用于同一接头。</p>
+</section>
+<section id="id6">
+<h3>11.1.4<a class="headerlink" href="#id6" title="Link to this heading">#</a></h3>
+<p>C级螺栓宜用于沿其杆轴方向受拉的连接，在下列情况下可用于受剪连接：</p>
+<ol class="arabic simple">
+<li><p>承受静力荷载或间接承受动力荷载结构中的次要连接；</p></li>
+<li><p>承受静力荷载的可拆卸结构的连接；</p></li>
+<li><p>临时固定构件用的安装连接。</p></li>
+</ol>
+</section>
+<section id="id7">
+<h3>11.1.5<a class="headerlink" href="#id7" title="Link to this heading">#</a></h3>
+<p>沉头和半沉头铆钉不得用于其杆轴方向受拉的连接。</p>
+</section>
+<section id="id8">
+<h3>11.1.6<a class="headerlink" href="#id8" title="Link to this heading">#</a></h3>
+<p>钢结构焊接连接构造设计应符合下列要求：</p>
+<ol class="arabic simple">
+<li><p>尽量减少焊缝的数量和尺寸。</p></li>
+<li><p>焊缝的布置宜对称于构件截面的形心轴。</p></li>
+<li><p>节点区留有足够空间，便于焊接操作和焊后检测。</p></li>
+<li><p>应避免焊缝密集和双向、三向相交。</p></li>
+<li><p>焊缝位置应避开高应力区。</p></li>
+<li><p>焊缝接头宜选择等强配比。当不同强度的钢材连接时，可采用与低强度钢材相适应的焊接材料。</p></li>
+</ol>
+</section>
+<section id="id9">
+<h3>11.1.7<a class="headerlink" href="#id9" title="Link to this heading">#</a></h3>
+<p>焊缝的质量等级应根据结构的重要性、荷载特性、焊缝形式、工作环境以及应力状态等情况，按下列原则选用：</p>
+<ol class="arabic simple">
+<li><p>在承受动荷载且需要进行疲劳验算的构件中，凡要求与母材等强连接的焊缝应焊透，其质量等级应符合下列规定：</p>
+<ol class="arabic simple">
+<li><p>作用力垂直于焊缝长度方向的横向对接焊缝或T形对接与角接组合焊缝，受拉时应为一级，受压时不应低于二级；</p></li>
+<li><p>作用力平行于焊缝长度方向的纵向对接焊缝不应低于二级；</p></li>
+<li><p>重级工作制（<span class="math notranslate nohighlight">\(A6 \sim A8\)</span>）和起重量<span class="math notranslate nohighlight">\(Q \geq 50t\)</span>的中级工作制（<span class="math notranslate nohighlight">\(A4\)</span>、<span class="math notranslate nohighlight">\(A5\)</span>）吊车梁的腹板与上翼缘之间以及吊车桁架上弦杆与节点板之间的T形接头焊缝应焊透，焊缝形式宜为对接与角接的组合焊缝，其质量等级不应低于二级。</p></li>
+</ol>
+</li>
+<li><p>在工作环境温度等于或低于<span class="math notranslate nohighlight">\(-20^\circ C\)</span>的地区，构件对接焊缝的质量不得低于二级。</p></li>
+<li><p>不需要疲劳验算的构件中，凡要求与母材等强的对接焊缝宜焊透，其质量等级受拉时不应低于二级，受压时不宜低于二级。</p></li>
+<li><p>部分焊透的对接焊缝、采用角焊缝或部分焊透的对接与角接组合焊缝的T形接头，以及搭接连接角焊缝，其质量等级应符合下列规定：</p>
+<ol class="arabic simple">
+<li><p>直接承受动荷载且需要疲劳验算的结构和吊车起重量等于或大于<span class="math notranslate nohighlight">\(50t\)</span>的中级工作制吊车梁以及梁柱、牛腿等重要节点不应低于二级；</p></li>
+<li><p>其他结构可为三级。</p></li>
+</ol>
+</li>
+</ol>
+</section>
+<section id="id10">
+<h3>11.1.8<a class="headerlink" href="#id10" title="Link to this heading">#</a></h3>
+<p>钢结构的安装连接应采用传力可靠、制作方便、连接简单、便于调整的构造形式并应考虑临时定位措施。</p>
+</section>
+</section>
+<section id="id11">
+<h2>11.2 焊接连接计算<a class="headerlink" href="#id11" title="Link to this heading">#</a></h2>
+<section id="id12">
+<h3>11.2.1 全熔透对接焊缝或对接与角接组合焊缝的强度计算<a class="headerlink" href="#id12" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>在对接接头和T形接头中，垂直于轴心拉力或轴心压力的对接焊缝或对接角接组合焊缝，其强度应按下式计算：</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+N \leq l_w \cdot h_e \cdot f_t^w \tag{11.2.1-1}
+\]</div>
+<p>式中：<br />
+<span class="math notranslate nohighlight">\(N\)</span>——轴心拉力或轴心压力；<br />
+<span class="math notranslate nohighlight">\(l_w\)</span>——焊缝长度；<br />
+<span class="math notranslate nohighlight">\(h_e\)</span>——对接焊缝的计算厚度，在对接接头中取连接件的较小厚度，在T形接头中取腹板的厚度；<br />
+<span class="math notranslate nohighlight">\(f_t^w\)</span>——对接焊缝的抗拉、抗压强度设计值。</p>
+<ol class="arabic simple" start="2">
+<li><p>在对接接头和T形接头中，承受弯矩和剪力共同作用的对接焊缝或对接角接组合焊缝，其正应力和剪应力应分别进行计算。但在同时受有较大正应力和剪应力处（例如梁腹板横向对接焊缝的端部）应按下式计算折算应力：</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+\sqrt{\sigma^2 + 3\tau^2} \leq 1.1f_t^w \tag{11.2.1-2}
+\]</div>
+<p>注：</p>
+<ol class="arabic simple">
+<li><p>当承受轴心力的板件用斜焊缝对接，焊缝与作用力间的夹角<span class="math notranslate nohighlight">\(\theta\)</span>符合<span class="math notranslate nohighlight">\(\tan\theta \leq 1.5\)</span>时，其强度可不计算。</p></li>
+<li><p>当对接焊缝和T形对接与角接组合焊缝无法采用引弧板和引出板施焊时，每条焊缝的长度计算时应各减去<span class="math notranslate nohighlight">\(2t\)</span>（<span class="math notranslate nohighlight">\(t\)</span>为焊件的较小厚度）。</p></li>
+</ol>
+</section>
+<section id="id13">
+<h3>11.2.2 直角角焊缝的强度计算<a class="headerlink" href="#id13" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>在通过焊缝形心的拉力、压力或剪力作用下：</p></li>
+</ol>
+<p>正面角焊缝（作用力垂直于焊缝长度方向）：</p>
+<div class="math notranslate nohighlight">
+\[
+\sigma_f = \frac{N}{h_e \cdot l_w} \leq \beta_f f_f^w \tag{11.2.2-1}
+\]</div>
+<p>侧面角焊缝（作用力平行于焊缝长度方向）：</p>
+<div class="math notranslate nohighlight">
+\[
+\tau_f = \frac{N}{h_e \cdot l_w} \leq f_f^w \tag{11.2.2-2}
+\]</div>
+<ol class="arabic simple" start="2">
+<li><p>在各种力综合作用下，<span class="math notranslate nohighlight">\(\sigma_f\)</span>和<span class="math notranslate nohighlight">\(\tau_f\)</span>共同作用处：</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+\sqrt{\left(\frac{\sigma_f}{\beta_f}\right)^2 + \tau_f^2} \leq f_f^w \tag{11.2.2-3}
+\]</div>
+<p>式中：<br />
+<span class="math notranslate nohighlight">\(\sigma_f\)</span>——按焊缝有效截面（<span class="math notranslate nohighlight">\(h_e l_w\)</span>）计算，垂直于焊缝长度方向的应力；<br />
+<span class="math notranslate nohighlight">\(\tau_f\)</span>——按焊缝有效截面计算，沿焊缝长度方向的剪应力；<br />
+<span class="math notranslate nohighlight">\(h_e\)</span>——直角角焊缝的计算厚度，当两焊件间隙<span class="math notranslate nohighlight">\(b \geq 1.5\ \text{mm}\)</span>时，<span class="math notranslate nohighlight">\(h_e = 0.7h_f\)</span>；<span class="math notranslate nohighlight">\(1.5\ \text{mm} &lt; b \leq 5\ \text{mm}\)</span>时，<span class="math notranslate nohighlight">\(h_e = 0.7(h_f - b)\)</span>，<span class="math notranslate nohighlight">\(h_f\)</span>为焊脚尺寸（图11.2.2）；<br />
+<span class="math notranslate nohighlight">\(l_w\)</span>——角焊缝的计算长度，对每条焊缝取其实际长度减去<span class="math notranslate nohighlight">\(2h_f\)</span>；<br />
+<span class="math notranslate nohighlight">\(f_f^w\)</span>——角焊缝的强度设计值；<br />
+<span class="math notranslate nohighlight">\(\beta_f\)</span>——正面角焊缝的强度设计值增大系数：对承受静力荷载和间接承受动力荷载的结构，<span class="math notranslate nohighlight">\(\beta_f = 1.22\)</span>；对直接承受动力荷载的结构，<span class="math notranslate nohighlight">\(\beta_f = 1.0\)</span>。</p>
+<p><img alt="图11.2.2 直角角焊缝截面" src="media/image164.svg" /></p>
+</section>
+<section id="t">
+<h3>11.2.3 T形接头的斜角角焊缝<a class="headerlink" href="#t" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>两焊脚边夹角<span class="math notranslate nohighlight">\(60^\circ \leq \alpha \leq 135^\circ\)</span>的T形接头斜角角焊缝（图11.2.3），其强度应按公式（11.2.2-1）至公式（11.2.2-3）计算，但取<span class="math notranslate nohighlight">\(\beta_f = 1.0\)</span>，其计算厚度（图11.2.3-2）为：</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+h_e = h_f \cos \frac{\alpha}{2}
+\]</div>
+<p>当根部间隙<span class="math notranslate nohighlight">\(b\)</span>、<span class="math notranslate nohighlight">\(b_1\)</span>或<span class="math notranslate nohighlight">\(b_2 \leq 1.5\ \text{mm}\)</span>或<span class="math notranslate nohighlight">\(1.5\ \text{mm} &lt; b\)</span>、<span class="math notranslate nohighlight">\(b_1\)</span>或<span class="math notranslate nohighlight">\(b_2 \leq 5\ \text{mm}\)</span>。</p>
+<ol class="arabic simple" start="2">
+<li><p>当<span class="math notranslate nohighlight">\(30^\circ \leq \alpha \leq 60^\circ\)</span>或<span class="math notranslate nohighlight">\(\alpha &lt; 30^\circ\)</span>时，斜角焊缝计算厚度<span class="math notranslate nohighlight">\(h_e\)</span>按现行国家标准《钢结构焊接规范》GB50661的有关规定计算取值。</p></li>
+</ol>
+<p><img alt="图11.2.3 T形接头的斜角角焊缝截面" src="media/image165.svg" /></p>
+</section>
+<section id="id14">
+<h3>11.2.4 部分熔透的对接焊缝和其与角接焊缝的组合焊缝<a class="headerlink" href="#id14" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>V形坡口（图11.2.4a）：当<span class="math notranslate nohighlight">\(\alpha \geq 60^\circ\)</span>时，<span class="math notranslate nohighlight">\(h_e = s\)</span>；当<span class="math notranslate nohighlight">\(\alpha &lt; 60^\circ\)</span>时，<span class="math notranslate nohighlight">\(h_e = 0.75s\)</span>。</p></li>
+<li><p>单边V形和K形坡口（图11.2.4b,c）：当<span class="math notranslate nohighlight">\(\alpha = 45^\circ \pm 5^\circ\)</span>时，<span class="math notranslate nohighlight">\(h_e = s - 3\)</span>。</p></li>
+<li><p>U形和J形坡口（图11.2.4d,e）：当<span class="math notranslate nohighlight">\(\alpha = 45^\circ \pm 5^\circ\)</span>时，<span class="math notranslate nohighlight">\(h_e = s\)</span>。</p></li>
+</ol>
+<p>注：</p>
+<ol class="arabic simple">
+<li><p><span class="math notranslate nohighlight">\(s\)</span>为坡口深度，即根部至焊缝表面（不考虑余高）的最短距离（mm）；<span class="math notranslate nohighlight">\(\alpha\)</span>为V形、单边V形或K形坡口角度。</p></li>
+<li><p>当熔合线处焊缝截面边长等于或接近于最短距离<span class="math notranslate nohighlight">\(s\)</span>时，抗剪强度设计值应按角焊缝的强度设计值乘以<span class="math notranslate nohighlight">\(0.9\)</span>。</p></li>
+</ol>
+<p><img alt="图11.2.4 部分熔透的对接焊缝和其与角接焊缝的组合焊缝截面" src="media/image166.svg" /><br />
+<img alt="图11.2.4 部分熔透的对接焊缝和其与角接焊缝的组合焊缝截面" src="media/image167.svg" /></p>
+</section>
+<section id="id15">
+<h3>11.2.5 圆形塞焊焊缝和圆孔或槽孔内角焊缝的强度计算<a class="headerlink" href="#id15" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>圆形塞焊焊缝的强度计算：</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+\tau_f = \frac{N}{A_w} \leq f_f^w \tag{11.2.5-1}
+\]</div>
+<ol class="arabic simple" start="2">
+<li><p>圆孔或槽孔内角焊缝的强度计算：</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+\tau_f = \frac{N}{h_e \cdot l_w} \leq f_f^w \tag{11.2.5-2}
+\]</div>
+<p>式中：<br />
+<span class="math notranslate nohighlight">\(A_w\)</span>——塞焊圆孔面积；<br />
+<span class="math notranslate nohighlight">\(l_w\)</span>——圆孔内或槽孔内角焊缝的计算长度。</p>
+</section>
+<section id="id16">
+<h3>11.2.6 角焊缝的搭接焊接接头<a class="headerlink" href="#id16" title="Link to this heading">#</a></h3>
+<p>当焊缝计算长度<span class="math notranslate nohighlight">\(l_w\)</span>超过<span class="math notranslate nohighlight">\(60h_f\)</span>时，焊缝的承载力设计值应乘以折减系数<span class="math notranslate nohighlight">\(\alpha_f\)</span>：</p>
+<div class="math notranslate nohighlight">
+\[
+\alpha_f = 1.5 - \frac{l_w}{120h_f}, \quad \alpha_f \geq 0.5
+\]</div>
+</section>
+<section id="id17">
+<h3>11.2.7 焊接截面工字形梁翼缘与腹板的双面角焊缝连接<a class="headerlink" href="#id17" title="Link to this heading">#</a></h3>
+<p>其强度应按下式计算：</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{1}{2h_e} \sqrt{\left(\frac{V S_f}{I}\right)^2 + \left(\frac{\psi F}{\beta_f l_z}\right)^2} \leq f_f^w \tag{11.2.7}
+\]</div>
+<p>式中：<br />
+<span class="math notranslate nohighlight">\(S_f\)</span>——所计算翼缘毛截面对梁中和轴的面积矩；<br />
+<span class="math notranslate nohighlight">\(I\)</span>——梁的毛截面惯性矩；<br />
+<span class="math notranslate nohighlight">\(\psi\)</span>——按本规范第6.1.3条采用。</p>
+<p>注：</p>
+<ol class="arabic simple">
+<li><p>当梁上翼缘受有固定集中荷载时，宜在该处设置顶紧上翼缘的支承加劲肋，此时取<span class="math notranslate nohighlight">\(F = 0\)</span>。</p></li>
+<li><p>当腹板与翼缘的连接焊缝采用焊透的T形对接与角接组合焊缝时，其焊缝强度可不计算。</p></li>
+</ol>
+</section>
+<section id="tyk">
+<h3>11.2.8 圆管与矩形管T、Y、K形相贯节点焊缝<a class="headerlink" href="#tyk" title="Link to this heading">#</a></h3>
+<p>圆管与矩形管T、Y、K形相贯节点焊缝的构造与计算厚度取值应符合现行国家标准《钢结构焊接规范》GB50661的相关规定。</p>
+</section>
+</section>
+<section id="id18">
+<h2>11.3 焊接连接构造要求<a class="headerlink" href="#id18" title="Link to this heading">#</a></h2>
+<section id="id19">
+<h3>11.3.1<a class="headerlink" href="#id19" title="Link to this heading">#</a></h3>
+<p>受力和构造焊缝可采用对接焊缝、角接焊缝、对接角接组合焊缝、塞焊焊缝、槽焊焊缝；重要接头或有等强要求的对接焊缝应为熔透焊缝；较厚板件或无需焊透时可采用部分熔透焊缝。</p>
+</section>
+<section id="id20">
+<h3>11.3.2<a class="headerlink" href="#id20" title="Link to this heading">#</a></h3>
+<p>对接焊缝的坡口形式，宜根据板厚和施工条件按《钢结构焊接规范》（GB50661）要求选用。</p>
+</section>
+<section id="id21">
+<h3>11.3.3<a class="headerlink" href="#id21" title="Link to this heading">#</a></h3>
+<p>不同厚度和宽度的材料对接时，应作平缓过渡，其连接处坡度值不应大于1:2.5（图11.3.3）。</p>
+<p><img alt="不同宽度或厚度钢板的拼接" src="_images/image168.svg" /><br />
+(a) 不同宽度对接<br />
+(b) 不同厚度对接</p>
+</section>
+<section id="id22">
+<h3>11.3.4<a class="headerlink" href="#id22" title="Link to this heading">#</a></h3>
+<p>承受动荷载时，塞焊、槽焊、角焊、对接接头应符合下列规定：</p>
+<section id="id23">
+<h4>11.3.4.1<a class="headerlink" href="#id23" title="Link to this heading">#</a></h4>
+<p>承受动荷载不需要进行疲劳验算的构件，采用塞焊、槽焊时，孔或槽的边缘到构件边缘在垂直于应力方向上的间距不应小于此构件厚度的5倍，且不应小于孔或槽宽度的2倍；构件端部搭接接头的纵向角焊缝长度不应小于两侧焊缝间的垂直间距<span class="math notranslate nohighlight">\(a\)</span>，且在无塞焊、槽焊等其他措施时，间距<span class="math notranslate nohighlight">\(a\)</span>不应大于较薄件厚度<span class="math notranslate nohighlight">\(t\)</span>的16倍（图11.3.4）。</p>
+<p><img alt="承受动载不需进行疲劳验算时构件端部纵向角焊缝长度及间距要求" src="media/image169.svg" /><br />
+<span class="math notranslate nohighlight">\(a\)</span> - 不应大于 <span class="math notranslate nohighlight">\(16t\)</span>（中间有塞焊焊缝或槽焊焊缝时除外）</p>
+</section>
+<section id="id24">
+<h4>11.3.4.2<a class="headerlink" href="#id24" title="Link to this heading">#</a></h4>
+<p>不得采用焊脚尺寸小于5 mm的角焊缝。</p>
+</section>
+<section id="id25">
+<h4>11.3.4.3<a class="headerlink" href="#id25" title="Link to this heading">#</a></h4>
+<p>严禁采用断续坡口焊缝和断续角焊缝。</p>
+</section>
+<section id="id26">
+<h4>11.3.4.4<a class="headerlink" href="#id26" title="Link to this heading">#</a></h4>
+<p>对接与角接组合焊缝和T形接头的全焊透坡口焊缝应采用角焊缝加强，加强焊脚尺寸应不大于接头较薄件厚度的1/2，但最大值不得超过10 mm。</p>
+</section>
+<section id="id27">
+<h4>11.3.4.5<a class="headerlink" href="#id27" title="Link to this heading">#</a></h4>
+<p>承受动荷载需经疲劳验算的接头，当拉应力与焊缝轴线垂直时，严禁采用部分焊透对接焊缝。</p>
+</section>
+<section id="id28">
+<h4>11.3.4.6<a class="headerlink" href="#id28" title="Link to this heading">#</a></h4>
+<p>除横焊位置以外，不宜采用L形和J形坡口。</p>
+</section>
+<section id="id29">
+<h4>11.3.4.7<a class="headerlink" href="#id29" title="Link to this heading">#</a></h4>
+<p>不同板厚的对接接头承受动载时，应按本规范第11.3.3条的规定做成平缓过渡。</p>
+</section>
+</section>
+<section id="id30">
+<h3>11.3.5<a class="headerlink" href="#id30" title="Link to this heading">#</a></h3>
+<p>角焊缝的尺寸应符合下列规定：</p>
+<section id="id31">
+<h4>11.3.5.1<a class="headerlink" href="#id31" title="Link to this heading">#</a></h4>
+<p>角焊缝的最小计算长度应为其焊脚尺寸（<span class="math notranslate nohighlight">\(h_f\)</span>）的8倍，且不应小于40 mm；焊缝计算长度应为扣除引弧、收弧长度后的焊缝长度。</p>
+</section>
+<section id="id32">
+<h4>11.3.5.2<a class="headerlink" href="#id32" title="Link to this heading">#</a></h4>
+<p>角焊缝的有效面积应为焊缝计算长度与计算厚度（<span class="math notranslate nohighlight">\(h_e\)</span>）的乘积。对任何方向的荷载，角焊缝上的应力应视为作用在这一有效面积上。</p>
+</section>
+<section id="id33">
+<h4>11.3.5.3<a class="headerlink" href="#id33" title="Link to this heading">#</a></h4>
+<p>断续角焊缝焊段的最小长度不应小于最小计算长度。</p>
+</section>
+<section id="id34">
+<h4>11.3.5.4<a class="headerlink" href="#id34" title="Link to this heading">#</a></h4>
+<p>角焊缝最小焊脚尺寸宜按表11.3.5取值。</p>
+<p><strong>表11.3.5 角焊缝最小焊脚尺寸</strong></p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>母材厚度<span class="math notranslate nohighlight">\(t\)</span></p></th>
+<th class="head"><p>角焊缝最小焊脚尺寸<span class="math notranslate nohighlight">\(h_f\)</span></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(t \leq 6\)</span></p></td>
+<td><p>3</p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(6 &lt; t \leq 12\)</span></p></td>
+<td><p>5</p></td>
+</tr>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(12 &lt; t \leq 20\)</span></p></td>
+<td><p>6</p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(t &gt; 20\)</span></p></td>
+<td><p>8</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>注：</p>
+<ol class="arabic simple">
+<li><p>采用不预热的非低氢焊接方法进行焊接时，<span class="math notranslate nohighlight">\(t\)</span>等于焊接接头中较厚件厚度，宜采用单道焊缝；采用预热的非低氢焊接方法或低氢焊接方法进行焊接时，<span class="math notranslate nohighlight">\(t\)</span>等于焊接接头中较薄件厚度；</p></li>
+<li><p>焊缝尺寸不要求超过焊接接头中较薄件厚度的情况除外；</p></li>
+<li><p>承受动荷载的角焊缝最小焊脚尺寸为5 mm。</p></li>
+</ol>
+</section>
+<section id="id35">
+<h4>11.3.5.5<a class="headerlink" href="#id35" title="Link to this heading">#</a></h4>
+<p>被焊构件中较薄板厚度不小于25 mm时，宜采用开局部坡口的角焊缝。</p>
+</section>
+<section id="id36">
+<h4>11.3.5.6<a class="headerlink" href="#id36" title="Link to this heading">#</a></h4>
+<p>采用角焊缝焊接接头，不宜将厚板焊接到较薄板上。</p>
+</section>
+</section>
+<section id="id37">
+<h3>11.3.6<a class="headerlink" href="#id37" title="Link to this heading">#</a></h3>
+<p>搭接接头角焊缝的尺寸及布置应符合下列规定：</p>
+<section id="id38">
+<h4>11.3.6.1<a class="headerlink" href="#id38" title="Link to this heading">#</a></h4>
+<p>传递轴向力的部件，其搭接接头最小搭接长度应为较薄件厚度的5倍，且不应小于25 mm（图11.3.6-1），并应施焊纵向或横向双角焊缝。</p>
+<p><img alt="搭接接头双角焊缝的要求" src="media/image170.svg" /><br />
+<span class="math notranslate nohighlight">\(t\)</span> - <span class="math notranslate nohighlight">\(t_1\)</span>和<span class="math notranslate nohighlight">\(t_2\)</span>中较小者； <span class="math notranslate nohighlight">\(h_f\)</span> - 焊脚尺寸，按设计要求</p>
+</section>
+<section id="id39">
+<h4>11.3.6.2<a class="headerlink" href="#id39" title="Link to this heading">#</a></h4>
+<p>只采用纵向角焊缝连接型钢杆件端部时，型钢杆件的宽度不应大于200 mm，当宽度大于200 mm时，应加横向角焊或中间塞焊；型钢杆件每一侧纵向角焊缝的长度不应小于型钢杆件的宽度。</p>
+</section>
+<section id="id40">
+<h4>11.3.6.3<a class="headerlink" href="#id40" title="Link to this heading">#</a></h4>
+<p>型钢杆件搭接接头采用围焊时，在转角处应连续施焊。杆件端部搭接角焊缝作绕焊时，绕焊长度不应小于焊脚尺寸的2倍，并应连续施焊。</p>
+</section>
+<section id="id41">
+<h4>11.3.6.4<a class="headerlink" href="#id41" title="Link to this heading">#</a></h4>
+<p>搭接焊缝沿母材棱边的最大焊脚尺寸，当板厚不大于6 mm时，应为母材厚度，当板厚大于6 mm时，应为母材厚度减去1 mm~2 mm（图11.3.6-2）。</p>
+<p><img alt="搭接焊缝沿母材棱边的最大焊脚尺寸" src="media/image171.svg" /></p>
+</section>
+<section id="id42">
+<h4>11.3.6.5<a class="headerlink" href="#id42" title="Link to this heading">#</a></h4>
+<p>用搭接焊缝传递荷载的套管接头可只焊一条角焊缝，其管材搭接长度<span class="math notranslate nohighlight">\(L\)</span>不应小于<span class="math notranslate nohighlight">\(5(t_1+t_2)\)</span>，且不应小于25 mm。搭接焊缝焊脚尺寸应符合设计要求（图11.3.6-3）。</p>
+<p><img alt="管材套管连接的搭接焊缝最小长度" src="media/image172.svg" /></p>
+</section>
+</section>
+<section id="id43">
+<h3>11.3.7<a class="headerlink" href="#id43" title="Link to this heading">#</a></h3>
+<p>塞焊和槽焊焊缝的尺寸、间距、焊缝高度应符合下列规定：</p>
+<section id="id44">
+<h4>11.3.7.1<a class="headerlink" href="#id44" title="Link to this heading">#</a></h4>
+<p>塞焊和槽焊的有效面积应为贴合面上圆孔或长槽孔的标称面积。</p>
+</section>
+<section id="id45">
+<h4>11.3.7.2<a class="headerlink" href="#id45" title="Link to this heading">#</a></h4>
+<p>塞焊焊缝的最小中心间隔应为孔径的4倍，槽焊焊缝的纵向最小间距应为槽孔长度的2倍，垂直于槽孔长度方向的两排槽孔的最小间距应为槽孔宽度的4倍。</p>
+</section>
+<section id="id46">
+<h4>11.3.7.3<a class="headerlink" href="#id46" title="Link to this heading">#</a></h4>
+<p>塞焊孔的最小直径不得小于开孔板厚度加8 mm，最大直径应为最小直径加3 mm和开孔件厚度的2.25倍两值中较大者。槽孔长度不应超过开孔件厚度的10倍，最小及最大槽宽规定应与塞焊孔的最小及最大孔径规定相同。</p>
+</section>
+<section id="id47">
+<h4>11.3.7.4<a class="headerlink" href="#id47" title="Link to this heading">#</a></h4>
+<p>塞焊和槽焊的焊缝高度应符合下列规定：</p>
+<ol class="arabic simple">
+<li><p>当母材厚度不大于16 mm时，应与母材厚度相同；</p></li>
+<li><p>当母材厚度大于16 mm时，不应小于母材厚度的一半和16 mm两值中较大者。</p></li>
+</ol>
+</section>
+<section id="id48">
+<h4>11.3.7.5<a class="headerlink" href="#id48" title="Link to this heading">#</a></h4>
+<p>塞焊焊缝和槽焊焊缝的尺寸应根据贴合面上承受的剪力计算确定。</p>
+</section>
+</section>
+<section id="id49">
+<h3>11.3.8<a class="headerlink" href="#id49" title="Link to this heading">#</a></h3>
+<p>在次要构件或次要焊接连接中，可采用断续角焊缝。断续角焊缝焊段的长度不得小于<span class="math notranslate nohighlight">\(10h_f\)</span>或50 mm，其净距不应大于<span class="math notranslate nohighlight">\(15t\)</span>（对受压构件）或<span class="math notranslate nohighlight">\(30t\)</span>（对受拉构件），<span class="math notranslate nohighlight">\(t\)</span>为较薄焊件厚度。腐蚀环境中不宜采用断续角焊缝。</p>
+</section>
+</section>
+<section id="id50">
+<h2>11.4 紧固件连接计算<a class="headerlink" href="#id50" title="Link to this heading">#</a></h2>
+<section id="id51">
+<h3>11.4.1 普通螺栓、锚栓或铆钉的连接承载力<a class="headerlink" href="#id51" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>在普通螺栓或铆钉受剪连接中，每个螺栓的承载力设计值应取受剪和承压承载力设计值中的较小者。受剪和承压承载力设计值应分别按以下公式计算：</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+N_v^b = n_v \frac{\pi d^2}{4} f_v^b \tag{11.4.1-1}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+N_v^r = n_v \frac{\pi d_0^2}{4} f_v^r \tag{11.4.1-2}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+N_c^b = d \sum t f_c^b \tag{11.4.1-3}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+N_c^r = d_0 \sum t f_c^r \tag{11.4.1-4}
+\]</div>
+<p>式中：</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(n_v\)</span> —— 受剪面数目；</p></li>
+<li><p><span class="math notranslate nohighlight">\(d\)</span> —— 螺杆直径；</p></li>
+<li><p><span class="math notranslate nohighlight">\(d_0\)</span> —— 铆钉孔直径；</p></li>
+<li><p><span class="math notranslate nohighlight">\(\sum t\)</span> —— 在不同受力方向中一个受力方向承压构件总厚度的较小值；</p></li>
+<li><p><span class="math notranslate nohighlight">\(f_v^b, f_c^b\)</span> —— 螺栓的抗剪和承压强度设计值；</p></li>
+<li><p><span class="math notranslate nohighlight">\(f_v^r, f_c^r\)</span> —— 铆钉的抗剪和承压强度设计值。</p></li>
+</ul>
+<ol class="arabic simple" start="2">
+<li><p>在普通螺栓、锚栓或铆钉杆轴向方向受拉的连接中，每个普通螺栓、锚栓或铆钉的承载力设计值应按下列公式计算：</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+N_t^b = \frac{\pi d_e^2}{4} f_t^b \tag{11.4.1-5}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+N_t^a = \frac{\pi d_e^2}{4} f_t^a \tag{11.4.1-6}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+N_t^r = \frac{\pi d_0^2}{4} f_t^r \tag{11.4.1-7}
+\]</div>
+<p>式中：</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(d_e\)</span> —— 螺栓或锚栓在螺纹处的有效直径；</p></li>
+<li><p><span class="math notranslate nohighlight">\(f_t^b, f_t^a, f_t^r\)</span> —— 普通螺栓、锚栓和铆钉的抗拉强度设计值。</p></li>
+</ul>
+<ol class="arabic simple" start="3">
+<li><p>同时承受剪力和杆轴方向拉力的普通螺栓和铆钉，其承载力应分别符合下列公式的要求：</p></li>
+</ol>
+<p>普通螺栓：</p>
+<div class="math notranslate nohighlight">
+\[
+\sqrt{\left(\frac{N_v}{N_v^b}\right)^2 + \left(\frac{N_t}{N_t^b}\right)^2} \leq 1.0 \tag{11.4.1-8}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+N_v \leq N_c^b \tag{11.4.1-9}
+\]</div>
+<p>铆钉：</p>
+<div class="math notranslate nohighlight">
+\[
+\sqrt{\left(\frac{N_v}{N_v^r}\right)^2 + \left(\frac{N_t}{N_t^r}\right)^2} \leq 1.0 \tag{11.4.1-10}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+N_v \leq N_c^r \tag{11.4.1-11}
+\]</div>
+<p>式中：</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(N_v, N_t\)</span> —— 某个普通螺栓或锚栓所承受的剪力和拉力；</p></li>
+<li><p><span class="math notranslate nohighlight">\(N_v^b, N_t^b, N_c^b\)</span> —— 一个普通螺栓的抗剪、抗拉和承压承载力设计值；</p></li>
+<li><p><span class="math notranslate nohighlight">\(N_v^r, N_t^r, N_c^r\)</span> —— 一个铆钉的抗剪、抗拉和承压承载力设计值。</p></li>
+</ul>
+</section>
+<section id="id52">
+<h3>11.4.2 高强度螺栓摩擦型连接<a class="headerlink" href="#id52" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>在受剪连接中，每个高强度螺栓的承载力设计值按下式计算：</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+N_v^b = 0.9k n_f \mu P \tag{11.4.2-1}
+\]</div>
+<p>式中：</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(N_v^b\)</span> —— 一个高强度螺栓的抗剪承载力设计值；</p></li>
+<li><p><span class="math notranslate nohighlight">\(k\)</span> —— 孔型系数，标准孔取1.0；大圆孔取0.85；内力与槽孔长向垂直时取0.7；内力与槽孔长向平行时取0.6；</p></li>
+<li><p><span class="math notranslate nohighlight">\(n_f\)</span> —— 传力摩擦面数目；</p></li>
+<li><p><span class="math notranslate nohighlight">\(\mu\)</span> —— 摩擦面的抗滑移系数，按钢材摩擦面与涂层摩擦面不同，分别由表11.4.2-1和表11.4.2-2取值；</p></li>
+<li><p><span class="math notranslate nohighlight">\(P\)</span> —— 一个高强度螺栓的预拉力设计值，按表11.4.2-3取值。</p></li>
+</ul>
+<ol class="arabic simple" start="2">
+<li><p>在螺栓杆轴方向受拉的连接中，每个高强度螺栓的承载力按下式计算：</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+N_t^b = 0.8P \tag{11.4.2-2}
+\]</div>
+<ol class="arabic simple" start="3">
+<li><p>当高强度螺栓摩擦型连接同时承受摩擦面间的剪力和螺栓杆轴方向的外拉力时，所计算的螺栓其承载力应符合下式要求：</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+\frac{N_v}{N_v^b} + \frac{N_t}{N_t^b} \leq 1 \tag{11.4.2-3}
+\]</div>
+<p>式中：</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(N_v, N_t\)</span> —— 所计算的某个高强度螺栓所承受的剪力和拉力；</p></li>
+<li><p><span class="math notranslate nohighlight">\(N_v^b, N_t^b\)</span> —— 一个高强度螺栓的抗剪、抗拉承载力设计值。</p></li>
+</ul>
+<p><strong>表11.4.2-1 钢材摩擦面的抗滑移系数 <span class="math notranslate nohighlight">\(\mu\)</span></strong></p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>连接处构件接触面的处理方法</p></th>
+<th class="head"><p>构件的钢材牌号</p></th>
+<th class="head"><p>Q235钢</p></th>
+<th class="head"><p>Q345钢或Q390钢</p></th>
+<th class="head"><p>Q420钢或Q460钢</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>喷硬质石英砂或铸钢棱角砂</p></td>
+<td><p></p></td>
+<td><p>0.45</p></td>
+<td><p>0.45</p></td>
+<td><p>0.45</p></td>
+</tr>
+<tr class="row-odd"><td><p>抛丸（喷砂）</p></td>
+<td><p></p></td>
+<td><p>0.35</p></td>
+<td><p>0.40</p></td>
+<td><p>0.40</p></td>
+</tr>
+<tr class="row-even"><td><p>抛丸（喷砂）后生赤锈</p></td>
+<td><p></p></td>
+<td><p>0.45</p></td>
+<td><p>0.45</p></td>
+<td><p>0.45</p></td>
+</tr>
+<tr class="row-odd"><td><p>钢丝刷清除浮锈或未经处理的干净轧制面</p></td>
+<td><p></p></td>
+<td><p>0.30</p></td>
+<td><p>0.35</p></td>
+<td><p>0.40</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>注：</p>
+<ol class="arabic simple">
+<li><p>钢丝刷除锈方向应与受力方向垂直。</p></li>
+<li><p>当连接构件采用不同钢材牌号时，<span class="math notranslate nohighlight">\(\mu\)</span> 按相应较低强度者取值。</p></li>
+<li><p>采用其他方法处理时，其处理工艺及抗滑移系数值均需经试验确定。</p></li>
+</ol>
+<p><strong>表11.4.2-2 涂层连接面的抗滑移系数 <span class="math notranslate nohighlight">\(\mu\)</span></strong></p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>表面处理要求</p></th>
+<th class="head"><p>涂层类别</p></th>
+<th class="head"><p>涂装方法及涂层厚度（<span class="math notranslate nohighlight">\(\mu m\)</span>）</p></th>
+<th class="head"><p>抗滑系数 <span class="math notranslate nohighlight">\(\mu\)</span></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>抛丸除锈，等级达到<img alt="media/image174.svg" src="_images/image174.svg" />级</p></td>
+<td><p>醇酸铁红</p></td>
+<td><p>喷涂或手工涂刷，50-75</p></td>
+<td><p>0.15</p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p>无机富锌</p></td>
+<td><p>喷涂或手工涂刷，50-75</p></td>
+<td><p>0.35</p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p>锌加</p></td>
+<td><p>喷涂，30-60</p></td>
+<td><p>0.45</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>注：当设计要求使用其他涂层（热喷铝、镀锌等）时，其钢材表面处理要求、涂层厚度及抗滑移系数均需由试验确定。</p>
+<p><strong>表11.4.2-3 一个高强度螺栓的预拉力设计值 <span class="math notranslate nohighlight">\(P\)</span> (kN)</strong></p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>螺栓的性能等级</p></th>
+<th class="head"><p>螺栓公称直径（mm）</p></th>
+<th class="head"><p>M16</p></th>
+<th class="head"><p>M20</p></th>
+<th class="head"><p>M22</p></th>
+<th class="head"><p>M24</p></th>
+<th class="head"><p>M27</p></th>
+<th class="head"><p>M30</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>8.8级</p></td>
+<td><p></p></td>
+<td><p>80</p></td>
+<td><p>125</p></td>
+<td><p>150</p></td>
+<td><p>175</p></td>
+<td><p>230</p></td>
+<td><p>280</p></td>
+</tr>
+<tr class="row-odd"><td><p>10.9级</p></td>
+<td><p></p></td>
+<td><p>100</p></td>
+<td><p>155</p></td>
+<td><p>190</p></td>
+<td><p>225</p></td>
+<td><p>290</p></td>
+<td><p>355</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="id53">
+<h3>11.4.3 高强度螺栓承压型连接<a class="headerlink" href="#id53" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>承压型连接的高强度螺栓预拉力 <span class="math notranslate nohighlight">\(P\)</span> 的施拧工艺和设计值取值应与摩擦型连接高强度螺栓相同。</p></li>
+<li><p>承压型连接中每个高强度螺栓的受剪承载力设计值，其计算方法与普通螺栓相同，但当计算剪切面在螺纹处时，其受剪承载力设计值应按螺纹处的有效截面积进行计算。</p></li>
+<li><p>在杆轴受拉的连接中，每个高强度螺栓的受拉承载力设计值的计算方法与普通螺栓相同。</p></li>
+<li><p>同时承受剪力和杆轴方向拉力的承压型连接中，所计算的高强度螺栓，其承载力应符合下列公式的要求：</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+\sqrt{\left(\frac{N_v}{N_v^b}\right)^2 + \left(\frac{N_t}{N_t^b}\right)^2} \leq 1.0 \tag{11.4.3-1}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+N_v \leq \frac{N_v^b}{1.2} \tag{11.4.3-2}
+\]</div>
+<p>式中：</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(N_v, N_t\)</span> —— 所计算的某个高强度螺栓所承受的剪力和拉力；</p></li>
+<li><p><span class="math notranslate nohighlight">\(N_v^b, N_t^b\)</span> —— 一个高强度螺栓按普通螺栓计算时的抗剪、抗拉和承压承载力设计值。</p></li>
+</ul>
+</section>
+<section id="id54">
+<h3>11.4.4 螺栓或铆钉数目的增加情况<a class="headerlink" href="#id54" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>一个构件借助填板或其他中间板与另一构件连接的螺栓（摩擦型连接的高强度螺栓除外）或铆钉数目，应按计算增加10%。</p></li>
+<li><p>当采用搭接或拼接板的单面连接传递轴心力，因偏心引起连接部位发生弯曲时，螺栓（摩擦型连接的高强度螺栓除外）数目，应按计算增加10%。</p></li>
+<li><p>在构件的端部连接中，当利用短角钢连接型钢（角钢或槽钢）的外伸肢以缩短连接长度时，在短角钢两肢中的一肢上，所用的螺栓或铆钉数目应按计算增加50%。</p></li>
+<li><p>当铆钉连接的铆合总厚度超过铆钉孔径的5倍时，总厚度每超过2 mm，铆钉数目应按计算增加1%（至少应增加1个铆钉），但铆合总厚度不得超过铆钉孔径的7倍。</p></li>
+</ol>
+</section>
+<section id="l-1-15d-0-d-0-left-1-1-frac-l-1-150d-0-right-60d-0-0-7">
+<h3>11.4.5 在构件的接头的一端，当螺栓沿轴向受力方向的连接长度 <span class="math notranslate nohighlight">\(l_1\)</span> 大于 <span class="math notranslate nohighlight">\(15d_0\)</span> 时（<span class="math notranslate nohighlight">\(d_0\)</span> 为孔径），应将螺栓的承载力设计值乘以折减系数<span class="math notranslate nohighlight">\(\left(1.1 - \frac{l_1}{150d_0}\right)\)</span>，当大于 <span class="math notranslate nohighlight">\(60d_0\)</span> 时，折减系数取为定值 0.7。<a class="headerlink" href="#l-1-15d-0-d-0-left-1-1-frac-l-1-150d-0-right-60d-0-0-7" title="Link to this heading">#</a></h3>
+</section>
+</section>
+<section id="id55">
+<h2>11.5 紧固件连接构造要求<a class="headerlink" href="#id55" title="Link to this heading">#</a></h2>
+<section id="id56">
+<h3>11.5.1 螺栓孔的孔径与孔型应符合下列规定：<a class="headerlink" href="#id56" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>B级普通螺栓的孔径 <span class="math notranslate nohighlight">\(d_o\)</span> 较螺栓公称直径 <span class="math notranslate nohighlight">\(d\)</span> 大 0.2～0.5 mm，C级普通螺栓的孔径 <span class="math notranslate nohighlight">\(d_o\)</span> 较螺栓公称直径 <span class="math notranslate nohighlight">\(d\)</span> 大 1.0～1.5 mm。</p></li>
+<li><p>高强度螺栓承压型连接采用标准圆孔时，其孔径 <span class="math notranslate nohighlight">\(d_o\)</span> 可按表 11.5.1 采用。</p></li>
+<li><p>高强度螺栓摩擦型连接可采用标准孔、大圆孔和槽孔，孔型尺寸可按表 11.5.1 采用。采用扩大孔连接时，同一连接面只能在盖板和芯板其中之一的板上采用大圆孔或槽孔，其余仍采用标准孔。</p></li>
+</ol>
+<p><strong>表 11.5.1 高强度螺栓连接的孔型尺寸匹配（mm）</strong></p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>螺栓公称直径</p></th>
+<th class="head"><p>M12</p></th>
+<th class="head"><p>M16</p></th>
+<th class="head"><p>M20</p></th>
+<th class="head"><p>M22</p></th>
+<th class="head"><p>M24</p></th>
+<th class="head"><p>M27</p></th>
+<th class="head"><p>M30</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>标准孔</p></td>
+<td><p>13.5</p></td>
+<td><p>17.5</p></td>
+<td><p>22</p></td>
+<td><p>24</p></td>
+<td><p>26</p></td>
+<td><p>30</p></td>
+<td><p>33</p></td>
+</tr>
+<tr class="row-odd"><td><p>大圆孔</p></td>
+<td><p>16</p></td>
+<td><p>20</p></td>
+<td><p>24</p></td>
+<td><p>28</p></td>
+<td><p>30</p></td>
+<td><p>35</p></td>
+<td><p>38</p></td>
+</tr>
+<tr class="row-even"><td><p>槽孔短向</p></td>
+<td><p>13.5</p></td>
+<td><p>17.5</p></td>
+<td><p>22</p></td>
+<td><p>24</p></td>
+<td><p>26</p></td>
+<td><p>30</p></td>
+<td><p>33</p></td>
+</tr>
+<tr class="row-odd"><td><p>槽孔长向</p></td>
+<td><p>22</p></td>
+<td><p>30</p></td>
+<td><p>37</p></td>
+<td><p>40</p></td>
+<td><p>45</p></td>
+<td><p>50</p></td>
+<td><p>55</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<ol class="arabic simple" start="4">
+<li><p>高强度螺栓摩擦型连接盖板按大圆孔、槽孔制孔时，应增大垫圈厚度或采用连续型垫板，其孔径与标准垫圈相同，厚度应符合以下要求：</p>
+<ul class="simple">
+<li><p>M24及以下的高强度螺栓连接，垫圈或连续型垫板的厚度不宜小于 8 mm；</p></li>
+<li><p>M24以上的高强度螺栓连接，垫圈或连续型垫板的厚度不宜小于 10 mm。</p></li>
+</ul>
+</li>
+</ol>
+</section>
+<section id="id57">
+<h3>11.5.2 螺栓（铆钉）连接的布置要求<a class="headerlink" href="#id57" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>螺栓（铆钉）连接宜采用紧凑布置，其连接中心宜与连接构件截面的重心相一致。螺栓或铆钉的间距、边距和端距容许值应符合表 11.5.2 的规定。</p></li>
+</ol>
+<p><strong>表 11.5.2 螺栓或铆钉的孔距、边距和端距容许值</strong></p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>名称</p></th>
+<th class="head"><p>位置和方向</p></th>
+<th class="head"><p>最大容许间距（取两者的较小值）</p></th>
+<th class="head"><p>最小容许间距</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>中心间距</p></td>
+<td><p>外排（垂直内力方向或顺内力方向）</p></td>
+<td><p><span class="math notranslate nohighlight">\(8d_0\)</span> 或 <span class="math notranslate nohighlight">\(12t\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(3d_0\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p>中间排</p></td>
+<td><p>垂直内力方向</p></td>
+<td><p><span class="math notranslate nohighlight">\(16d_0\)</span> 或 <span class="math notranslate nohighlight">\(24t\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p></p></td>
+<td><p>顺内力方向</p></td>
+<td><p>构件受压力</p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p>构件受拉力</p></td>
+</tr>
+<tr class="row-even"><td><p>中心至构件边缘距离</p></td>
+<td><p>顺内力方向</p></td>
+<td><p><span class="math notranslate nohighlight">\(4d_0\)</span> 或 <span class="math notranslate nohighlight">\(8t\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(2d_0\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p>垂直内力方向</p></td>
+<td><p>剪切边或手工切割边</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p></p></td>
+<td><p>轧制边、自动气割或锯割边</p></td>
+<td><p>高强度螺栓</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>注：</p>
+<ol class="arabic simple">
+<li><p><span class="math notranslate nohighlight">\(d_0\)</span> 为螺栓或铆钉的孔径，对槽孔为短向尺寸，<span class="math notranslate nohighlight">\(t\)</span> 为外层较薄板件的厚度；</p></li>
+<li><p>钢板边缘与刚性构件（如角钢、槽钢等）相连的高强度螺栓的最大间距，可按中间排的数值采用；</p></li>
+<li><p>计算螺栓孔引起的截面削弱时取 <span class="math notranslate nohighlight">\(d + 4\)</span> mm 和 <span class="math notranslate nohighlight">\(d_0\)</span> 的较大者。</p></li>
+</ol>
+</section>
+<section id="id58">
+<h3>11.5.3 动力荷载构件的螺栓连接要求<a class="headerlink" href="#id58" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>抗剪连接时应采用摩擦型高强度螺栓；</p></li>
+<li><p>普通螺栓受拉连接应采用双螺帽或其他能防止螺帽松动的有效措施。</p></li>
+</ol>
+</section>
+<section id="id59">
+<h3>11.5.4 高强度螺栓连接设计要求<a class="headerlink" href="#id59" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>本章的高强度螺栓连接均应按表 11.4.2-3 施加预拉力。</p></li>
+<li><p>仅承受拉力的高强度螺栓连接，不要求对接触面进行抗滑移处理。</p></li>
+<li><p>当高强度螺栓连接的环境温度为 <span class="math notranslate nohighlight">\(100^\circ C \sim 150^\circ C\)</span> 时，其承载力应降低 10%。</p></li>
+</ol>
+</section>
+<section id="id60">
+<h3>11.5.5 型钢构件拼接的高强度螺栓连接<a class="headerlink" href="#id60" title="Link to this heading">#</a></h3>
+<p>当型钢构件拼接采用高强度螺栓连接时，其拼接件宜采用钢板。</p>
+</section>
+<section id="id61">
+<h3>11.5.6 螺栓连接设计的其他要求<a class="headerlink" href="#id61" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>连接接头处应有必要的螺栓施拧空间。</p></li>
+<li><p>螺栓连接或拼接接头中，每一杆件一端的永久性的螺栓数不宜少于 2 个。对组合构件的缀条，其端部连接可采用 1 个螺栓。</p></li>
+<li><p>沿杆轴方向受拉的螺栓连接中的端板（法兰板），应适当加大其刚度（如加设加劲肋），以减少撬力对螺栓抗拉承载力的不利影响。</p></li>
+</ol>
+</section>
+</section>
+<section id="id62">
+<h2>11.6 销轴连接<a class="headerlink" href="#id62" title="Link to this heading">#</a></h2>
+<section id="id63">
+<h3>11.6.1<a class="headerlink" href="#id63" title="Link to this heading">#</a></h3>
+<p>销轴连接适用于铰接柱脚或拱脚以及拉索、拉杆端部的连接，销轴与耳板宜采用<span class="math notranslate nohighlight">\(Q345\)</span>、<span class="math notranslate nohighlight">\(Q390\)</span>与<span class="math notranslate nohighlight">\(Q420\)</span>，必要时也可采用<span class="math notranslate nohighlight">\(45\)</span>号钢、<span class="math notranslate nohighlight">\(35CrMo\)</span>或<span class="math notranslate nohighlight">\(40Cr\)</span>等钢材。<br />
+当销孔和销轴表面要求机加工时，其质量要求应符合相应的机械零件加工标准的规定。当销轴直径大于<span class="math notranslate nohighlight">\(120\ \text{mm}\)</span>时，宜采用锻造加工工艺制作。</p>
+</section>
+<section id="id64">
+<h3>11.6.2<a class="headerlink" href="#id64" title="Link to this heading">#</a></h3>
+<p>销轴连接的构造应符合下列要求（图11.6.2）：</p>
+<ol class="arabic simple">
+<li><p>销轴孔中心应位于耳板的中心线上，其孔径与直径相差应不大于<span class="math notranslate nohighlight">\(1\ \text{mm}\)</span>；</p></li>
+<li><p>耳板两侧宽厚比<span class="math notranslate nohighlight">\(b/t\)</span>不宜大于<span class="math notranslate nohighlight">\(4\)</span>，几何尺寸应符合下列规定：</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+a \geq \frac{4}{3}b_{\text{eff}} \tag{11.6.2-1}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+b_{\text{eff}} = 2t + 16 \leq b \tag{11.6.2-2}
+\]</div>
+<p>式中：</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(b\)</span>——连接耳板两侧边缘与销轴孔边缘净距（<span class="math notranslate nohighlight">\(\text{mm}\)</span>）；</p></li>
+<li><p><span class="math notranslate nohighlight">\(t\)</span>——耳板厚度（<span class="math notranslate nohighlight">\(\text{mm}\)</span>）；</p></li>
+<li><p><span class="math notranslate nohighlight">\(a\)</span>——顺受力方向，销轴孔边距板边缘最小距离（<span class="math notranslate nohighlight">\(\text{mm}\)</span>）。</p></li>
+</ul>
+<ol class="arabic simple" start="3">
+<li><p>销轴表面与耳板孔周表面宜进行机加工。</p></li>
+</ol>
+<p><img alt="图11.6.2 销轴连接耳板" src="_images/image175.svg" /></p>
+</section>
+<section id="id65">
+<h3>11.6.3<a class="headerlink" href="#id65" title="Link to this heading">#</a></h3>
+<p>连接耳板应按下列公式进行抗拉、抗剪强度的计算：</p>
+<ol class="arabic simple">
+<li><p>耳板孔净截面处的抗拉强度：</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+\sigma = \frac{N}{2t b_1} \leq f \tag{11.6.3-1}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+b_1 = \min(2t + 16, b - \frac{d_0}{3}) \tag{11.6.3-2}
+\]</div>
+<ol class="arabic simple" start="2">
+<li><p>耳板端部截面抗拉（劈开）强度：</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+\sigma = \frac{N}{2t(a - \frac{2d_0}{3})} \leq f \tag{11.6.3-3}
+\]</div>
+<ol class="arabic simple" start="3">
+<li><p>耳板抗剪强度：</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+\tau = \frac{N}{2tZ} \leq f_v \tag{11.6.3-4}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+Z = \sqrt{(a + \frac{d_0}{2})^2 - (\frac{d_0}{2})^2} \tag{11.6.3-5}
+\]</div>
+<p>式中：</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(N\)</span>——杆件轴向拉力设计值；</p></li>
+<li><p><span class="math notranslate nohighlight">\(b_1\)</span>——计算宽度（<span class="math notranslate nohighlight">\(\text{mm}\)</span>）；</p></li>
+<li><p><span class="math notranslate nohighlight">\(d_0\)</span>——销轴孔径（<span class="math notranslate nohighlight">\(\text{mm}\)</span>）；</p></li>
+<li><p><span class="math notranslate nohighlight">\(f\)</span>——耳板抗拉强度设计值（<span class="math notranslate nohighlight">\(\text{N/mm}^2\)</span>）；</p></li>
+<li><p><span class="math notranslate nohighlight">\(Z\)</span>——耳板端部抗剪截面宽度（如图11.6.3所示）（<span class="math notranslate nohighlight">\(\text{mm}\)</span>）；</p></li>
+<li><p><span class="math notranslate nohighlight">\(f_v\)</span>——耳板钢材抗剪强度设计值（<span class="math notranslate nohighlight">\(\text{N/mm}^2\)</span>）。</p></li>
+</ul>
+<p><img alt="图11.6.3 销轴连接耳板受剪面示意图" src="_images/image176.svg" /></p>
+</section>
+<section id="id66">
+<h3>11.6.4<a class="headerlink" href="#id66" title="Link to this heading">#</a></h3>
+<p>销轴应按下列公式进行承压、抗剪与抗弯强度的计算，计算简图如图11.6.4所示：</p>
+<ol class="arabic simple">
+<li><p>销轴承压强度：</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+\sigma_c = \frac{N}{dt} \leq f_c^b \tag{11.6.4-1}
+\]</div>
+<ol class="arabic simple" start="2">
+<li><p>销轴抗剪强度：</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+\tau_b = \frac{N}{n_v \pi \frac{d^2}{4}} \leq f_v^b \tag{11.6.4-2}
+\]</div>
+<ol class="arabic simple" start="3">
+<li><p>销轴的抗弯强度：</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+\sigma_b = \frac{M}{1.5 \frac{\pi d^3}{32}} \leq f^b \tag{11.6.4-3}
+\]</div>
+<ol class="arabic simple" start="4">
+<li><p>计算截面同时受弯受剪时组合强度应按下式验算：</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+\sqrt{\left(\frac{\sigma_b}{f^b}\right)^2 + \left(\frac{\tau_b}{f_v^b}\right)^2} \leq 1 \tag{11.6.4-4}
+\]</div>
+<p>式中：</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(d\)</span>——销轴直径；</p></li>
+<li><p><span class="math notranslate nohighlight">\(f_c^b\)</span>——销轴连接中耳板的承压强度设计值；</p></li>
+<li><p><span class="math notranslate nohighlight">\(n_v\)</span>——受剪面数目；</p></li>
+<li><p><span class="math notranslate nohighlight">\(f_v^b\)</span>——销轴的抗剪强度设计值；</p></li>
+<li><p><span class="math notranslate nohighlight">\(M\)</span>——销轴计算截面弯矩设计值；</p></li>
+<li><p><span class="math notranslate nohighlight">\(f^b\)</span>——销轴的抗弯强度设计值。</p></li>
+</ul>
+</section>
+</section>
+<section id="id67">
+<h2>11.7 钢管法兰连接构造<a class="headerlink" href="#id67" title="Link to this heading">#</a></h2>
+<section id="id68">
+<h3>11.7.1<a class="headerlink" href="#id68" title="Link to this heading">#</a></h3>
+<p>法兰板应为环状。除承压型法兰连接外，钢管的插入深度可取法兰板厚的 <span class="math notranslate nohighlight">\(1/2\)</span>（图11.7.1），法兰板两侧应与钢管焊接。<br />
+法兰板与钢管外壁间的焊缝为非全熔透的角焊缝，其厚度不应大于管壁厚的 <span class="math notranslate nohighlight">\(1.2\)</span> 倍，管端焊缝为角焊缝，其焊脚高度等于管壁厚。</p>
+<p><img alt="图11.7.1 钢管插入法兰板深度" src="_images/image177.svg" /><br />
+1—伸入法兰板厚度的一半处</p>
+</section>
+<section id="id69">
+<h3>11.7.2<a class="headerlink" href="#id69" title="Link to this heading">#</a></h3>
+<p>法兰板上螺孔应均匀分布。螺栓应选强度等级较高者。</p>
+</section>
+<section id="id70">
+<h3>11.7.3<a class="headerlink" href="#id70" title="Link to this heading">#</a></h3>
+<p>加劲板厚度不宜小于其长度或宽度的 <span class="math notranslate nohighlight">\(1/15\)</span>。加劲板与法兰板的连接及加劲板与钢管壁的连接应采用双面角焊缝。加劲板和法兰板、管壁三向交汇处加劲板应有四分之一圆弧形切口，其半径不宜小于加劲板厚的 <span class="math notranslate nohighlight">\(1.5\)</span> 倍，也不宜小于 <span class="math notranslate nohighlight">\(20\ \text{mm}\)</span>（图11.7.3）。</p>
+<p><img alt="图11.7.3 加劲板圆弧形切口" src="_images/image178.svg" /><br />
+1—厚度；2—圆弧形切口；<br />
+<span class="math notranslate nohighlight">\(a\)</span>—切口长度 <span class="math notranslate nohighlight">\(\leq \delta_L\)</span>，且不小于 <span class="math notranslate nohighlight">\(20\ \text{mm}\)</span></p>
+</section>
+<section id="id71">
+<h3>11.7.4<a class="headerlink" href="#id71" title="Link to this heading">#</a></h3>
+<p>当钢管内壁不作防腐蚀处理时，管端部法兰应采用 <span class="math notranslate nohighlight">\(3\ \text{mm}\)</span> 厚钢板作气密性焊接封闭。当钢管用热浸镀锌作内外防腐蚀处理时，管端不应封闭。</p>
+<p><img alt="图11.7.5 承压型法兰端部铣平" src="_images/image179.svg" /><br />
+1—端部铣平</p>
+</section>
+<section id="id72">
+<h3>11.7.5<a class="headerlink" href="#id72" title="Link to this heading">#</a></h3>
+<p>承压型法兰钢管应贯穿全部环形法兰板厚。承压型法兰在焊接完毕后端部应铣平（图11.7.5）。</p>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="10%20%E5%A1%91%E6%80%A7%E5%8F%8A%E5%BC%AF%E7%9F%A9%E8%B0%83%E5%B9%85%E8%AE%BE%E8%AE%A1.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">10 塑性及弯矩调幅设计</p>
+      </div>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">11.1 一般规定</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">11.1.1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">11.1.2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">11.1.3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">11.1.4</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">11.1.5</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">11.1.6</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">11.1.7</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">11.1.8</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">11.2 焊接连接计算</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">11.2.1 全熔透对接焊缝或对接与角接组合焊缝的强度计算</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">11.2.2 直角角焊缝的强度计算</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#t">11.2.3 T形接头的斜角角焊缝</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">11.2.4 部分熔透的对接焊缝和其与角接焊缝的组合焊缝</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">11.2.5 圆形塞焊焊缝和圆孔或槽孔内角焊缝的强度计算</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">11.2.6 角焊缝的搭接焊接接头</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">11.2.7 焊接截面工字形梁翼缘与腹板的双面角焊缝连接</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tyk">11.2.8 圆管与矩形管T、Y、K形相贯节点焊缝</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">11.3 焊接连接构造要求</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">11.3.1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id20">11.3.2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id21">11.3.3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id22">11.3.4</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id23">11.3.4.1</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id24">11.3.4.2</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id25">11.3.4.3</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id26">11.3.4.4</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id27">11.3.4.5</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id28">11.3.4.6</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id29">11.3.4.7</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id30">11.3.5</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id31">11.3.5.1</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id32">11.3.5.2</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id33">11.3.5.3</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id34">11.3.5.4</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id35">11.3.5.5</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id36">11.3.5.6</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id37">11.3.6</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id38">11.3.6.1</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id39">11.3.6.2</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id40">11.3.6.3</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id41">11.3.6.4</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id42">11.3.6.5</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id43">11.3.7</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id44">11.3.7.1</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id45">11.3.7.2</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id46">11.3.7.3</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id47">11.3.7.4</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id48">11.3.7.5</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id49">11.3.8</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id50">11.4 紧固件连接计算</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id51">11.4.1 普通螺栓、锚栓或铆钉的连接承载力</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id52">11.4.2 高强度螺栓摩擦型连接</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id53">11.4.3 高强度螺栓承压型连接</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id54">11.4.4 螺栓或铆钉数目的增加情况</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#l-1-15d-0-d-0-left-1-1-frac-l-1-150d-0-right-60d-0-0-7">11.4.5 在构件的接头的一端，当螺栓沿轴向受力方向的连接长度 <span class="math notranslate nohighlight">\(l_1\)</span> 大于 <span class="math notranslate nohighlight">\(15d_0\)</span> 时（<span class="math notranslate nohighlight">\(d_0\)</span> 为孔径），应将螺栓的承载力设计值乘以折减系数<span class="math notranslate nohighlight">\(\left(1.1 - \frac{l_1}{150d_0}\right)\)</span>，当大于 <span class="math notranslate nohighlight">\(60d_0\)</span> 时，折减系数取为定值 0.7。</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id55">11.5 紧固件连接构造要求</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id56">11.5.1 螺栓孔的孔径与孔型应符合下列规定：</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id57">11.5.2 螺栓（铆钉）连接的布置要求</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id58">11.5.3 动力荷载构件的螺栓连接要求</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id59">11.5.4 高强度螺栓连接设计要求</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id60">11.5.5 型钢构件拼接的高强度螺栓连接</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id61">11.5.6 螺栓连接设计的其他要求</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id62">11.6 销轴连接</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id63">11.6.1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id64">11.6.2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id65">11.6.3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id66">11.6.4</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id67">11.7 钢管法兰连接构造</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id68">11.7.1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id69">11.7.2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id70">11.7.3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id71">11.7.4</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id72">11.7.5</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By 游田重新排版
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2025.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
