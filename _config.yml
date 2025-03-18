@@ -20,7 +20,7 @@ bibtex_bibfiles:
 
 # Information about where the book exists on the web
 repository:
-  url: https://github.com/youtianjava/Standard_for_design_of_steel_structures_GB_50017-2017  # Online location of your book
+  url: https://github.com/youtian95/Book_SteelStd  # Online location of your book
   path_to_book: SteelStd  # Optional path to your book, relative to the repository root
   branch: main  # Which branch of the repository should be used when creating links (optional)
 
@@ -31,4 +31,5 @@ html:
   use_repository_button: true
   use_issues_button: true
   comments:
-    Hypothesis: true
+    Hypothesis: false
+    utterances: false
