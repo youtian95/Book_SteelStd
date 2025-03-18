@@ -1,0 +1,1235 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>17 钢结构构件和节点抗震设计 &#8212; 钢结构设计标准 GB 50017-2017</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="_static/mystyle.css?v=63ecd79b" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '17 钢结构构件和节点抗震设计';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="18 钢结构防护" href="18%20%E9%92%A2%E7%BB%93%E6%9E%84%E9%98%B2%E6%8A%A4.html" />
+    <link rel="prev" title="16 疲劳计算及防脆断设计" href="16%20%E7%96%B2%E5%8A%B3%E8%AE%A1%E7%AE%97%E5%8F%8A%E9%98%B2%E8%84%86%E6%96%AD%E8%AE%BE%E8%AE%A1.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="README.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="钢结构设计标准 GB 50017-2017 - Home"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="钢结构设计标准 GB 50017-2017 - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="README.html">
+                    《钢结构设计标准 GB 50017-2017》
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="%E5%89%8D%E8%A8%80.html">前言</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E7%9B%AE%E5%BD%95.html">目次</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="1%20%E6%80%BB%E5%88%99.html">1 总则</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2%20%E6%9C%AF%E8%AF%AD%E5%92%8C%E7%AC%A6%E5%8F%B7.html">2 术语和符号</a></li>
+<li class="toctree-l1"><a class="reference internal" href="3%20%E5%9F%BA%E6%9C%AC%E8%AE%BE%E8%AE%A1%E8%A7%84%E5%AE%9A.html">3 基本设计规定</a></li>
+<li class="toctree-l1"><a class="reference internal" href="4%20%E6%9D%90%E6%96%99%E5%92%8C%E6%9D%90%E6%96%99%E9%80%89%E7%94%A8.html">4 材料和材料选用</a></li>
+<li class="toctree-l1"><a class="reference internal" href="5%20%E7%BB%93%E6%9E%84%E5%88%86%E6%9E%90%E4%B8%8E%E7%A8%B3%E5%AE%9A%E6%80%A7%E8%AE%BE%E8%AE%A1.html">5 结构分析与稳定性设计</a></li>
+<li class="toctree-l1"><a class="reference internal" href="6%20%E5%8F%97%E5%BC%AF%E6%9E%84%E4%BB%B6.html">6 受弯构件</a></li>
+<li class="toctree-l1"><a class="reference internal" href="7%20%E8%BD%B4%E5%BF%83%E5%8F%97%E5%8A%9B%E6%9E%84%E4%BB%B6.html">7 轴心受力构件</a></li>
+<li class="toctree-l1"><a class="reference internal" href="8%20%E6%8B%89%E5%BC%AF%E3%80%81%E5%8E%8B%E5%BC%AF%E6%9E%84%E4%BB%B6.html">8 拉弯、压弯构件</a></li>
+<li class="toctree-l1"><a class="reference internal" href="9%20%E5%8A%A0%E5%8A%B2%E9%92%A2%E6%9D%BF%E5%89%AA%E5%8A%9B%E5%A2%99.html">9 加劲钢板剪力墙</a></li>
+<li class="toctree-l1"><a class="reference internal" href="10%20%E5%A1%91%E6%80%A7%E5%8F%8A%E5%BC%AF%E7%9F%A9%E8%B0%83%E5%B9%85%E8%AE%BE%E8%AE%A1.html">10 塑性及弯矩调幅设计</a></li>
+<li class="toctree-l1"><a class="reference internal" href="11%20%E8%BF%9E%E6%8E%A5.html">11 连接</a></li>
+<li class="toctree-l1"><a class="reference internal" href="12%20%E8%8A%82%E7%82%B9.html">12 节点</a></li>
+<li class="toctree-l1"><a class="reference internal" href="13%20%E9%92%A2%E7%AE%A1%E8%BF%9E%E6%8E%A5%E8%8A%82%E7%82%B9.html">13 钢管连接节点</a></li>
+<li class="toctree-l1"><a class="reference internal" href="14%20%E9%92%A2%E4%B8%8E%E6%B7%B7%E5%87%9D%E5%9C%9F%E7%BB%84%E5%90%88%E6%A2%81.html">14 钢与混凝土组合梁</a></li>
+<li class="toctree-l1"><a class="reference internal" href="15%20%E9%92%A2%E7%AE%A1%E6%B7%B7%E5%87%9D%E5%9C%9F%E6%9F%B1%E5%8F%8A%E8%8A%82%E7%82%B9.html">15 钢管混凝土柱及节点</a></li>
+<li class="toctree-l1"><a class="reference internal" href="16%20%E7%96%B2%E5%8A%B3%E8%AE%A1%E7%AE%97%E5%8F%8A%E9%98%B2%E8%84%86%E6%96%AD%E8%AE%BE%E8%AE%A1.html">16 疲劳计算及防脆断设计</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">17 钢结构构件和节点抗震设计</a></li>
+<li class="toctree-l1"><a class="reference internal" href="18%20%E9%92%A2%E7%BB%93%E6%9E%84%E9%98%B2%E6%8A%A4.html">18 钢结构防护</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E9%99%84%E5%BD%95A%20%E5%B8%B8%E7%94%A8%E5%BB%BA%E7%AD%91%E7%BB%93%E6%9E%84%E4%BD%93%E7%B3%BB.html">附录A 常用建筑结构体系</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E9%99%84%E5%BD%95B%20%E7%BB%93%E6%9E%84%E6%88%96%E6%9E%84%E4%BB%B6%E7%9A%84%E5%8F%98%E5%BD%A2%E5%AE%B9%E8%AE%B8%E5%80%BC.html">附录B  结构或构件的变形容许值</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E9%99%84%E5%BD%95C%20%E7%AE%80%E6%94%AF%E6%A2%81%E3%80%81%E6%82%AC%E8%87%82%E6%A2%81%E5%8F%8A%E6%A1%86%E6%9E%B6%E6%A2%81%E7%9A%84%E5%BC%B9%E6%80%A7%E5%B1%88%E6%9B%B2%E4%B8%B4%E7%95%8C%E5%BC%AF%E7%9F%A9.html">附录C  简支梁、悬臂梁及框架梁的弹性屈曲临界弯矩</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E9%99%84%E5%BD%95D%20%E8%BD%B4%E5%BF%83%E5%8F%97%E5%8E%8B%E6%9E%84%E4%BB%B6%E7%9A%84%E7%A8%B3%E5%AE%9A%E7%B3%BB%E6%95%B0.html">附录D  轴心受压构件的稳定系数</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E9%99%84%E5%BD%95E%20%E6%9F%B1%E7%9A%84%E8%AE%A1%E7%AE%97%E9%95%BF%E5%BA%A6%E7%B3%BB%E6%95%B0.html">附录E  柱的计算长度系数</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E9%99%84%E5%BD%95F%20%E8%AE%BE%E7%BD%AE%E5%8A%A0%E5%8A%B2%E7%9A%84%E9%92%A2%E6%9D%BF%E5%89%AA%E5%8A%9B%E5%A2%99%E7%9A%84%E5%BC%B9%E6%80%A7%E5%B1%88%E6%9B%B2%E4%B8%B4%E7%95%8C%E5%BA%94%E5%8A%9B.html">附录F  设置加劲的钢板剪力墙的弹性屈曲临界应力</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E9%99%84%E5%BD%95G%20%E6%A1%81%E6%9E%B6%E8%8A%82%E7%82%B9%E6%9D%BF%E5%9C%A8%E6%96%9C%E8%85%B9%E6%9D%86%E5%8E%8B%E5%8A%9B%E4%BD%9C%E7%94%A8%E4%B8%8B%E7%9A%84%E7%A8%B3%E5%AE%9A%E8%AE%A1%E7%AE%97.html">附录G 桁架节点板在斜腹杆压力作用下的稳定计算</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E9%99%84%E5%BD%95H%20%E6%97%A0%E5%8A%A0%E5%8A%B2%E9%92%A2%E7%AE%A1%E7%9B%B4%E6%8E%A5%E7%84%8A%E6%8E%A5%E8%8A%82%E7%82%B9%E5%88%9A%E5%BA%A6%E5%88%A4%E5%88%AB.html">附录H  无加劲钢管直接焊接节点刚度判别</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E9%99%84%E5%BD%95J%20%E9%92%A2%E4%B8%8E%E6%B7%B7%E5%87%9D%E5%9C%9F%E7%BB%84%E5%90%88%E6%A2%81%E7%9A%84%E7%96%B2%E5%8A%B3%E9%AA%8C%E7%AE%97.html">附录J  钢与混凝土组合梁的疲劳验算</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E9%99%84%E5%BD%95K%20%E7%96%B2%E5%8A%B3%E8%AE%A1%E7%AE%97%E7%9A%84%E6%9E%84%E4%BB%B6%E5%92%8C%E8%BF%9E%E6%8E%A5%E5%88%86%E7%B1%BB.html">附录K  疲劳计算的构件和连接分类</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E9%99%84%E5%BD%95L%20%E5%BB%B6%E6%80%A7%E7%AD%89%E7%BA%A7.html">附录L  延性等级</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E9%99%84%E5%BD%95M%20%E7%BD%95%E9%81%87%E5%9C%B0%E9%9C%87%E4%BD%9C%E7%94%A8%E4%B8%8B%E7%9A%84%E4%BE%A7%E7%A7%BB%E8%AE%A1%E7%AE%97.html">附录M 罕遇地震作用下的侧移计算</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E6%9C%AC%E8%A7%84%E8%8C%83%E7%94%A8%E8%AF%8D%E8%AF%B4%E6%98%8E.html">本规范用词说明</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E5%BC%95%E7%94%A8%E6%A0%87%E5%87%86%E5%90%8D%E5%BD%95.html">引用标准名录</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/youtian95/Book_SteelStd" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/youtian95/Book_SteelStd/issues/new?title=Issue%20on%20page%20%2F17 钢结构构件和节点抗震设计.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/17 钢结构构件和节点抗震设计.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>17 钢结构构件和节点抗震设计</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">17.1 一般规定</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">17.2 计算要点</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">17.2.1 进行设防地震承载力验算时，阻尼比可采用0.05。</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">17.2.2 结构构件承载力按不同要求进行复核时，地震内力计算应符合下列要求：</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">17.2.3 抗震性能调整系数应按下列公式计算：</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">17.2.4 当结构构件承载力低于性能2要求时，强柱弱梁的设计要求应符合下列规定：</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">17.2.5 框架结构的构件要求</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">17.2.6 中心支撑结构的构件要求</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">17.2.7 当结构构件承载力低于性能 2 要求时，对于框架中心支撑结构：</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gb50011-10-2-beta-mathrm-memv-mathrm-e-1-15-beta-mathrm-memv-mathrm-e-1-2">17.2.8 大跨度屋盖结构应符合现行国家标准《建筑抗震设计规范》GB50011 第 10.2 节的有关规定。进行屋盖构件抗震验算时，关键杆件的构件系数 <span class="math notranslate nohighlight">\(\beta_{\mathrm{memv}}^{\mathrm{E}}\)</span> 可取 1.15，关键节点的构件系数 <span class="math notranslate nohighlight">\(\beta_{\mathrm{memv}}^{\mathrm{E}}\)</span> 可取 1.2；</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#beta-mathrm-mem-mathrm-e-1-5">17.2.9 直接传递转换构件内力的抗震构件，其构件系数 <span class="math notranslate nohighlight">\(\beta_{\mathrm{mem}}^{\mathrm{E}}\)</span> 不宜小于 1.5。</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">17.3 节点连接与构造要求</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gb50661-20115-7">17.3.1 节点连接应满足国家现行标准《钢结构焊接规范》GB50661-2011第5.7节的规定。</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">17.3.2 抗震设防的钢结构，当结构构件承载力低于性能1要求时，其构件应符合下列规定：</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">17.3.3 框架柱长细比应符合下列规定：</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">17.3.4 抗震设防的钢结构，当结构构件承载力低于性能1要求时，其节点设计应符合下列规定：</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#h">17.3.5 当框架结构的梁柱采用刚性连接时，H形和箱形截面柱的节点域应符合下列规定：</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">17.3.6 当结构构件承载力低于性能2要求时，梁柱刚性节点应符合下列规定：</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">17.3.7 当梁柱刚性节点采用骨形节点（图17.3.7）时，应符合下列规定：</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">17.3.8 当梁柱节点采用梁端加强的方法来保证塑性铰外移要求时，应符合下列要求：</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">17.3.9 当柱脚承载力低于性能2要求时，抗震设防的钢结构柱脚设计应符合下列规定：</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">17.3.10 当结构构件承载力低于性能1要求时，钢支撑连接节点应符合下列要求：</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id20">17.3.11 对于框架结构或框架承担总水平力50％以上的双重抗侧力结构中的框架部分，当框架梁上覆混凝土楼板时，其楼板钢筋应可靠锚固。</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id21">17.3.12 钢板剪力墙与框架梁柱的连接应符合下列规定：</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="id1">
+<h1>17 钢结构构件和节点抗震设计<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
+<section id="id2">
+<h2>17.1 一般规定<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>本章适用于进行钢结构抗震性能化设计的构件和节点，地震动参数应符合现行国家标准《建筑抗震设计规范》GB50011的规定，设计应符合其性能化设计原则。</p></li>
+<li><p>钢结构建筑的抗震设防类别和抗震设防标准应按国家现行标准《建筑工程抗震设防分类标准》GB50223的规定采用。</p></li>
+<li><p>结构构件和节点实现抗震性能要求的承载力指标及相应构造要求可按表17.1.3的要求选择，延性等级可根据本规范附录L的规定采用。</p></li>
+</ol>
+<p><strong>表17.1.3 结构构件和节点实现抗震性能要求的承载力指标及相应构造要求</strong></p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>性能要求</p></th>
+<th class="head"><p>多遇地震</p></th>
+<th class="head"><p>设防地震</p></th>
+<th class="head"><p>构造要求</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>性能1</p></td>
+<td><p>完好，承载力按现行国家标准《建筑抗震设计规范》GB50011或《构筑物抗震设计规范》GB50191中未调整地震效应的设计值复核</p></td>
+<td><p>承载力按考虑地震效应调整的设计值复核</p></td>
+<td><p>除应满足本规范第17.1.5条第1款和第17.3.1条的规定外，可按非抗震要求设计</p></td>
+</tr>
+<tr class="row-odd"><td><p>性能2</p></td>
+<td><p></p></td>
+<td><p>承载力按延性等级为Ⅴ级的抗震性能调整系数调整地震效应的标准值复核</p></td>
+<td><p>延性等级为Ⅴ级时相应的抗震构造。当承载力满足极限值要求时，可按非抗震要求设计</p></td>
+</tr>
+<tr class="row-even"><td><p>性能3</p></td>
+<td><p></p></td>
+<td><p>承载力按延性等级为Ⅳ级的抗震性能调整系数调整地震效应的标准值复核</p></td>
+<td><p>延性等级为Ⅳ级时相应的抗震构造</p></td>
+</tr>
+<tr class="row-odd"><td><p>性能4</p></td>
+<td><p></p></td>
+<td><p>承载力按延性等级为Ⅰ级、Ⅱ级或Ⅲ级调整地震效应的标准值复核</p></td>
+<td><p>相应延性等级的抗震构造</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>注: 抗震性能要求的承载力指标为性能4的框架梁，端弯矩可取柱侧弯矩并可考虑结构刚度折减。</p>
+<ol class="arabic simple" start="4">
+<li><p>抗震设防的钢结构，在地震作用下宜根据本章的规定进行性能化设计，并应根据其抗震设防类别、设防烈度、场地条件、结构类型和不规则性，建筑使用功能和附属设施功能的要求、投资大小、震后损失和修复难易程度等，选定其抗震性能目标。抗震设防类别为标准设防类的建筑，其构件和节点承载力抗震性能目标不宜低于表17.1.4的规定。</p></li>
+</ol>
+<p><strong>表17.1.4 构件和节点承载力最低抗震性能目标</strong></p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>延性等级</p></th>
+<th class="head"><p>Ⅰ级、Ⅱ级、Ⅲ级、Ⅳ级</p></th>
+<th class="head"><p>Ⅴ级</p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>设防烈度</p></td>
+<td><p>单层</p></td>
+<td><p>多层</p></td>
+<td><p>高层</p></td>
+<td><p>其它</p></td>
+<td><p>—</p></td>
+</tr>
+<tr class="row-odd"><td><p>6度</p></td>
+<td><p>性能2</p></td>
+<td><p>性能2</p></td>
+<td><p>性能4</p></td>
+<td><p>性能3</p></td>
+<td><p>性能2</p></td>
+</tr>
+<tr class="row-even"><td><p>7度</p></td>
+<td><p>性能2</p></td>
+<td><p>性能3</p></td>
+<td><p>性能4</p></td>
+<td><p>性能4</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>8度</p></td>
+<td><p>性能3</p></td>
+<td><p>性能4</p></td>
+<td><p>性能4</p></td>
+<td><p>性能4</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>9度</p></td>
+<td><p>性能4</p></td>
+<td><p>性能4</p></td>
+<td><p>性能4</p></td>
+<td><p>性能4</p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<ol class="arabic simple" start="5">
+<li><p>多遇地震作用下，抗震设防的钢结构的侧移限值应满足国家现行标准《建筑抗震设计规范》GB50011的规定。罕遇地震作用下，弹塑性层间位移角限值可按表17.1.5采用。层间最大弹塑性位移可按本规范附录M的规定计算。</p></li>
+</ol>
+<p><strong>表17.1.5 弹塑性层间位移角限值</strong></p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>延性等级</p></th>
+<th class="head"><p>Ⅰ级</p></th>
+<th class="head"><p>Ⅱ级</p></th>
+<th class="head"><p>Ⅲ级</p></th>
+<th class="head"><p>Ⅳ级</p></th>
+<th class="head"><p>Ⅴ级</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>框架结构</p></td>
+<td><p><span class="math notranslate nohighlight">\(\frac{1}{30}\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\frac{1}{30}\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\frac{1}{50}\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\frac{1}{50}\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\frac{1}{100}\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>中心支撑结构</p></td>
+<td><p><span class="math notranslate nohighlight">\(\frac{1}{50}\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\frac{1}{50}\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\frac{1}{50}\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\frac{1}{50}\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\frac{1}{100}\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>多层框架-中心支撑结构</p></td>
+<td><p><span class="math notranslate nohighlight">\(\frac{1}{30}\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\frac{1}{50}\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\frac{1}{50}\)</span></p></td>
+<td><p>—</p></td>
+<td><p><span class="math notranslate nohighlight">\(\frac{1}{100}\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>高层框架-中心支撑结构</p></td>
+<td><p><span class="math notranslate nohighlight">\(\frac{1}{50}\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\frac{1}{50}\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\frac{1}{50}\)</span></p></td>
+<td><p>—</p></td>
+<td><p><span class="math notranslate nohighlight">\(\frac{1}{100}\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>框架-偏心支撑结构</p></td>
+<td><p><span class="math notranslate nohighlight">\(\frac{1}{30}\)</span></p></td>
+<td><p>—</p></td>
+<td><p>—</p></td>
+<td><p>—</p></td>
+<td><p><span class="math notranslate nohighlight">\(\frac{1}{100}\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>框架-防屈曲支撑结构</p></td>
+<td><p><span class="math notranslate nohighlight">\(\frac{1}{30}\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\frac{1}{30}\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\frac{1}{50}\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\frac{1}{50}\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\frac{1}{100}\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>框架-钢板剪力墙结构</p></td>
+<td><p><span class="math notranslate nohighlight">\(\frac{1}{50}\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\frac{1}{50}\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\frac{1}{50}\)</span></p></td>
+<td><p>—</p></td>
+<td><p><span class="math notranslate nohighlight">\(\frac{1}{100}\)</span></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>注：</p>
+<ol class="arabic simple">
+<li><p>设防地震和罕遇地震下的变形计算，应考虑重力二阶效应，可扣除整体弯曲变形。</p></li>
+<li><p>延性等级为Ⅴ级的单层钢结构层间位移角限值可取为 <span class="math notranslate nohighlight">\(\frac{1}{50}\)</span>。</p></li>
+<li><p>抗震设防的钢结构，其钢材应符合下列要求：</p>
+<ol class="arabic simple">
+<li><p>弹性区所采用的钢材的质量等级应符合下列要求：</p>
+<ol class="arabic simple">
+<li><p>当工作环境温度高于0℃时其质量等级不应低于B级；</p></li>
+<li><p>当工作环境温度不高于0℃但高于-20℃时，Q235、Q345钢不应低于B级，Q390、Q420及Q460钢不应低于C级；</p></li>
+<li><p>当工作环境温度不高于-20℃时，Q235、Q345钢不应低于C级，Q390、Q420及Q460钢不应低于D级。</p></li>
+</ol>
+</li>
+<li><p>塑性耗能区所采用的钢材应符合下列要求：</p>
+<ol class="arabic simple">
+<li><p>钢材的屈服强度实测值与抗拉强度实测值的比值不应大于0.85；</p></li>
+<li><p>钢材应有明显的屈服台阶，且伸长率不应小于20%；</p></li>
+<li><p>钢材应满足屈服强度实测值不高于上一级钢材屈服强度规定值的条件；</p></li>
+<li><p>钢材工作环境温度时夏比冲击韧性不应低于27J。</p></li>
+</ol>
+</li>
+</ol>
+</li>
+<li><p>钢结构关键性焊缝的填充金属应检验V形切口的冲击韧性，其工作环境温度时夏比冲击韧性不应低于27J。</p></li>
+<li><p>钢结构的布置应符合现行国家标准《建筑抗震设计规范》GB50011或《构筑物抗震设计规范》GB50191的规定。</p></li>
+<li><p>框架结构应满足强柱弱梁要求。</p></li>
+<li><p>支撑结构及框架支撑结构的支撑系统应符合强节点弱支撑、强柱弱支撑的要求，支撑的型式和布置应符合国家现行标准《建筑抗震设计规范》GB50011的有关规定。</p></li>
+<li><p>进行构成支撑（钢板剪力墙）系统的梁柱设计时，不宜考虑支撑（钢板剪力墙）承担竖向荷载。</p></li>
+<li><p>抗震设防烈度为7度及以上地区的钢结构采用钢板剪力墙体系时，宜采用双向加劲钢板剪力墙。</p></li>
+</ol>
+</section>
+<section id="id3">
+<h2>17.2 计算要点<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
+<section id="id4">
+<h3>17.2.1 进行设防地震承载力验算时，阻尼比可采用0.05。<a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
+</section>
+<section id="id5">
+<h3>17.2.2 结构构件承载力按不同要求进行复核时，地震内力计算应符合下列要求：<a class="headerlink" href="#id5" title="Link to this heading">#</a></h3>
+<ol class="arabic">
+<li><p>设防地震作用下的构件承载力，按考虑地震效应调整的设计值复核时，应采用下式验算：</p>
+<div class="math notranslate nohighlight">
+\[
+    \gamma_{\mathrm{G}} S_{\mathrm{GE}} + \gamma_{\mathrm{Eh}} \Omega_{\mathrm{h}} S_{\mathrm{Ehk}} + \gamma_{\mathrm{Ev}} \Omega_{\mathrm{v}} S_{\mathrm{Evk}} \leq R \tag{17.2.2-1}
+    \]</div>
+</li>
+<li><p>设防地震作用下的构件承载力，按考虑地震效应调整的标准值复核时，应采用下式验算：</p>
+<div class="math notranslate nohighlight">
+\[
+    S_{\mathrm{GE}} + \Omega_{\mathrm{h}} S_{\mathrm{Ehk}} + \Omega_{\mathrm{v}} S_{\mathrm{Evk}} \leq R_{\mathrm{k}} \tag{17.2.2-2}
+    \]</div>
+</li>
+<li><p>罕遇地震作用下的构件承载力，按极限承载力复核时，应采用下式验算：</p>
+<div class="math notranslate nohighlight">
+\[
+    S_{\mathrm{GE}} + \beta_{\mathrm{ysh}}^{\mathrm{E}} S_{\mathrm{Ehk,rar}} + \beta_{\mathrm{ysv}}^{\mathrm{E}} S_{\mathrm{Evk,rar}} \leq R_{\mathrm{u}} \tag{17.2.2-3}
+    \]</div>
+<p>式中：<br />
+<span class="math notranslate nohighlight">\(\gamma_{\mathrm{G}}\)</span>——重力荷载分项系数，一般情况下应采用1.2，当重力荷载效应对构件承载能力有利时，不应大于1.0；<br />
+<span class="math notranslate nohighlight">\(\gamma_{\mathrm{Eh}}\)</span>、<span class="math notranslate nohighlight">\(\gamma_{\mathrm{Ev}}\)</span>——分别为水平、竖向地震作用的分项系数，按现行国家标准《建筑抗震设计规范》GB50011的规定采用；<br />
+<span class="math notranslate nohighlight">\(S_{\mathrm{GE}}\)</span>——重力荷载代表值效应，按现行国家标准《建筑抗震设计规范》GB50011的规定采用；<br />
+<span class="math notranslate nohighlight">\(S_{\mathrm{Ehk}}\)</span>、<span class="math notranslate nohighlight">\(S_{\mathrm{Evk}}\)</span>——水平、竖向设防地震作用标准值效应；<br />
+<span class="math notranslate nohighlight">\(S_{\mathrm{Ehk,rar}}\)</span>、<span class="math notranslate nohighlight">\(S_{\mathrm{Evk,rar}}\)</span>——水平、竖向罕遇地震作用标准值效应；<br />
+<span class="math notranslate nohighlight">\(\beta_{\mathrm{ysh}}^{\mathrm{E}}\)</span>——水平地震作用屈服强度调整系数，可按表17.2.2取值；<br />
+<span class="math notranslate nohighlight">\(\beta_{\mathrm{ysv}}^{\mathrm{E}}\)</span>——竖向地震作用屈服强度调整系数，取0.7；<br />
+<span class="math notranslate nohighlight">\(\Omega_{\mathrm{h}}\)</span>、<span class="math notranslate nohighlight">\(\Omega_{\mathrm{v}}\)</span>——分别为水平方向及竖向抗震性能调整系数，按式(17.2.3-1)和(17.2.3-2)计算；<br />
+<span class="math notranslate nohighlight">\(R\)</span>、<span class="math notranslate nohighlight">\(R_{\mathrm{k}}\)</span>、<span class="math notranslate nohighlight">\(R_{\mathrm{u}}\)</span>——分别为结构构件的抗力设计值、按屈服强度计算的承载力标准值、按最小抗拉强度计算的极限承载力。</p>
+</li>
+</ol>
+<p><strong>表17.2.2 屈服强度调整系数 <span class="math notranslate nohighlight">\(\beta_{\mathrm{ysh}}^{\mathrm{E}}\)</span></strong></p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>延性等级</p></th>
+<th class="head"><p>Ⅰ级</p></th>
+<th class="head"><p>Ⅱ级</p></th>
+<th class="head"><p>Ⅲ级</p></th>
+<th class="head"><p>Ⅳ级</p></th>
+<th class="head"><p>Ⅴ级</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(\beta_{\mathrm{ysh}}^{\mathrm{E}}\)</span></p></td>
+<td><p>0.25</p></td>
+<td><p>0.3</p></td>
+<td><p>0.35</p></td>
+<td><p>0.45</p></td>
+<td><p>0.55</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="id6">
+<h3>17.2.3 抗震性能调整系数应按下列公式计算：<a class="headerlink" href="#id6" title="Link to this heading">#</a></h3>
+<div class="math notranslate nohighlight">
+\[
+\Omega_{\mathrm{h}} \geq \beta_{\mathrm{ysh}}^{\mathrm{E}} \beta_{\mathrm{memh}}^{\mathrm{E}} \tag{17.2.3-1}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+\Omega_{\mathrm{v}} \geq \beta_{\mathrm{ysv}}^{\mathrm{E}} \beta_{\mathrm{memv}}^{\mathrm{E}} \tag{17.2.3-2}
+\]</div>
+<p>式中：<br />
+<span class="math notranslate nohighlight">\(\beta_{\mathrm{memh}}^{\mathrm{E}}\)</span>——水平地震作用构件系数，关键构件和节点宜按本章的相关规定取值且不小于1.1，塑性耗能区可取1.0，其余构件和节点可取1.1；<br />
+<span class="math notranslate nohighlight">\(\beta_{\mathrm{memv}}^{\mathrm{E}}\)</span>——竖向地震作用构件系数，一般可取为1.0，大跨钢结构关键构件及节点可按本规范第17.2.8条的规定采用。</p>
+<p><strong>表17.2.3 超强系数</strong></p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>钢材类型</p></th>
+<th class="head"><p>塑性耗能区</p></th>
+<th class="head"><p>弹性区</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Q235</p></td>
+<td><p>1.15</p></td>
+<td><p>1.05</p></td>
+</tr>
+<tr class="row-odd"><td><p>Q345、Q345GJ、Q390、Q420、Q460</p></td>
+<td><p>1.2</p></td>
+<td><p>1.1</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>注：当塑性耗能区的钢材为管材时，超强系数可取表中的数值乘以1.1。</p>
+</section>
+<section id="id7">
+<h3>17.2.4 当结构构件承载力低于性能2要求时，强柱弱梁的设计要求应符合下列规定：<a class="headerlink" href="#id7" title="Link to this heading">#</a></h3>
+<ol class="arabic">
+<li><p>等截面梁框架结构应满足下式要求：</p>
+<div class="math notranslate nohighlight">
+\[
+     \frac{N_{\mathrm{Ek}}^{\mathrm{ys}}}{A_{\mathrm{c}} f_{\mathrm{yc}}} + \frac{\sum W_{\mathrm{c}} f_{\mathrm{yc}}}{\sum W_{\mathrm{b}} f_{\mathrm{yb}}} \leq 1 \tag{17.2.4-1}
+     \]</div>
+<p>式中：<br />
+<span class="math notranslate nohighlight">\(N_{\mathrm{Ek}}^{\mathrm{ys}}\)</span>——考虑屈服强度调整系数的设防地震作用标准组合的柱轴力设计值；<br />
+<span class="math notranslate nohighlight">\(W_{\mathrm{c}}\)</span>、<span class="math notranslate nohighlight">\(W_{\mathrm{b}}\)</span>——分别为交汇于节点的柱和梁的截面模量；<br />
+<span class="math notranslate nohighlight">\(f_{\mathrm{yc}}\)</span>、<span class="math notranslate nohighlight">\(f_{\mathrm{yb}}\)</span>——分别是柱和梁的钢材屈服强度；<br />
+<span class="math notranslate nohighlight">\(A_{\mathrm{c}}\)</span>——框架柱的截面面积。</p>
+</li>
+<li><p>采用梁端加强方法时，应满足下式要求：</p>
+<div class="math notranslate nohighlight">
+\[
+     V_{\mathrm{p}} \cdot l_{\mathrm{p}} \geq M_{\mathrm{p}} \tag{17.2.4-2}
+     \]</div>
+<p>式中：<br />
+<span class="math notranslate nohighlight">\(V_{\mathrm{p}}\)</span>——产生塑性铰时塑性铰截面的剪力；<br />
+<span class="math notranslate nohighlight">\(l_{\mathrm{p}}\)</span>——塑性铰截面至柱侧面的距离。</p>
+</li>
+<li><p>符合下列情况之一可不考虑强柱弱梁要求：</p>
+<ol class="arabic simple">
+<li><p>单层框架和框架顶层柱；</p></li>
+<li><p>柱所在楼层的受剪承载力比相邻上一层的受剪承载力高出25%；</p></li>
+<li><p>不满足强柱弱梁要求的柱子提供的抗剪承载力之和，不超过总抗剪承载力的20%；</p></li>
+<li><p>偏心支撑跨的非消能梁段的梁柱节点；</p></li>
+<li><p>框架柱轴压比（<span class="math notranslate nohighlight">\(N_{\mathrm{Ek}}^{\mathrm{ys}} / N_{\mathrm{y}}\)</span>）不超过0.4且柱的截面设计等级不低于S3级。</p></li>
+</ol>
+</li>
+</ol>
+</section>
+<section id="id8">
+<h3>17.2.5 框架结构的构件要求<a class="headerlink" href="#id8" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>当结构构件承载力低于性能2要求时，框架结构应符合下列规定：</p>
+<ol class="arabic simple">
+<li><p>多高层钢结构底层柱的构件系数 <span class="math notranslate nohighlight">\(\beta_{\mathrm{memh}}^{\mathrm{E}}\)</span> 不宜小于 1.3；</p></li>
+<li><p>梁端塑性耗能区应符合下列要求：</p>
+<ol class="arabic simple">
+<li><p>当采用 S1、S2 级截面时，承受的轴力不应大于轴向塑性承载力的 15%，当腹板未设置纵向加劲肋时，剪力不应大于截面塑性抗剪承载力的 50%；</p></li>
+<li><p>当框架梁采用 S3、S4 级截面时，承受的轴力不应大于轴向弹性承载力的 15%，当腹板未设置纵向加劲肋时，剪力不应大于截面弹性抗剪承载力的 50%。</p></li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</section>
+<section id="id9">
+<h3>17.2.6 中心支撑结构的构件要求<a class="headerlink" href="#id9" title="Link to this heading">#</a></h3>
+<ol class="arabic">
+<li><p>钢支撑受拉时按照拉杆计算强度，受压时按压杆计算强度及稳定承载力；</p></li>
+<li><p>交叉支撑结构、成对布置的单斜支撑结构的支撑系统应符合下列要求：</p>
+<ol class="arabic">
+<li><p>当支撑斜杆的长细比大于 130 时，可按只受拉斜杆计算，当支撑斜杆截面采用 S1 级截面且内力计算时不计入压杆作用，屈服强度调整系数 <span class="math notranslate nohighlight">\(\beta_{\mathrm{ysh}}^{\mathrm{E}}\)</span> 可取为 0.25；</p></li>
+<li><p>在支撑系统之间，直接与支撑系统构件相连的刚接钢梁，应按连梁设计，其构件系数 <span class="math notranslate nohighlight">\(\beta_{\mathrm{memh}}^{\mathrm{E}}\)</span> 取为 1，截面设计等级应满足 S1 级截面要求，同时满足本规范第 17.3.2 条第 5 款的规定；</p></li>
+<li><p>上、下层支撑斜杆交汇处节点，应可靠承受按下式确定的竖向不平衡剪力：</p>
+<div class="math notranslate nohighlight">
+\[
+        V_{\mathrm{br}} = \frac{N_{\mathrm{br}}^{\mathrm{re}}}{\lambda_{\mathrm{br}}^{\mathrm{re}}} \tag{17.2.6-1}
+        \]</div>
+<p>式中：<br />
+<span class="math notranslate nohighlight">\(V_{\mathrm{br}}\)</span>——支撑斜杆交汇处的竖向不平衡剪力；<br />
+<span class="math notranslate nohighlight">\(N_{\mathrm{br}}^{\mathrm{re}}\)</span>——支撑的剩余承载力；<br />
+<span class="math notranslate nohighlight">\(\lambda_{\mathrm{br}}^{\mathrm{re}}\)</span>——支撑的长细比修正系数。</p>
+</li>
+</ol>
+</li>
+<li><p>人字形或 V 字形支撑，除应满足本条第 1 款的要求外，尚应符合下列要求：</p>
+<ol class="arabic">
+<li><p>除顶层横梁外，横梁计入轴力计算的全截面塑性抗弯承载力，不应小于按下式计算的竖向不平衡力：</p>
+<div class="math notranslate nohighlight">
+\[
+        N_{\mathrm{v}} = A_{\mathrm{br}} f_{\mathrm{y}} \sin \theta \tag{17.2.6-6}
+        \]</div>
+<p>式中：<br />
+<span class="math notranslate nohighlight">\(N_{\mathrm{v}}\)</span>——竖向不平衡力；<br />
+<span class="math notranslate nohighlight">\(A_{\mathrm{br}}\)</span>——支撑杆截面面积；<br />
+<span class="math notranslate nohighlight">\(f_{\mathrm{y}}\)</span>——支撑杆屈服强度；<br />
+<span class="math notranslate nohighlight">\(\theta\)</span>——支撑斜杆与横梁的交角。</p>
+</li>
+<li><p>支撑斜杆、横梁与立柱的汇交点，应可靠传递按下式计算的剪力：</p>
+<div class="math notranslate nohighlight">
+\[
+        V_{\mathrm{j}} = V_{\mathrm{g}} + V_{\mathrm{br}} \tag{17.2.6-8}
+        \]</div>
+<p>式中：<br />
+<span class="math notranslate nohighlight">\(V_{\mathrm{j}}\)</span>——节点剪力；<br />
+<span class="math notranslate nohighlight">\(V_{\mathrm{g}}\)</span>——横梁在重力作用下的梁端剪力；<br />
+<span class="math notranslate nohighlight">\(V_{\mathrm{br}}\)</span>——支撑传递的剪力。</p>
+</li>
+</ol>
+</li>
+<li><p>当同层同一竖向平面内有两个支撑斜杆汇交于一个柱子时，该柱应能承受左右支撑屈服和屈曲产生的不平衡力，并应验算该柱在梁底水平截面的抗剪强度。</p></li>
+<li><p>当人字形或 V 字形支撑采用防屈曲支撑时，应符合下列规定：</p>
+<ol class="arabic simple">
+<li><p>防屈曲支撑的设计应符合现行国家标准《高层民用建筑钢结构技术规程》JGJ99 的有关规定；</p></li>
+<li><p>人字支撑和 V 形支撑的横梁在支撑连接处应保持连续，横梁在不计入支撑支点的作用的情况下应能抵抗竖向荷载效应，在恒载和支撑最大拉压力组合下的变形不应超过跨度的 1/240；计算地震作用组合时，横梁应能承受支撑传来的最大压力和最大拉力。</p></li>
+</ol>
+</li>
+<li><p>除防屈曲支撑及内力计算时不计入压杆作用的支撑系统外，计算轴力时，除压杆外，支撑系统的构件系数 <span class="math notranslate nohighlight">\(\beta_{\mathrm{memh}}^{\mathrm{E}}\)</span> 不应小于 1.35。</p></li>
+</ol>
+</section>
+<section id="id10">
+<h3>17.2.7 当结构构件承载力低于性能 2 要求时，对于框架中心支撑结构：<a class="headerlink" href="#id10" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>当框架承担总水平力 75% 以上时，应符合本规范第 17.2.4 条及第 17.2.5 条的规定；</p></li>
+<li><p>当中心支撑承担总水平力 75% 以上时，应符合本规范第 17.2.6 条的规定；</p></li>
+<li><p>当框架承担总水平力不高于 75% 同时不低于 25% 时，应同时满足本规范第 17.2.4 条、第 17.2.5 条及第 17.2.6 条第 1 至第 5 款的规定。</p></li>
+</ol>
+</section>
+<section id="gb50011-10-2-beta-mathrm-memv-mathrm-e-1-15-beta-mathrm-memv-mathrm-e-1-2">
+<h3>17.2.8 大跨度屋盖结构应符合现行国家标准《建筑抗震设计规范》GB50011 第 10.2 节的有关规定。进行屋盖构件抗震验算时，关键杆件的构件系数 <span class="math notranslate nohighlight">\(\beta_{\mathrm{memv}}^{\mathrm{E}}\)</span> 可取 1.15，关键节点的构件系数 <span class="math notranslate nohighlight">\(\beta_{\mathrm{memv}}^{\mathrm{E}}\)</span> 可取 1.2；<a class="headerlink" href="#gb50011-10-2-beta-mathrm-memv-mathrm-e-1-15-beta-mathrm-memv-mathrm-e-1-2" title="Link to this heading">#</a></h3>
+</section>
+<section id="beta-mathrm-mem-mathrm-e-1-5">
+<h3>17.2.9 直接传递转换构件内力的抗震构件，其构件系数 <span class="math notranslate nohighlight">\(\beta_{\mathrm{mem}}^{\mathrm{E}}\)</span> 不宜小于 1.5。<a class="headerlink" href="#beta-mathrm-mem-mathrm-e-1-5" title="Link to this heading">#</a></h3>
+</section>
+</section>
+<section id="id11">
+<h2>17.3 节点连接与构造要求<a class="headerlink" href="#id11" title="Link to this heading">#</a></h2>
+<section id="gb50661-20115-7">
+<h3>17.3.1 节点连接应满足国家现行标准《钢结构焊接规范》GB50661-2011第5.7节的规定。<a class="headerlink" href="#gb50661-20115-7" title="Link to this heading">#</a></h3>
+</section>
+<section id="id12">
+<h3>17.3.2 抗震设防的钢结构，当结构构件承载力低于性能1要求时，其构件应符合下列规定：<a class="headerlink" href="#id12" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>受拉构件或构件的受拉区域塑性抗力设计值应小于连接孔净截面处的极限拉力设计值。</p></li>
+<li><p>塑性耗能区板件间的连接应采用完全焊透的对接焊缝。</p></li>
+<li><p>位于塑性耗能区的梁或支撑应采用整根材料，当热轧型钢超过材料最大长度规格时，可采用拼接等强接长。</p></li>
+<li><p>位于塑性耗能区的梁或支撑不得进行现场拼接。</p></li>
+<li><p>框架梁塑性耗能区应满足下列要求之一：</p>
+<ol class="arabic simple">
+<li><p>满足本规范第10.5.3条的规定。</p></li>
+<li><p>工字形梁受弯正则化长细比限值应符合表17.3.2的规定。</p></li>
+</ol>
+</li>
+</ol>
+<p><strong>表17.3.2 工字形梁正则化长细比限值</strong></p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>延性等级</p></th>
+<th class="head"><p>Ⅰ级、Ⅱ级</p></th>
+<th class="head"><p>Ⅲ级</p></th>
+<th class="head"><p>Ⅳ级</p></th>
+<th class="head"><p>Ⅴ级</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>上翼缘无楼板</p></td>
+<td><p><img alt="" src="_images/image816.svg" /></p></td>
+<td><p><img alt="" src="_images/image817.svg" /></p></td>
+<td><p>1.0</p></td>
+<td><p>1.2</p></td>
+</tr>
+<tr class="row-odd"><td><p>上翼缘有楼板</p></td>
+<td><p>0.25</p></td>
+<td><p>0.4</p></td>
+<td><p>0.55</p></td>
+<td><p>0.8</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>注：</p>
+<ol class="arabic simple">
+<li><p>当工字形梁上翼缘无楼板时，受弯正则化长细比<img alt="" src="_images/image818.svg" />按式（6.2.3-2）计算；</p></li>
+<li><p>当工字形梁上翼缘有楼板时，受弯正则化长细比<img alt="" src="_images/image819.svg" />按式（6.2.8-4）计算；</p></li>
+<li><p>初始正则化长细比<img alt="" src="_images/image820.svg" />取值应符合表6.2.3的规定。</p></li>
+<li><p>上下翼缘均设置侧向支承。</p></li>
+</ol>
+</section>
+<section id="id13">
+<h3>17.3.3 框架柱长细比应符合下列规定：<a class="headerlink" href="#id13" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>延性等级为Ⅰ、Ⅱ、Ⅲ级的结构，框架柱的长细比不应大于120<img alt="" src="_images/image821.svg" />；</p></li>
+<li><p>延性等级为Ⅳ级的结构，框架柱的长细比不应大于150；</p></li>
+<li><p>延性等级为Ⅰ、Ⅱ、Ⅲ、Ⅳ级的框架结构或框架承担总水平力50％以上的双重抗侧力结构中的框架部分的框架柱，当轴压比<img alt="" src="_images/image822.svg" /> &gt; 0.2时，不应大于<img alt="" src="_images/image823.svg" />。</p></li>
+<li><p>延性等级为Ⅴ类的结构，框架柱长细比不宜大于180。</p></li>
+</ol>
+</section>
+<section id="id14">
+<h3>17.3.4 抗震设防的钢结构，当结构构件承载力低于性能1要求时，其节点设计应符合下列规定：<a class="headerlink" href="#id14" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>与塑性耗能区连接的节点连接的极限承载力应大于与其连接构件的屈服承载力，连接计算应满足现行国家标准《建筑抗震设计规范》GB50011-2010中8.2.8条第3、5款的规定，当梁腹板的焊缝通过孔采用改进型过焊孔（图17.3.6-1a）或梁柱连接节点采用自由翼缘节点时，梁柱刚性连接的连接系数可乘以不小于0.9的折减系数。</p></li>
+<li><p>梁柱刚性连接采用高强度螺栓连接时，弹性设计阶段应采用摩擦型连接设计，极限承载力验算可采用承压型连接计算。</p></li>
+</ol>
+</section>
+<section id="h">
+<h3>17.3.5 当框架结构的梁柱采用刚性连接时，H形和箱形截面柱的节点域应符合下列规定：<a class="headerlink" href="#h" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>受剪正则化长细比限值应符合表17.3.5的规定。</p></li>
+</ol>
+<p><strong>表17.3.5 H形和箱形截面柱节点域受剪正则化长细比的限值</strong></p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>框架延性等级</p></th>
+<th class="head"><p>I、II类</p></th>
+<th class="head"><p>III类</p></th>
+<th class="head"><p>IV类</p></th>
+<th class="head"><p>V类</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><img alt="" src="_images/image825.svg" /></p></td>
+<td><p>0.4</p></td>
+<td><p>0.6</p></td>
+<td><p>0.8</p></td>
+<td><p>1.2</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>注：节点受剪正则化长细比<img alt="" src="_images/image824.svg" />，按式（12.3.2-1、2）计算。</p>
+<ol class="arabic" start="2">
+<li><p>当与梁翼缘平齐的横向加劲肋的厚度不小于梁翼缘厚度时，H形和箱形截面柱的节点域承载力验算应符合下列规定：</p>
+<ol class="arabic">
+<li><p>节点域的承载力应符合下列要求：</p>
+<div class="math notranslate nohighlight">
+\[
+        \frac{M_{\mathrm{b1}}^{\mathrm{ys}} + M_{\mathrm{b2}}^{\mathrm{ys}}}{V_{\mathrm{P}}} \leq \tau_{\mathrm{cr}} \tag{17.3.5-2}
+        \]</div>
+</li>
+<li><p>当结构构件承载力低于性能3要求时，节点域的承载力验算应符合下式要求：</p>
+<div class="math notranslate nohighlight">
+\[
+        0.85 \frac{M_{\mathrm{Pb1}} + M_{\mathrm{Pb2}}}{V_{\mathrm{P}}} \leq \frac{4}{3} f_{\mathrm{yv}} \tag{17.3.5-1}
+        \]</div>
+<p>式中：<br />
+<span class="math notranslate nohighlight">\(M_{\mathrm{b1}}^{\mathrm{ys}}\)</span>、<span class="math notranslate nohighlight">\(M_{\mathrm{b2}}^{\mathrm{ys}}\)</span>——分别为考虑屈服强度调整系数后节点域两侧梁端的最大弯矩；<br />
+<span class="math notranslate nohighlight">\(M_{\mathrm{Pb1}}\)</span>、<span class="math notranslate nohighlight">\(M_{\mathrm{Pb2}}\)</span>——分别为与刚架柱节点域连接的左、右梁端截面的全塑性抗弯承载力；<br />
+<span class="math notranslate nohighlight">\(f_{\mathrm{yv}}\)</span>——钢材的屈服抗剪强度，取钢材屈服强度的0.58倍；<br />
+<span class="math notranslate nohighlight">\(V_{\mathrm{P}}\)</span>——节点域的抗剪承载力，按本规范第12.3.2的规定计算。</p>
+</li>
+</ol>
+</li>
+<li><p>当节点域的计算不满足第2款规定时，应根据本规范第12.3.2的规定采取加厚柱腹板或贴焊补强板的构造措施。补强板的厚度及其焊接应按传递补强板所分担剪力的要求设计。</p></li>
+</ol>
+</section>
+<section id="id15">
+<h3>17.3.6 当结构构件承载力低于性能2要求时，梁柱刚性节点应符合下列规定：<a class="headerlink" href="#id15" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>有抗震设防要求的钢结构，梁柱刚性节点应符合下列规定：</p>
+<ol class="arabic simple">
+<li><p>梁翼缘与柱翼缘焊接时，应采用全熔透焊缝；</p></li>
+<li><p>在梁翼缘上下各600mm的节点范围内，柱翼缘与柱腹板间或箱形柱壁板间的连接焊缝，应采用全熔透焊缝。在梁上下翼缘标高处设置的柱水平加劲肋或隔板的厚度应不小于梁翼缘厚度。</p></li>
+</ol>
+</li>
+<li><p>梁腹板的焊缝通过孔应使其端部与梁翼缘和柱翼缘间的全熔透坡口焊缝完全隔开，延性等级为Ⅰ级时应采用改进型过焊孔（图17.3.6-1a）或采用自由翼缘节点，当延性等级为Ⅲ级、Ⅳ级时，可采用常规型过焊孔（图17.3.6-1b）。耗能梁段与柱子的连接宜采用改进型过焊孔。</p></li>
+</ol>
+<p><img alt="" src="_images/image832.svg" /><br />
+<img alt="" src="_images/image833.svg" /></p>
+<p>(a) 改进型过焊孔<br />
+(b) 常规型过焊孔</p>
+<p>图17.3.6-1 焊接工艺孔孔型</p>
+<p>1—大于剪切板与柱翼缘焊缝高度；<br />
+2—大于剪切板与柱翼缘焊缝高度+2～5。</p>
+<ol class="arabic simple" start="3">
+<li><p>梁翼缘和柱翼缘焊接工艺孔下焊接衬板长度不应小于翼缘宽度＋50和翼缘宽度＋两倍翼缘厚度；与柱翼缘的焊接构造（图17.3.6-2）应满足下列要求：</p>
+<ol class="arabic simple">
+<li><p>上翼缘的焊接衬板可采用角焊缝，引弧部分应采用绕角焊；</p></li>
+<li><p>下翼缘衬板应采用从上部往下熔透的焊缝与柱翼缘焊接。</p></li>
+</ol>
+</li>
+</ol>
+<p><img alt="" src="media/image834.svg" /></p>
+<p>图17.3.6-2 衬板与柱翼缘的焊接构造</p>
+<p>1—下翼缘；<br />
+2—上翼缘。</p>
+</section>
+<section id="id16">
+<h3>17.3.7 当梁柱刚性节点采用骨形节点（图17.3.7）时，应符合下列规定：<a class="headerlink" href="#id16" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>内力分析模型按照未削弱截面计算时，纯框架结构侧移限值应乘以0.95；钢梁的挠度限值应乘以0.9；</p></li>
+<li><p>削弱截面的抗弯强度应按柱面弯矩的0.8倍进行验算；</p></li>
+<li><p>梁的线刚度可按等截面计算的数值乘以0.9倍计算；</p></li>
+<li><p>强柱弱梁按式（17.2.1-2）计算；</p></li>
+<li><p>骨形削弱段应采用自动切割，可按图17.4.6设计，尺寸<span class="math notranslate nohighlight">\(a\)</span>、<span class="math notranslate nohighlight">\(b\)</span>、<span class="math notranslate nohighlight">\(c\)</span>按下列公式计算：</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+a = \ldots \tag{17.3.7-1}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+b = \ldots \tag{17.3.7-2}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+c = \ldots \tag{17.3.7-3}
+\]</div>
+<p><img alt="" src="_images/image838.svg" /></p>
+<p>图17.3.7 骨形节点</p>
+</section>
+<section id="id17">
+<h3>17.3.8 当梁柱节点采用梁端加强的方法来保证塑性铰外移要求时，应符合下列要求：<a class="headerlink" href="#id17" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>加强段的塑性弯矩的变化宜与梁端形成塑性铰时的弯矩图相接近；</p></li>
+<li><p>采用盖板加强节点时，盖板的计算长度应以离开柱子表面50mm处为起点；</p></li>
+<li><p>采用翼缘加宽的方法时，翼缘边的斜角应不大于1:2.5；加宽的起点和柱翼缘间的距离宜为<span class="math notranslate nohighlight">\(h/2\)</span>，<span class="math notranslate nohighlight">\(h\)</span>为梁截面高度。翼缘加宽后的宽厚比不应超过<span class="math notranslate nohighlight">\(h/t\)</span>。</p></li>
+<li><p>当柱子为箱形截面时，应考虑钢梁腹板前方柱内空心引起的弯曲应力重分布，加强上下翼缘。</p></li>
+</ol>
+</section>
+<section id="id18">
+<h3>17.3.9 当柱脚承载力低于性能2要求时，抗震设防的钢结构柱脚设计应符合下列规定：<a class="headerlink" href="#id18" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>柱脚的极限抗弯承载力，除下列情况之一外，应满足现行国家标准《建筑抗震设计规范》GB50011-2010第8.2.8条第5款的要求：</p>
+<ol class="arabic simple">
+<li><p>无支撑框架构件系数<span class="math notranslate nohighlight">\(\beta_{\mathrm{memh}}^{\mathrm{E}}\)</span>不小于1.5；</p></li>
+<li><p>双重抗侧力体系中柱脚的极限承载力，不小于经25%基底剪力调整并放大1.5倍的地震作用组合后的内力。</p></li>
+</ol>
+</li>
+<li><p>支撑系统的立柱柱脚的极限承载力，不宜小于与其相连斜撑的1.2倍屈服拉力产生的剪力和组合拉力；</p></li>
+<li><p>实腹式钢柱采用埋入式、插入式柱脚的埋入深度应符合国家现行标准《建筑抗震设计规范》的规定；</p></li>
+<li><p>当结构设有一层地下室且嵌固层为地面层时，进行抗剪强度计算时，构件系数<span class="math notranslate nohighlight">\(\beta_{\mathrm{memh}}^{\mathrm{E}}\)</span>不宜小于1.5。</p></li>
+<li><p>对于框架结构或框架承担总水平力50％以上的双重抗侧力结构中的框架部分的框架柱柱脚，外露式柱脚的锚栓宜符合下列规定：</p>
+<ol class="arabic simple">
+<li><p>实腹柱刚接柱脚，按锚栓毛截面屈服计算的抗弯承载力，不宜小于钢柱全截面塑性受弯承载力的0.5倍；</p></li>
+<li><p>格构柱分离式柱脚，受拉肢的锚栓毛截面抗拉屈服承载力，不宜小于钢柱分肢受拉屈服承载力的0.5倍；</p></li>
+<li><p>实腹柱铰接柱脚，锚栓毛截面抗拉屈服承载力，不宜小于钢柱最薄弱截面受拉屈服承载力的0.5倍。</p></li>
+</ol>
+</li>
+</ol>
+</section>
+<section id="id19">
+<h3>17.3.10 当结构构件承载力低于性能1要求时，钢支撑连接节点应符合下列要求：<a class="headerlink" href="#id19" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>支撑和框架采用节点板连接时，支撑端部至节点板最近嵌固点在沿支撑杆件轴线方向的距离，不应小于节点板的2倍；</p></li>
+<li><p>人字撑与横梁的节点处，应设置侧向支承，支承构件的轴力设计值不得小于梁轴向承载力设计值的2％。</p></li>
+</ol>
+</section>
+<section id="id20">
+<h3>17.3.11 对于框架结构或框架承担总水平力50％以上的双重抗侧力结构中的框架部分，当框架梁上覆混凝土楼板时，其楼板钢筋应可靠锚固。<a class="headerlink" href="#id20" title="Link to this heading">#</a></h3>
+</section>
+<section id="id21">
+<h3>17.3.12 钢板剪力墙与框架梁柱的连接应符合下列规定：<a class="headerlink" href="#id21" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>利用屈曲后拉力场设计的钢板剪力墙，与框架梁柱的焊缝宜采用全熔透二级焊缝；</p></li>
+<li><p>不利用屈曲后强度设计的钢板剪力墙，焊缝可采用与钢板抗剪等强的角焊缝或对接焊缝。</p></li>
+</ol>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="16%20%E7%96%B2%E5%8A%B3%E8%AE%A1%E7%AE%97%E5%8F%8A%E9%98%B2%E8%84%86%E6%96%AD%E8%AE%BE%E8%AE%A1.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">16 疲劳计算及防脆断设计</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="18%20%E9%92%A2%E7%BB%93%E6%9E%84%E9%98%B2%E6%8A%A4.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">18 钢结构防护</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">17.1 一般规定</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">17.2 计算要点</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">17.2.1 进行设防地震承载力验算时，阻尼比可采用0.05。</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">17.2.2 结构构件承载力按不同要求进行复核时，地震内力计算应符合下列要求：</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">17.2.3 抗震性能调整系数应按下列公式计算：</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">17.2.4 当结构构件承载力低于性能2要求时，强柱弱梁的设计要求应符合下列规定：</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">17.2.5 框架结构的构件要求</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">17.2.6 中心支撑结构的构件要求</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">17.2.7 当结构构件承载力低于性能 2 要求时，对于框架中心支撑结构：</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gb50011-10-2-beta-mathrm-memv-mathrm-e-1-15-beta-mathrm-memv-mathrm-e-1-2">17.2.8 大跨度屋盖结构应符合现行国家标准《建筑抗震设计规范》GB50011 第 10.2 节的有关规定。进行屋盖构件抗震验算时，关键杆件的构件系数 <span class="math notranslate nohighlight">\(\beta_{\mathrm{memv}}^{\mathrm{E}}\)</span> 可取 1.15，关键节点的构件系数 <span class="math notranslate nohighlight">\(\beta_{\mathrm{memv}}^{\mathrm{E}}\)</span> 可取 1.2；</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#beta-mathrm-mem-mathrm-e-1-5">17.2.9 直接传递转换构件内力的抗震构件，其构件系数 <span class="math notranslate nohighlight">\(\beta_{\mathrm{mem}}^{\mathrm{E}}\)</span> 不宜小于 1.5。</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">17.3 节点连接与构造要求</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gb50661-20115-7">17.3.1 节点连接应满足国家现行标准《钢结构焊接规范》GB50661-2011第5.7节的规定。</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">17.3.2 抗震设防的钢结构，当结构构件承载力低于性能1要求时，其构件应符合下列规定：</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">17.3.3 框架柱长细比应符合下列规定：</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">17.3.4 抗震设防的钢结构，当结构构件承载力低于性能1要求时，其节点设计应符合下列规定：</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#h">17.3.5 当框架结构的梁柱采用刚性连接时，H形和箱形截面柱的节点域应符合下列规定：</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">17.3.6 当结构构件承载力低于性能2要求时，梁柱刚性节点应符合下列规定：</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">17.3.7 当梁柱刚性节点采用骨形节点（图17.3.7）时，应符合下列规定：</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">17.3.8 当梁柱节点采用梁端加强的方法来保证塑性铰外移要求时，应符合下列要求：</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">17.3.9 当柱脚承载力低于性能2要求时，抗震设防的钢结构柱脚设计应符合下列规定：</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">17.3.10 当结构构件承载力低于性能1要求时，钢支撑连接节点应符合下列要求：</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id20">17.3.11 对于框架结构或框架承担总水平力50％以上的双重抗侧力结构中的框架部分，当框架梁上覆混凝土楼板时，其楼板钢筋应可靠锚固。</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id21">17.3.12 钢板剪力墙与框架梁柱的连接应符合下列规定：</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By 游田重新排版
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2025.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

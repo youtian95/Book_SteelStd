@@ -1,0 +1,1747 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>13 钢管连接节点 &#8212; 钢结构设计标准 GB 50017-2017</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="_static/mystyle.css?v=63ecd79b" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '13 钢管连接节点';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="14 钢与混凝土组合梁" href="14%20%E9%92%A2%E4%B8%8E%E6%B7%B7%E5%87%9D%E5%9C%9F%E7%BB%84%E5%90%88%E6%A2%81.html" />
+    <link rel="prev" title="12 节点" href="12%20%E8%8A%82%E7%82%B9.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="README.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="钢结构设计标准 GB 50017-2017 - Home"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="钢结构设计标准 GB 50017-2017 - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="README.html">
+                    《钢结构设计标准 GB 50017-2017》
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="%E5%89%8D%E8%A8%80.html">前言</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E7%9B%AE%E5%BD%95.html">目次</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="1%20%E6%80%BB%E5%88%99.html">1 总则</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2%20%E6%9C%AF%E8%AF%AD%E5%92%8C%E7%AC%A6%E5%8F%B7.html">2 术语和符号</a></li>
+<li class="toctree-l1"><a class="reference internal" href="3%20%E5%9F%BA%E6%9C%AC%E8%AE%BE%E8%AE%A1%E8%A7%84%E5%AE%9A.html">3 基本设计规定</a></li>
+<li class="toctree-l1"><a class="reference internal" href="4%20%E6%9D%90%E6%96%99%E5%92%8C%E6%9D%90%E6%96%99%E9%80%89%E7%94%A8.html">4 材料和材料选用</a></li>
+<li class="toctree-l1"><a class="reference internal" href="5%20%E7%BB%93%E6%9E%84%E5%88%86%E6%9E%90%E4%B8%8E%E7%A8%B3%E5%AE%9A%E6%80%A7%E8%AE%BE%E8%AE%A1.html">5 结构分析与稳定性设计</a></li>
+<li class="toctree-l1"><a class="reference internal" href="6%20%E5%8F%97%E5%BC%AF%E6%9E%84%E4%BB%B6.html">6 受弯构件</a></li>
+<li class="toctree-l1"><a class="reference internal" href="7%20%E8%BD%B4%E5%BF%83%E5%8F%97%E5%8A%9B%E6%9E%84%E4%BB%B6.html">7 轴心受力构件</a></li>
+<li class="toctree-l1"><a class="reference internal" href="8%20%E6%8B%89%E5%BC%AF%E3%80%81%E5%8E%8B%E5%BC%AF%E6%9E%84%E4%BB%B6.html">8 拉弯、压弯构件</a></li>
+<li class="toctree-l1"><a class="reference internal" href="9%20%E5%8A%A0%E5%8A%B2%E9%92%A2%E6%9D%BF%E5%89%AA%E5%8A%9B%E5%A2%99.html">9 加劲钢板剪力墙</a></li>
+<li class="toctree-l1"><a class="reference internal" href="10%20%E5%A1%91%E6%80%A7%E5%8F%8A%E5%BC%AF%E7%9F%A9%E8%B0%83%E5%B9%85%E8%AE%BE%E8%AE%A1.html">10 塑性及弯矩调幅设计</a></li>
+<li class="toctree-l1"><a class="reference internal" href="11%20%E8%BF%9E%E6%8E%A5.html">11 连接</a></li>
+<li class="toctree-l1"><a class="reference internal" href="12%20%E8%8A%82%E7%82%B9.html">12 节点</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">13 钢管连接节点</a></li>
+<li class="toctree-l1"><a class="reference internal" href="14%20%E9%92%A2%E4%B8%8E%E6%B7%B7%E5%87%9D%E5%9C%9F%E7%BB%84%E5%90%88%E6%A2%81.html">14 钢与混凝土组合梁</a></li>
+<li class="toctree-l1"><a class="reference internal" href="15%20%E9%92%A2%E7%AE%A1%E6%B7%B7%E5%87%9D%E5%9C%9F%E6%9F%B1%E5%8F%8A%E8%8A%82%E7%82%B9.html">15 钢管混凝土柱及节点</a></li>
+<li class="toctree-l1"><a class="reference internal" href="16%20%E7%96%B2%E5%8A%B3%E8%AE%A1%E7%AE%97%E5%8F%8A%E9%98%B2%E8%84%86%E6%96%AD%E8%AE%BE%E8%AE%A1.html">16 疲劳计算及防脆断设计</a></li>
+<li class="toctree-l1"><a class="reference internal" href="17%20%E9%92%A2%E7%BB%93%E6%9E%84%E6%9E%84%E4%BB%B6%E5%92%8C%E8%8A%82%E7%82%B9%E6%8A%97%E9%9C%87%E8%AE%BE%E8%AE%A1.html">17 钢结构构件和节点抗震设计</a></li>
+<li class="toctree-l1"><a class="reference internal" href="18%20%E9%92%A2%E7%BB%93%E6%9E%84%E9%98%B2%E6%8A%A4.html">18 钢结构防护</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E9%99%84%E5%BD%95A%20%E5%B8%B8%E7%94%A8%E5%BB%BA%E7%AD%91%E7%BB%93%E6%9E%84%E4%BD%93%E7%B3%BB.html">附录A 常用建筑结构体系</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E9%99%84%E5%BD%95B%20%E7%BB%93%E6%9E%84%E6%88%96%E6%9E%84%E4%BB%B6%E7%9A%84%E5%8F%98%E5%BD%A2%E5%AE%B9%E8%AE%B8%E5%80%BC.html">附录B  结构或构件的变形容许值</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E9%99%84%E5%BD%95C%20%E7%AE%80%E6%94%AF%E6%A2%81%E3%80%81%E6%82%AC%E8%87%82%E6%A2%81%E5%8F%8A%E6%A1%86%E6%9E%B6%E6%A2%81%E7%9A%84%E5%BC%B9%E6%80%A7%E5%B1%88%E6%9B%B2%E4%B8%B4%E7%95%8C%E5%BC%AF%E7%9F%A9.html">附录C  简支梁、悬臂梁及框架梁的弹性屈曲临界弯矩</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E9%99%84%E5%BD%95D%20%E8%BD%B4%E5%BF%83%E5%8F%97%E5%8E%8B%E6%9E%84%E4%BB%B6%E7%9A%84%E7%A8%B3%E5%AE%9A%E7%B3%BB%E6%95%B0.html">附录D  轴心受压构件的稳定系数</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E9%99%84%E5%BD%95E%20%E6%9F%B1%E7%9A%84%E8%AE%A1%E7%AE%97%E9%95%BF%E5%BA%A6%E7%B3%BB%E6%95%B0.html">附录E  柱的计算长度系数</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E9%99%84%E5%BD%95F%20%E8%AE%BE%E7%BD%AE%E5%8A%A0%E5%8A%B2%E7%9A%84%E9%92%A2%E6%9D%BF%E5%89%AA%E5%8A%9B%E5%A2%99%E7%9A%84%E5%BC%B9%E6%80%A7%E5%B1%88%E6%9B%B2%E4%B8%B4%E7%95%8C%E5%BA%94%E5%8A%9B.html">附录F  设置加劲的钢板剪力墙的弹性屈曲临界应力</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E9%99%84%E5%BD%95G%20%E6%A1%81%E6%9E%B6%E8%8A%82%E7%82%B9%E6%9D%BF%E5%9C%A8%E6%96%9C%E8%85%B9%E6%9D%86%E5%8E%8B%E5%8A%9B%E4%BD%9C%E7%94%A8%E4%B8%8B%E7%9A%84%E7%A8%B3%E5%AE%9A%E8%AE%A1%E7%AE%97.html">附录G 桁架节点板在斜腹杆压力作用下的稳定计算</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E9%99%84%E5%BD%95H%20%E6%97%A0%E5%8A%A0%E5%8A%B2%E9%92%A2%E7%AE%A1%E7%9B%B4%E6%8E%A5%E7%84%8A%E6%8E%A5%E8%8A%82%E7%82%B9%E5%88%9A%E5%BA%A6%E5%88%A4%E5%88%AB.html">附录H  无加劲钢管直接焊接节点刚度判别</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E9%99%84%E5%BD%95J%20%E9%92%A2%E4%B8%8E%E6%B7%B7%E5%87%9D%E5%9C%9F%E7%BB%84%E5%90%88%E6%A2%81%E7%9A%84%E7%96%B2%E5%8A%B3%E9%AA%8C%E7%AE%97.html">附录J  钢与混凝土组合梁的疲劳验算</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E9%99%84%E5%BD%95K%20%E7%96%B2%E5%8A%B3%E8%AE%A1%E7%AE%97%E7%9A%84%E6%9E%84%E4%BB%B6%E5%92%8C%E8%BF%9E%E6%8E%A5%E5%88%86%E7%B1%BB.html">附录K  疲劳计算的构件和连接分类</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E9%99%84%E5%BD%95L%20%E5%BB%B6%E6%80%A7%E7%AD%89%E7%BA%A7.html">附录L  延性等级</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E9%99%84%E5%BD%95M%20%E7%BD%95%E9%81%87%E5%9C%B0%E9%9C%87%E4%BD%9C%E7%94%A8%E4%B8%8B%E7%9A%84%E4%BE%A7%E7%A7%BB%E8%AE%A1%E7%AE%97.html">附录M 罕遇地震作用下的侧移计算</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E6%9C%AC%E8%A7%84%E8%8C%83%E7%94%A8%E8%AF%8D%E8%AF%B4%E6%98%8E.html">本规范用词说明</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E5%BC%95%E7%94%A8%E6%A0%87%E5%87%86%E5%90%8D%E5%BD%95.html">引用标准名录</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/youtian95/Book_SteelStd" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/youtian95/Book_SteelStd/issues/new?title=Issue%20on%20page%20%2F13 钢管连接节点.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/13 钢管连接节点.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>13 钢管连接节点</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">13.1 一般规定</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">13.1.1 本章规定适用于钢管桁架、拱架、塔架和网架、网壳等结构中的钢管间连接节点。</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#d-t-b-t-b-t">13.1.2 圆钢管的外径与壁厚之比不应超过 <span class="math notranslate nohighlight">\(D/t\)</span>；方（矩）形管的最大外缘尺寸与壁厚之比不应超过 <span class="math notranslate nohighlight">\(b/t\)</span>，<span class="math notranslate nohighlight">\(b/t\)</span> 为钢号修正系数。</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">13.1.3 采用非加劲直接焊接节点的钢管材料应符合本规范第 4.3.8 条的规定。</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">13.1.4 采用无加劲直接焊接节点的钢管桁架，如节点偏心不超过式（13.2.1）限制时，在计算节点和受拉主管承载力时，可忽略因偏心引起的弯矩的影响，但受压主管应考虑此偏心弯矩的影响：</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#h">13.1.5  无加劲钢管直接焊接节点的支管宜符合本规范第 5.1.5 条的要求采用铰接假定，不符合时，其刚度判别应符合本规范附录 H 的规定，无斜腹杆的空腹桁架的节点应符合刚接假定。</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">13.2 构造要求</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">13.2.1 钢管直接焊接节点的构造应符合下列要求：</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">13.2.2 支管搭接型的直接焊接节点的构造尚应符合下列要求：</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">13.2.3 非加劲直接焊接方式不能满足承载力要求时，可按下列规定在主管内设置横向加劲板：</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">13.2.4 钢管直接焊接节点可采用主管表面贴加强板的方法加强：</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">13.3 圆钢管直接焊接节点和局部加劲节点的计算</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">13.3.1 本节各计算公式适用如下参数范围：</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">13.3.2 非加劲直接焊接的平面节点</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#x-13-3-2-1">13.3.2.1 平面X形节点（图13.3.2-1）</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#t-y-13-3-2-2-13-3-2-3">13.3.2.2 平面T形（或Y形）节点（图13.3.2-2 和 图13.3.2-3）</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#k-13-3-2-4">13.3.2.3 平面K形间隙节点（图13.3.2-4）</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#k-13-3-2-5">13.3.2.4 平面 K 形搭接节点（图 13.3.2-5）</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#dy-13-3-2-6">13.3.2.5 平面 DY 形节点（图 13.3.2-6）</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#dk">13.3.2.6 平面 DK 形节点</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">1. 荷载正对称节点（图 13.3.2-7）</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">2. 荷载反对称节点（图 13.3.2-8）</a></li>
+</ul>
+</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#kt-13-3-2-9">13.3.2.7 平面 KT 形节点（图 13.3.2-9）</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">13.3.2.8 冲剪验算</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">13.3.3 非加劲直接焊接的空间节点</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#tt-13-3-3-1">13.3.3.1 空间TT形节点（图13.3.3-1）</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#n-ctt-pj">1. 受压支管在管节点处的承载力设计值 <span class="math notranslate nohighlight">\(N_{cTT}^{pj}\)</span> 应按下式计算：</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#n-ttt-pj">2. 受拉支管在管节点处的承载力设计值 <span class="math notranslate nohighlight">\(N_{tTT}^{pj}\)</span> 应按下式计算：</a></li>
+</ul>
+</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#kk-13-3-3-2">13.3.3.2 空间KK形节点（图13.3.3-2）</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#kt-13-3-3-3">13.3.3.3 空间KT形圆管节点（图13.3.3-3）</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#k-n-ckt-pj">1. K形受压支管在管节点处的承载力设计值 <span class="math notranslate nohighlight">\(N_{cKT}^{pj}\)</span> 应按下式计算：</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#k-n-tkt-pj">2. K形受拉支管在管节点处的承载力设计值 <span class="math notranslate nohighlight">\(N_{tKT}^{pj}\)</span> 应按下式计算：</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#t-n-tt-pj">3. T形支管在管节点处的承载力设计值 <span class="math notranslate nohighlight">\(N_{tT}^{pj}\)</span> 应按下式计算：</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tyx">13.3.4 非加劲直接焊接的平面 T、Y、X 形节点</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">13.3.4.1 支管在管节点处的平面内抗弯承载力设计值</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">13.3.4.2 支管在管节点处的平面外抗弯承载力设计值</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id20">13.3.4.3 支管在平面内、外弯矩和轴力组合作用下的承载力</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id21">13.3.5 主管呈弯曲状的平面或空间圆管焊接节点</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id22">13.3.6 主管采用 13.2.4 条第 1 款外贴加强板方式的节点</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tx">13.3.7 支管为方矩形管的平面 T、X 形节点</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#t">13.3.7.1 T 形节点</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#x">13.3.7.2 X 形节点</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id23">13.3.7.3 冲剪计算</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id24">13.3.8	在节点处，支管沿周边与主管相焊；支管互相搭接处，搭接支管沿搭接边与被搭接支管相焊。焊缝承载力应不小于节点承载力。</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#t-y-x-k">13.3.9 T（Y）、X 或 K 形间隙节点及其他非搭接节点中，支管为圆管时的焊缝承载力设计值：</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id25">13.4 矩形钢管直接焊接节点和局部加劲节点的计算</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id26">13.4.1 本节规定适用于直接焊接且主管为矩形管，支管为矩形管或圆管的钢管节点（图13.4.1），其适用范围应符合表13.4.1的要求。</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id27">13.4.2 非加劲直接焊接的平面节点</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id28">13.4.2.1 支管为矩形管的平面T、Y和X形节点</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#kn">13.4.2.2 支管为矩形管的有间隙的平面K形和N形节点</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id29">13.4.2.3 支管为矩形管的搭接的平面K形和N形节点</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id30">13.4.2.4 支管为圆管的各种形式平面节点</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id31">13.4.3 非加劲直接焊接的T形方管节点</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id32">13.4.4 采用局部加强的方（矩）形管节点</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id33">13.4.5 方（矩）形管节点连接焊缝的计算</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="id1">
+<h1>13 钢管连接节点<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
+<section id="id2">
+<h2>13.1 一般规定<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<section id="id3">
+<h3>13.1.1 本章规定适用于钢管桁架、拱架、塔架和网架、网壳等结构中的钢管间连接节点。<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
+</section>
+<section id="d-t-b-t-b-t">
+<h3>13.1.2 圆钢管的外径与壁厚之比不应超过 <span class="math notranslate nohighlight">\(D/t\)</span>；方（矩）形管的最大外缘尺寸与壁厚之比不应超过 <span class="math notranslate nohighlight">\(b/t\)</span>，<span class="math notranslate nohighlight">\(b/t\)</span> 为钢号修正系数。<a class="headerlink" href="#d-t-b-t-b-t" title="Link to this heading">#</a></h3>
+</section>
+<section id="id4">
+<h3>13.1.3 采用非加劲直接焊接节点的钢管材料应符合本规范第 4.3.8 条的规定。<a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
+</section>
+<section id="id5">
+<h3>13.1.4 采用无加劲直接焊接节点的钢管桁架，如节点偏心不超过式（13.2.1）限制时，在计算节点和受拉主管承载力时，可忽略因偏心引起的弯矩的影响，但受压主管应考虑此偏心弯矩的影响：<a class="headerlink" href="#id5" title="Link to this heading">#</a></h3>
+<div class="math notranslate nohighlight">
+\[
+M = N \cdot e \tag{13.1.4}
+\]</div>
+<p>其中：</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(N\)</span> 为节点两侧主管轴力之差值；</p></li>
+<li><p><span class="math notranslate nohighlight">\(e\)</span> 为偏心矩，符号如图 13.1.4 所示。</p></li>
+</ul>
+<p>图 13.1.4 K 形和 N 形管节点的偏心和间隙</p>
+<ul class="simple">
+<li><p>(a) 有间隙的 K 形节点<br />
+<img alt="" src="_images/image262.svg" /></p></li>
+<li><p>(b) 有间隙的 N 形节点<br />
+<img alt="" src="_images/image263.svg" /></p></li>
+<li><p>(c) 搭接的 K 形节点<br />
+<img alt="" src="_images/image264.svg" /></p></li>
+<li><p>(d) 搭接的 N 形节点<br />
+<img alt="" src="_images/image265.svg" /></p></li>
+</ul>
+<p>1—搭接管；2—被搭接管。</p>
+</section>
+<section id="h">
+<h3>13.1.5  无加劲钢管直接焊接节点的支管宜符合本规范第 5.1.5 条的要求采用铰接假定，不符合时，其刚度判别应符合本规范附录 H 的规定，无斜腹杆的空腹桁架的节点应符合刚接假定。<a class="headerlink" href="#h" title="Link to this heading">#</a></h3>
+</section>
+</section>
+<section id="id6">
+<h2>13.2 构造要求<a class="headerlink" href="#id6" title="Link to this heading">#</a></h2>
+<section id="id7">
+<h3>13.2.1 钢管直接焊接节点的构造应符合下列要求：<a class="headerlink" href="#id7" title="Link to this heading">#</a></h3>
+<ol class="arabic">
+<li><p>主管的外部尺寸不应小于支管的外部尺寸，主管的壁厚不应小于支管的壁厚，在支管与主管的连接处不得将支管插入主管内；</p></li>
+<li><p>主管与支管或支管轴线间的夹角不宜小于 <span class="math notranslate nohighlight">\(30^\circ\)</span>；</p></li>
+<li><p>支管与主管的连接节点处，应尽可能避免偏心；偏心不可避免时，宜使偏心不超过式（13.2.1）的限制：</p>
+<div class="math notranslate nohighlight">
+\[
+    -0.55 \cdot \frac{e}{d} \leq \frac{e}{h} \leq 0.25 \tag{13.2.1}
+    \]</div>
+<p>式中：</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(e\)</span> —— 偏心距，符号如图 13.2.1 所示；</p></li>
+<li><p><span class="math notranslate nohighlight">\(d\)</span> —— 圆管主管外径；</p></li>
+<li><p><span class="math notranslate nohighlight">\(h\)</span> —— 连接平面内的方（矩）形管主管截面高度。</p></li>
+</ul>
+</li>
+<li><p>支管端部应使用自动切管机切割，支管壁厚小于 6 mm 时可不切坡口；</p></li>
+<li><p>支管与主管的连接焊缝，除支管搭接符合 13.2.2 条规定外，应沿全周连续焊接并平滑过渡；焊缝型式可沿全周采用角焊缝，或部分采用对接焊缝，部分采用角焊缝，其中支管管壁与主管管壁之间的夹角大于或等于 <span class="math notranslate nohighlight">\(120^\circ\)</span> 的区域宜采用对接焊缝或带坡口的角焊缝，角焊缝的焊脚尺寸不宜大于支管壁厚的 2 倍；搭接支管周边焊缝宜为 2 倍支管壁厚。</p></li>
+<li><p>在主管表面焊接的相邻支管的间隙 <span class="math notranslate nohighlight">\(a\)</span> 应不小于两支管壁厚之和（图 13.1.4a、b）。</p></li>
+</ol>
+</section>
+<section id="id8">
+<h3>13.2.2 支管搭接型的直接焊接节点的构造尚应符合下列要求：<a class="headerlink" href="#id8" title="Link to this heading">#</a></h3>
+<ol class="arabic">
+<li><p>支管搭接的平面 K 形或 N 形节点（图 13.2.2a, b），其搭接率 <span class="math notranslate nohighlight">\(q/p \cdot 100\%\)</span> 应满足要求，且应确保在搭接的支管之间的连接焊缝能可靠地传递内力；</p></li>
+<li><p>当互相搭接的支管外部尺寸不同时，外部尺寸较小者应搭接在尺寸较大者上；当支管壁厚不同时，较小壁厚者应搭接在较大壁厚者上；承受轴心压力的支管宜在下方。</p>
+<p><img alt="" src="_images/image268.svg" /><br />
+<img alt="" src="_images/image269.svg" /></p>
+<p>(a) 搭接的 K 形节点<br />
+(b) 搭接的 N 形节点</p>
+<p>图 13.2.2 支管搭接的构造<br />
+1—搭接支管；2—被搭接支管。</p>
+</li>
+</ol>
+</section>
+<section id="id9">
+<h3>13.2.3 非加劲直接焊接方式不能满足承载力要求时，可按下列规定在主管内设置横向加劲板：<a class="headerlink" href="#id9" title="Link to this heading">#</a></h3>
+<ol class="arabic">
+<li><p>支管以承受轴力为主时，可在主管内设 1 道或 2 道加劲板（图 13.2.3-1a，b）；节点需满足抗弯连接要求时，应设 2 道加劲板；加劲板中面宜垂直主管轴线，设置 1 道加劲板时，加劲板位置宜在支管与主管相贯面的鞍点处，设置 2 道加劲板时，加劲板宜设置在距相贯面冠点 <span class="math notranslate nohighlight">\(0.1 \cdot d_1\)</span> 附近（图 13.2.3b），<span class="math notranslate nohighlight">\(d_1\)</span> 为支管外径；主管为方管时，加劲肋宜设置 2 块（图 13.2.3-2）。</p></li>
+<li><p>加劲板厚度不得小于支管壁厚，也不宜小于主管壁厚的 <span class="math notranslate nohighlight">\(2/3\)</span> 和主管内径的 <span class="math notranslate nohighlight">\(1/40\)</span>；加劲板中央开孔时，环板宽度与板厚的比值不宜大于 <span class="math notranslate nohighlight">\(b/t\)</span>，<span class="math notranslate nohighlight">\(b/t\)</span> 为钢号修正系数；</p></li>
+<li><p>加劲板宜采用部分熔透焊缝焊接，主管为方管的加劲板靠支管一边与两侧边宜采用部分熔透焊接，与支管连接反向一边可不焊接；</p></li>
+<li><p>当主管直径较小，加劲板的焊接必须断开主管钢管时，主管的拼接焊缝宜设置在距支管相贯焊缝最外侧冠点 80 mm 以外处（图 13.2.3-1c）。</p>
+<p><img alt="" src="_images/image272.svg" /><br />
+<img alt="" src="_images/image273.svg" /><br />
+<img alt="" src="_images/image274.svg" /></p>
+<p>(a)<br />
+(b)<br />
+(c)</p>
+<p>图 13.2.3-1 支管为圆管时横向加劲板的位置<br />
+1—冠点；2—鞍点；3—加劲板；4—主管拼缝。</p>
+<p><img alt="" src="_images/image275.svg" /></p>
+<p>图 13.2.3-2 支管为方管或矩形管时内加劲板的位置<br />
+1—内加劲板。</p>
+</li>
+</ol>
+</section>
+<section id="id10">
+<h3>13.2.4 钢管直接焊接节点可采用主管表面贴加强板的方法加强：<a class="headerlink" href="#id10" title="Link to this heading">#</a></h3>
+<ol class="arabic">
+<li><p>主管为圆管时，加强板宜包覆主管半圆（图 13.2.4a），长度方向两侧均应超过支管最外侧焊缝 50 mm 以上，但不宜超过支管直径的 <span class="math notranslate nohighlight">\(2/3\)</span>，加强板厚度不宜小于 4 mm；</p></li>
+<li><p>主管为方（矩）形管且在与支管相连表面设置加强板（图 13.2.4b）时，加强板长度 <span class="math notranslate nohighlight">\(l_p\)</span> 可按下式确定：</p>
+<p>对 T、Y 和 X 形节点：</p>
+<div class="math notranslate nohighlight">
+\[
+    l_p \geq \frac{h_1}{\sin \theta_1} + \sqrt{b_p (b_p - b_1)} \tag{13.2.4-1}
+    \]</div>
+<p>对 K 形间隙节点：</p>
+<div class="math notranslate nohighlight">
+\[
+    l_p \geq \frac{h_1}{\sin \theta_1} + \sqrt{b_p (b_p - b_1)} \tag{13.2.4-2}
+    \]</div>
+<p>式中：</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(l_p\)</span> —— 加强板的长度；</p></li>
+<li><p><span class="math notranslate nohighlight">\(b_p\)</span> —— 加强板的宽度；</p></li>
+<li><p><span class="math notranslate nohighlight">\(h_1, h_2\)</span> —— 支管 1、2 的截面高度；</p></li>
+<li><p><span class="math notranslate nohighlight">\(b_1\)</span> —— 支管 1 的截面宽度；</p></li>
+<li><p><span class="math notranslate nohighlight">\(\theta_1, \theta_2\)</span> —— 支管 1、2 轴线和主管轴线的夹角；</p></li>
+<li><p><span class="math notranslate nohighlight">\(a\)</span> —— 两支管在主管表面的距离。</p></li>
+</ul>
+</li>
+<li><p>加强板宽度 <span class="math notranslate nohighlight">\(b_p\)</span> 宜接近主管宽度，并预留适当的焊缝位置，加强板厚度不宜小于支管最大厚度的 2 倍；</p></li>
+<li><p>主管为方（矩）形管且在与主管两侧表面设置加强板（图 13.2.4c）时，加强板长度 <span class="math notranslate nohighlight">\(l_p\)</span> 可按下式确定：</p>
+<p>对 T 和 Y 形节点：</p>
+<div class="math notranslate nohighlight">
+\[
+    l_p \geq \frac{1.5 h_1}{\sin \theta_1} \tag{13.2.4-3}
+    \]</div>
+<p>对 K 形间隙节点：按式（13.2.4-2）确定。</p>
+</li>
+<li><p>加强板与主管应采用四周围焊。对 K、N 形节点焊缝有效高度应不小于腹杆壁厚。焊接前宜在加强板上先钻一个排气小孔，焊后应用塞焊将孔封闭。</p>
+<p><img alt="" src="_images/image285.svg" /></p>
+<p>(a) 圆管表面的加强板</p>
+<p><img alt="" src="_images/image286.svg" /><br />
+<img alt="" src="_images/image287.svg" /></p>
+<p>(b) 方（矩）形主管与支管连接表面的加强板<br />
+(c) 方（矩）形主管侧表面的加强板</p>
+<p>图 13.2.4 主管外表面贴加强板的加劲方式<br />
+1—四周围焊；2—腹板。</p>
+</li>
+</ol>
+</section>
+</section>
+<section id="id11">
+<h2>13.3 圆钢管直接焊接节点和局部加劲节点的计算<a class="headerlink" href="#id11" title="Link to this heading">#</a></h2>
+<section id="id12">
+<h3>13.3.1 本节各计算公式适用如下参数范围：<a class="headerlink" href="#id12" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><img alt="" src="_images/image288.svg" />；</p></li>
+<li><p><img alt="" src="_images/image289.svg" />；</p></li>
+<li><p><img alt="" src="_images/image290.svg" />；</p></li>
+<li><p><img alt="" src="_images/image291.svg" />；</p></li>
+<li><p><span class="math notranslate nohighlight">\(\theta \geq 30^\circ\)</span>；</p></li>
+<li><p><span class="math notranslate nohighlight">\(60^\circ \leq \text{图中参数} \leq 120^\circ\)</span>。</p></li>
+</ul>
+<p>其中：</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\beta = d_i / d\)</span>，<span class="math notranslate nohighlight">\(d\)</span>、<span class="math notranslate nohighlight">\(d_i\)</span>分别为主管和支管的外径；</p></li>
+<li><p><span class="math notranslate nohighlight">\(\gamma = t / d\)</span>，<span class="math notranslate nohighlight">\(t\)</span>为主管壁厚；</p></li>
+<li><p><span class="math notranslate nohighlight">\(\gamma_i = t_i / d_i\)</span>，<span class="math notranslate nohighlight">\(t_i\)</span>为支管壁厚；</p></li>
+<li><p><span class="math notranslate nohighlight">\(\theta\)</span>为主支管轴线间小于直角的夹角；</p></li>
+<li><p><span class="math notranslate nohighlight">\(\phi\)</span>为空间管节点支管的横向夹角，即支管轴线在主管横截面所在平面投影的夹角。</p></li>
+</ul>
+</section>
+<section id="id13">
+<h3>13.3.2 非加劲直接焊接的平面节点<a class="headerlink" href="#id13" title="Link to this heading">#</a></h3>
+<p>当支管按仅承受轴心力的构件设计时，平面节点的承载力设计值应按下列规定计算，支管在节点处的承载力设计值不得小于其轴心力设计值。</p>
+<section id="x-13-3-2-1">
+<h4>13.3.2.1 平面X形节点（图13.3.2-1）<a class="headerlink" href="#x-13-3-2-1" title="Link to this heading">#</a></h4>
+<p><img alt="" src="media/image297.svg" /><br />
+图13.3.2-1 X形节点<br />
+1—主管；2—支管</p>
+<ol class="arabic">
+<li><p><strong>受压支管在管节点处的承载力设计值</strong> <span class="math notranslate nohighlight">\(N_{cX}^{pj}\)</span> 应按下式计算：</p>
+<div class="math notranslate nohighlight">
+\[
+    N_{cX}^{pj} = \frac{5.45}{(1 - 0.81\beta) \sin \theta} \psi_n t^2 f \tag{13.3.2-1}
+    \]</div>
+<div class="math notranslate nohighlight">
+\[
+    \psi_n = \frac{f_y}{f} - \frac{\sigma_{op}}{f} \tag{13.3.2-2}
+    \]</div>
+<p>式中：</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\psi_n\)</span> —— 参数，当节点两侧或者一侧主管受拉时，取 <span class="math notranslate nohighlight">\(\psi_n = 1\)</span>，其余情况按式 (13.3.2-2) 计算；</p></li>
+<li><p><span class="math notranslate nohighlight">\(f\)</span> —— 主管钢材的抗拉、抗压和抗弯强度设计值；</p></li>
+<li><p><span class="math notranslate nohighlight">\(f_y\)</span> —— 主管钢材的屈服强度；</p></li>
+<li><p><span class="math notranslate nohighlight">\(\sigma_{op}\)</span> —— 节点两侧主管轴心压应力的较小绝对值。</p></li>
+</ul>
+</li>
+<li><p><strong>受拉支管在管节点处的承载力设计值</strong> <span class="math notranslate nohighlight">\(N_{tX}^{pj}\)</span> 应按下式计算：</p>
+<div class="math notranslate nohighlight">
+\[
+    N_{tX}^{pj} = \frac{5.45}{(1 - 0.81\beta) \sin \theta} \psi_n t^2 f \tag{13.3.2-3}
+    \]</div>
+</li>
+</ol>
+</section>
+<section id="t-y-13-3-2-2-13-3-2-3">
+<h4>13.3.2.2 平面T形（或Y形）节点（图13.3.2-2 和 图13.3.2-3）<a class="headerlink" href="#t-y-13-3-2-2-13-3-2-3" title="Link to this heading">#</a></h4>
+<p><img alt="" src="_images/image307.svg" /><br />
+图13.3.2-2 T形（或Y形）受拉节点</p>
+<p><img alt="" src="_images/image308.svg" /><br />
+图13.3.2-3 T形（或Y形）受压节点</p>
+<p>1—主管；2—支管</p>
+<ol class="arabic">
+<li><p><strong>受压支管在管节点处的承载力设计值</strong> <span class="math notranslate nohighlight">\(N_{cT}^{pj}\)</span> 应按下式计算：</p>
+<div class="math notranslate nohighlight">
+\[
+    N_{cT}^{pj} = \frac{5.45}{(1 - 0.81\beta) \sin \theta} \psi_n t^2 f \tag{13.3.2-4a}
+    \]</div>
+<p>当 <span class="math notranslate nohighlight">\(\beta \leq 0.65\)</span> 时：</p>
+<div class="math notranslate nohighlight">
+\[
+    N_{cT}^{pj} = \frac{4.9}{(1 - 0.81\beta) \sin \theta} \psi_n t^2 f \tag{13.3.2-4b}
+    \]</div>
+<p>当 <span class="math notranslate nohighlight">\(0.65 &lt; \beta \leq 1\)</span> 时：</p>
+<div class="math notranslate nohighlight">
+\[
+    N_{cT}^{pj} = \frac{5.45}{(1 - 0.81\beta) \sin \theta} \psi_n t^2 f \tag{13.3.2-4c}
+    \]</div>
+</li>
+<li><p><strong>受拉支管在管节点处的承载力设计值</strong> <span class="math notranslate nohighlight">\(N_{tT}^{pj}\)</span> 应按下式计算：</p>
+<p>当 <span class="math notranslate nohighlight">\(\beta \leq 0.65\)</span> 时：</p>
+<div class="math notranslate nohighlight">
+\[
+    N_{tT}^{pj} = \frac{4.9}{(1 - 0.81\beta) \sin \theta} \psi_n t^2 f \tag{13.3.2-5}
+    \]</div>
+<p>当 <span class="math notranslate nohighlight">\(0.65 &lt; \beta \leq 1\)</span> 时：</p>
+<div class="math notranslate nohighlight">
+\[
+    N_{tT}^{pj} = \frac{5.45}{(1 - 0.81\beta) \sin \theta} \psi_n t^2 f \tag{13.3.2-6}
+    \]</div>
+</li>
+</ol>
+</section>
+<section id="k-13-3-2-4">
+<h4>13.3.2.3 平面K形间隙节点（图13.3.2-4）<a class="headerlink" href="#k-13-3-2-4" title="Link to this heading">#</a></h4>
+<p><img alt="" src="_images/image320.svg" /><br />
+图13.3.2-4 平面K形间隙节点<br />
+1—主管；2—支管</p>
+<ol class="arabic">
+<li><p><strong>受压支管在管节点处的承载力设计值</strong> <span class="math notranslate nohighlight">\(N_{cK}^{pj}\)</span> 应按下式计算：</p>
+<div class="math notranslate nohighlight">
+\[
+    N_{cK}^{pj} = \frac{5.45}{(1 - 0.81\beta) \sin \theta} \psi_n t^2 f \tag{13.3.2-7}
+    \]</div>
+<div class="math notranslate nohighlight">
+\[
+    \psi_n = \frac{f_y}{f} - \frac{\sigma_{op}}{f} \tag{13.3.2-8}
+    \]</div>
+<p>式中：</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\theta\)</span> —— 受压支管轴线与主管轴线的夹角；</p></li>
+<li><p><span class="math notranslate nohighlight">\(\psi_n\)</span> —— 参数，按式 (13.3.2-8) 计算；</p></li>
+<li><p><span class="math notranslate nohighlight">\(\sigma_{op}\)</span> —— 节点两侧主管轴心压应力的较小绝对值。</p></li>
+</ul>
+</li>
+<li><p><strong>受拉支管在管节点处的承载力设计值</strong> <span class="math notranslate nohighlight">\(N_{tK}^{pj}\)</span> 应按下式计算：</p>
+<div class="math notranslate nohighlight">
+\[
+    N_{tK}^{pj} = \frac{5.45}{(1 - 0.81\beta) \sin \theta} \psi_n t^2 f \tag{13.3.2-9}
+    \]</div>
+<p>式中：</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\theta\)</span> —— 受拉支管轴线与主管轴线的夹角。</p></li>
+</ul>
+</li>
+</ol>
+</section>
+<section id="k-13-3-2-5">
+<h4>13.3.2.4 平面 K 形搭接节点（图 13.3.2-5）<a class="headerlink" href="#k-13-3-2-5" title="Link to this heading">#</a></h4>
+<p><img alt="" src="media/image331.svg" /><br />
+图 13.3.2-5 平面 K 形搭接节点<br />
+1—主管；2—搭接支管；3—被搭接支管；4—被搭接支管内隐藏部分</p>
+<p>支管在管节点处的承载力设计值应按下列公式计算：</p>
+<p><strong>受压支管</strong></p>
+<div class="math notranslate nohighlight">
+\[
+N_{cK}^{pj} = \frac{5.45}{(1 - 0.81\beta) \sin \theta} \psi_n t^2 f \tag{13.3.2-10}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+\psi_n = \frac{f_y}{f} - \frac{\sigma_{op}}{f} \tag{13.3.2-11}
+\]</div>
+<p><strong>受拉支管</strong></p>
+<div class="math notranslate nohighlight">
+\[
+N_{tK}^{pj} = \frac{5.45}{(1 - 0.81\beta) \sin \theta} \psi_n t^2 f \tag{13.3.2-12}
+\]</div>
+<p>式中：</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\beta\)</span> —— 支管与主管的直径比；</p></li>
+<li><p><span class="math notranslate nohighlight">\(\theta\)</span> —— 支管轴线与主管轴线的夹角；</p></li>
+<li><p><span class="math notranslate nohighlight">\(\psi_n\)</span> —— 参数，按式 (13.3.2-11) 计算；</p></li>
+<li><p><span class="math notranslate nohighlight">\(\sigma_{op}\)</span> —— 节点两侧主管轴心压应力的较小绝对值。</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="dy-13-3-2-6">
+<h4>13.3.2.5 平面 DY 形节点（图 13.3.2-6）<a class="headerlink" href="#dy-13-3-2-6" title="Link to this heading">#</a></h4>
+<p><img alt="" src="media/image340.svg" /><br />
+图 13.3.2-6 平面 DY 形节点<br />
+1—主管；2—支管</p>
+<p>两受压支管在管节点处的承载力设计值 <span class="math notranslate nohighlight">\(N_{cDY}^{pj}\)</span> 应按下式计算：</p>
+<div class="math notranslate nohighlight">
+\[
+N_{cDY}^{pj} = N_{cX}^{pj} \tag{13.3.2-13}
+\]</div>
+<p>式中：</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(N_{cX}^{pj}\)</span> —— X 形节点中受压支管极限承载力设计值。</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="dk">
+<h4>13.3.2.6 平面 DK 形节点<a class="headerlink" href="#dk" title="Link to this heading">#</a></h4>
+<section id="id14">
+<h5>1. 荷载正对称节点（图 13.3.2-7）<a class="headerlink" href="#id14" title="Link to this heading">#</a></h5>
+<p>四支管同时受压时，支管在管节点处的承载力应按下列公式验算：</p>
+<div class="math notranslate nohighlight">
+\[
+N_{cDK}^{pj} = N_{cX}^{pj} \tag{13.3.2-14a}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+N_{cDK}^{pj} = N_{cK}^{pj} \tag{13.3.2-14b}
+\]</div>
+<p>四支管同时受拉时，支管在管节点处的承载力应按下列公式验算：</p>
+<div class="math notranslate nohighlight">
+\[
+N_{tDK}^{pj} = N_{tX}^{pj} \tag{13.3.2-15a}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+N_{tDK}^{pj} = N_{tK}^{pj} \tag{13.3.2-15b}
+\]</div>
+<p>式中：</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(N_{cX}^{pj}\)</span> —— X 形节点中支管受压时节点承载力设计值；</p></li>
+<li><p><span class="math notranslate nohighlight">\(N_{tX}^{pj}\)</span> —— X 形节点中支管受拉时节点承载力设计值。</p></li>
+</ul>
+</section>
+<section id="id15">
+<h5>2. 荷载反对称节点（图 13.3.2-8）<a class="headerlink" href="#id15" title="Link to this heading">#</a></h5>
+<p><img alt="" src="_images/image350.svg" /><br />
+图 13.3.2-8 荷载反对称平面 DK 形节点<br />
+1—主管；2—支管</p>
+<div class="math notranslate nohighlight">
+\[
+N_{cDK}^{pj} = N_{cK}^{pj} \tag{13.3.2-16}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+N_{tDK}^{pj} = N_{tK}^{pj} \tag{13.3.2-17}
+\]</div>
+<p>对于荷载反对称作用的间隙节点，还需补充验算截面 <span class="math notranslate nohighlight">\(a-a\)</span> 的塑性剪切承载力：</p>
+<div class="math notranslate nohighlight">
+\[
+V_{pa} = \tau A \tag{13.3.2-18}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+\tau = \frac{N_{op}}{A} \tag{13.3.2-19}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+V_{pa} \geq V_{op} \tag{13.3.2-20}
+\]</div>
+<p>式中：</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(V_{pa}\)</span> —— 主管剪切承载力；</p></li>
+<li><p><span class="math notranslate nohighlight">\(A\)</span> —— 主管截面面积；</p></li>
+<li><p><span class="math notranslate nohighlight">\(\tau\)</span> —— 主管钢材抗剪强度设计值；</p></li>
+<li><p><span class="math notranslate nohighlight">\(N_{op}\)</span> —— 截面 <span class="math notranslate nohighlight">\(a-a\)</span> 处主管轴力。</p></li>
+</ul>
+</section>
+</section>
+<hr class="docutils" />
+<section id="kt-13-3-2-9">
+<h4>13.3.2.7 平面 KT 形节点（图 13.3.2-9）<a class="headerlink" href="#kt-13-3-2-9" title="Link to this heading">#</a></h4>
+<p><img alt="" src="media/image364.svg" /><br />
+(a) <span class="math notranslate nohighlight">\(N_1\)</span>、<span class="math notranslate nohighlight">\(N_3\)</span> 受压<br />
+(b) <span class="math notranslate nohighlight">\(N_2\)</span>、<span class="math notranslate nohighlight">\(N_3\)</span> 受拉</p>
+<p>图 13.3.2-9 平面 KT 形节点<br />
+1—主管；2—支管</p>
+<p>对有间隙的 KT 形节点，当竖杆不受力，可按没有竖杆的 K 形节点计算，其间隙值 <span class="math notranslate nohighlight">\(a\)</span> 取为两斜杆的趾间距；当竖杆受压力时，按下式计算：</p>
+<div class="math notranslate nohighlight">
+\[
+N_{cKT}^{pj} = N_{cK}^{pj} \tag{13.3.2-21}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+N_{tKT}^{pj} = N_{tK}^{pj} \tag{13.3.2-22}
+\]</div>
+<p>当竖杆受拉力时，尚应按下式计算：</p>
+<div class="math notranslate nohighlight">
+\[
+N_{tKT}^{pj} = N_{tK}^{pj} \tag{13.3.2-23}
+\]</div>
+<p>式中：</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(N_{cK}^{pj}\)</span> —— K 形节点支管承载力设计值，由式 (13.3.2-7) 计算，公式中用 <span class="math notranslate nohighlight">\(a\)</span> 代替 <span class="math notranslate nohighlight">\(h\)</span>；</p></li>
+<li><p><span class="math notranslate nohighlight">\(a\)</span> —— 受压管支管与受拉支管在主管表面的间隙。</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="id16">
+<h4>13.3.2.8 冲剪验算<a class="headerlink" href="#id16" title="Link to this heading">#</a></h4>
+<p>T、Y、X 形和有间隙的 K、N 形、平面 KT 形节点的冲剪验算，支管在节点处的冲剪承载力设计值 <span class="math notranslate nohighlight">\(V_{pj}\)</span> 应按下式进行补充验算：</p>
+<div class="math notranslate nohighlight">
+\[
+V_{pj} = \tau A \tag{13.3.2-24}
+\]</div>
+</section>
+</section>
+<section id="id17">
+<h3>13.3.3 非加劲直接焊接的空间节点<a class="headerlink" href="#id17" title="Link to this heading">#</a></h3>
+<p>当支管按仅承受轴力的构件设计时，空间节点的承载力设计值应按下列规定计算，支管在节点处的承载力设计值不得小于其轴心力设计值。</p>
+<section id="tt-13-3-3-1">
+<h4>13.3.3.1 空间TT形节点（图13.3.3-1）<a class="headerlink" href="#tt-13-3-3-1" title="Link to this heading">#</a></h4>
+<section id="n-ctt-pj">
+<h5>1. 受压支管在管节点处的承载力设计值 <span class="math notranslate nohighlight">\(N_{cTT}^{pj}\)</span> 应按下式计算：<a class="headerlink" href="#n-ctt-pj" title="Link to this heading">#</a></h5>
+<div class="math notranslate nohighlight">
+\[
+N_{cTT}^{pj} = \psi_g \cdot \frac{5.45}{(1 - 0.81\beta) \sin \theta} \cdot t^2 \cdot f \tag{13.3.3-1}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+\psi_g = 1.28 - 0.64 \cdot \frac{g}{d} \leq 1.1 \tag{13.3.3-2}
+\]</div>
+<p>式中：</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(g\)</span> —— 两支管的横向间隙。</p></li>
+</ul>
+</section>
+<section id="n-ttt-pj">
+<h5>2. 受拉支管在管节点处的承载力设计值 <span class="math notranslate nohighlight">\(N_{tTT}^{pj}\)</span> 应按下式计算：<a class="headerlink" href="#n-ttt-pj" title="Link to this heading">#</a></h5>
+<div class="math notranslate nohighlight">
+\[
+N_{tTT}^{pj} = \frac{5.45}{(1 - 0.81\beta) \sin \theta} \cdot t^2 \cdot f \tag{13.3.3-3}
+\]</div>
+<p><img alt="" src="media/image377.svg" /><br />
+图13.3.3-1 空间TT形节点<br />
+1—主管；2—支管</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="kk-13-3-3-2">
+<h4>13.3.3.2 空间KK形节点（图13.3.3-2）<a class="headerlink" href="#kk-13-3-3-2" title="Link to this heading">#</a></h4>
+<p>受压或受拉支管在空间管节点处的承载力设计值 <span class="math notranslate nohighlight">\(N_{cKK}^{pj}\)</span> 或 <span class="math notranslate nohighlight">\(N_{tKK}^{pj}\)</span> 应分别按平面K形节点相应支管承载力设计值 <span class="math notranslate nohighlight">\(N_{cK}^{pj}\)</span> 或 <span class="math notranslate nohighlight">\(N_{tK}^{pj}\)</span> 乘以空间调整系数 <span class="math notranslate nohighlight">\(\psi_s\)</span> 计算。</p>
+<p><img alt="" src="media/image383.svg" /><br />
+图13.3.3-2 空间KK形节点<br />
+1—主管；2—支管</p>
+<p>当支管为非全搭接型时：</p>
+<div class="math notranslate nohighlight">
+\[
+\psi_s = 1.28 - 0.64 \cdot \frac{g}{d} \leq 1.1 \tag{13.3.3-4a}
+\]</div>
+<p>当支管为全搭接型时：</p>
+<div class="math notranslate nohighlight">
+\[
+\psi_s = 1.1 \tag{13.3.3-4b}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+g = \frac{l_{ov}}{d} \tag{13.3.3-5}
+\]</div>
+<p>式中：</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(l_{ov}\)</span> —— 平面外两支管的搭接长度。</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="kt-13-3-3-3">
+<h4>13.3.3.3 空间KT形圆管节点（图13.3.3-3）<a class="headerlink" href="#kt-13-3-3-3" title="Link to this heading">#</a></h4>
+<section id="k-n-ckt-pj">
+<h5>1. K形受压支管在管节点处的承载力设计值 <span class="math notranslate nohighlight">\(N_{cKT}^{pj}\)</span> 应按下式计算：<a class="headerlink" href="#k-n-ckt-pj" title="Link to this heading">#</a></h5>
+<div class="math notranslate nohighlight">
+\[
+N_{cKT}^{pj} = \psi_s \cdot \frac{5.45}{(1 - 0.81\beta) \sin \theta} \cdot t^2 \cdot f \tag{13.3.3-6}
+\]</div>
+</section>
+<section id="k-n-tkt-pj">
+<h5>2. K形受拉支管在管节点处的承载力设计值 <span class="math notranslate nohighlight">\(N_{tKT}^{pj}\)</span> 应按下式计算：<a class="headerlink" href="#k-n-tkt-pj" title="Link to this heading">#</a></h5>
+<div class="math notranslate nohighlight">
+\[
+N_{tKT}^{pj} = \psi_s \cdot \frac{5.45}{(1 - 0.81\beta) \sin \theta} \cdot t^2 \cdot f \tag{13.3.3-7}
+\]</div>
+</section>
+<section id="t-n-tt-pj">
+<h5>3. T形支管在管节点处的承载力设计值 <span class="math notranslate nohighlight">\(N_{tT}^{pj}\)</span> 应按下式计算：<a class="headerlink" href="#t-n-tt-pj" title="Link to this heading">#</a></h5>
+<div class="math notranslate nohighlight">
+\[
+N_{tT}^{pj} = \psi_s \cdot \frac{5.45}{(1 - 0.81\beta) \sin \theta} \cdot t^2 \cdot f \tag{13.3.3-8}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+\psi_s = 1.28 - 0.64 \cdot \frac{g}{d} \leq 1.1 \tag{13.3.3-9}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+g = \frac{l_{ov}}{d} \tag{13.3.3-10}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+l_{ov} = \frac{h_1}{\sin \theta_1} + \sqrt{b_p (b_p - b_1)} \tag{13.3.3-11}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+b_p = b_1 + 2 \cdot t \tag{13.3.3-12}
+\]</div>
+<p>式中：</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(h_1\)</span> —— 支管截面高度；</p></li>
+<li><p><span class="math notranslate nohighlight">\(b_1\)</span> —— 支管截面宽度；</p></li>
+<li><p><span class="math notranslate nohighlight">\(b_p\)</span> —— 支管搭接宽度。</p></li>
+</ul>
+<p><img alt="" src="media/image389.svg" /><br />
+(a) 空间KT-Gap型<br />
+<img alt="" src="_images/image390.svg" /><br />
+(b) 空间KT-IPOv型<br />
+<img alt="" src="_images/image410.svg" /><br />
+(c) 空间KT-Ov型</p>
+<p>图13.3.3-3 空间KT形节点分类<br />
+1—主管；2—支管；3—贯通支管；4—搭接支管；5—内隐蔽部分</p>
+</section>
+</section>
+</section>
+<section id="tyx">
+<h3>13.3.4 非加劲直接焊接的平面 T、Y、X 形节点<a class="headerlink" href="#tyx" title="Link to this heading">#</a></h3>
+<p>当支管承受弯矩作用时（图 13.3.4-1 和图 13.3.4-2），节点承载力应按下列规定计算：</p>
+<p><img alt="" src="_images/image411.svg" /><br />
+图 13.3.4-1 T 形（或 Y 形）节点的平面内受弯与平面外受弯<br />
+1—主管；2—支管</p>
+<p><img alt="" src="media/image412.svg" /><br />
+图 13.3.4-2 X 形节点的平面内受弯与平面外受弯<br />
+1—主管；2—支管</p>
+<section id="id18">
+<h4>13.3.4.1 支管在管节点处的平面内抗弯承载力设计值<a class="headerlink" href="#id18" title="Link to this heading">#</a></h4>
+<p>支管在管节点处的平面内抗弯承载力设计值 <span class="math notranslate nohighlight">\(M_{ipj}\)</span> 应按下列公式计算（图 13.3.4-2）：</p>
+<div class="math notranslate nohighlight">
+\[
+M_{ipj} = Q_f \cdot W \cdot f \tag{13.3.4-1}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+Q_f = \frac{f_y}{f} - \frac{\sigma_{op}}{f} \tag{13.3.4-2}
+\]</div>
+<p>当节点两侧或一侧主管受拉时：</p>
+<div class="math notranslate nohighlight">
+\[
+Q_f = 1 \tag{13.3.4-3a}
+\]</div>
+<p>当节点两侧主管受压时：</p>
+<div class="math notranslate nohighlight">
+\[
+Q_f = \frac{f_y}{f} - \frac{\sigma_{op}}{f} \tag{13.3.4-3b}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+\sigma_{op} = \frac{N_{op}}{A} \tag{13.3.4-4}
+\]</div>
+<p>当 <span class="math notranslate nohighlight">\(M_{op} / W \leq f\)</span> 时，平面内弯矩不应大于下式规定的抗冲剪承载力设计值：</p>
+<div class="math notranslate nohighlight">
+\[
+M_{ipj} \leq \tau \cdot W \tag{13.3.4-5}
+\]</div>
+<p>式中：</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(Q_f\)</span> —— 参数；</p></li>
+<li><p><span class="math notranslate nohighlight">\(N_{op}\)</span> —— 节点两侧主管轴心压力的较小绝对值；</p></li>
+<li><p><span class="math notranslate nohighlight">\(M_{op}\)</span> —— 节点与 <span class="math notranslate nohighlight">\(N_{op}\)</span> 对应一侧的主管平面内弯矩绝对值；</p></li>
+<li><p><span class="math notranslate nohighlight">\(A\)</span> —— 与 <span class="math notranslate nohighlight">\(N_{op}\)</span> 对应一侧的主管截面积；</p></li>
+<li><p><span class="math notranslate nohighlight">\(W\)</span> —— 与 <span class="math notranslate nohighlight">\(N_{op}\)</span> 对应一侧的主管截面模量。</p></li>
+</ul>
+</section>
+<section id="id19">
+<h4>13.3.4.2 支管在管节点处的平面外抗弯承载力设计值<a class="headerlink" href="#id19" title="Link to this heading">#</a></h4>
+<p>支管在管节点处的平面外抗弯承载力设计值 <span class="math notranslate nohighlight">\(M_{opj}\)</span> 应按下式计算：</p>
+<div class="math notranslate nohighlight">
+\[
+M_{opj} = Q_f \cdot W \cdot f \tag{13.3.4-6}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+Q_f = \frac{f_y}{f} - \frac{\sigma_{op}}{f} \tag{13.3.4-7}
+\]</div>
+<p>当 <span class="math notranslate nohighlight">\(M_{op} / W \leq f\)</span> 时，平面外弯矩不应大于下式规定的抗冲剪承载力设计值：</p>
+<div class="math notranslate nohighlight">
+\[
+M_{opj} \leq \tau \cdot W \tag{13.3.4-8}
+\]</div>
+</section>
+<section id="id20">
+<h4>13.3.4.3 支管在平面内、外弯矩和轴力组合作用下的承载力<a class="headerlink" href="#id20" title="Link to this heading">#</a></h4>
+<p>支管在平面内、外弯矩和轴力组合作用下的承载力应按下式验算：</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{N}{N_{pj}} + \frac{M_i}{M_{ipj}} + \frac{M_o}{M_{opj}} \leq 1 \tag{13.3.4-9}
+\]</div>
+<p>式中：</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(N\)</span>、<span class="math notranslate nohighlight">\(M_i\)</span>、<span class="math notranslate nohighlight">\(M_o\)</span> —— 支管在管节点处的轴心力、平面内弯矩、平面外弯矩设计值；</p></li>
+<li><p><span class="math notranslate nohighlight">\(N_{pj}\)</span> —— 支管在管节点处的承载力设计值，按公式 (13.3.2-1) ~ (13.3.2-5) 计算。</p></li>
+</ul>
+</section>
+</section>
+<section id="id21">
+<h3>13.3.5 主管呈弯曲状的平面或空间圆管焊接节点<a class="headerlink" href="#id21" title="Link to this heading">#</a></h3>
+<p>当主管曲率半径 <span class="math notranslate nohighlight">\(R \geq 5 \, \text{m}\)</span> 且主管曲率半径 <span class="math notranslate nohighlight">\(R\)</span> 与主管直径 <span class="math notranslate nohighlight">\(d\)</span> 之比不小于 12 时，可采用本规范第 13.3.2 条和第 13.3.4 条所规定的计算公式进行承载力计算。</p>
+</section>
+<section id="id22">
+<h3>13.3.6 主管采用 13.2.4 条第 1 款外贴加强板方式的节点<a class="headerlink" href="#id22" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>当支管受压时，节点承载力设计值，取相应未加强时节点承载力设计值的 <span class="math notranslate nohighlight">\((1 + \frac{t_p}{t})\)</span> 倍。</p></li>
+<li><p>当支管受拉时，节点承载力设计值，取相应未加强时节点承载力设计值的 <span class="math notranslate nohighlight">\((1 + 0.5 \cdot \frac{t_p}{t})\)</span> 倍。</p></li>
+</ol>
+<p>其中：</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(t_p\)</span> 为加强板厚度；</p></li>
+<li><p><span class="math notranslate nohighlight">\(t\)</span> 为主管壁厚。</p></li>
+</ul>
+</section>
+<section id="tx">
+<h3>13.3.7 支管为方矩形管的平面 T、X 形节点<a class="headerlink" href="#tx" title="Link to this heading">#</a></h3>
+<section id="t">
+<h4>13.3.7.1 T 形节点<a class="headerlink" href="#t" title="Link to this heading">#</a></h4>
+<ol class="arabic">
+<li><p><strong>支管在节点处的轴向承载力设计值</strong>应按下式计算：</p>
+<div class="math notranslate nohighlight">
+\[
+    N_{pj} = 0.9 \cdot \beta_{RC} \cdot \eta_{RC} \cdot t^2 \cdot f \tag{13.3.7-1}
+    \]</div>
+<p>式中：</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\beta_{RC}\)</span> —— 支管的平面外宽度与主管直径的比值，<span class="math notranslate nohighlight">\(\beta_{RC} = b_R / d\)</span>，且需满足 <span class="math notranslate nohighlight">\(\beta_{RC} \geq 0.4\)</span>；</p></li>
+<li><p><span class="math notranslate nohighlight">\(\eta_{RC}\)</span> —— 支管的平面内高度与主管直径的比值，<span class="math notranslate nohighlight">\(\eta_{RC} = h_R / d\)</span>，且需满足 <span class="math notranslate nohighlight">\(\eta_{RC} \leq 4\)</span>；</p></li>
+<li><p><span class="math notranslate nohighlight">\(b_R\)</span> —— 支管的平面外宽度；</p></li>
+<li><p><span class="math notranslate nohighlight">\(h_R\)</span> —— 支管的平面内高度；</p></li>
+<li><p><span class="math notranslate nohighlight">\(d\)</span> —— 主管直径；</p></li>
+<li><p><span class="math notranslate nohighlight">\(t\)</span> —— 主管壁厚；</p></li>
+<li><p><span class="math notranslate nohighlight">\(f\)</span> —— 主管钢材的抗拉、抗压和抗弯强度设计值。</p></li>
+</ul>
+</li>
+<li><p><strong>支管在节点处的平面内抗弯承载力设计值</strong>应按下式计算：</p>
+<div class="math notranslate nohighlight">
+\[
+    M_{ipj} = 0.8 \cdot \beta_{RC} \cdot \eta_{RC} \cdot t^2 \cdot f \tag{13.3.7-2}
+    \]</div>
+</li>
+<li><p><strong>支管在节点处的平面外抗弯承载力设计值</strong>应按下式计算：</p>
+<div class="math notranslate nohighlight">
+\[
+    M_{opj} = 0.7 \cdot \beta_{RC} \cdot \eta_{RC} \cdot t^2 \cdot f \tag{13.3.7-3}
+    \]</div>
+</li>
+</ol>
+</section>
+<section id="x">
+<h4>13.3.7.2 X 形节点<a class="headerlink" href="#x" title="Link to this heading">#</a></h4>
+<ol class="arabic">
+<li><p><strong>节点轴向承载力设计值</strong>应按下式计算：</p>
+<div class="math notranslate nohighlight">
+\[
+    N_{pj} = 0.85 \cdot \beta_{RC} \cdot \eta_{RC} \cdot t^2 \cdot f \tag{13.3.7-4}
+    \]</div>
+</li>
+<li><p><strong>节点平面内抗弯承载力设计值</strong>应按下式计算：</p>
+<div class="math notranslate nohighlight">
+\[
+    M_{ipj} = 0.75 \cdot \beta_{RC} \cdot \eta_{RC} \cdot t^2 \cdot f \tag{13.3.7-5}
+    \]</div>
+</li>
+<li><p><strong>节点平面外抗弯承载力设计值</strong>应按下式计算：</p>
+<div class="math notranslate nohighlight">
+\[
+    M_{opj} = 0.65 \cdot \beta_{RC} \cdot \eta_{RC} \cdot t^2 \cdot f \tag{13.3.7-6}
+    \]</div>
+</li>
+</ol>
+</section>
+<section id="id23">
+<h4>13.3.7.3 冲剪计算<a class="headerlink" href="#id23" title="Link to this heading">#</a></h4>
+<p>节点还应按下式进行冲剪计算：</p>
+<div class="math notranslate nohighlight">
+\[
+V_{pj} = \tau \cdot A \tag{13.3.7-7}
+\]</div>
+<p>式中：</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\tau\)</span> —— 主管钢材的抗剪强度设计值；</p></li>
+<li><p><span class="math notranslate nohighlight">\(A\)</span> —— 支管的横截面积。</p></li>
+</ul>
+</section>
+</section>
+<section id="id24">
+<h3>13.3.8	在节点处，支管沿周边与主管相焊；支管互相搭接处，搭接支管沿搭接边与被搭接支管相焊。焊缝承载力应不小于节点承载力。<a class="headerlink" href="#id24" title="Link to this heading">#</a></h3>
+</section>
+<section id="t-y-x-k">
+<h3>13.3.9 T（Y）、X 或 K 形间隙节点及其他非搭接节点中，支管为圆管时的焊缝承载力设计值：<a class="headerlink" href="#t-y-x-k" title="Link to this heading">#</a></h3>
+<ol class="arabic">
+<li><p>支管仅受轴力作用时：</p>
+<p>非搭接支管与主管的连接焊缝可视为全周角焊缝进行计算。角焊缝的计算厚度沿支管周长取 <span class="math notranslate nohighlight">\(0.7 \cdot h_f\)</span>，焊缝承载力设计值 <span class="math notranslate nohighlight">\(N_f\)</span> 可按下式计算：</p>
+<div class="math notranslate nohighlight">
+\[
+      N_f = 0.7 \cdot h_f \cdot l_w \cdot f_{fw} \tag{13.3.9-1}
+      \]</div>
+<p>当 <span class="math notranslate nohighlight">\(d_i / d \leq 0.65\)</span> 时：</p>
+<div class="math notranslate nohighlight">
+\[
+      N_f = 0.6 \cdot h_f \cdot l_w \cdot f_{fw} \tag{13.3.9-2}
+      \]</div>
+<p>当 <span class="math notranslate nohighlight">\(0.65 &lt; d_i / d \leq 1\)</span> 时：</p>
+<div class="math notranslate nohighlight">
+\[
+      N_f = 0.5 \cdot h_f \cdot l_w \cdot f_{fw} \tag{13.3.9-3}
+      \]</div>
+<p>式中：</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(h_f\)</span> —— 焊脚尺寸；</p></li>
+<li><p><span class="math notranslate nohighlight">\(f_{fw}\)</span> —— 角焊缝的强度设计值；</p></li>
+<li><p><span class="math notranslate nohighlight">\(l_w\)</span> —— 焊缝的计算长度。</p></li>
+</ul>
+</li>
+<li><p>平面内弯矩作用下：</p>
+<p>支管与主管的连接焊缝可视为全周角焊缝进行计算。角焊缝的计算厚度沿支管周长取 <span class="math notranslate nohighlight">\(0.7 \cdot h_f\)</span>，焊缝承载力设计值 <span class="math notranslate nohighlight">\(M_{fi}\)</span> 可按下列公式计算：</p>
+<div class="math notranslate nohighlight">
+\[
+      M_{fi} = W_{fi} \cdot f_{fw} \tag{13.3.9-4}
+      \]</div>
+<div class="math notranslate nohighlight">
+\[
+      W_{fi} = \frac{I_{fi}}{x_c} \tag{13.3.9-5}
+      \]</div>
+<div class="math notranslate nohighlight">
+\[
+      x_c = \frac{l_w}{2} \tag{13.3.9-6}
+      \]</div>
+<div class="math notranslate nohighlight">
+\[
+      I_{fi} = \frac{l_w^3}{12} \tag{13.3.9-7}
+      \]</div>
+</li>
+<li><p>平面外弯矩作用下：</p>
+<p>支管与主管的连接焊缝可视为全周角焊缝进行计算。角焊缝的计算厚度沿支管周长取 <span class="math notranslate nohighlight">\(0.7 \cdot h_f\)</span>，焊缝承载力设计值 <span class="math notranslate nohighlight">\(M_{fo}\)</span> 可按下式计算：</p>
+<div class="math notranslate nohighlight">
+\[
+      M_{fo} = W_{fo} \cdot f_{fw} \tag{13.3.9-9}
+      \]</div>
+<div class="math notranslate nohighlight">
+\[
+      W_{fo} = \frac{I_{fo}}{x_c} \tag{13.3.9-10}
+      \]</div>
+<div class="math notranslate nohighlight">
+\[
+      x_c = \frac{l_w}{2} \tag{13.3.9-11}
+      \]</div>
+<div class="math notranslate nohighlight">
+\[
+      I_{fo} = \frac{l_w^3}{12} \tag{13.3.9-12}
+      \]</div>
+<p>式中：</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(W_{fi}\)</span>、<span class="math notranslate nohighlight">\(W_{fo}\)</span> —— 焊缝有效截面的平面内、外抗弯模量；</p></li>
+<li><p><span class="math notranslate nohighlight">\(I_{fi}\)</span>、<span class="math notranslate nohighlight">\(I_{fo}\)</span> —— 焊缝有效截面的平面内、外抗弯惯性矩；</p></li>
+<li><p><span class="math notranslate nohighlight">\(x_c\)</span> —— 参数；</p></li>
+<li><p><span class="math notranslate nohighlight">\(l_w\)</span> —— 焊缝的计算长度。</p></li>
+</ul>
+</li>
+</ol>
+</section>
+</section>
+<section id="id25">
+<h2>13.4 矩形钢管直接焊接节点和局部加劲节点的计算<a class="headerlink" href="#id25" title="Link to this heading">#</a></h2>
+<section id="id26">
+<h3>13.4.1 本节规定适用于直接焊接且主管为矩形管，支管为矩形管或圆管的钢管节点（图13.4.1），其适用范围应符合表13.4.1的要求。<a class="headerlink" href="#id26" title="Link to this heading">#</a></h3>
+<p><img alt="图13.4.1 矩形管直接焊接平面节点" src="media/image455.svg" /><br />
+1—搭接支管；2—被搭接支管</p>
+<p><strong>表13.4.1 主管为矩形管、支管为矩形管或圆管的节点几何参数适用范围</strong></p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>截面及节点形式</p></th>
+<th class="head"><p>节点几何参数，<span class="math notranslate nohighlight">\(i=1\)</span>或<span class="math notranslate nohighlight">\(2\)</span>，表示支管；<span class="math notranslate nohighlight">\(j\)</span>表示被搭接支管</p></th>
+<th class="head"><p>受压</p></th>
+<th class="head"><p>受拉</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>支管为矩形管</p></td>
+<td><p>T、Y与X</p></td>
+<td><p><img alt="公式" src="_images/image463.svg" /></p></td>
+<td><p><img alt="公式" src="_images/image464.svg" /> (Q235) <img alt="公式" src="_images/image465.svg" /> (Q345)</p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p>K与N间隙节点</p></td>
+<td><p><img alt="公式" src="_images/image469.svg" /> <img alt="公式" src="_images/image470.svg" /></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p>K与N搭接节点</p></td>
+<td><p><img alt="公式" src="_images/image463.svg" /></p></td>
+<td><p><img alt="公式" src="_images/image473.svg" /></p></td>
+</tr>
+<tr class="row-odd"><td><p>支管为圆管</p></td>
+<td><p><img alt="公式" src="_images/image477.svg" /></p></td>
+<td><p><img alt="公式" src="_images/image478.svg" /></p></td>
+<td><p><img alt="公式" src="_images/image479.svg" /></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>注：</p>
+<ol class="arabic simple">
+<li><p>当 <span class="math notranslate nohighlight">\(d_i/d \leq 0.65\)</span>，则按T形或Y形节点计算。</p></li>
+<li><p><span class="math notranslate nohighlight">\(b_i\)</span>、<span class="math notranslate nohighlight">\(h_i\)</span>、<span class="math notranslate nohighlight">\(t_i\)</span> 分别为第<span class="math notranslate nohighlight">\(i\)</span>个矩形支管的截面宽度、高度和壁厚；<span class="math notranslate nohighlight">\(d_i\)</span>、<span class="math notranslate nohighlight">\(t_i\)</span> 分别为第<span class="math notranslate nohighlight">\(i\)</span>个圆支管的外径和壁厚；<span class="math notranslate nohighlight">\(b\)</span>、<span class="math notranslate nohighlight">\(h\)</span>、<span class="math notranslate nohighlight">\(t\)</span> 为矩形主管的截面宽度、高度和壁厚；<span class="math notranslate nohighlight">\(a\)</span> 为支管间的间隙；<span class="math notranslate nohighlight">\(q/p\)</span> 为搭接率；<span class="math notranslate nohighlight">\(k_i\)</span> 为第<span class="math notranslate nohighlight">\(i\)</span>个支管钢材的钢号调整系数；<span class="math notranslate nohighlight">\(c\)</span> 为参数：</p>
+<ul class="simple">
+<li><p>对T、Y、X形节点，<span class="math notranslate nohighlight">\(c = 1 - \beta\)</span> 或 <span class="math notranslate nohighlight">\(c = \sqrt{1 - \beta}\)</span>；</p></li>
+<li><p>对K、N形节点，<span class="math notranslate nohighlight">\(c = 1 - \beta\)</span> 或 <span class="math notranslate nohighlight">\(c = \sqrt{1 - \beta}\)</span>。</p></li>
+</ul>
+</li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="id27">
+<h3>13.4.2 非加劲直接焊接的平面节点<a class="headerlink" href="#id27" title="Link to this heading">#</a></h3>
+<p>当支管按仅承受轴心力的构件设计时，平面节点的承载力设计值应按下列规定计算，支管在节点处的承载力设计值不得小于其轴心力设计值。</p>
+<section id="id28">
+<h4>13.4.2.1 支管为矩形管的平面T、Y和X形节点<a class="headerlink" href="#id28" title="Link to this heading">#</a></h4>
+<ol class="arabic simple">
+<li><p>当 <span class="math notranslate nohighlight">\(c = \sqrt{1 - \beta}\)</span> 时，支管在节点处的承载力设计值 <span class="math notranslate nohighlight">\(N_i\)</span> 应按下列公式计算：</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+N_i = c \cdot t^2 \cdot f \tag{13.4.2-1a}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+c = \sqrt{1 - \beta} \tag{13.4.2-1b}
+\]</div>
+<p>主管受压时：</p>
+<div class="math notranslate nohighlight">
+\[
+N_i = c \cdot t^2 \cdot f \cdot \frac{1}{1 - \beta} \tag{13.4.2-1c}
+\]</div>
+<p>主管受拉时：</p>
+<div class="math notranslate nohighlight">
+\[
+N_i = c \cdot t^2 \cdot f \cdot \frac{1}{1 + \beta} \tag{13.4.2-1d}
+\]</div>
+<p>式中：</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(c\)</span> —— 参数，按式 (13.4.2-1b) 计算；</p></li>
+<li><p><span class="math notranslate nohighlight">\(\beta\)</span> —— 参数，按式 (13.4.2-1c) 计算；</p></li>
+<li><p><span class="math notranslate nohighlight">\(\sigma_{op}\)</span> —— 节点两侧主管轴心压应力的较大绝对值。</p></li>
+</ul>
+<ol class="arabic simple" start="2">
+<li><p>当 <span class="math notranslate nohighlight">\(c = 1 - \beta\)</span> 时，支管在节点处的承载力设计值 <span class="math notranslate nohighlight">\(N_i\)</span> 应按下式计算：</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+N_i = c \cdot t^2 \cdot f \tag{13.4.2-2a}
+\]</div>
+<p>对于X形节点，当 <span class="math notranslate nohighlight">\(c = 1 - \beta\)</span> 且 <span class="math notranslate nohighlight">\(\beta \leq 0.65\)</span> 时，尚应按下式计算：</p>
+<div class="math notranslate nohighlight">
+\[
+N_i = c \cdot t^2 \cdot f \cdot \frac{1}{1 - \beta} \tag{13.4.2-2b}
+\]</div>
+<p>当支管受拉时：</p>
+<div class="math notranslate nohighlight">
+\[
+N_i = c \cdot t^2 \cdot f \cdot \frac{1}{1 + \beta} \tag{13.4.2-3a}
+\]</div>
+<p>当支管受压时：</p>
+<p>对T、Y形节点：</p>
+<div class="math notranslate nohighlight">
+\[
+N_i = c \cdot t^2 \cdot f \cdot \frac{1}{1 - \beta} \tag{13.4.2-3b}
+\]</div>
+<p>对X形节点：</p>
+<div class="math notranslate nohighlight">
+\[
+N_i = c \cdot t^2 \cdot f \cdot \frac{1}{1 - \beta} \tag{13.4.2-3c}
+\]</div>
+</section>
+<hr class="docutils" />
+<section id="kn">
+<h4>13.4.2.2 支管为矩形管的有间隙的平面K形和N形节点<a class="headerlink" href="#kn" title="Link to this heading">#</a></h4>
+<p>节点处任一支管的承载力设计值应取下列各式的较小值：</p>
+<div class="math notranslate nohighlight">
+\[
+N_i = c \cdot t^2 \cdot f \tag{13.4.2-6}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+N_i = c \cdot t^2 \cdot f \cdot \frac{1}{1 - \beta} \tag{13.4.2-7}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+N_i = c \cdot t^2 \cdot f \cdot \frac{1}{1 + \beta} \tag{13.4.2-8}
+\]</div>
+<p>当 <span class="math notranslate nohighlight">\(c = 1 - \beta\)</span> 时，尚应不超过式 (13.4.2-9) 的计算值：</p>
+<div class="math notranslate nohighlight">
+\[
+N_i = c \cdot t^2 \cdot f \cdot \frac{1}{1 - \beta} \tag{13.4.2-9a}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+N_i = c \cdot t^2 \cdot f \cdot \frac{1}{1 + \beta} \tag{13.4.2-9b}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+N_i = c \cdot t^2 \cdot f \cdot \frac{1}{1 - \beta} \tag{13.4.2-9c}
+\]</div>
+</section>
+<hr class="docutils" />
+<section id="id29">
+<h4>13.4.2.3 支管为矩形管的搭接的平面K形和N形节点<a class="headerlink" href="#id29" title="Link to this heading">#</a></h4>
+<p>搭接支管的承载力设计值应根据不同的搭接率 <span class="math notranslate nohighlight">\(q/p\)</span> 按下列公式计算（下标<span class="math notranslate nohighlight">\(j\)</span>表示被搭接支管）：</p>
+<ol class="arabic simple">
+<li><p>当 <span class="math notranslate nohighlight">\(q/p \leq 0.5\)</span> 时：</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+N_i = c \cdot t^2 \cdot f \tag{13.4.2-11a}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+N_i = c \cdot t^2 \cdot f \cdot \frac{1}{1 - \beta} \tag{13.4.2-11b}
+\]</div>
+<ol class="arabic simple" start="2">
+<li><p>当 <span class="math notranslate nohighlight">\(q/p &gt; 0.5\)</span> 时：</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+N_i = c \cdot t^2 \cdot f \tag{13.4.2-12}
+\]</div>
+</section>
+<hr class="docutils" />
+<section id="id30">
+<h4>13.4.2.4 支管为圆管的各种形式平面节点<a class="headerlink" href="#id30" title="Link to this heading">#</a></h4>
+<p>支管为圆管的T、Y、X、K及N形节点时，支管在节点处的承载力，可用上述相应的支管为矩形管的节点的承载力公式计算，这时需用 <span class="math notranslate nohighlight">\(d_i\)</span> 替代 <span class="math notranslate nohighlight">\(b_i\)</span> 和 <span class="math notranslate nohighlight">\(h_i\)</span>，并将计算结果乘以 <span class="math notranslate nohighlight">\(k_i\)</span>。</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="id31">
+<h3>13.4.3 非加劲直接焊接的T形方管节点<a class="headerlink" href="#id31" title="Link to this heading">#</a></h3>
+<p>当支管承受弯矩作用时，节点承载力应按下列规定计算：</p>
+<ol class="arabic simple">
+<li><p>当 <span class="math notranslate nohighlight">\(c = \sqrt{1 - \beta}\)</span> 且 <span class="math notranslate nohighlight">\(\beta \leq 0.65\)</span> 时，按公式 (13.4.3-1) 验算；当 <span class="math notranslate nohighlight">\(c = 1 - \beta\)</span> 且 <span class="math notranslate nohighlight">\(\beta &gt; 0.65\)</span> 时，按公式 (13.4.3-2) 验算：</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+N_1^\ast = t^2 \cdot f \cdot \left( \frac{h_1}{b} \cdot \frac{1}{1 - \beta} \cdot \left( 2 - n^2 \right) + \frac{4}{\sqrt{1 - \beta}} \cdot \left( 1 - n^2 \right) \right) \tag{13.4.3-1}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+M_1 = t^2 \cdot f \cdot h_1 \cdot \left( \frac{b}{2h_1} + \frac{2}{\sqrt{1 - \beta}} + \frac{h_1}{b} \cdot \frac{1}{1 - \beta} \right) \cdot \left( 1 - n^2 \right) \tag{13.4.3-2}
+\]</div>
+<p>式中：</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(n\)</span> —— 参数，按式 (13.4.3-2) 计算，受拉时取 <span class="math notranslate nohighlight">\(n=0\)</span>；</p></li>
+<li><p><span class="math notranslate nohighlight">\(b_e\)</span> —— 腹杆翼缘的有效宽度，按式 (13.4.3-2) 计算，<span class="math notranslate nohighlight">\(b_e\)</span> 不超过 <span class="math notranslate nohighlight">\(b\)</span>；</p></li>
+<li><p><span class="math notranslate nohighlight">\(W\)</span> —— 支管截面模量。</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="id32">
+<h3>13.4.4 采用局部加强的方（矩）形管节点<a class="headerlink" href="#id32" title="Link to this heading">#</a></h3>
+<ol class="arabic">
+<li><p>主管与支管相连一侧采用加强板（图13.2.4b）：</p>
+<ol class="arabic simple">
+<li><p>对支管受拉的T、Y和X形节点，支管在节点处的承载力设计值应按下列公式计算：</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+    N_i = t^2 \cdot f \cdot \left( 1 + \frac{t_p}{t} \right) \tag{13.4.4-1a}
+    \]</div>
+<div class="math notranslate nohighlight">
+\[
+    N_i = t^2 \cdot f \cdot \left( 1 + 0.5 \cdot \frac{t_p}{t} \right) \tag{13.4.4-1b}
+    \]</div>
+<div class="math notranslate nohighlight">
+\[
+    N_i = t^2 \cdot f \cdot \left( 1 + \frac{t_p}{t} \right) \cdot \frac{1}{1 - \beta} \tag{13.4.4-1c}
+    \]</div>
+</li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="id33">
+<h3>13.4.5 方（矩）形管节点连接焊缝的计算<a class="headerlink" href="#id33" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>在节点处，支管沿周边与主管相焊，焊缝承载力应不小于节点承载力。</p></li>
+<li><p>直接焊接的方（矩）管节点中，轴心受力支管与主管的连接焊缝可视为全周角焊缝按下式计算：</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+N_f = 0.7 \cdot h_f \cdot l_w \cdot f_{fw} \tag{13.4.5-1}
+\]</div>
+<p>式中：</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(N_f\)</span> —— 支管轴力设计值；</p></li>
+<li><p><span class="math notranslate nohighlight">\(h_f\)</span> —— 角焊缝计算厚度，当支管承受轴力时，平均计算厚度可取 <span class="math notranslate nohighlight">\(0.7 \cdot h_f\)</span>；</p></li>
+<li><p><span class="math notranslate nohighlight">\(l_w\)</span> —— 焊缝的计算长度；</p></li>
+<li><p><span class="math notranslate nohighlight">\(f_{fw}\)</span> —— 角焊缝的强度设计值。</p></li>
+</ul>
+<ol class="arabic" start="3">
+<li><p>支管为方（矩）管时，角焊缝的计算长度可按下列公式计算：</p>
+<ol class="arabic simple">
+<li><p>对于有间隙的K形和N形节点：</p></li>
+</ol>
+<p>当 <span class="math notranslate nohighlight">\(c = \sqrt{1 - \beta}\)</span> 时：</p>
+<div class="math notranslate nohighlight">
+\[
+    l_w = \pi \cdot (a_0 + b_0) - d_i \tag{13.4.5-2}
+    \]</div>
+<p>当 <span class="math notranslate nohighlight">\(c = 1 - \beta\)</span> 时：</p>
+<div class="math notranslate nohighlight">
+\[
+    l_w = \pi \cdot (a_0 + b_0) - d_i \tag{13.4.5-3}
+    \]</div>
+</li>
+<li><p>当支管为圆管时，焊缝计算长度应按下式计算：</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+l_w = \pi \cdot (a_0 + b_0) - d_i \tag{13.4.5-5}
+\]</div>
+<p>式中：</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(a_0\)</span> —— 椭圆相交线的长半轴；</p></li>
+<li><p><span class="math notranslate nohighlight">\(b_0\)</span> —— 椭圆相交线的短半轴；</p></li>
+<li><p><span class="math notranslate nohighlight">\(R_i\)</span> —— 圆支管半径；</p></li>
+<li><p><span class="math notranslate nohighlight">\(\theta\)</span> —— 支管轴线与主管轴线的交角。</p></li>
+</ul>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="12%20%E8%8A%82%E7%82%B9.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">12 节点</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="14%20%E9%92%A2%E4%B8%8E%E6%B7%B7%E5%87%9D%E5%9C%9F%E7%BB%84%E5%90%88%E6%A2%81.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">14 钢与混凝土组合梁</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">13.1 一般规定</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">13.1.1 本章规定适用于钢管桁架、拱架、塔架和网架、网壳等结构中的钢管间连接节点。</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#d-t-b-t-b-t">13.1.2 圆钢管的外径与壁厚之比不应超过 <span class="math notranslate nohighlight">\(D/t\)</span>；方（矩）形管的最大外缘尺寸与壁厚之比不应超过 <span class="math notranslate nohighlight">\(b/t\)</span>，<span class="math notranslate nohighlight">\(b/t\)</span> 为钢号修正系数。</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">13.1.3 采用非加劲直接焊接节点的钢管材料应符合本规范第 4.3.8 条的规定。</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">13.1.4 采用无加劲直接焊接节点的钢管桁架，如节点偏心不超过式（13.2.1）限制时，在计算节点和受拉主管承载力时，可忽略因偏心引起的弯矩的影响，但受压主管应考虑此偏心弯矩的影响：</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#h">13.1.5  无加劲钢管直接焊接节点的支管宜符合本规范第 5.1.5 条的要求采用铰接假定，不符合时，其刚度判别应符合本规范附录 H 的规定，无斜腹杆的空腹桁架的节点应符合刚接假定。</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">13.2 构造要求</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">13.2.1 钢管直接焊接节点的构造应符合下列要求：</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">13.2.2 支管搭接型的直接焊接节点的构造尚应符合下列要求：</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">13.2.3 非加劲直接焊接方式不能满足承载力要求时，可按下列规定在主管内设置横向加劲板：</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">13.2.4 钢管直接焊接节点可采用主管表面贴加强板的方法加强：</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">13.3 圆钢管直接焊接节点和局部加劲节点的计算</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">13.3.1 本节各计算公式适用如下参数范围：</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">13.3.2 非加劲直接焊接的平面节点</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#x-13-3-2-1">13.3.2.1 平面X形节点（图13.3.2-1）</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#t-y-13-3-2-2-13-3-2-3">13.3.2.2 平面T形（或Y形）节点（图13.3.2-2 和 图13.3.2-3）</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#k-13-3-2-4">13.3.2.3 平面K形间隙节点（图13.3.2-4）</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#k-13-3-2-5">13.3.2.4 平面 K 形搭接节点（图 13.3.2-5）</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#dy-13-3-2-6">13.3.2.5 平面 DY 形节点（图 13.3.2-6）</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#dk">13.3.2.6 平面 DK 形节点</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">1. 荷载正对称节点（图 13.3.2-7）</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">2. 荷载反对称节点（图 13.3.2-8）</a></li>
+</ul>
+</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#kt-13-3-2-9">13.3.2.7 平面 KT 形节点（图 13.3.2-9）</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">13.3.2.8 冲剪验算</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">13.3.3 非加劲直接焊接的空间节点</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#tt-13-3-3-1">13.3.3.1 空间TT形节点（图13.3.3-1）</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#n-ctt-pj">1. 受压支管在管节点处的承载力设计值 <span class="math notranslate nohighlight">\(N_{cTT}^{pj}\)</span> 应按下式计算：</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#n-ttt-pj">2. 受拉支管在管节点处的承载力设计值 <span class="math notranslate nohighlight">\(N_{tTT}^{pj}\)</span> 应按下式计算：</a></li>
+</ul>
+</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#kk-13-3-3-2">13.3.3.2 空间KK形节点（图13.3.3-2）</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#kt-13-3-3-3">13.3.3.3 空间KT形圆管节点（图13.3.3-3）</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#k-n-ckt-pj">1. K形受压支管在管节点处的承载力设计值 <span class="math notranslate nohighlight">\(N_{cKT}^{pj}\)</span> 应按下式计算：</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#k-n-tkt-pj">2. K形受拉支管在管节点处的承载力设计值 <span class="math notranslate nohighlight">\(N_{tKT}^{pj}\)</span> 应按下式计算：</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#t-n-tt-pj">3. T形支管在管节点处的承载力设计值 <span class="math notranslate nohighlight">\(N_{tT}^{pj}\)</span> 应按下式计算：</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tyx">13.3.4 非加劲直接焊接的平面 T、Y、X 形节点</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">13.3.4.1 支管在管节点处的平面内抗弯承载力设计值</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">13.3.4.2 支管在管节点处的平面外抗弯承载力设计值</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id20">13.3.4.3 支管在平面内、外弯矩和轴力组合作用下的承载力</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id21">13.3.5 主管呈弯曲状的平面或空间圆管焊接节点</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id22">13.3.6 主管采用 13.2.4 条第 1 款外贴加强板方式的节点</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tx">13.3.7 支管为方矩形管的平面 T、X 形节点</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#t">13.3.7.1 T 形节点</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#x">13.3.7.2 X 形节点</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id23">13.3.7.3 冲剪计算</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id24">13.3.8	在节点处，支管沿周边与主管相焊；支管互相搭接处，搭接支管沿搭接边与被搭接支管相焊。焊缝承载力应不小于节点承载力。</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#t-y-x-k">13.3.9 T（Y）、X 或 K 形间隙节点及其他非搭接节点中，支管为圆管时的焊缝承载力设计值：</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id25">13.4 矩形钢管直接焊接节点和局部加劲节点的计算</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id26">13.4.1 本节规定适用于直接焊接且主管为矩形管，支管为矩形管或圆管的钢管节点（图13.4.1），其适用范围应符合表13.4.1的要求。</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id27">13.4.2 非加劲直接焊接的平面节点</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id28">13.4.2.1 支管为矩形管的平面T、Y和X形节点</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#kn">13.4.2.2 支管为矩形管的有间隙的平面K形和N形节点</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id29">13.4.2.3 支管为矩形管的搭接的平面K形和N形节点</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id30">13.4.2.4 支管为圆管的各种形式平面节点</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id31">13.4.3 非加劲直接焊接的T形方管节点</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id32">13.4.4 采用局部加强的方（矩）形管节点</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id33">13.4.5 方（矩）形管节点连接焊缝的计算</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By 游田重新排版
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2025.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
