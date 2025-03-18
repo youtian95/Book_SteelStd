@@ -1,0 +1,1293 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>8 拉弯、压弯构件 &#8212; 钢结构设计标准 GB 50017-2017</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="_static/mystyle.css?v=63ecd79b" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '8 拉弯、压弯构件';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="7 轴心受力构件" href="7%20%E8%BD%B4%E5%BF%83%E5%8F%97%E5%8A%9B%E6%9E%84%E4%BB%B6.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="README.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="钢结构设计标准 GB 50017-2017 - Home"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="钢结构设计标准 GB 50017-2017 - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="README.html">
+                    《钢结构设计标准 GB 50017-2017》
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="%E5%89%8D%E8%A8%80.html">前言</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%E7%9B%AE%E5%BD%95.html">目次</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="1%20%E6%80%BB%E5%88%99.html">1 总则</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2%20%E6%9C%AF%E8%AF%AD%E5%92%8C%E7%AC%A6%E5%8F%B7.html">2 术语和符号</a></li>
+<li class="toctree-l1"><a class="reference internal" href="3%20%E5%9F%BA%E6%9C%AC%E8%AE%BE%E8%AE%A1%E8%A7%84%E5%AE%9A.html">3 基本设计规定</a></li>
+<li class="toctree-l1"><a class="reference internal" href="4%20%E6%9D%90%E6%96%99%E5%92%8C%E6%9D%90%E6%96%99%E9%80%89%E7%94%A8.html">4 材料和材料选用</a></li>
+<li class="toctree-l1"><a class="reference internal" href="5%20%E7%BB%93%E6%9E%84%E5%88%86%E6%9E%90%E4%B8%8E%E7%A8%B3%E5%AE%9A%E6%80%A7%E8%AE%BE%E8%AE%A1.html">5 结构分析与稳定性设计</a></li>
+<li class="toctree-l1"><a class="reference internal" href="6%20%E5%8F%97%E5%BC%AF%E6%9E%84%E4%BB%B6.html">6 受弯构件</a></li>
+<li class="toctree-l1"><a class="reference internal" href="7%20%E8%BD%B4%E5%BF%83%E5%8F%97%E5%8A%9B%E6%9E%84%E4%BB%B6.html">7 轴心受力构件</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">8 拉弯、压弯构件</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/youtian95/Book_SteelStd" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/youtian95/Book_SteelStd/issues/new?title=Issue%20on%20page%20%2F8 拉弯、压弯构件.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/8 拉弯、压弯构件.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>8 拉弯、压弯构件</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">8.1 截面强度计算</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">1. 弯矩作用在两个主平面内的拉弯构件和压弯构件（圆管截面除外）</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">2. 弯矩作用在两个主平面内的圆形截面拉弯构件和压弯构件</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">8.2 构件的稳定性计算</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#x">8.2.1 弯矩作用在对称轴平面内（绕<span class="math notranslate nohighlight">\(x\)</span>轴）的实腹式压弯构件（圆管截面除外）</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">1. 弯矩作用平面内稳定性</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">1. 无侧移框架柱和两端支承的构件：</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">2. 有侧移框架柱和悬臂构件：</a></li>
+</ul>
+</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">2. 弯矩作用平面外稳定性</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">3. 弯矩绕虚轴（<span class="math notranslate nohighlight">\(x\)</span>轴）作用的格构式压弯构件</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">4. 弯矩绕实轴作用的格构式压弯构件</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">5. 双向压弯圆管的整体稳定</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#h">6. 双轴对称实腹式工字形（含H形）和箱形（闭口）截面的压弯构件</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">7. 双肢格构式压弯构件</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">1. 按整体计算</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">2. 按分肢计算</a></li>
+</ul>
+</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">8. 格构式缀件的计算</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">9. 支撑的计算</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">8.3 框架柱的计算长度</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">8.3.1 等截面柱</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id20">1. 纯框架</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id21">2. 有支撑框架</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id22">8.3.2 当梁与柱的连接达不到刚性连接要求时，确定柱计算长度时应考虑连接的半刚性特性。</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id23">8.3.3 单层厂房框架下端刚性固定的带牛腿等截面柱</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id24">8.3.4 单层厂房框架下端刚性固定的阶形柱</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id25">1. 单阶柱</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#mu-2">1. 下段柱的计算长度系数 <span class="math notranslate nohighlight">\( \mu_2 \)</span>：</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#mu-2-mu-2-1-8-3-4-mu-2-1-mu-2-mu-2">2. 当柱上端与实腹梁刚接时，下段柱的计算长度系数 <span class="math notranslate nohighlight">\( \mu_2 \)</span>，应按下列公式计算的系数 <span class="math notranslate nohighlight">\( \mu_2^1 \)</span> 乘以表8.3.4的折减系数，系数 <span class="math notranslate nohighlight">\( \mu_2^1 \)</span> 应不大于按柱上端与横梁铰接计算时得到的 <span class="math notranslate nohighlight">\( \mu_2 \)</span> 值，且不小于按柱上端与横梁刚接计算时得到的 <span class="math notranslate nohighlight">\( \mu_2 \)</span> 值。</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#mu-1">3. 上段柱的计算长度系数 <span class="math notranslate nohighlight">\( \mu_1 \)</span>：</a></li>
+</ul>
+</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id26">2. 双阶柱</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#mu-3">1. 下段柱的计算长度系数 <span class="math notranslate nohighlight">\( \mu_3 \)</span>：</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#mu-1-mu-2">2. 上段柱和中段柱的计算长度系数 <span class="math notranslate nohighlight">\( \mu_1 \)</span> 和 <span class="math notranslate nohighlight">\( \mu_2 \)</span>，应按下列公式计算：</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id27">8.3.5 当计算框架的格构式柱和桁架式横梁的惯性矩时，应考虑柱或横梁截面高度变化和缀件（或腹板）变形的影响。</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id28">8.3.6 框架柱在框架平面外的计算长度可取面外支撑点之间距离，还可考虑相邻柱之间的相互约束关系确定计算长度。</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id29">8.4 压弯构件的局部稳定和屈曲后强度</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#s3">8.4.1 压弯构件腹板、翼缘宽厚比应符合本规范表3.5规定的压弯构件S3级截面要求。</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id30">8.4.2 工字形和箱形截面压弯构件的腹板高厚比超过表3.5规定的S3级截面要求时，其构件设计应符合下列规定：</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id31">8.4.2.1 应以有效截面代替实际截面按本条第2款计算杆件的承载力。</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id32">8.4.2.2 应采用下列公式计算其承载力：</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#t-10-0-75t">8.4.3 压弯构件的板件当用纵向加劲肋加强以满足宽厚比限值时，加劲肋宜在板件两侧成对配置，其一侧外伸宽度不应小于板件厚度 <span class="math notranslate nohighlight">\(t\)</span> 的10倍，厚度不宜小于0.75<span class="math notranslate nohighlight">\(t\)</span>。</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="id1">
+<h1>8 拉弯、压弯构件<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
+<section id="id2">
+<h2>8.1 截面强度计算<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<section id="id3">
+<h3>1. 弯矩作用在两个主平面内的拉弯构件和压弯构件（圆管截面除外）<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
+<p>其截面强度应按下列规定计算：</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{N}{{A_{\rm{n}}}} \pm \frac{{M_{\rm{x}}}}{{\gamma_{\rm{x}} W_{\rm{nx}}}} \pm \frac{{M_{\rm{y}}}}{{\gamma_{\rm{y}} W_{\rm{ny}}}} \leq f \tag{8.1.1-1}
+\]</div>
+</section>
+<section id="id4">
+<h3>2. 弯矩作用在两个主平面内的圆形截面拉弯构件和压弯构件<a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
+<p>其截面强度应按下列规定计算：</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{N}{{A_{\rm{n}}}} + \frac{\sqrt{M_{\rm{x}}^2 + M_{\rm{y}}^2}}{{\gamma_{\rm{m}} W_{\rm{n}}}} \leq f \tag{8.1.1-2}
+\]</div>
+<p>式中：</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(A_{\rm{n}}\)</span> —— 圆管净截面面积；</p></li>
+<li><p><span class="math notranslate nohighlight">\(W_{\rm{n}}\)</span> —— 圆管净截面模量；</p></li>
+<li><p><span class="math notranslate nohighlight">\(\gamma_{\rm{m}}\)</span> —— 对于实腹圆形截面取1.2，圆管截面取1.15；</p></li>
+<li><p><span class="math notranslate nohighlight">\(\gamma_{\rm{x}}\)</span>, <span class="math notranslate nohighlight">\(\gamma_{\rm{y}}\)</span> —— 与截面模量相应的截面塑性发展系数，应按表8.1.1采用。</p></li>
+</ul>
+<p>当压弯构件受压翼缘的自由外伸宽度与其厚度之比大于 <span class="math notranslate nohighlight">\(13\varepsilon_{\rm{k}}\)</span> 而不超过 <span class="math notranslate nohighlight">\(15\varepsilon_{\rm{k}}\)</span> 时，应取 <span class="math notranslate nohighlight">\(\gamma_{\rm{x}} = 1.0\)</span>。</p>
+<p>需要验算疲劳强度的拉弯、压弯构件，宜取 <span class="math notranslate nohighlight">\(\gamma_{\rm{x}} = \gamma_{\rm{y}} = \gamma_{\rm{m}} = 1.0\)</span>。</p>
+<p><strong>表8.1.1 截面塑性发展系数</strong></p>
+<p><img alt="" src="_images/image151.svg" /><br />
+<img alt="" src="_images/image152.svg" /></p>
+<p><img alt="" src="_images/image153.jpeg" /><br />
+<img alt="" src="_images/image154.jpeg" /></p>
+</section>
+</section>
+<section id="id5">
+<h2>8.2 构件的稳定性计算<a class="headerlink" href="#id5" title="Link to this heading">#</a></h2>
+<section id="x">
+<h3>8.2.1 弯矩作用在对称轴平面内（绕<span class="math notranslate nohighlight">\(x\)</span>轴）的实腹式压弯构件（圆管截面除外）<a class="headerlink" href="#x" title="Link to this heading">#</a></h3>
+<section id="id6">
+<h4>1. 弯矩作用平面内稳定性<a class="headerlink" href="#id6" title="Link to this heading">#</a></h4>
+<div class="math notranslate nohighlight">
+\[
+\frac{N}{{\phi_{\rm{x}} A f}} + \frac{{\beta_{\rm{mx}} M_{\rm{x}}}}{{\gamma_{\rm{x}} W_{\rm{1x}} (1 - 0.8 N / N_{\rm{Ex}}') f}} \leq 1 \tag{8.2.1-1}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+N_{\rm{Ex}}' = \frac{\pi^2 E A}{1.1 \lambda_{\rm{x}}^2} \tag{8.2.1-2}
+\]</div>
+<p>式中：</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(N\)</span> —— 所计算构件范围内轴心压力设计值；</p></li>
+<li><p><span class="math notranslate nohighlight">\(N_{\rm{Ex}}'\)</span> —— 参数，按式（8.2.1-2）计算；</p></li>
+<li><p><span class="math notranslate nohighlight">\(\phi_{\rm{x}}\)</span> —— 弯矩作用平面内轴心受压构件稳定系数；</p></li>
+<li><p><span class="math notranslate nohighlight">\(M_{\rm{x}}\)</span> —— 所计算构件段范围内的最大弯矩设计值；</p></li>
+<li><p><span class="math notranslate nohighlight">\(W_{\rm{1x}}\)</span> —— 在弯矩作用平面内对受压最大纤维的毛截面模量；</p></li>
+<li><p><span class="math notranslate nohighlight">\(\beta_{\rm{mx}}\)</span> —— 等效弯矩系数，应按下列规定采用：</p></li>
+</ul>
+<section id="id7">
+<h5>1. 无侧移框架柱和两端支承的构件：<a class="headerlink" href="#id7" title="Link to this heading">#</a></h5>
+<ul>
+<li><p>无横向荷载作用时，取 <span class="math notranslate nohighlight">\(\beta_{\rm{mx}} = 0.6 + 0.4 \frac{M_2}{M_1}\)</span>，<span class="math notranslate nohighlight">\(M_1\)</span> 和 <span class="math notranslate nohighlight">\(M_2\)</span> 为端弯矩，使构件产生同向曲率（无反弯点）时取同号；使构件产生反向曲率（有反弯点）时取异号，<span class="math notranslate nohighlight">\(\left| M_1 \right| \geq \left| M_2 \right|\)</span>；</p></li>
+<li><p>无端弯矩但有横向荷载作用时：</p>
+<ul>
+<li><p>跨中单个集中荷载：</p>
+<div class="math notranslate nohighlight">
+\[
+        \beta_{\rm{mqx}} = 1 - 0.36 N / N_{\rm{cr}} \tag{8.2.1-2a}
+        \]</div>
+</li>
+<li><p>全跨均布荷载：</p>
+<div class="math notranslate nohighlight">
+\[
+        \beta_{\rm{mqx}} = 1 - 0.18 N / N_{\rm{cr}} \tag{8.2.1-2b}
+        \]</div>
+<div class="math notranslate nohighlight">
+\[
+        N_{\rm{cr}} = \frac{\pi^2 E I}{(\mu l)^2} \tag{8.2.1-3}
+        \]</div>
+</li>
+</ul>
+<p>式中：</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(N_{\rm{cr}}\)</span> —— 弹性临界力；</p></li>
+<li><p><span class="math notranslate nohighlight">\(\mu\)</span> —— 构件的计算长度系数。</p></li>
+</ul>
+</li>
+<li><p>有端弯矩和横向荷载同时作用时，将式（8.2.1-1）的 <span class="math notranslate nohighlight">\(\beta_{\rm{mx}} M_{\rm{x}}\)</span> 取为 <span class="math notranslate nohighlight">\(\beta_{\rm{mqx}} M_{\rm{qx}} + \beta_{\rm{m1x}} M_1\)</span>，即工况①和工况②等效弯矩的代数和。<span class="math notranslate nohighlight">\(M_{\rm{qx}}\)</span> 为横向荷载产生的弯矩最大值。</p></li>
+</ul>
+</section>
+<section id="id8">
+<h5>2. 有侧移框架柱和悬臂构件：<a class="headerlink" href="#id8" title="Link to this heading">#</a></h5>
+<ul class="simple">
+<li><p>除本款②项规定之外的框架柱，<span class="math notranslate nohighlight">\(\beta_{\rm{m}} = 1 - 0.36 N / N_{\rm{cr}}\)</span>；</p></li>
+<li><p>有横向荷载的柱脚铰接的单层框架柱和多层框架的底层柱，<span class="math notranslate nohighlight">\(\beta_{\rm{m}} = 1.0\)</span>；</p></li>
+<li><p>自由端作用有弯矩的悬臂柱，<span class="math notranslate nohighlight">\(\beta_{\rm{m}} = 1 - 0.36 (1 - m) N / N_{\rm{cr}}\)</span>，式中 <span class="math notranslate nohighlight">\(m\)</span> 为自由端弯矩与固定端弯矩之比，当弯矩图无反弯点时取正号，有反弯点时取负号。</p></li>
+</ul>
+<p>当框架内力采用二阶分析时，柱弯矩由无侧移弯矩和放大的侧移弯矩组成，此时可对两部分弯矩分别乘以无侧移柱和有侧移柱的等效弯矩系数。</p>
+<p>对于表8.1.1的3.4项中的单轴对称压弯构件，当弯矩作用在对称平面内且使翼缘受压时，除应按公式（8.2.1-1）计算外，尚应按下式计算：</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{N}{{A f}} - \frac{\beta_{\rm{mx}} M_{\rm{x}}}{{\gamma_{\rm{x}} W_{\rm{2x}} (1 - 1.25 N / N_{\rm{Ex}}') f}} \leq 1 \tag{8.2.1-3}
+\]</div>
+<p>式中：</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(W_{\rm{2x}}\)</span> —— 对无翼缘端的毛截面模量。</p></li>
+</ul>
+</section>
+</section>
+<section id="id9">
+<h4>2. 弯矩作用平面外稳定性<a class="headerlink" href="#id9" title="Link to this heading">#</a></h4>
+<div class="math notranslate nohighlight">
+\[
+\frac{N}{{\varphi_y A f}} + \eta \frac{M_{\rm{x}}}{{\varphi_{\rm{b}} \gamma_{\rm{x}} W_{\rm{1x}} f}} \leq 1 \tag{8.2.1-5}
+\]</div>
+<p>式中：</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\varphi_y\)</span> —— 弯矩作用平面外的轴压构件稳定系数，按7.2.1条确定；</p></li>
+<li><p><span class="math notranslate nohighlight">\(\varphi_{\rm{b}}\)</span> —— 考虑弯矩变化和荷载位置影响的受弯构件整体稳定系数，按本规范第6.2节规定取值，对闭口截面 <span class="math notranslate nohighlight">\(\varphi_{\rm{b}} = 1.0\)</span>；</p></li>
+<li><p><span class="math notranslate nohighlight">\(M_{\rm{x}}\)</span> —— 所计算构件段范围内的最大弯矩设计值；</p></li>
+<li><p><span class="math notranslate nohighlight">\(\eta\)</span> —— 截面影响系数，闭口截面 <span class="math notranslate nohighlight">\(\eta = 0.7\)</span>，其它截面 <span class="math notranslate nohighlight">\(\eta = 1.0\)</span>。</p></li>
+</ul>
+</section>
+<section id="id10">
+<h4>3. 弯矩绕虚轴（<span class="math notranslate nohighlight">\(x\)</span>轴）作用的格构式压弯构件<a class="headerlink" href="#id10" title="Link to this heading">#</a></h4>
+<p>其弯矩作用平面内的整体稳定性应按下式计算：</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{N}{{\varphi_{\rm{x}} A f}} + \frac{\beta_{\rm{mx}} M_{\rm{x}}}{{W_{\rm{1x}} (1 - N / N_{\rm{Ex}}') f}} \leq 1 \tag{8.2.2-1}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+W_{\rm{1x}} = \frac{I_{\rm{x}}}{y_0} \tag{8.2.2-2}
+\]</div>
+<p>式中：</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(I_{\rm{x}}\)</span> —— 对<span class="math notranslate nohighlight">\(x\)</span>轴的毛截面的惯性矩；</p></li>
+<li><p><span class="math notranslate nohighlight">\(y_0\)</span> —— 由<span class="math notranslate nohighlight">\(x\)</span>轴到压力较大分肢的轴线距离或者到压力较大分肢腹板外边缘的距离，二者取较大者；</p></li>
+<li><p><span class="math notranslate nohighlight">\(\varphi_{\rm{x}}\)</span>、<span class="math notranslate nohighlight">\(N_{\rm{Ex}}'\)</span> —— 分别为弯矩作用平面内轴心受压构件稳定系数和参数，由换算长细比确定。</p></li>
+</ul>
+<p>弯矩作用平面外的整体稳定性可不计算，但应计算分肢的稳定性，分肢的轴心力应按桁架的弦杆计算。对缀板柱的分肢尚应考虑由剪力引起的局部弯矩。</p>
+</section>
+<section id="id11">
+<h4>4. 弯矩绕实轴作用的格构式压弯构件<a class="headerlink" href="#id11" title="Link to this heading">#</a></h4>
+<p>其弯矩作用平面内和平面外的稳定性计算均与实腹式构件相同。但在计算弯矩作用平面外的整体稳定性时，长细比应取换算长细比，<span class="math notranslate nohighlight">\(\phi_{\rm{b}}\)</span> 应取1.0。</p>
+</section>
+<section id="id12">
+<h4>5. 双向压弯圆管的整体稳定<a class="headerlink" href="#id12" title="Link to this heading">#</a></h4>
+<p>当柱段中没有很大横向力或集中弯矩时，按下式计算：</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{N}{{\varphi A}} + \frac{\beta M}{{\gamma W (1 - 0.8 N / N_{\rm{Ex}}')}} \leq f \tag{8.2.4-1}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+M = \max \left( \sqrt{M_{\rm{xA}}^2 + M_{\rm{yA}}^2}, \sqrt{M_{\rm{xB}}^2 + M_{\rm{yB}}^2} \right) \tag{8.2.4-2}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+\beta = \beta_{\rm{x}} \beta_{\rm{y}} \tag{8.2.4-3}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+\beta_{\rm{x}} = 1 - 0.35 \sqrt{N / N_{\rm{E}}} + 0.35 \sqrt{N / N_{\rm{E}}} \left( M_{\rm{2x}} / M_{\rm{1x}} \right) \tag{8.2.4-4a}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+\beta_{\rm{y}} = 1 - 0.35 \sqrt{N / N_{\rm{E}}} + 0.35 \sqrt{N / N_{\rm{E}}} \left( M_{\rm{2y}} / M_{\rm{1y}} \right) \tag{8.2.4-4b}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+N_{\rm{E}} = \frac{\pi^2 E A}{\lambda^2} \tag{8.2.4-5}
+\]</div>
+<p>式中：</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\varphi\)</span> —— 轴心受压稳定系数，按构件最大长细比取值；</p></li>
+<li><p><span class="math notranslate nohighlight">\(M\)</span> —— 计算双向压弯整体稳定时采用的弯矩值，按式（8.2.4-2）计算；</p></li>
+<li><p><span class="math notranslate nohighlight">\(M_{\rm{xA}}\)</span>, <span class="math notranslate nohighlight">\(M_{\rm{yA}}\)</span>, <span class="math notranslate nohighlight">\(M_{\rm{xB}}\)</span>, <span class="math notranslate nohighlight">\(M_{\rm{yB}}\)</span> —— 分别为构件A端和B端关于<span class="math notranslate nohighlight">\(x\)</span>、<span class="math notranslate nohighlight">\(y\)</span>轴的弯矩；</p></li>
+<li><p><span class="math notranslate nohighlight">\(\beta\)</span> —— 计算双向压弯整体稳定时采用的等效弯矩系数；</p></li>
+<li><p><span class="math notranslate nohighlight">\(M_{\rm{1x}}\)</span>, <span class="math notranslate nohighlight">\(M_{\rm{2x}}\)</span>, <span class="math notranslate nohighlight">\(M_{\rm{1y}}\)</span>, <span class="math notranslate nohighlight">\(M_{\rm{2y}}\)</span> —— 分别为构件两端关于<span class="math notranslate nohighlight">\(x\)</span>轴和<span class="math notranslate nohighlight">\(y\)</span>轴的最大、最小弯矩；</p></li>
+<li><p><span class="math notranslate nohighlight">\(N_{\rm{E}}\)</span> —— 根据构件最大长细比计算的欧拉力，按式（8.2.4-5）计算。</p></li>
+</ul>
+</section>
+<section id="h">
+<h4>6. 双轴对称实腹式工字形（含H形）和箱形（闭口）截面的压弯构件<a class="headerlink" href="#h" title="Link to this heading">#</a></h4>
+<p>其稳定性应按下列公式计算：</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{N}{{\varphi_{\rm{x}} A f}} + \frac{\beta_{\rm{mx}} M_{\rm{x}}}{{\gamma_{\rm{x}} W_{\rm{x}} \left( 1 - 0.8 N / N_{\rm{Ex}}' \right) f}} + \eta \frac{M_{\rm{y}}}{{\varphi_{\rm{by}} \gamma_{\rm{y}} W_{\rm{y}} f}} \leq 1 \tag{8.2.5-1}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+\frac{N}{{\varphi_{\rm{y}} A f}} + \eta \frac{M_{\rm{x}}}{{\varphi_{\rm{bx}} \gamma_{\rm{x}} W_{\rm{x}} f}} + \frac{\beta_{\rm{my}} M_{\rm{y}}}{{\gamma_{\rm{y}} W_{\rm{y}} \left( 1 - 0.8 N / N_{\rm{Ey}}' \right) f}} \leq 1 \tag{8.2.5-2}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+N_{\rm{Ey}}' = \frac{\pi^2 E A}{1.1 \lambda_{\rm{y}}^2} \tag{8.2.5-3}
+\]</div>
+<p>式中：</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\varphi_{\rm{x}}\)</span>, <span class="math notranslate nohighlight">\(\varphi_{\rm{y}}\)</span> —— 对强轴<span class="math notranslate nohighlight">\(x\)</span>-<span class="math notranslate nohighlight">\(x\)</span>和弱轴<span class="math notranslate nohighlight">\(y\)</span>-<span class="math notranslate nohighlight">\(y\)</span>的轴心受压构件稳定系数；</p></li>
+<li><p><span class="math notranslate nohighlight">\(\varphi_{\rm{bx}}\)</span>, <span class="math notranslate nohighlight">\(\varphi_{\rm{by}}\)</span> —— 考虑弯矩变化和荷载位置影响的受弯构件整体稳定系数，按本规范第6.2节规定取值（<span class="math notranslate nohighlight">\(M_{\rm{cr}}\)</span> 按简支梁计算）；</p></li>
+<li><p><span class="math notranslate nohighlight">\(M_{\rm{x}}\)</span>, <span class="math notranslate nohighlight">\(M_{\rm{y}}\)</span> —— 所计算构件段范围内对强轴和弱轴的最大弯矩设计值；</p></li>
+<li><p><span class="math notranslate nohighlight">\(W_{\rm{x}}\)</span>, <span class="math notranslate nohighlight">\(W_{\rm{y}}\)</span> —— 对强轴和弱轴的毛截面模量；</p></li>
+<li><p><span class="math notranslate nohighlight">\(\beta_{\rm{mx}}\)</span>, <span class="math notranslate nohighlight">\(\beta_{\rm{my}}\)</span> —— 等效弯矩系数，应按本规范第8.2.1条弯矩作用平面内稳定计算的有关规定采用。</p></li>
+</ul>
+</section>
+<section id="id13">
+<h4>7. 双肢格构式压弯构件<a class="headerlink" href="#id13" title="Link to this heading">#</a></h4>
+<section id="id14">
+<h5>1. 按整体计算<a class="headerlink" href="#id14" title="Link to this heading">#</a></h5>
+<div class="math notranslate nohighlight">
+\[
+\frac{N}{{\varphi_{\rm{x}} A f}} + \frac{\beta_{\rm{tm}} M_{\rm{x}}}{{W_{\rm{1x}} \left( 1 - N / N_{\rm{Ex}}' \right) f}} + \frac{M_{\rm{y}}}{{W_{\rm{1y}} f}} \leq 1.0 \tag{8.2.6-1}
+\]</div>
+<p>式中：</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(W_{\rm{1y}}\)</span> —— 在 <span class="math notranslate nohighlight">\(M_{\rm{y}}\)</span> 作用下，对较大受压纤维的毛截面模量。</p></li>
+</ul>
+</section>
+<section id="id15">
+<h5>2. 按分肢计算<a class="headerlink" href="#id15" title="Link to this heading">#</a></h5>
+<p>在 <span class="math notranslate nohighlight">\(N\)</span> 和 <span class="math notranslate nohighlight">\(M_{\rm{x}}\)</span> 作用下，将分肢作为桁架弦杆计算其轴心力，<span class="math notranslate nohighlight">\(M_{\rm{y}}\)</span> 按下列公式分配给两分肢（图8.2.6），然后按本规范第8.2.1条的规定计算分肢稳定性。</p>
+<p>分肢1：</p>
+<div class="math notranslate nohighlight">
+\[
+M_{\rm{y1}} = \frac{I_1 / y_1}{I_1 / y_1 + I_2 / y_2} \cdot M_{\rm{y}} \tag{8.2.6-2}
+\]</div>
+<p>分肢2：</p>
+<div class="math notranslate nohighlight">
+\[
+M_{\rm{y2}} = \frac{I_2 / y_2}{I_1 / y_1 + I_2 / y_2} \cdot M_{\rm{y}} \tag{8.2.6-3}
+\]</div>
+<p>式中：</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(I_1\)</span>, <span class="math notranslate nohighlight">\(I_2\)</span> —— 分肢1、分肢2对<span class="math notranslate nohighlight">\(y\)</span>轴的惯性矩；</p></li>
+<li><p><span class="math notranslate nohighlight">\(y_1\)</span>, <span class="math notranslate nohighlight">\(y_2\)</span> —— <span class="math notranslate nohighlight">\(M_{\rm{y}}\)</span> 作用的主轴平面至分肢1、分肢2轴线的距离。</p></li>
+</ul>
+<p><img alt="" src="_images/image155.svg" /></p>
+<p><strong>图8.2.6 格构式构件截面</strong></p>
+<p>1—分肢1； 2—分肢2</p>
+</section>
+</section>
+<section id="id16">
+<h4>8. 格构式缀件的计算<a class="headerlink" href="#id16" title="Link to this heading">#</a></h4>
+<p>计算格构式缀件时，应取构件的实际剪力和按本规范公式（7.2.6）计算的剪力两者中的较大值进行计算。</p>
+</section>
+<section id="id17">
+<h4>9. 支撑的计算<a class="headerlink" href="#id17" title="Link to this heading">#</a></h4>
+<p>用作减小压弯构件弯矩作用平面外计算长度的支撑，应将压弯构件的受压翼缘（对实腹式构件）或受压分肢（对格构式构件）视为轴压构件按本规范7.5节的规定计算各自的支撑力。</p>
+</section>
+</section>
+</section>
+<section id="id18">
+<h2>8.3 框架柱的计算长度<a class="headerlink" href="#id18" title="Link to this heading">#</a></h2>
+<section id="id19">
+<h3>8.3.1 等截面柱<a class="headerlink" href="#id19" title="Link to this heading">#</a></h3>
+<p>在框架平面内的计算长度应等于该层柱的高度乘以计算长度系数<span class="math notranslate nohighlight">\(\mu\)</span>。框架分为纯框架和有支撑框架。</p>
+<p>当采用二阶弹性分析方法计算内力且在每层柱顶附加考虑假想水平力<span class="math notranslate nohighlight">\(H_{\rm{ni}}\)</span>时，框架柱的计算长度系数<span class="math notranslate nohighlight">\(\mu = 1.0\)</span>。</p>
+<p>当采用一阶弹性分析方法计算内力时，框架柱的计算长度系数<span class="math notranslate nohighlight">\(\mu\)</span>应按照下列规定确定：</p>
+<section id="id20">
+<h4>1. 纯框架<a class="headerlink" href="#id20" title="Link to this heading">#</a></h4>
+<ol class="arabic simple">
+<li><p>框架柱的计算长度系数<span class="math notranslate nohighlight">\(\mu\)</span>按本规范附录E表E-2有侧移框架柱的计算长度系数确定，也可按下列简化公式计算：</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+\mu = \sqrt{\frac{7.5K_1K_2 + 4(K_1 + K_2) + 1.52}{7.5K_1K_2 + K_1 + K_2}} \tag{8.3.1-1}
+\]</div>
+<p>式中：</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(K_1\)</span>、<span class="math notranslate nohighlight">\(K_2\)</span> —— 分别为相交于柱上端、柱下端的横梁线刚度之和与柱线刚度之和的比值。<span class="math notranslate nohighlight">\(K_1\)</span>、<span class="math notranslate nohighlight">\(K_2\)</span>的修正见附录E表E-2。</p></li>
+</ul>
+<ol class="arabic simple" start="2">
+<li><p>设有摇摆柱时，摇摆柱本身的计算长度系数取1.0，框架柱的计算长度系数应乘以放大系数<span class="math notranslate nohighlight">\(\eta\)</span>，<span class="math notranslate nohighlight">\(\eta\)</span>应按下式计算：</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+\eta = \sqrt{1 + \frac{\sum \left( \frac{N_1}{h_1} \right)}{\sum \left( \frac{N_{\rm{f}}}{h_{\rm{f}}} \right)}} \tag{8.3.1-2}
+\]</div>
+<p>式中：</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\sum \left( \frac{N_{\rm{f}}}{h_{\rm{f}}} \right)\)</span> —— 本层各框架柱轴心压力设计值与柱子高度比值之和；</p></li>
+<li><p><span class="math notranslate nohighlight">\(\sum \left( \frac{N_1}{h_1} \right)\)</span> —— 本层各摇摆柱轴心压力设计值与柱子高度比值之和。</p></li>
+</ul>
+<ol class="arabic simple" start="3">
+<li><p>当有侧移框架同层各柱的<span class="math notranslate nohighlight">\(\frac{N}{I}\)</span>不相同时，柱计算长度系数宜按下列公式计算：</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+\mu_{\rm{i}} = \sqrt{\frac{N_{\rm{Ei}}}{N_{\rm{i}}} \cdot \frac{1.2}{K} \sum \frac{N_{\rm{i}}}{h_{\rm{i}}}} \tag{8.3.1-3}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+N_{\rm{Ei}} = \frac{\pi^2 E I_{\rm{i}}}{h_{\rm{i}}^2} \tag{8.3.1-4}
+\]</div>
+<p>当框架附有摇摆柱时，框架柱的计算长度系数由下式确定：</p>
+<div class="math notranslate nohighlight">
+\[
+\mu_{\rm{i}} = \sqrt{\frac{N_{\rm{Ei}}}{N_{\rm{i}}} \cdot \frac{1.2 \sum \left( \frac{N_{\rm{i}}}{h_{\rm{i}}} \right) + \sum \left( \frac{P_{\rm{j}}}{h_{\rm{j}}} \right)}{K}} \tag{8.3.1-5}
+\]</div>
+<p>当根据式（8.3.1-3）或式（8.3.1-5）计算而得的<span class="math notranslate nohighlight">\(\mu_{\rm{i}}\)</span>小于1.0时，此柱应作为摇摆柱考虑。</p>
+<p>式中：</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(N_{\rm{i}}\)</span> —— 第<span class="math notranslate nohighlight">\(i\)</span>根柱轴心压力设计值；</p></li>
+<li><p><span class="math notranslate nohighlight">\(N_{\rm{Ei}}\)</span> —— 第<span class="math notranslate nohighlight">\(i\)</span>根柱的欧拉临界力；</p></li>
+<li><p><span class="math notranslate nohighlight">\(h_{\rm{i}}\)</span> —— 第<span class="math notranslate nohighlight">\(i\)</span>根柱高度；</p></li>
+<li><p><span class="math notranslate nohighlight">\(K\)</span> —— 框架层侧移刚度，即产生层间单位侧移所需的力；</p></li>
+<li><p><span class="math notranslate nohighlight">\(P_{\rm{j}}\)</span> —— 第<span class="math notranslate nohighlight">\(j\)</span>根摇摆柱轴心压力设计值；</p></li>
+<li><p><span class="math notranslate nohighlight">\(h_{\rm{j}}\)</span> —— 第<span class="math notranslate nohighlight">\(j\)</span>根摇摆柱的高度。</p></li>
+</ul>
+<ol class="arabic simple" start="4">
+<li><p>当多层单跨框架的顶层采用轻型屋面，或多跨多层框架的顶层抽柱形成较大跨度时，顶层框架柱的计算长度系数应忽略屋面梁对柱子的转动约束。</p></li>
+<li><p>柱脚刚性连接的单层大跨度框架，除按本款规定的柱计算长度计算框架有侧移失稳外，还应计算无侧移失稳。单跨对称框架，梁和柱的计算长度系数分别按下式计算：</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+\mu_{\rm{b}} = \frac{1 + 0.41 G_0}{1 + 0.82 G_0} \tag{8.3.1-6}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+G_0 = \frac{2 I_{\rm{c}} l}{I_{\rm{b}} h \cos \alpha} \left( 1 - \frac{N_{\rm{c}}}{2 N_{\rm{Ec}}} \right) \tag{8.3.1-7}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+\mu_{\rm{c}} = \frac{l}{h} \sqrt{\frac{N_{\rm{b}} I_{\rm{c}}}{N_{\rm{c}} I_{\rm{b}}}} \tag{8.3.1-8}
+\]</div>
+<p>式中：</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(I_{\rm{c}}\)</span>, <span class="math notranslate nohighlight">\(I_{\rm{b}}\)</span> —— 分别为柱和梁的惯性矩；</p></li>
+<li><p><span class="math notranslate nohighlight">\(h\)</span>, <span class="math notranslate nohighlight">\(l\)</span> —— 分别为柱高度和框架跨度；</p></li>
+<li><p><span class="math notranslate nohighlight">\(\alpha\)</span> —— 框架梁的倾角（不超过<span class="math notranslate nohighlight">\(45^\circ\)</span>）；</p></li>
+<li><p><span class="math notranslate nohighlight">\(N_{\rm{c}}\)</span>, <span class="math notranslate nohighlight">\(N_{\rm{b}}\)</span> —— 分别为柱和梁的轴压力；</p></li>
+<li><p><span class="math notranslate nohighlight">\(N_{\rm{Ec}}\)</span> —— 柱的欧拉临界力。</p></li>
+</ul>
+</section>
+<section id="id21">
+<h4>2. 有支撑框架<a class="headerlink" href="#id21" title="Link to this heading">#</a></h4>
+<ol class="arabic simple">
+<li><p>当支撑系统满足公式（8.3.1-9）要求时，为强支撑框架，框架柱的计算长度系数<span class="math notranslate nohighlight">\(\mu\)</span>按本规范附录E表E-1无侧移框架柱的计算长度系数确定，也可按下式计算：</p></li>
+</ol>
+<p>对于两端刚接的框架柱：</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{H_{\rm{i}}}{H_{\rm{ri}}} \leq 1.0 \tag{8.3.1-9a}
+\]</div>
+<p>对于一端铰接的框架柱：</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{H_{\rm{i}}}{H_{\rm{ri}}} \leq 1.0 \tag{8.3.1-9b}
+\]</div>
+<p>式中：</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(H_{\rm{i}}\)</span>, <span class="math notranslate nohighlight">\(H_{\rm{ri}}\)</span> —— 分别是第<span class="math notranslate nohighlight">\(i\)</span>层支撑所分担的水平力和所能抵抗的水平力；</p></li>
+<li><p><span class="math notranslate nohighlight">\(K_0\)</span> —— 多层框架柱的层侧移刚度；</p></li>
+<li><p><span class="math notranslate nohighlight">\(S_{\rm{b}}\)</span> —— 支撑系统的层侧移刚度。</p></li>
+</ul>
+<ol class="arabic simple" start="2">
+<li><p>当支撑系统不满足式（8.3.1-9）时，该结构体系中的框架称为弱支撑框架，弱支撑框架柱的稳定系数<span class="math notranslate nohighlight">\(\phi\)</span>按下列公式计算：</p></li>
+</ol>
+<p>对于两端刚接的框架柱：</p>
+<div class="math notranslate nohighlight">
+\[
+\phi = \phi_1 \phi_0 \tag{8.3.1-12a}
+\]</div>
+<p>对于一端铰接的框架柱：</p>
+<div class="math notranslate nohighlight">
+\[
+\phi = \phi_1 \phi_0 \tag{8.3.1-12b}
+\]</div>
+<p>式中：</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\phi_1\)</span>, <span class="math notranslate nohighlight">\(\phi_0\)</span> —— 分别是框架柱按附录E表E-1和表E-2得出的系数算得的稳定系数。</p></li>
+</ul>
+</section>
+</section>
+<section id="id22">
+<h3>8.3.2 当梁与柱的连接达不到刚性连接要求时，确定柱计算长度时应考虑连接的半刚性特性。<a class="headerlink" href="#id22" title="Link to this heading">#</a></h3>
+</section>
+<section id="id23">
+<h3>8.3.3 单层厂房框架下端刚性固定的带牛腿等截面柱<a class="headerlink" href="#id23" title="Link to this heading">#</a></h3>
+<p>在框架平面内的计算长度应按下列公式确定：</p>
+<div class="math notranslate nohighlight">
+\[
+h_0 = \alpha_{\rm{N}} \left[ \sqrt{\frac{4 + 7.5R}{1 + 7.5R}} - \alpha_{\rm{R}} \left( \frac{h_1}{h} \right)^{1 + 0.8R} \right] h \tag{8.3.3-1}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+R = \frac{\sum I_{\rm{b}} / l}{I_{\rm{c}} / h} \tag{8.3.3-2}
+\]</div>
+<p>当<span class="math notranslate nohighlight">\(R &lt; 0.2\)</span>时：</p>
+<div class="math notranslate nohighlight">
+\[
+\alpha_{\rm{R}} = 1.5 - 2.5R \tag{8.3.3-3}
+\]</div>
+<p>当<span class="math notranslate nohighlight">\(0.2 \leq R &lt; 2.0\)</span>时：</p>
+<div class="math notranslate nohighlight">
+\[
+\alpha_{\rm{R}} = 1.0 \tag{8.3.3-4}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+\gamma = \frac{N_1}{N_1 + N_2} \tag{8.3.3-5}
+\]</div>
+<p>当<span class="math notranslate nohighlight">\(\gamma &gt; 0.2\)</span>时：</p>
+<div class="math notranslate nohighlight">
+\[
+\alpha_{\rm{N}} = 1.0 \tag{8.3.3-6}
+\]</div>
+<p>当<span class="math notranslate nohighlight">\(\gamma \leq 0.2\)</span>时：</p>
+<div class="math notranslate nohighlight">
+\[
+\alpha_{\rm{N}} = 1 + \frac{h_1}{h_2} \frac{\gamma - 0.2}{1.2} \tag{8.3.3-7}
+\]</div>
+<p><strong>图8.3.3 单层厂房框架示意</strong></p>
+<p><img alt="" src="_images/image162.svg" /></p>
+<p>式中：</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(h_1\)</span>, <span class="math notranslate nohighlight">\(h_2\)</span> —— 分别为柱在牛腿表面以下的高度和柱总高度；</p></li>
+<li><p><span class="math notranslate nohighlight">\(R\)</span> —— 与柱连接的斜梁线刚度之和和柱线刚度之比；</p></li>
+<li><p><span class="math notranslate nohighlight">\(\alpha_{\rm{R}}\)</span> —— 和比值<span class="math notranslate nohighlight">\(R\)</span>有关的系数；</p></li>
+<li><p><span class="math notranslate nohighlight">\(\alpha_{\rm{N}}\)</span> —— 考虑压力变化的系数；</p></li>
+<li><p><span class="math notranslate nohighlight">\(\gamma\)</span> —— 柱上下段压力比。</p></li>
+</ul>
+</section>
+<section id="id24">
+<h3>8.3.4 单层厂房框架下端刚性固定的阶形柱<a class="headerlink" href="#id24" title="Link to this heading">#</a></h3>
+<section id="id25">
+<h4>1. 单阶柱<a class="headerlink" href="#id25" title="Link to this heading">#</a></h4>
+<section id="mu-2">
+<h5>1. 下段柱的计算长度系数 <span class="math notranslate nohighlight">\( \mu_2 \)</span>：<a class="headerlink" href="#mu-2" title="Link to this heading">#</a></h5>
+<p>当柱上端与横梁铰接时，应按本规范附录E表E-3的数值乘以表8.3.4的折减系数；当柱上端与横梁刚接时，应按本规范附录E表E-4的数值乘以表8.3.4的折减系数。</p>
+</section>
+<section id="mu-2-mu-2-1-8-3-4-mu-2-1-mu-2-mu-2">
+<h5>2. 当柱上端与实腹梁刚接时，下段柱的计算长度系数 <span class="math notranslate nohighlight">\( \mu_2 \)</span>，应按下列公式计算的系数 <span class="math notranslate nohighlight">\( \mu_2^1 \)</span> 乘以表8.3.4的折减系数，系数 <span class="math notranslate nohighlight">\( \mu_2^1 \)</span> 应不大于按柱上端与横梁铰接计算时得到的 <span class="math notranslate nohighlight">\( \mu_2 \)</span> 值，且不小于按柱上端与横梁刚接计算时得到的 <span class="math notranslate nohighlight">\( \mu_2 \)</span> 值。<a class="headerlink" href="#mu-2-mu-2-1-8-3-4-mu-2-1-mu-2-mu-2" title="Link to this heading">#</a></h5>
+<div class="math notranslate nohighlight">
+\[
+K_b = \frac{I_b H_1}{l_b I_1} \tag{8.3.4-1}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+K_1 = \frac{I_1 H_2}{H_1 I_2} \tag{8.3.4-2}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+\mu_2^1 = \frac{\eta_1^2}{2(\eta_1 + 1)} \cdot \sqrt[3]{\frac{\eta_1 - K_b}{K_b}} + (\eta_1 - 0.5)K_1 + 2 \tag{8.3.4-3}
+\]</div>
+<p>式中：</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(I_b\)</span>, <span class="math notranslate nohighlight">\(l_b\)</span> —— 实腹钢梁的惯性矩和跨度；</p></li>
+<li><p><span class="math notranslate nohighlight">\(I_1\)</span>, <span class="math notranslate nohighlight">\(H_1\)</span> —— 阶形柱上段柱的惯性矩和柱高；</p></li>
+<li><p><span class="math notranslate nohighlight">\(I_2\)</span>, <span class="math notranslate nohighlight">\(H_2\)</span> —— 阶形柱下段柱的惯性矩和柱高；</p></li>
+<li><p><span class="math notranslate nohighlight">\(K_b\)</span> —— 横梁线刚度与上段柱线刚度的比值；</p></li>
+<li><p><span class="math notranslate nohighlight">\(K_1\)</span> —— 阶形柱上段柱线刚度与下段柱线刚度的比值。</p></li>
+</ul>
+<p><strong><span class="math notranslate nohighlight">\( \mu_2 \)</span> 值：</strong></p>
+<ul class="simple">
+<li><p>柱上端与横梁铰接时（即 <span class="math notranslate nohighlight">\(K_b = 0\)</span> 时）单阶柱下段柱的计算长度系数，按表E-3查得；</p></li>
+<li><p>柱上端与横梁刚接时（即 <span class="math notranslate nohighlight">\(K_b = \infty\)</span> 时）单阶柱下段柱的计算长度系数，按表E-4查得。</p></li>
+</ul>
+<p><span class="math notranslate nohighlight">\( \eta_1 \)</span> —— 参数，按表E-3或表E-4中公式计算。</p>
+<p><strong>表8.3.4 单层厂房阶形柱计算长度的折减系数</strong></p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>厂房类型</p></th>
+<th class="head"><p>纵向温度区段内一个柱列的柱子数</p></th>
+<th class="head"><p>屋面情况</p></th>
+<th class="head"><p>厂房两侧是否有通长的屋盖纵向水平支撑</p></th>
+<th class="head"><p>折减系数</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>单跨</p></td>
+<td><p>等于或少于6个</p></td>
+<td><p>—</p></td>
+<td><p>—</p></td>
+<td><p>0.9</p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p>多于6个</p></td>
+<td><p>非大型混凝土屋面板的屋面</p></td>
+<td><p>无纵向水平支撑</p></td>
+<td><p>0.8</p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p>有纵向水平支撑</p></td>
+<td><p>0.8</p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p></p></td>
+<td><p>大型混凝土屋面板的屋面</p></td>
+<td><p>—</p></td>
+<td><p>0.7</p></td>
+</tr>
+<tr class="row-even"><td><p>多跨</p></td>
+<td><p>—</p></td>
+<td><p>非大型混凝土屋面板的屋面</p></td>
+<td><p>无纵向水平支撑</p></td>
+<td><p>0.7</p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p>有纵向水平支撑</p></td>
+<td><p>0.7</p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p></p></td>
+<td><p>大型混凝土屋面板的屋面</p></td>
+<td><p>—</p></td>
+<td><p>0.6</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="mu-1">
+<h5>3. 上段柱的计算长度系数 <span class="math notranslate nohighlight">\( \mu_1 \)</span>：<a class="headerlink" href="#mu-1" title="Link to this heading">#</a></h5>
+<div class="math notranslate nohighlight">
+\[
+\mu_1 = \frac{\mu_2}{\eta_1} \tag{8.3.4-4}
+\]</div>
+</section>
+</section>
+<section id="id26">
+<h4>2. 双阶柱<a class="headerlink" href="#id26" title="Link to this heading">#</a></h4>
+<section id="mu-3">
+<h5>1. 下段柱的计算长度系数 <span class="math notranslate nohighlight">\( \mu_3 \)</span>：<a class="headerlink" href="#mu-3" title="Link to this heading">#</a></h5>
+<p>当柱上端与横梁铰接时，等于按附录E表E-5（柱上端为自由的双阶柱）的数值乘以表8.3.4的折减系数；当柱上端与横梁刚接时，等于按附录E表E-6（柱上端可移动但不转动的双阶柱）的数值乘以表8.3.4的折减系数。</p>
+</section>
+<section id="mu-1-mu-2">
+<h5>2. 上段柱和中段柱的计算长度系数 <span class="math notranslate nohighlight">\( \mu_1 \)</span> 和 <span class="math notranslate nohighlight">\( \mu_2 \)</span>，应按下列公式计算：<a class="headerlink" href="#mu-1-mu-2" title="Link to this heading">#</a></h5>
+<div class="math notranslate nohighlight">
+\[
+\mu_1 = \frac{\mu_3}{\eta_1} \tag{8.3.4-5}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+\mu_2 = \frac{\mu_3}{\eta_2} \tag{8.3.4-6}
+\]</div>
+</section>
+</section>
+</section>
+<section id="id27">
+<h3>8.3.5 当计算框架的格构式柱和桁架式横梁的惯性矩时，应考虑柱或横梁截面高度变化和缀件（或腹板）变形的影响。<a class="headerlink" href="#id27" title="Link to this heading">#</a></h3>
+</section>
+<section id="id28">
+<h3>8.3.6 框架柱在框架平面外的计算长度可取面外支撑点之间距离，还可考虑相邻柱之间的相互约束关系确定计算长度。<a class="headerlink" href="#id28" title="Link to this heading">#</a></h3>
+</section>
+</section>
+<section id="id29">
+<h2>8.4 压弯构件的局部稳定和屈曲后强度<a class="headerlink" href="#id29" title="Link to this heading">#</a></h2>
+<section id="s3">
+<h3>8.4.1 压弯构件腹板、翼缘宽厚比应符合本规范表3.5规定的压弯构件S3级截面要求。<a class="headerlink" href="#s3" title="Link to this heading">#</a></h3>
+</section>
+<section id="id30">
+<h3>8.4.2 工字形和箱形截面压弯构件的腹板高厚比超过表3.5规定的S3级截面要求时，其构件设计应符合下列规定：<a class="headerlink" href="#id30" title="Link to this heading">#</a></h3>
+<section id="id31">
+<h4>8.4.2.1 应以有效截面代替实际截面按本条第2款计算杆件的承载力。<a class="headerlink" href="#id31" title="Link to this heading">#</a></h4>
+<ol class="arabic simple">
+<li><p>腹板受压区的有效宽度应取为：</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+h_{\rm{e}} = \rho h_{\rm{c}} \tag{8.4.2-1}
+\]</div>
+<p>当 <span class="math notranslate nohighlight">\(\lambda_{\rm{p}}^{\rm{re}} \leq 0.75\)</span> 时：</p>
+<div class="math notranslate nohighlight">
+\[
+\rho = 1.0 \tag{8.4.2-2a}
+\]</div>
+<p>当 <span class="math notranslate nohighlight">\(\lambda_{\rm{p}}^{\rm{re}} &gt; 0.75\)</span> 时：</p>
+<div class="math notranslate nohighlight">
+\[
+\rho = \frac{1}{\lambda_{\rm{p}}^{\rm{re}}} \left( 1 - \frac{0.19}{\lambda_{\rm{p}}^{\rm{re}}} \right) \tag{8.4.2-2b}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+\lambda_{\rm{p}}^{\rm{re}} = \frac{h_{\rm{w}} / t_{\rm{w}}}{28.1 \sqrt{k_\sigma}} \cdot \frac{1}{\varepsilon_{\rm{k}}} \tag{8.4.2-3}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+k_\sigma = \frac{16}{2 - \alpha_0 + \sqrt{(2 - \alpha_0)^2 + 0.112 \alpha_0^2}} \tag{8.4.2-4}
+\]</div>
+<p>式中：</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(h_{\rm{c}}\)</span>, <span class="math notranslate nohighlight">\(h_{\rm{e}}\)</span> —— 分别为腹板受压区宽度和有效宽度，当腹板全部受压时，<span class="math notranslate nohighlight">\(h_{\rm{c}} = h_{\rm{w}}\)</span>；</p></li>
+<li><p><span class="math notranslate nohighlight">\(\rho\)</span> —— 有效宽度系数，按式（8.4.2-2）计算。</p></li>
+</ul>
+<ol class="arabic simple" start="2">
+<li><p>腹板有效宽度 <span class="math notranslate nohighlight">\(h_{\rm{e}}\)</span> 应按下列规则分布：</p></li>
+</ol>
+<ul class="simple">
+<li><p>当截面全部受压，即 <span class="math notranslate nohighlight">\(\alpha_0 \leq 1\)</span> 时（图8.4.2a）：</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+h_{\rm{e1}} = \frac{2 h_{\rm{e}}}{4 + \alpha_0} \tag{8.4.2-5}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+h_{\rm{e2}} = h_{\rm{e}} - h_{\rm{e1}} \tag{8.4.2-6}
+\]</div>
+<ul class="simple">
+<li><p>当截面部分受拉，即 <span class="math notranslate nohighlight">\(\alpha_0 &gt; 1\)</span> 时（图8.4.2b）：</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+h_{\rm{e1}} = 0.4 h_{\rm{e}} \tag{8.4.2-7}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+h_{\rm{e2}} = 0.6 h_{\rm{e}} \tag{8.4.2-8}
+\]</div>
+<p><img alt="" src="_images/image163.svg" /></p>
+<p><strong>图8.4.2 有效宽度的分布</strong></p>
+<ol class="arabic simple" start="3">
+<li><p>箱形截面压弯构件翼缘宽厚比超限时也应按公式（8.4.2-1）计算其有效宽度，计算时取 <span class="math notranslate nohighlight">\(k_\sigma = 4.0\)</span>。有效宽度分布在两侧均等。</p></li>
+</ol>
+</section>
+<section id="id32">
+<h4>8.4.2.2 应采用下列公式计算其承载力：<a class="headerlink" href="#id32" title="Link to this heading">#</a></h4>
+<p><strong>强度计算：</strong></p>
+<div class="math notranslate nohighlight">
+\[
+\frac{N}{A_{\rm{ne}}} \pm \frac{M_{\rm{x}} + Ne}{\gamma_{\rm{x}} W_{\rm{nex}}} \leq f \tag{8.4.2-9}
+\]</div>
+<p><strong>平面内稳定计算：</strong></p>
+<div class="math notranslate nohighlight">
+\[
+\frac{N}{\varphi_{\rm{x}} A_{\rm{e}} f} + \frac{\beta_{\rm{mx}} M_{\rm{x}} + Ne}{\gamma_{\rm{x}} W_{\rm{elx}} \left( 1 - 0.8 N / N_{\rm{Ex}}' \right) f} \leq 1.0 \tag{8.4.2-10}
+\]</div>
+<p><strong>平面外稳定计算：</strong></p>
+<div class="math notranslate nohighlight">
+\[
+\frac{N}{\varphi_{\rm{y}} A_{\rm{e}} f} + \eta \frac{M_{\rm{x}} + Ne}{\varphi_{\rm{b}} \gamma_{\rm{x}} W_{\rm{elx}} f} \leq 1.0 \tag{8.4.2-11}
+\]</div>
+<p>式中：</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(A_{\rm{ne}}\)</span>, <span class="math notranslate nohighlight">\(A_{\rm{e}}\)</span> —— 分别为有效净截面的面积和有效毛截面的面积；</p></li>
+<li><p><span class="math notranslate nohighlight">\(W_{\rm{nex}}\)</span> —— 有效截面的净截面模量；</p></li>
+<li><p><span class="math notranslate nohighlight">\(W_{\rm{elx}}\)</span> —— 有效截面对较大受压纤维的毛截面模量；</p></li>
+<li><p><span class="math notranslate nohighlight">\(e\)</span> —— 有效截面形心至原截面形心的距离。</p></li>
+</ul>
+</section>
+</section>
+<section id="t-10-0-75t">
+<h3>8.4.3 压弯构件的板件当用纵向加劲肋加强以满足宽厚比限值时，加劲肋宜在板件两侧成对配置，其一侧外伸宽度不应小于板件厚度 <span class="math notranslate nohighlight">\(t\)</span> 的10倍，厚度不宜小于0.75<span class="math notranslate nohighlight">\(t\)</span>。<a class="headerlink" href="#t-10-0-75t" title="Link to this heading">#</a></h3>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="7%20%E8%BD%B4%E5%BF%83%E5%8F%97%E5%8A%9B%E6%9E%84%E4%BB%B6.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">7 轴心受力构件</p>
+      </div>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">8.1 截面强度计算</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">1. 弯矩作用在两个主平面内的拉弯构件和压弯构件（圆管截面除外）</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">2. 弯矩作用在两个主平面内的圆形截面拉弯构件和压弯构件</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">8.2 构件的稳定性计算</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#x">8.2.1 弯矩作用在对称轴平面内（绕<span class="math notranslate nohighlight">\(x\)</span>轴）的实腹式压弯构件（圆管截面除外）</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">1. 弯矩作用平面内稳定性</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">1. 无侧移框架柱和两端支承的构件：</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">2. 有侧移框架柱和悬臂构件：</a></li>
+</ul>
+</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">2. 弯矩作用平面外稳定性</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">3. 弯矩绕虚轴（<span class="math notranslate nohighlight">\(x\)</span>轴）作用的格构式压弯构件</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">4. 弯矩绕实轴作用的格构式压弯构件</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">5. 双向压弯圆管的整体稳定</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#h">6. 双轴对称实腹式工字形（含H形）和箱形（闭口）截面的压弯构件</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">7. 双肢格构式压弯构件</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">1. 按整体计算</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">2. 按分肢计算</a></li>
+</ul>
+</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">8. 格构式缀件的计算</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">9. 支撑的计算</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">8.3 框架柱的计算长度</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">8.3.1 等截面柱</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id20">1. 纯框架</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id21">2. 有支撑框架</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id22">8.3.2 当梁与柱的连接达不到刚性连接要求时，确定柱计算长度时应考虑连接的半刚性特性。</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id23">8.3.3 单层厂房框架下端刚性固定的带牛腿等截面柱</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id24">8.3.4 单层厂房框架下端刚性固定的阶形柱</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id25">1. 单阶柱</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#mu-2">1. 下段柱的计算长度系数 <span class="math notranslate nohighlight">\( \mu_2 \)</span>：</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#mu-2-mu-2-1-8-3-4-mu-2-1-mu-2-mu-2">2. 当柱上端与实腹梁刚接时，下段柱的计算长度系数 <span class="math notranslate nohighlight">\( \mu_2 \)</span>，应按下列公式计算的系数 <span class="math notranslate nohighlight">\( \mu_2^1 \)</span> 乘以表8.3.4的折减系数，系数 <span class="math notranslate nohighlight">\( \mu_2^1 \)</span> 应不大于按柱上端与横梁铰接计算时得到的 <span class="math notranslate nohighlight">\( \mu_2 \)</span> 值，且不小于按柱上端与横梁刚接计算时得到的 <span class="math notranslate nohighlight">\( \mu_2 \)</span> 值。</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#mu-1">3. 上段柱的计算长度系数 <span class="math notranslate nohighlight">\( \mu_1 \)</span>：</a></li>
+</ul>
+</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id26">2. 双阶柱</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#mu-3">1. 下段柱的计算长度系数 <span class="math notranslate nohighlight">\( \mu_3 \)</span>：</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#mu-1-mu-2">2. 上段柱和中段柱的计算长度系数 <span class="math notranslate nohighlight">\( \mu_1 \)</span> 和 <span class="math notranslate nohighlight">\( \mu_2 \)</span>，应按下列公式计算：</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id27">8.3.5 当计算框架的格构式柱和桁架式横梁的惯性矩时，应考虑柱或横梁截面高度变化和缀件（或腹板）变形的影响。</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id28">8.3.6 框架柱在框架平面外的计算长度可取面外支撑点之间距离，还可考虑相邻柱之间的相互约束关系确定计算长度。</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id29">8.4 压弯构件的局部稳定和屈曲后强度</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#s3">8.4.1 压弯构件腹板、翼缘宽厚比应符合本规范表3.5规定的压弯构件S3级截面要求。</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id30">8.4.2 工字形和箱形截面压弯构件的腹板高厚比超过表3.5规定的S3级截面要求时，其构件设计应符合下列规定：</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id31">8.4.2.1 应以有效截面代替实际截面按本条第2款计算杆件的承载力。</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id32">8.4.2.2 应采用下列公式计算其承载力：</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#t-10-0-75t">8.4.3 压弯构件的板件当用纵向加劲肋加强以满足宽厚比限值时，加劲肋宜在板件两侧成对配置，其一侧外伸宽度不应小于板件厚度 <span class="math notranslate nohighlight">\(t\)</span> 的10倍，厚度不宜小于0.75<span class="math notranslate nohighlight">\(t\)</span>。</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By 游田重新排版
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2025.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
