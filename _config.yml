@@ -33,3 +33,10 @@ html:
   comments:
     Hypothesis: false
     utterances: false
+
+sphinx:
+  config:
+    html_baseurl            : "https://github.com/youtian95/Book_SteelStd/"
+    sitemap_url_scheme      : "{link}"
+  extra_extensions:
+    - sphinx_sitemap
